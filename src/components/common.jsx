@@ -1,4 +1,6 @@
+import { isFig } from '../data/abstract.js'
 import { CATS, DIFF } from '../data/bank.js'
+import { FigQ, OptText } from './Figure.jsx'
 import { PASS } from '../lib/config.js'
 import { examLevel } from '../lib/exam.js'
 import { fmt } from '../lib/util.js'
@@ -101,19 +103,20 @@ export function ItemCard({ q, label, yours, hidden, showStatus, children }) {
         {st && <span className={`spill ${st}`}>{st === 'c' ? 'Correct' : st === 'w' ? 'Wrong' : 'Blank'}{q.flag ? ' ⚑' : ''}</span>}
       </div>
       <div className="q">{q.q}</div>
+      <FigQ fig={q.fig} />
       <div>
         {q.o.map((t, i) => {
           const isKey = !hidden && i === q.a, isYours = showStatus && yours === i && i !== q.a
           return (
             <div key={i} className={'ropt' + (isKey ? ' k' : '') + (isYours ? ' y' : '')}>
-              <span className="bub">{'ABCD'[i]}</span><span>{t}</span>
+              <span className="bub">{'ABCD'[i]}</span><span><OptText t={t} /></span>
               <span className="mk">{isKey ? (showStatus && yours === i ? 'Your answer, correct' : 'Correct answer') : isYours ? 'Your answer' : ''}</span>
             </div>
           )
         })}
       </div>
       {!hidden && (
-        <div className="explain"><b>Explanation</b><p>The answer is {'ABCD'[q.a]}, {q.o[q.a]}. {q.e}</p></div>
+        <div className="explain"><b>Explanation</b><p>The answer is {'ABCD'[q.a]}{isFig(q.o[q.a]) ? '' : `, ${q.o[q.a]}`}. {q.e}</p></div>
       )}
       {children}
     </div>

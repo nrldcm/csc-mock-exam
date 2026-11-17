@@ -9,8 +9,9 @@ export const SEC_PER_ITEM = 67
 export const LEVELS = {
   pro: {
     name: 'Professional', cats: ['verbal', 'filipino', 'numerical', 'analytical', 'general'], items: 170, sec: 190 * 60,
-    note: 'Verbal, numerical and analytical ability, and general information. 170 items in 3 hours 10 minutes.',
-    w: { easy: 0.8, average: 1, difficult: 1.3 }
+    note: 'Verbal, numerical and analytical ability (including abstract reasoning), and general information. 170 items in 3 hours 10 minutes.',
+    w: { easy: 0.8, average: 1, difficult: 1.3 },
+    abstract: 10 // figure items placed in the Analytical part of the realistic exam
   },
   sub: {
     name: 'Subprofessional', cats: ['verbal', 'filipino', 'numerical', 'clerical', 'general'], items: 165, sec: 160 * 60,

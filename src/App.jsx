@@ -1,6 +1,7 @@
 import { Suspense, lazy, useCallback, useEffect, useRef, useState } from 'react'
 import { BANK, CATS, DIFF } from './data/bank.js'
 import { genItem } from './data/generators.js'
+import { genAbstract } from './data/abstract.js'
 import { LEVELS, MODES, PASS, SEC_PER_ITEM, levelPool } from './lib/config.js'
 import { SESSION_KEY, buildReal, diffPool, examLevel, nextBatch, prep, weakestCat } from './lib/exam.js'
 import { award, requestPersistence, saveSession, triviaItems, triviaToday } from './lib/progress.js'
@@ -101,6 +102,11 @@ function Main() {
 
   /* Practice one subject from the notes or reviewer: 15 written + 5 fresh items */
   const practiceCat = c => {
+    if (c === 'abstract') {
+      const items = []; let guard = 0
+      while (items.length < 20 && guard++ < 100) { const g = genAbstract('mixed'); if (g) items.push(g) }
+      begin(items, 'quick', false, 'Abstract reasoning practice'); return
+    }
     const written = shuffle(BANK.filter(q => q.c === c)).slice(0, 15)
     const cats = LEVELS[level].cats.includes(c) ? LEVELS[level].cats : [c]
     let guard = 0
@@ -145,7 +151,7 @@ function Main() {
       id: Date.now(), at: new Date().toISOString(), label: e.label, examLevel: e.level, level: examLevel(items), mode: e.mode, name: e.name || '',
       timeUp: !!timeUp, used: e.used, score, total, rating,
       items: items.map((q, i) => (q.gen
-        ? { g: { c: q.c, d: q.d, q: q.q, o: q.o, a: q.a, e: q.e }, s: ans[i] === null ? -1 : ans[i] }
+        ? { g: { c: q.c, d: q.d, q: q.q, o: q.o, a: q.a, e: q.e, ...(q.fig ? { fig: q.fig } : {}) }, s: ans[i] === null ? -1 : ans[i] }
         : [q.id, q.o.map(t => BANK[q.id].o.indexOf(t)).join(''), ans[i] === null ? -1 : ans[i]])),
       flags: flags.map((f, i) => (f ? i : -1)).filter(i => i >= 0)
     }

@@ -1,5 +1,6 @@
 import { BANK } from '../data/bank.js'
 import { genItem } from '../data/generators.js'
+import { genAbstract } from '../data/abstract.js'
 import { LEVELS, levelPool } from './config.js'
 import { avg, shuffle } from './util.js'
 import { ls } from './storage.js'
@@ -17,8 +18,10 @@ export const diffPool = (pool, diff) => (diff === 'mixed' || diff === 'all' ? [.
 /* Realistic set: every subject represented, grouped by part like a test booklet.
    Weighted random pick: each item gets random × level weight; the highest scores are kept. */
 export function buildReal(level) {
-  const L = LEVELS[level]
-  const pick = levelPool(level).map(q => ({ q, k: Math.random() * L.w[q.d] })).sort((a, b) => b.k - a.k).slice(0, L.items).map(x => x.q)
+  const L = LEVELS[level], nAbs = L.abstract || 0
+  const pick = levelPool(level).map(q => ({ q, k: Math.random() * L.w[q.d] })).sort((a, b) => b.k - a.k).slice(0, L.items - nAbs).map(x => x.q)
+  // Abstract reasoning figures join the Analytical part
+  for (let i = 0, guard = 0; i < nAbs && guard < 100; guard++) { const g = genAbstract('mixed'); if (g) { pick.push(g); i++ } }
   // Top up with generated items if the written bank is smaller than the official item count
   const out = L.cats.flatMap(k => shuffle(pick.filter(q => q.c === k)))
   if (out.length < L.items) {

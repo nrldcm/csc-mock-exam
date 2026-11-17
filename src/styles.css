@@ -309,6 +309,18 @@ h3{font-size:1rem;margin:16px 0 6px}
 .dev .av{width:56px;height:56px;border-radius:50%;background:var(--gov);color:var(--gov-ink);display:grid;place-items:center;font-family:var(--serif);font-weight:700;font-size:1.2rem;flex:none}
 .linkbtn{display:inline-flex;align-items:center;gap:8px;margin-top:10px}
 
+/* ---------- Abstract reasoning figures ---------- */
+.fig{display:block;width:100%;height:100%}
+.figrow{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:-6px 0 18px}
+.figbox{width:clamp(50px,14vw,78px);aspect-ratio:1;border:1.5px solid var(--line);border-radius:10px;background:var(--sheet);padding:6px;display:grid;place-items:center;color:var(--ink)}
+.figbox.ask{border-style:dashed;border-color:var(--seal);color:var(--seal);font-family:var(--serif);font-weight:700;font-size:1.8rem}
+.figop{font-family:var(--serif);font-weight:700;font-size:1.3rem;color:var(--muted)}
+.figopts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px}
+.figopts .opt{margin:0;min-height:96px}
+.optfig{display:block;width:clamp(56px,16vw,80px);aspect-ratio:1}
+.ropt .optfig{width:56px}
+.figans{display:inline-block;width:40px;height:40px;vertical-align:middle;margin-left:4px}
+
 /* ---------- Donate ---------- */
 .donate{border-color:var(--seal)}
 .donate-head{display:flex;gap:14px;align-items:flex-start}

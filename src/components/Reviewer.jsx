@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { CATS } from '../data/bank.js'
 import { genItem } from '../data/generators.js'
+import { genAbstract } from '../data/abstract.js'
 import { LEVELS, levelPool } from '../lib/config.js'
 import { ls } from '../lib/storage.js'
 import { Footer, ItemCard, TopBar } from './common.jsx'
@@ -28,10 +29,13 @@ export default function Reviewer({ level, onPractice }) {
 
   // Generated items: build in the background so the skeleton can show first
   useEffect(() => {
-    if (src !== 'gen' || gen.length >= limit) return
+    if ((src !== 'gen' && src !== 'abs') || gen.length >= limit) return
     const t = setTimeout(() => {
       const add = []
-      while (gen.length + add.length < limit) { const g = genItem(L.cats, cat === 'all' ? null : cat, diff); if (!g) break; add.push(g) }
+      while (gen.length + add.length < limit) {
+        const g = src === 'abs' ? genAbstract(diff) : genItem(L.cats, cat === 'all' ? null : cat, diff)
+        if (!g) break; add.push(g)
+      }
       setGen(x => [...x, ...add])
     }, 30)
     return () => clearTimeout(t)
@@ -44,7 +48,7 @@ export default function Reviewer({ level, onPractice }) {
   }
   const reveal = k => setRevealed(s => new Set(s).add(k))
   const nd = lp.filter(x => done.has(x.id)).length
-  const isGen = src === 'gen'
+  const isGen = src === 'gen' || src === 'abs'
   const lowered = q.trim().toLowerCase()
   const shown = isGen ? [] : lp.filter(x => (cat === 'all' || x.c === cat) && (diff === 'all' || x.d === diff)
     && (filter === 'all' || (filter === 'done') === done.has(x.id))
@@ -56,16 +60,18 @@ export default function Reviewer({ level, onPractice }) {
       <main className="wrap has-nav" id="main">
         <div className="card">
           <div className="chips" style={{ marginTop: 0 }} role="group" aria-label="Source">
-            {[['bank', `Written items (${lp.length})`], ['gen', 'Unlimited new items']].map(([k, v]) => (
+            {[['bank', `Written items (${lp.length})`], ['gen', 'Unlimited new items'], ['abs', 'Abstract figures']].map(([k, v]) => (
               <button key={k} className="chip" aria-pressed={src === k} onClick={() => { setSrc(k); reset() }}>{v}</button>
             ))}
           </div>
           {!isGen && <input className="input" type="search" placeholder="Search a word, law or topic" aria-label="Search items" value={term} onChange={e => setTerm(e.target.value)} style={{ marginTop: 12 }} />}
-          <div className="chips" role="group" aria-label="Subject">
-            {[['all', `All ${L.name} subjects`], ...L.cats.map(k => [k, CATS[k]])].map(([k, v]) => (
-              <button key={k} className="chip" aria-pressed={cat === k} onClick={() => { setCat(k); reset() }}>{v}</button>
-            ))}
-          </div>
+          {src !== 'abs' && (
+            <div className="chips" role="group" aria-label="Subject">
+              {[['all', `All ${L.name} subjects`], ...L.cats.map(k => [k, CATS[k]])].map(([k, v]) => (
+                <button key={k} className="chip" aria-pressed={cat === k} onClick={() => { setCat(k); reset() }}>{v}</button>
+              ))}
+            </div>
+          )}
           <div className="chips" role="group" aria-label="Difficulty">
             {[['all', 'All levels'], ['easy', 'Easy'], ['average', 'Average'], ['difficult', 'Difficult']].map(([k, v]) => (
               <button key={k} className="chip" aria-pressed={diff === k} onClick={() => { setDiff(k); reset() }}>{v}</button>
@@ -82,7 +88,9 @@ export default function Reviewer({ level, onPractice }) {
             <div><b>Hide answers</b><small>Try each item first, then tap to reveal the answer</small></div>
             <button className="tog" role="switch" aria-checked={hide} aria-label="Hide answers" onClick={() => { setHide(!hide); setRevealed(new Set()) }} />
           </div>
-          {cat !== 'all' && <button className="btn ghost block" style={{ marginTop: 14 }} onClick={() => onPractice(cat)}>Practice {CATS[cat]} now</button>}
+          {src === 'abs'
+            ? <button className="btn ghost block" style={{ marginTop: 14 }} onClick={() => onPractice('abstract')}>Practice abstract reasoning now</button>
+            : cat !== 'all' && <button className="btn ghost block" style={{ marginTop: 14 }} onClick={() => onPractice(cat)}>Practice {CATS[cat]} now</button>}
         </div>
 
         <p className="sub" style={{ margin: '14px 2px 0' }} aria-live="polite">

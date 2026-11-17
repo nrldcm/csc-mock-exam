@@ -1,5 +1,7 @@
 import { useState } from 'react'
+import { dec, isFig } from '../data/abstract.js'
 import { CATS } from '../data/bank.js'
+import { Fig, FigQ } from './Figure.jsx'
 import { PASS } from '../lib/config.js'
 import { shareResult } from '../lib/shareResult.js'
 import { fmt, fmtTime } from '../lib/util.js'
@@ -73,8 +75,9 @@ export default function Results({ r, onReview, onRetry, onHome }) {
             <div className="rev" key={i}>
               <div className="qsection">Item {i + 1}, {CATS[q.c]}</div>
               <div className="q">{q.q}</div>
-              <div className="ans">Your answer: <span className="y">{yours === null ? 'Left blank' : q.o[yours]}</span></div>
-              <div className="ans">Correct answer: <span className="k">{q.o[q.a]}</span></div>
+              <FigQ fig={q.fig} />
+              <div className="ans">Your answer: <span className="y">{yours === null ? 'Left blank' : <AnsText t={q.o[yours]} />}</span></div>
+              <div className="ans">Correct answer: <span className="k"><AnsText t={q.o[q.a]} /></span></div>
               <div className="ex">{q.e}</div>
             </div>
           ))}
@@ -85,6 +88,8 @@ export default function Results({ r, onReview, onRetry, onHome }) {
     </>
   )
 }
+
+const AnsText = ({ t }) => (isFig(t) ? <span className="figans"><Fig spec={dec(t)} /></span> : t)
 
 const ShareIcon = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">

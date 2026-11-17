@@ -5,7 +5,9 @@ import { SESSION_KEY, nextBatch, prep, saveProgress } from '../lib/exam.js'
 import { ptsFor } from '../lib/progress.js'
 import { ls } from '../lib/storage.js'
 import { fmt, fmtTime, reducedMotion } from '../lib/util.js'
+import { isFig } from '../data/abstract.js'
 import { DBadge } from './common.jsx'
+import { FigQ, OptText, optWords } from './Figure.jsx'
 import { useUI } from './ui.jsx'
 
 const WARN = [[1800, '30 minutes remaining'], [600, '10 minutes remaining'], [300, '5 minutes remaining. Shade all your answers.']]
@@ -173,21 +175,22 @@ export default function Quiz({ exam, setExam, onFinish, onLeave, backRef }) {
             {exam.flags[exam.idx] && <span className="qflag">⚑ Flagged</span>}
           </div>
           <div className="q"><span className="n">{exam.idx + 1}.</span><span>{q.q}</span></div>
-          <div role="group" aria-label="Choices">
+          <FigQ fig={q.fig} />
+          <div role="group" aria-label="Choices" className={isFig(q.o[0]) ? 'figopts' : undefined}>
             {q.o.map((t, i) => {
               let c = 'opt'
               if (locked) c += i === q.a ? ' right' : i === a ? ' wrong' : ' dim'
               else if (a === i) c += ' sel'
               return (
                 <button key={i} className={c} disabled={locked} aria-pressed={a === i} onClick={() => choose(i)}>
-                  <span className="bub">{'ABCD'[i]}</span><span>{t}</span>
+                  <span className="bub">{'ABCD'[i]}</span><span><OptText t={t} /></span>
                 </button>
               )
             })}
           </div>
           {locked && (
             <div ref={fbRef} className={`fb ${a === q.a ? 'ok' : 'no'}`} role="status">
-              <strong>{a === q.a ? `Correct  +${ptsFor(q)} pts` : `Wrong. The answer is ${'ABCD'[q.a]}: ${q.o[q.a]}`}</strong>
+              <strong>{a === q.a ? `Correct  +${ptsFor(q)} pts` : `Wrong. The answer is ${'ABCD'[q.a]}${optWords(q.o[q.a])}`}</strong>
               <p>{q.e}</p>
             </div>
           )}

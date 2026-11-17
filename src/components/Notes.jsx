@@ -83,7 +83,9 @@ export function NoteView({ id, onBack, onOpen, onPractice }) {
         </div>
         <div className="stack">
           <button className={`btn block${read.has(n.id) ? ' done' : ''}`} onClick={markRead} disabled={read.has(n.id)}>{read.has(n.id) ? '✓ Marked as read' : 'Mark as read'}</button>
-          {CATS[n.c] && <button className="btn ghost block" onClick={() => onPractice(n.c)}>Practice {CATS[n.c]}</button>}
+          {n.practice === 'abstract'
+            ? <button className="btn ghost block" onClick={() => onPractice('abstract')}>Practice abstract reasoning (20 figure items)</button>
+            : CATS[n.c] && <button className="btn ghost block" onClick={() => onPractice(n.c)}>Practice {CATS[n.c]}</button>}
           <div className="row2">
             <button className="btn ghost" disabled={!prev} onClick={() => prev && onOpen(prev.id)}>Previous</button>
             <button className="btn ghost" disabled={!next} onClick={() => next && onOpen(next.id)}>Next topic</button>

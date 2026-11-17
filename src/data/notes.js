@@ -227,6 +227,32 @@ export const NOTES = [
     ]
   },
 
+  {
+    id: 'abstract', c: 'analytical', practice: 'abstract', title: 'Abstract reasoning (figures)',
+    summary: 'Figure series, figure analogies and odd one out.',
+    sections: [
+      { h: 'What the items look like', list: [
+        'Series: four figures follow a rule. Pick the fifth.',
+        'Analogy: figure A changes into figure B. Apply the same change to figure C.',
+        'Odd one out: three figures share a rule; one does not.'
+      ] },
+      { h: 'Rules to check, in this order', list: [
+        'Rotation: how many degrees does the figure turn each step (45°, 90°, 180°), and in which direction?',
+        'Count: does the number of sides, dots or lines go up or down by a fixed amount?',
+        'Position: does a shaded part or small mark move around the figure? Count how many places it moves.',
+        'Shading: does the figure switch between solid and outline?',
+        'Mirror image: a flipped figure can never be made by turning it. This is a favorite odd-one-out trap.',
+        'Two rules at once: sometimes the figure turns AND changes shading. Check each change separately.'
+      ] },
+      { h: 'Tips', list: [
+        'Compare figure 1 with 2, then 2 with 3. The change between neighbors is the rule.',
+        'Eliminate choices that break any rule you already found.',
+        'A choice that repeats the last figure in the series is a common distractor.',
+        'Turn the page or phone in your mind, not your head: track one corner or tip of the figure.'
+      ] }
+    ]
+  },
+
   // ---------------- CLERICAL ----------------
   {
     id: 'filing', c: 'clerical', title: 'Alphabetical filing and checking',

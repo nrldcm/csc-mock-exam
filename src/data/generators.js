@@ -2,6 +2,7 @@
    Builds new items on the fly. Math, logic and clerical answers are computed, so they are always correct;
    vocabulary, laws and Constitution items are drawn from curated fact lists in random combinations. */
 import { R, pk, shuffle } from '../lib/util.js'
+import { ABSGEN } from './abstract.js'
 
 const num = n => n.toLocaleString('en-US', { maximumFractionDigits: 2 })
 const peso = n => {
@@ -312,7 +313,7 @@ const CLEGEN = [
 const GEN = {
   verbal: [() => vocabItem(VOCAB, 'verbal', false), () => vocabItem(VOCAB, 'verbal', false), agreeItem, analogyItem],
   filipino: [() => vocabItem(SALITA, 'filipino', true)],
-  numerical: NUMGEN, analytical: ANAGEN, clerical: CLEGEN,
+  numerical: NUMGEN, analytical: [...ANAGEN, ...ABSGEN], clerical: CLEGEN,
   general: [lawItem, lawItem, articleItem, officeItem]
 }
 

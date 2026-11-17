@@ -1,0 +1,33 @@
+{
+  "name": "csc-mock-exam",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "prebuild": "pwa-assets-generator",
+    "build": "vite build",
+    "preview": "vite preview --host",
+    "icons": "pwa-assets-generator"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/core": "^7.0.0",
+    "@capacitor/filesystem": "^7.0.0",
+    "@capacitor/share": "^7.0.0",
+    "@capacitor/status-bar": "^7.0.0",
+    "@fontsource/public-sans": "^5.1.0",
+    "@fontsource/source-serif-4": "^5.1.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^7.0.0",
+    "@vite-pwa/assets-generator": "^0.2.6",
+    "@vitejs/plugin-react": "^4.3.4",
+    "sharp": "^0.33.5",
+    "vite": "^5.4.11",
+    "vite-plugin-pwa": "^0.21.1"
+  }
+}

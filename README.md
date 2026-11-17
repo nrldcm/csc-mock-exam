@@ -30,17 +30,36 @@ npm run preview    # serve the production build
 Installing as an app (and offline mode) needs **HTTPS**. Host `dist/` on any static host (Netlify, Vercel, GitHub Pages, Cloudflare Pages),
 open it on the phone, then **Install app / Add to Home screen**.
 
-## Android APK (optional)
+## CI/CD (GitHub Actions)
 
-The build uses relative paths, so it can be wrapped with Capacitor. Requires Android Studio and a JDK.
+Every push to `main` runs two workflows:
+
+| Workflow | Output |
+|---|---|
+| `.github/workflows/build-apk.yml` | Android APK (Capacitor) published as a **GitHub Release** `v1.0.<run>` |
+| `.github/workflows/deploy-pages.yml` | Web app (installable PWA) on **GitHub Pages** |
+
+### One-time setup
+
+1. **Release signing:** Settings → Secrets and variables → Actions → New repository secret
+   `ANDROID_KEYSTORE_PASSWORD` = a long random password (save it in your password manager).
+   The first build creates the signing key, encrypts it with this password (AES-256) and commits
+   `signing/release.keystore.enc`. Later builds reuse it, so new releases install as updates and keep user data.
+   Without the secret the workflow builds a debug APK.
+2. **Pages:** Settings → Pages → Build and deployment → Source: **GitHub Actions**.
+
+Do not delete `signing/release.keystore.enc` or change the password: a new key means users must uninstall to update.
+
+## Android APK on your own machine (optional)
+
+Requires a JDK 21 and the Android SDK.
 
 ```bash
-npm i @capacitor/core @capacitor/cli @capacitor/android
-npx cap init "CSC Mock Exam" ph.csc.mockexam --web-dir dist
-npm run build && npx cap add android && npx cap copy && npx cap open android
+npm install && npm run build
+npx cap add android
+node tools/native-assets.cjs && npx @capacitor/assets generate --android
+npx cap sync android && npx cap open android
 ```
-
-Alternatively, enter the hosted HTTPS URL at pwabuilder.com to generate an Android package.
 
 ## Project layout
 

@@ -1,0 +1,16 @@
+node_modules
+dist
+dev-dist
+*.local
+*.apk
+*.keystore
+*.jks
+
+# Generated during the build (CI recreates these every run)
+android/
+ios/
+assets/
+public/pwa-*.png
+public/maskable-icon-*.png
+public/apple-touch-icon-*.png
+public/favicon.ico

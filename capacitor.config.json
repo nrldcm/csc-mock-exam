@@ -1,0 +1,9 @@
+{
+  "appId": "com.nrldcm.cscmockexam",
+  "appName": "CSC Mock Exam",
+  "webDir": "dist",
+  "android": {
+    "backgroundColor": "#1F3A68",
+    "adjustMarginsForEdgeToEdge": "force"
+  }
+}

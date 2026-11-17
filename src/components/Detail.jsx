@@ -6,7 +6,8 @@ import { SKEY } from '../lib/progress.js'
 import { ls } from '../lib/storage.js'
 import { avg, fmt, fmtTime, fmtWhen } from '../lib/util.js'
 import { DiffCard, ItemCard, SubjBars, TopBar } from './common.jsx'
-import { useUI } from './ui.jsx'
+import { shareResult } from '../lib/shareResult.js'
+import { Spinner, useUI } from './ui.jsx'
 
 const TESTS = {
   all: () => true, wrong: q => q.ans !== null && q.ans !== q.a, blank: q => q.ans === null,
@@ -15,7 +16,8 @@ const TESTS = {
 const NAMES = { all: 'All', wrong: 'Wrong', blank: 'Blank', correct: 'Correct', flag: 'Flagged' }
 
 export default function Detail({ id, onBack, onDeleted }) {
-  const { ask } = useUI()
+  const { ask, toast } = useUI()
+  const [sharing, setSharing] = useState(false)
   const [filter, setFilter] = useState('all')
   const [limit, setLimit] = useState(30)
   const rec = useMemo(() => ls.get(SKEY, []).find(r => r.id === id), [id])
@@ -28,6 +30,14 @@ export default function Detail({ id, onBack, onDeleted }) {
   const by = {}
   items.forEach(q => { by[q.c] = by[q.c] || { t: 0, s: 0 }; by[q.c].t++; if (q.ans === q.a) by[q.c].s++ })
   const shown = items.map((q, i) => ({ q, i })).filter(({ q }) => TESTS[filter](q))
+  const share = async () => {
+    setSharing(true)
+    try {
+      const res = await shareResult({ label: rec.label, name: rec.name, rating: rec.rating, passed: rec.rating >= PASS, score: rec.score, total: rec.total, by, used: rec.used })
+      if (res === 'downloaded') toast('Result image saved. The caption was copied, paste it in your post.')
+    } catch { toast('Could not share the result.', 'bad') }
+    setSharing(false)
+  }
   const del = async () => {
     if (await ask('Delete this session?', 'This exam and its answers will be removed from this device.', 'Delete', 'Cancel', true)) {
       ls.set(SKEY, ls.get(SKEY, []).filter(r => r.id !== id)); onDeleted()
@@ -47,6 +57,9 @@ export default function Detail({ id, onBack, onDeleted }) {
             <div className="stat"><b>{fmt(avg(Object.values(by).map(v => v.s / v.t * 100)))}</b><span>Average per subject</span></div>
             <div className="stat"><b>{fmtTime(rec.used || 0)}</b><span>Time used</span></div>
           </div>
+          <button className="btn block" style={{ marginTop: 16 }} onClick={share} disabled={sharing}>
+            {sharing ? <Spinner label="Preparing image" /> : 'Share this result'}
+          </button>
         </div>
         <div className="card"><h2>Exam difficulty</h2><DiffCard items={items} answers={items.map(q => q.ans)} /></div>
         <div className="card"><h2>By subject</h2><div style={{ marginTop: 10 }}><SubjBars by={by} /></div></div>

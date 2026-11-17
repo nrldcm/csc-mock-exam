@@ -5,6 +5,7 @@ import { LEVELS, MODES, PASS, SEC_PER_ITEM, levelPool } from './lib/config.js'
 import { SESSION_KEY, buildReal, diffPool, examLevel, nextBatch, prep, weakestCat } from './lib/exam.js'
 import { award, requestPersistence, saveSession, triviaItems, triviaToday } from './lib/progress.js'
 import { ls } from './lib/storage.js'
+import { checkForUpdate, dismiss as dismissUpdate, isNative, startUpdate, wasDismissed } from './lib/updater.js'
 import { avg, shortDate, shuffle } from './lib/util.js'
 import { BottomNav } from './components/common.jsx'
 import Home from './components/Home.jsx'
@@ -28,7 +29,7 @@ export default function App() {
 }
 
 function Main() {
-  const { toast, dismiss } = useUI()
+  const { toast, dismiss, ask } = useUI()
   const [screen, setScreen] = useState('home')
   const [level, setLevelRaw] = useState(() => { const v = ls.get('csc-level', 'pro'); return LEVELS[v] ? v : 'pro' })
   const [mode, setMode] = useState('real')
@@ -48,6 +49,29 @@ function Main() {
   useEffect(() => { window.scrollTo(0, 0) }, [screen])
   // Ask once to keep this app's data from being cleared automatically (granted silently for installed apps)
   useEffect(() => { requestPersistence() }, [])
+
+  /* Android app: look for a newer release when the app opens or comes back to the front.
+     Never interrupts an exam in progress. */
+  const screenRef = useRef(screen); screenRef.current = screen
+  useEffect(() => {
+    if (!isNative()) return
+    let handle, busy = false
+    const run = async () => {
+      if (busy || screenRef.current === 'quiz') return
+      busy = true
+      try {
+        const info = await checkForUpdate().catch(() => null)
+        if (!info?.available || wasDismissed(info) || screenRef.current === 'quiz') return
+        const ok = await ask(`Update available: ${info.latest}`,
+          `You have version ${info.current.name}. The new version downloads from GitHub and installs over this app. Your sessions and progress stay on this device.`,
+          'Update now', 'Later')
+        if (ok) startUpdate(info); else dismissUpdate(info)
+      } finally { busy = false }
+    }
+    const t = setTimeout(run, 1500)
+    import('@capacitor/app').then(({ App }) => App.addListener('resume', run)).then(h => { handle = h }).catch(() => {})
+    return () => { clearTimeout(t); handle?.remove?.() }
+  }, [ask])
 
   /* ---------- Starting an exam ---------- */
   const begin = (items, m, t, label, name = '') => {

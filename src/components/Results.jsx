@@ -1,9 +1,22 @@
+import { useState } from 'react'
 import { CATS } from '../data/bank.js'
 import { PASS } from '../lib/config.js'
+import { shareResult } from '../lib/shareResult.js'
 import { fmt, fmtTime } from '../lib/util.js'
 import { DiffCard, Footer, Masthead, SubjBars } from './common.jsx'
+import { Spinner, useUI } from './ui.jsx'
 
 export default function Results({ r, onReview, onRetry, onHome }) {
+  const { toast } = useUI()
+  const [sharing, setSharing] = useState(false)
+  const share = async () => {
+    setSharing(true)
+    try {
+      const res = await shareResult(r)
+      if (res === 'downloaded') toast('Result image saved. The caption was copied, paste it in your post.')
+    } catch { toast('Could not share the result.', 'bad') }
+    setSharing(false)
+  }
   return (
     <>
       <Masthead title="Examination result" sub={[r.name, r.label, r.timeUp ? 'time ran out' : ''].filter(Boolean).join(', ')} />
@@ -16,6 +29,9 @@ export default function Results({ r, onReview, onRetry, onHome }) {
             {r.passed ? `You cleared the ${PASS}.00 passing rating by ${fmt(r.rating - PASS)} points.`
               : `You needed ${r.need} more correct answer${r.need > 1 ? 's' : ''} to reach ${PASS}.00.`}
           </div>
+          <button className="btn block" style={{ marginTop: 18 }} onClick={share} disabled={sharing}>
+            {sharing ? <Spinner label="Preparing image" /> : <><ShareIcon /> Share my result</>}
+          </button>
         </div>
 
         {r.award && (
@@ -69,3 +85,9 @@ export default function Results({ r, onReview, onRetry, onHome }) {
     </>
   )
 }
+
+const ShareIcon = () => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <circle cx="18" cy="5" r="3" /><circle cx="6" cy="12" r="3" /><circle cx="18" cy="19" r="3" /><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4" />
+  </svg>
+)

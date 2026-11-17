@@ -309,6 +309,15 @@ h3{font-size:1rem;margin:16px 0 6px}
 .dev .av{width:56px;height:56px;border-radius:50%;background:var(--gov);color:var(--gov-ink);display:grid;place-items:center;font-family:var(--serif);font-weight:700;font-size:1.2rem;flex:none}
 .linkbtn{display:inline-flex;align-items:center;gap:8px;margin-top:10px}
 
+/* ---------- Donate ---------- */
+.donate{border-color:var(--seal)}
+.donate-head{display:flex;gap:14px;align-items:flex-start}
+.donate .heart{flex:none;width:44px;height:44px;border-radius:12px;background:var(--bad-soft);color:var(--bad);display:grid;place-items:center}
+.donate-btn{background:#C2410C;border-color:#C2410C;color:#fff}
+.donate-body{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-top:14px}
+.donate-qr{width:160px;height:160px;object-fit:contain;border-radius:12px;border:1px solid var(--line);background:#fff;padding:6px}
+.donate-num{font-family:var(--serif);font-weight:700;font-size:1.4rem;letter-spacing:.03em;user-select:all}
+
 /* ---------- Tablet layouts ---------- */
 @media (min-width:1024px){
   :root{--maxw:1040px}

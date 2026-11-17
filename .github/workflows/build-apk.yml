@@ -129,6 +129,7 @@ jobs:
             Android app for the CSC Career Service Examination reviewer (Professional and Subprofessional).
 
             **Install:** download `CSC-Mock-Exam.apk` on your phone or tablet, open it, and allow "Install unknown apps" when asked.
+            **Updates:** the app checks for new versions when you open it. Tap *Update now*, then *Install*; the update installs over the old app and keeps your sessions.
 
             Build: **${{ steps.sign.outputs.mode }}**${{ steps.sign.outputs.mode == 'debug' && ' (temporary signing key: to update from an older build you may need to uninstall first, so back up your sessions in My sessions → Back up to a file).' || ' (signed; installs as an update over earlier releases and keeps your data).' }}
 

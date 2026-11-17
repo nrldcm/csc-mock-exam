@@ -6,6 +6,7 @@ import { BADGES, RANKS, SKEY, liveStreak, rankOf, triviaToday } from '../lib/pro
 import { ls } from '../lib/storage.js'
 import { avg, dayDiff, dayKey, fmt, fmtTime } from '../lib/util.js'
 import { Footer, Icon, Masthead } from './common.jsx'
+import { DonateCard } from './Donate.jsx'
 import { useUI } from './ui.jsx'
 
 export default function Home({ level, setLevel, mode, setMode, diff, setDiff, timed, setTimed, onStart, onResume, onTrivia, go }) {
@@ -128,6 +129,7 @@ export default function Home({ level, setLevel, mode, setMode, diff, setDiff, ti
             )}
 
             <Badges />
+            <DonateCard compact />
           </div>
         </div>
         <Footer />

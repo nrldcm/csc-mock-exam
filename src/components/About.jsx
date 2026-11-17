@@ -1,6 +1,40 @@
+import { useEffect, useState } from 'react'
 import { BANK } from '../data/bank.js'
 import { NOTES } from '../data/notes.js'
+import { RELEASES_URL, appVersion, checkForUpdate, isNative, startUpdate } from '../lib/updater.js'
 import { DEVELOPER, Icon, LINKEDIN, Masthead } from './common.jsx'
+import { DonateCard } from './Donate.jsx'
+import { Spinner, useUI } from './ui.jsx'
+
+function Updates() {
+  const { toast, ask } = useUI()
+  const [ver, setVer] = useState(null)
+  const [busy, setBusy] = useState(false)
+  const native = isNative()
+  useEffect(() => { appVersion().then(setVer) }, [])
+  const check = async () => {
+    setBusy(true)
+    try {
+      const info = await checkForUpdate({ force: true })
+      if (!info) toast('Could not check right now.')
+      else if (!info.available) toast(`You have the latest version (${info.current.name}).`)
+      else if (await ask(`Update available: ${info.latest}`, 'It downloads from GitHub and installs over this app. Your sessions and progress stay on this device.', 'Update now', 'Later')) startUpdate(info)
+    } catch { toast('No internet connection. Try again later.', 'bad') }
+    setBusy(false)
+  }
+  return (
+    <div className="card">
+      <h2>App version and updates</h2>
+      {native ? <>
+        <p className="sub">Version <b>{ver ? `${ver.name} (build ${ver.build})` : '…'}</b>. The app checks for updates when you open it. Updates install over this app and keep your data. Android asks you to tap Install once.</p>
+        <button className="btn ghost block" onClick={check} disabled={busy}>{busy ? <Spinner label="Checking" /> : 'Check for updates'}</button>
+      </> : <>
+        <p className="sub">You are using the web version. It updates automatically. Prefer an Android app?</p>
+        <a className="btn ghost block" href={RELEASES_URL} target="_blank" rel="noopener noreferrer">Download the Android app (APK)</a>
+      </>}
+    </div>
+  )
+}
 
 export default function About() {
   return (
@@ -51,6 +85,9 @@ export default function About() {
           </ul>
         </div>
 
+        <Updates />
+        <DonateCard />
+
         <div className="card">
           <h2>Developer</h2>
           <div className="dev" style={{ marginTop: 8 }}>
@@ -61,7 +98,6 @@ export default function About() {
             </div>
           </div>
         </div>
-        <p className="foot">Version 1.0</p>
       </main>
     </>
   )

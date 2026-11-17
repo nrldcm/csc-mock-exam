@@ -7,7 +7,7 @@ const REPO = 'nrldcm/csc-mock-exam'
 export const RELEASES_URL = `https://github.com/${REPO}/releases/latest`
 export const APK_URL = `https://github.com/${REPO}/releases/latest/download/CSC-Mock-Exam.apk`
 const CACHE = 'csc-update-cache', DISMISS = 'csc-update-dismissed'
-const EVERY = 3 * 3600e3 // check GitHub at most every 3 hours (API limit is 60 requests/hour per device)
+const EVERY = 10 * 60e3 // check on every launch; skip only if checked in the last 10 minutes (API limit is 60 requests/hour per device)
 
 export const isNative = () => !!window.Capacitor?.isNativePlatform?.()
 

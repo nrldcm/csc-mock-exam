@@ -179,7 +179,10 @@ test('about: disclaimer, developer credit, donate, updates', async ({ page }) =>
   await expect(page.getByText(/not affiliated with, endorsed by/)).toBeVisible()
   await expect(page.getByText('Developed by Norell Mantilla')).toBeVisible()
   await expect(page.locator('a[href="https://linkedin.com/in/nrldcm"]').first()).toBeVisible()
-  await expect(page.getByText('0910 227 1670')).toBeVisible()
+  // The mobile number is masked on the page and only copied on request
+  await expect(page.getByText('0910 ••• ••70')).toBeVisible()
+  await expect(page.getByRole('button', { name: 'Copy GCash number' })).toBeVisible()
+  expect(await page.content()).not.toMatch(/0910\s?227\s?1670|09102271670/)
   await page.getByRole('tab', { name: 'PayPal' }).click()
   await expect(page.locator('a[href="https://paypal.me/nrldcm"]')).toBeVisible()
   await expect(page.getByText('App version and updates')).toBeVisible()

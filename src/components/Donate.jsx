@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { DONATE } from '../data/donate.js'
+import { DONATE, maskNumber, revealNumber } from '../data/donate.js'
 import { useUI } from './ui.jsx'
 
 export const hasDonate = () => DONATE.methods.length > 0
@@ -17,9 +17,17 @@ export function DonateCard({ compact = false }) {
   const [tab, setTab] = useState(0)
   if (!hasDonate()) return null
   const m = DONATE.methods[tab]
-  const copy = async text => {
-    try { await navigator.clipboard.writeText(text.replace(/\s+/g, '')); toast(`${m.label} number copied`) }
-    catch { toast('Could not copy. Long-press the number to copy it.') }
+  // The full number is decoded only here, at the moment of copying; it is never rendered on the page
+  const copy = async enc => {
+    const text = revealNumber(enc)
+    let ok = false
+    try { await navigator.clipboard.writeText(text); ok = true } catch {
+      try { // Fallback for WebViews without the async clipboard API
+        const ta = document.createElement('textarea'); ta.value = text; ta.setAttribute('readonly', ''); ta.style.position = 'fixed'; ta.style.opacity = '0'
+        document.body.appendChild(ta); ta.select(); ok = document.execCommand('copy'); ta.remove()
+      } catch { ok = false }
+    }
+    toast(ok ? `${m.label} number copied. Paste it in your ${m.label} app.` : 'Could not copy. Please try again.', ok ? '' : 'bad')
   }
   return (
     <div className="card donate">
@@ -40,10 +48,10 @@ export function DonateCard({ compact = false }) {
             {m.qr && <img src={m.qr} alt={`${m.label} QR code`} className="donate-qr" loading="lazy" />}
             <div>
               <b style={{ fontSize: '1.05rem' }}>{m.label}</b>
-              {m.number && <div className="donate-num">{m.number}</div>}
+              {m.num && <div className="donate-num" aria-label={`${m.label} number, hidden. Use Copy number.`}>{maskNumber(m.num)}</div>}
               {m.name && <div className="muted" style={{ fontSize: '.9rem' }}>{m.name}</div>}
               <div className="ractions">
-                {m.number && <button className="btn small" onClick={() => copy(m.number)}>Copy number</button>}
+                {m.num && <button className="btn small" onClick={() => copy(m.num)}>Copy {m.label} number</button>}
                 {m.url && <a className="btn small donate-btn" href={m.url} target="_blank" rel="noopener noreferrer"><Heart /> Donate with {m.label}</a>}
               </div>
             </div>

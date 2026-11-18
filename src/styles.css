@@ -357,7 +357,7 @@ h3{font-size:1rem;margin:16px 0 6px}
 .donate-btn{background:#C2410C;border-color:#C2410C;color:#fff}
 .donate-body{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-top:14px}
 .donate-qr{width:160px;height:160px;object-fit:contain;border-radius:12px;border:1px solid var(--line);background:#fff;padding:6px}
-.donate-num{font-family:var(--serif);font-weight:700;font-size:1.4rem;letter-spacing:.03em;user-select:all}
+.donate-num{font-family:var(--serif);font-weight:700;font-size:1.4rem;letter-spacing:.03em}
 
 /* ---------- Tablet layouts ---------- */
 @media (min-width:1024px){

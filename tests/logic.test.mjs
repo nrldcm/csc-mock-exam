@@ -210,7 +210,24 @@ test('every General Information item links to an official source', () => {
   eq(bad.length, 0, `no source for ${bad}`)
 })
 test('every visible mode has a description', () => Object.entries(MODES).filter(([, m]) => !m.hidden).forEach(([k, m]) => assert(m.desc(LEVELS.pro).length > 10, k)))
-test('donate methods are complete', () => DONATE.methods.forEach(m => assert(m.label && (m.number || m.url), m.label)))
+test('donate methods are complete', () => DONATE.methods.forEach(m => assert(m.label && (m.num || m.url), m.label)))
+const { revealNumber, maskNumber } = await import(src('data/donate.js'))
+test('donation number is hidden: only masked on the page, full only when copied', () => {
+  for (const m of DONATE.methods.filter(x => x.num)) {
+    const full = revealNumber(m.num)
+    assert(/^09\d{9}$/.test(full), `${m.label}: decodes to a mobile number`)
+    const masked = maskNumber(m.num)
+    assert(masked.startsWith(full.slice(0, 4)) && masked.endsWith(full.slice(-2)) && !masked.includes(full.slice(4, 9)), `${m.label}: mask hides the middle digits`)
+  }
+})
+test('the full donation number appears nowhere in the source code', () => {
+  const full = revealNumber(DONATE.methods.find(x => x.num).num)
+  const spaced = `${full.slice(0, 4)} ${full.slice(4, 7)} ${full.slice(7)}`
+  const walk = d => fs.readdirSync(d, { withFileTypes: true }).flatMap(e => e.isDirectory() ? walk(path.join(d, e.name)) : [path.join(d, e.name)])
+  const hits = [...walk(path.join(ROOT, 'src')), path.join(ROOT, 'index.html'), path.join(ROOT, 'README.md')]
+    .filter(f => /\.(js|jsx|json|html|md|css)$/.test(f)).filter(f => { const t = fs.readFileSync(f, 'utf8'); return t.includes(full) || t.includes(spaced) })
+  eq(hits.length, 0, `number found in ${hits}`)
+})
 const { shareText, REPO_URL } = await import(src('lib/shareResult.js'))
 test('share caption mentions the score, level and the repo', () => {
   const t = shareText({ rating: 86.47, passed: true, label: 'Realistic exam, Professional', score: 147, total: 170 })

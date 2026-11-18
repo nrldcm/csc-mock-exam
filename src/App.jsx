@@ -2,9 +2,9 @@ import { Suspense, lazy, useCallback, useEffect, useRef, useState } from 'react'
 import { BANK, CATS, DIFF } from './data/bank.js'
 import { genItem } from './data/generators.js'
 import { genAbstract } from './data/abstract.js'
-import { LEVELS, MODES, PASS, SEC_PER_ITEM, levelPool } from './lib/config.js'
+import { LEVELS, MODES, PASS, levelPool, secPerItem } from './lib/config.js'
 import { SESSION_KEY, buildReal, diffPool, examLevel, nextBatch, prep, weakestCat } from './lib/exam.js'
-import { award, requestPersistence, saveSession, triviaItems, triviaToday } from './lib/progress.js'
+import { autoBackup, award, requestPersistence, saveSession, triviaItems, triviaToday } from './lib/progress.js'
 import { ls } from './lib/storage.js'
 import { checkForUpdate, dismiss as dismissUpdate, isNative, startUpdate, wasDismissed } from './lib/updater.js'
 import { avg, shortDate, shuffle } from './lib/util.js'
@@ -47,7 +47,21 @@ function Main() {
   const setLevel = v => { setLevelRaw(v); ls.set('csc-level', v) }
   const go = useCallback(s => { setScreen(s); if (s === 'home') setHomeKey(k => k + 1) }, [])
 
-  useEffect(() => { window.scrollTo(0, 0) }, [screen])
+  // Scroll to top on every screen change, except when returning from a lesson (restore where you were)
+  const restoreY = useRef(null)
+  useEffect(() => {
+    const y = restoreY.current; restoreY.current = null
+    if (y != null) requestAnimationFrame(() => window.scrollTo(0, y)); else window.scrollTo(0, 0)
+  }, [screen])
+
+  /* Open the study-note lesson for an item, then come back to the same place */
+  const [noteFrom, setNoteFrom] = useState({ screen: 'notes', y: 0 })
+  const openLesson = id => { setNoteFrom({ screen, y: window.scrollY }); setNote(id); setScreen('note') }
+  const closeNote = () => {
+    if (noteFrom.screen !== 'notes' && noteFrom.screen !== 'note') { restoreY.current = noteFrom.y; setScreen(noteFrom.screen) }
+    else setScreen('notes')
+    setNoteFrom({ screen: 'notes', y: 0 })
+  }
   // Ask once to keep this app's data from being cleared automatically (granted silently for installed apps)
   useEffect(() => { requestPersistence() }, [])
 
@@ -66,7 +80,7 @@ function Main() {
         const ok = await ask(`Update available: ${info.latest}`,
           `You have version ${info.current.name}. The new version downloads from GitHub and installs over this app. Your sessions and progress stay on this device.`,
           'Update now', 'Later')
-        if (ok) startUpdate(info); else dismissUpdate(info)
+        if (ok) { await autoBackup(); startUpdate(info) } else dismissUpdate(info)
       } finally { busy = false }
     }
     const t = setTimeout(run, 1500)
@@ -80,7 +94,7 @@ function Main() {
     const its = items.map(prep), L = LEVELS[level]
     setExam({
       items: its, ans: Array(its.length).fill(null), flags: Array(its.length).fill(false), idx: 0, mode: m, timed: t, used: 0,
-      name, level, diff, realSec: L.sec, timeLeft: m === 'real' ? L.sec : its.length * SEC_PER_ITEM, label: label || MODES[m].label
+      name, level, diff, realSec: L.sec, timeLeft: m === 'real' ? L.sec : its.length * secPerItem(level), label: label || MODES[m].label
     })
     setScreen('quiz')
   }
@@ -156,6 +170,7 @@ function Main() {
       flags: flags.map((f, i) => (f ? i : -1)).filter(i => i >= 0)
     }
     saveSession(rec)
+    autoBackup()
 
     const hist = ls.get('csc-history', [])
     hist.unshift({ date: shortDate(), label: e.label, score, total, rating })
@@ -186,7 +201,7 @@ function Main() {
     if (dismiss()) { if (screen !== 'home') stay(); return }
     if (screen === 'quiz') { stay(); quizBack.current?.(); return }
     if (screen === 'detail') { setScreen(detail?.from === 'results' ? 'results' : 'sessions'); return }
-    if (screen === 'note') { setScreen('notes'); return }
+    if (screen === 'note') { closeNote(); return }
     if (screen !== 'home') go('home')
   }
   useEffect(() => {
@@ -213,12 +228,17 @@ function Main() {
           <Results r={result} onReview={() => openDetail(result.sessionId, 'results')}
             onRetry={() => begin(shuffle([...result.lastWrong]), 'quick', false, 'Missed items practice')} onHome={() => go('home')} />
         )}
-        {screen === 'reviewer' && <Reviewer level={level} onPractice={practiceCat} />}
-        {screen === 'notes' && <NotesList level={level} onOpen={id => { setNote(id); setScreen('note') }} />}
-        {screen === 'note' && note && <NoteView id={note} onBack={() => setScreen('notes')} onOpen={setNote} onPractice={practiceCat} />}
+        {/* Reviewer and session detail stay mounted (hidden) while a lesson is open, so filters and position are kept */}
+        {(screen === 'reviewer' || (screen === 'note' && noteFrom.screen === 'reviewer')) && (
+          <div hidden={screen !== 'reviewer'}><Reviewer level={level} onPractice={practiceCat} onLesson={openLesson} /></div>
+        )}
+        {screen === 'notes' && <NotesList level={level} onOpen={id => { setNoteFrom({ screen: 'notes', y: 0 }); setNote(id); setScreen('note') }} />}
+        {screen === 'note' && note && <NoteView id={note} onBack={closeNote} onOpen={setNote} onPractice={practiceCat} backLabel={noteFrom.screen === 'notes' ? 'Back' : 'Back to item'} />}
         {screen === 'sessions' && <Sessions onOpen={id => openDetail(id, 'sessions')} />}
-        {screen === 'detail' && detail && (
-          <Detail id={detail.id} onBack={() => setScreen(detail.from === 'results' ? 'results' : 'sessions')} onDeleted={() => setScreen('sessions')} />
+        {detail && (screen === 'detail' || (screen === 'note' && noteFrom.screen === 'detail')) && (
+          <div hidden={screen !== 'detail'}>
+            <Detail id={detail.id} onBack={() => setScreen(detail.from === 'results' ? 'results' : 'sessions')} onDeleted={() => setScreen('sessions')} onLesson={openLesson} />
+          </div>
         )}
         {screen === 'about' && <About />}
       </Suspense>

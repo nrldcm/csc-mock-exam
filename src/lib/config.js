@@ -2,23 +2,27 @@ import { BANK } from '../data/bank.js'
 import { fmtTime } from './util.js'
 
 export const PASS = 80
-export const SEC_PER_ITEM = 67
 
-/* Each level has its own coverage, item count and time limit.
+/* Each level has its own coverage, item count and time limit, per CSC Examination Advisory No. 10, s. 2026
+   (Scope of Examination): Professional 150 test items, Subprofessional 145 test items. The official totals of
+   170/165 also count 20 EDQ items (Examinee Descriptive Questionnaire: personal data, not scored), so the
+   mock exam uses the 150/145 scored items within the same time limit.
    w = selection weights so the Subprofessional set leans easier and the Professional set harder. */
 export const LEVELS = {
   pro: {
-    name: 'Professional', cats: ['verbal', 'filipino', 'numerical', 'analytical', 'general'], items: 170, sec: 190 * 60,
-    note: 'Verbal, numerical and analytical ability (including abstract reasoning), and general information. 170 items in 3 hours 10 minutes.',
+    name: 'Professional', cats: ['verbal', 'filipino', 'numerical', 'analytical', 'general'], items: 150, sec: 190 * 60,
+    note: 'Verbal, numerical and analytical ability (including abstract reasoning), and general information. 150 test items in 3 hours 10 minutes.',
     w: { easy: 0.8, average: 1, difficult: 1.3 },
     abstract: 10 // figure items placed in the Analytical part of the realistic exam
   },
   sub: {
-    name: 'Subprofessional', cats: ['verbal', 'filipino', 'numerical', 'clerical', 'general'], items: 165, sec: 160 * 60,
-    note: 'Verbal and numerical ability, clerical operations, and general information. 165 items in 2 hours 40 minutes.',
+    name: 'Subprofessional', cats: ['verbal', 'filipino', 'numerical', 'clerical', 'general'], items: 145, sec: 160 * 60,
+    note: 'Verbal and numerical ability, clerical ability (filing and spelling), and general information. 145 test items in 2 hours 40 minutes.',
     w: { easy: 1.4, average: 1.1, difficult: 0.7 }
   }
 }
+/* The real exam's pace: time limit ÷ test items (Professional ≈ 76 s, Subprofessional ≈ 66 s) */
+export const secPerItem = level => Math.round(LEVELS[level].sec / LEVELS[level].items)
 
 export const levelPool = level => BANK.filter(q => LEVELS[level].cats.includes(q.c))
 

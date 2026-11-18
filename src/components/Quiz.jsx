@@ -6,7 +6,8 @@ import { ptsFor } from '../lib/progress.js'
 import { ls } from '../lib/storage.js'
 import { fmt, fmtTime, reducedMotion } from '../lib/util.js'
 import { isFig } from '../data/abstract.js'
-import { DBadge } from './common.jsx'
+import { DBadge, FullExplain } from './common.jsx'
+import { explainFor } from '../lib/lessons.js'
 import { FigQ, OptText, optWords } from './Figure.jsx'
 import { useUI } from './ui.jsx'
 
@@ -16,6 +17,8 @@ export default function Quiz({ exam, setExam, onFinish, onLeave, backRef }) {
   const { ask, toast, dismiss } = useUI()
   const fbOn = feedbackOn(exam.mode)
   const [sheet, setSheet] = useState(false)
+  const [showMore, setShowMore] = useState(false)
+  useEffect(() => { setShowMore(false) }, [exam.idx])
   const warned = useRef({})
   const done = useRef(false)
   const answered = useRef(false)
@@ -192,6 +195,9 @@ export default function Quiz({ exam, setExam, onFinish, onLeave, backRef }) {
             <div ref={fbRef} className={`fb ${a === q.a ? 'ok' : 'no'}`} role="status">
               <strong>{a === q.a ? `Correct  +${ptsFor(q)} pts` : `Wrong. The answer is ${'ABCD'[q.a]}${optWords(q.o[q.a])}`}</strong>
               <p>{q.e}</p>
+              {explainFor(q) && (showMore
+                ? <FullExplain q={q} />
+                : <button className="btn ghost small xtoggle" onClick={() => setShowMore(true)}>Show full explanation</button>)}
             </div>
           )}
           <div className="more">

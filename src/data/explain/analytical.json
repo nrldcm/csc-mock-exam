@@ -1,0 +1,826 @@
+{
+  "64": {
+    "steps": [
+      "This is a syllogism: two statements called premises (facts we accept as true) lead to a conclusion (a statement that must follow from them).",
+      "Premise 1: All clerks are employees. Draw a small circle 'clerks' completely inside a bigger circle 'employees'.",
+      "Premise 2: All employees are taxpayers. Now draw the 'employees' circle completely inside an even bigger circle 'taxpayers'.",
+      "So the circles nest like boxes: clerks inside employees inside taxpayers.",
+      "Test the conclusion: is every clerk inside the taxpayers circle? Yes, because the clerks circle sits inside it. So 'All clerks are taxpayers' must be true."
+    ],
+    "wrong": {
+      "All taxpayers are clerks": "This flips the order. The taxpayers circle is the biggest one; many taxpayers (like a farmer or a store owner) are not clerks.",
+      "Some taxpayers are not employees": "This may be true in real life, but the premises do not prove it. The taxpayers circle could be exactly the same size as the employees circle.",
+      "No clerk is a taxpayer": "This is the opposite of what the circles show. Every clerk is inside the taxpayers circle."
+    },
+    "tip": "All A are B + All B are C = All A are C (circles inside circles)."
+  },
+  "65": {
+    "steps": [
+      "Premise 1: Some A are B. The A circle and the B circle overlap; there is at least one thing that is both A and B.",
+      "Premise 2: All B are C. The whole B circle is inside the C circle.",
+      "The overlap part (things that are both A and B) is inside B, so it is also inside C.",
+      "So at least some A are C. That is all we can be sure of, because the A's outside B could be anywhere."
+    ],
+    "wrong": {
+      "All A are C": "Only the A's that are B are sure to be C. Other A's outside B might not be C.",
+      "No A is C": "This is false. The A's that are also B are inside C.",
+      "All C are A": "C is the biggest circle. Nothing says every C is an A."
+    },
+    "tip": "Some A are B + All B are C = Some A are C. 'Some' at the start keeps 'some' in the answer."
+  },
+  "66": {
+    "steps": [
+      "Find the group most of the items share.",
+      "Mango: fruit. Banana: fruit. Apple: fruit.",
+      "Carrot: a root vegetable, not a fruit.",
+      "Carrot is the odd one out."
+    ],
+    "wrong": {
+      "Mango": "Mango is a fruit, like banana and apple.",
+      "Banana": "Banana is a fruit, like mango and apple.",
+      "Apple": "Apple is a fruit, like mango and banana."
+    },
+    "tip": "Odd one out: name the group three of them share, then find the one outside it."
+  },
+  "67": {
+    "steps": [
+      "The code gives each letter its place in the alphabet: A=1, B=2, C=3 … Z=26.",
+      "Check with CAT: C=3, A=1, T=20. 3 + 1 + 20 = 24. The rule works.",
+      "Now DOG: D=4, O=15, G=7.",
+      "Add them: 4 + 15 + 7 = 26."
+    ],
+    "wrong": {
+      "24": "24 is the value of CAT, not DOG. DOG adds up to 26.",
+      "25": "Off by one. Recount: D=4, O=15, G=7, total 26.",
+      "27": "Off by one. Recount: D=4, O=15, G=7, total 26."
+    },
+    "tip": "Memorize key letters: E=5, J=10, O=15, T=20, Y=25. Count from the nearest one."
+  },
+  "68": {
+    "steps": [
+      "Compare FISH with GJTI letter by letter: F→G, I→J, S→T, H→I.",
+      "Each letter moved one step forward in the alphabet (+1).",
+      "Apply +1 to BIRD: B→C, I→J, R→S, D→E.",
+      "BIRD is coded as CJSE."
+    ],
+    "wrong": {
+      "AHQC": "This moves each letter one step backward (−1). The rule is +1.",
+      "CJRE": "The R was not changed. R must become S.",
+      "DKTF": "This moves each letter two steps forward (+2). The rule is +1."
+    },
+    "tip": "In letter codes, compare the first word letter by letter to find the shift, then apply it to every letter."
+  },
+  "69": {
+    "steps": [
+      "Use the clues to build the row from left to right.",
+      "A is immediately left of B, and C is immediately right of B: A B C.",
+      "D is immediately left of A: D A B C.",
+      "E is at the far right: D A B C E.",
+      "Five seats, so the middle is seat 3. Seat 3 is B."
+    ],
+    "wrong": {
+      "A": "A is in seat 2, not the middle seat 3.",
+      "C": "C is in seat 4, not the middle seat 3.",
+      "D": "D is in seat 1, the far left."
+    },
+    "tip": "Seating puzzles: chain the 'immediately next to' clues first, then place the ends."
+  },
+  "70": {
+    "steps": [
+      "Start facing north and walk 5 km north.",
+      "Turn right: from north, right is east. Walk 3 km east.",
+      "Turn right again: from east, right is south. Walk 5 km south.",
+      "Up 5 and down 5 cancel out. Only the 3 km east remains.",
+      "You end 3 km east of the start."
+    ],
+    "wrong": {
+      "3 km west": "Turning right from north points you east, not west.",
+      "5 km south": "The 5 km south only undoes the 5 km north. It does not leave you south.",
+      "8 km east": "You only walked 3 km east. The 5 km legs went north and south, not east."
+    },
+    "tip": "Direction problems: draw it. Opposite moves (north/south, east/west) cancel."
+  },
+  "71": {
+    "steps": [
+      "Line them up from tallest to shortest using each clue.",
+      "Pedro > Juan.",
+      "Juan > Marco, so Pedro > Juan > Marco.",
+      "Marco > Luis, so Pedro > Juan > Marco > Luis.",
+      "The last one, Luis, is the shortest."
+    ],
+    "wrong": {
+      "Pedro": "Pedro is the tallest, at the top of the order.",
+      "Juan": "Juan is taller than Marco and Luis.",
+      "Marco": "Marco is still taller than Luis."
+    },
+    "tip": "Ranking: write one chain using > signs and read the end you need."
+  },
+  "72": {
+    "steps": [
+      "The rule is an if–then statement: IF it rains, THEN the event is cancelled.",
+      "We are told the THEN part did not happen: the event was not cancelled.",
+      "If it had rained, the event would have been cancelled. It wasn't, so it could not have rained.",
+      "This valid rule is called modus tollens (denying the consequent). Everyday example: 'If you are sick, you stay home.' You did not stay home, so you are not sick."
+    ],
+    "wrong": {
+      "It rained": "If it had rained, the event would have been cancelled. But it was not cancelled.",
+      "The event was moved": "Nothing in the statements talks about moving the event. This is extra information.",
+      "Nothing can be concluded": "We can conclude something. When the THEN part is false, the IF part must be false too."
+    },
+    "tip": "If P then Q. Not Q → Not P (modus tollens, valid)."
+  },
+  "73": {
+    "steps": [
+      "The rule is: IF it rains, THEN the event is cancelled.",
+      "We are told the THEN part happened: the event was cancelled.",
+      "But the rule never says rain is the only reason to cancel. It could be cancelled because of a typhoon warning, a power outage, or a sick speaker.",
+      "Saying 'it was cancelled, so it rained' is a mistake called affirming the consequent. Everyday example: 'If you have a cold, you sneeze.' Sneezing does not prove a cold; it could be dust.",
+      "So nothing definite about rain can be concluded."
+    ],
+    "wrong": {
+      "It rained": "This is the affirming-the-consequent mistake. Cancellation could have another cause.",
+      "It did not rain": "We cannot say this either. Rain is still one possible reason for the cancellation.",
+      "The event will resume": "Nothing in the statements talks about the event resuming."
+    },
+    "tip": "If P then Q. Q is true → P is unknown (affirming the consequent is a trap)."
+  },
+  "74": {
+    "steps": [
+      "Days repeat every 7 days, so only the leftover (remainder) after dividing by 7 matters.",
+      "100 ÷ 7 = 14 weeks, because 14 × 7 = 98.",
+      "Remainder: 100 − 98 = 2 days.",
+      "After 14 full weeks it is Wednesday again. Move 2 more days: Thursday, Friday.",
+      "So 100 days from Wednesday is Friday."
+    ],
+    "wrong": {
+      "Thursday": "That is only 1 day after Wednesday. The remainder is 2, not 1.",
+      "Saturday": "That is 3 days after Wednesday. The remainder is 2.",
+      "Sunday": "That is 4 days after Wednesday. The remainder is 2."
+    },
+    "tip": "Day-of-week: divide the number of days by 7, then count forward only the remainder."
+  },
+  "75": {
+    "steps": [
+      "An analogy (A : B :: C : ?) means 'A is to B as C is to ?'. Find the link in the first pair.",
+      "Water relieves (satisfies) thirst.",
+      "Apply the same link: food relieves ____.",
+      "Food relieves hunger."
+    ],
+    "wrong": {
+      "Kitchen": "A kitchen is where food is made. It is not something food relieves.",
+      "Plate": "A plate holds food. It is not what food relieves.",
+      "Cook": "A cook prepares food. It is not what food relieves."
+    },
+    "tip": "Analogy: turn the first pair into a sentence, then reuse that same sentence."
+  },
+  "76": {
+    "steps": [
+      "Write the letter numbers: Z=26, X=24, V=22, T=20.",
+      "Each step goes down by 2 (one letter is skipped each time: Y, W, U are skipped).",
+      "Next: 20 − 2 = 18.",
+      "Letter 18 is R."
+    ],
+    "wrong": {
+      "S": "S is only one step back from T (19). The pattern goes back 2.",
+      "Q": "Q is three steps back from T (17). The pattern goes back 2.",
+      "P": "P is four steps back from T (16). The pattern goes back 2."
+    },
+    "tip": "Letter series: convert letters to numbers (A=1 … Z=26) and look for the steady jump."
+  },
+  "77": {
+    "steps": [
+      "Premise 1 is a rule for a whole group: no government employee may solicit (ask for) gifts in connection with their work.",
+      "Premise 2: Liza is a government employee. So Liza is inside that group.",
+      "Whatever applies to every member of the group applies to Liza.",
+      "Conclusion: Liza may not solicit gifts in connection with her work."
+    ],
+    "wrong": {
+      "Liza may accept any gift": "The rule forbids her from soliciting gifts for work. Nothing says she may accept any gift.",
+      "Liza is not a government employee": "This contradicts Premise 2, which says she is one.",
+      "No conclusion follows": "A conclusion does follow, because Liza belongs to the group the rule covers."
+    },
+    "tip": "If a rule covers everyone in a group and X is in the group, the rule covers X."
+  },
+  "78": {
+    "steps": [
+      "Look at what three shapes share.",
+      "Triangle: 3 straight sides. Square: 4 straight sides. Pentagon: 5 straight sides. These are polygons (closed shapes made of straight sides).",
+      "Circle: one curved line, no straight sides, so it is not a polygon.",
+      "Circle is the odd one out."
+    ],
+    "wrong": {
+      "Triangle": "A triangle has straight sides, like the square and pentagon.",
+      "Square": "A square has straight sides, like the triangle and pentagon.",
+      "Pentagon": "A pentagon has straight sides, like the triangle and square."
+    },
+    "tip": "Shapes: check sides and corners. Polygons have straight sides; circles do not."
+  },
+  "79": {
+    "steps": [
+      "Break the sentence from the end: 'my mother' = Rosa's mother.",
+      "'The only daughter of my mother': Rosa is a daughter of her mother, and she is the only one. So this person is Rosa herself.",
+      "'His mother is … Rosa'. So the young man's mother is Rosa.",
+      "The man is Rosa's son."
+    ],
+    "wrong": {
+      "Brother": "A brother would share Rosa's mother as his own mother. But his mother is Rosa herself.",
+      "Nephew": "A nephew's mother would be Rosa's sister. Rosa is the only daughter, so she has no sister.",
+      "Cousin": "A cousin's mother would be Rosa's aunt. The man's mother is Rosa."
+    },
+    "tip": "Family puzzles: start from 'my' and work outward; 'the only daughter of my mother' (said by a woman) means the speaker herself."
+  },
+  "80": {
+    "steps": [
+      "Premise 1: Some managers are lawyers. The managers circle and lawyers circle overlap.",
+      "Premise 2: All lawyers are graduates. The whole lawyers circle is inside the graduates circle.",
+      "The managers in the overlap are lawyers, so they are also graduates.",
+      "So at least some managers are graduates. We know nothing about managers who are not lawyers."
+    ],
+    "wrong": {
+      "All managers are graduates": "Only the managers who are lawyers are sure to be graduates. Others might not be.",
+      "All graduates are lawyers": "This flips Premise 2. Graduates is the bigger circle; not every graduate is a lawyer.",
+      "No manager is a graduate": "False. The managers who are lawyers are graduates."
+    },
+    "tip": "Some A are B + All B are C = Some A are C."
+  },
+  "81": {
+    "steps": [
+      "January has 31 days, so February 1 is 31 days after January 1.",
+      "Divide by 7: 31 ÷ 7 = 4 weeks (28 days), remainder 3.",
+      "After 4 full weeks it is Monday again. Count 3 more days: Tuesday, Wednesday, Thursday.",
+      "February 1 is a Thursday."
+    ],
+    "wrong": {
+      "Wednesday": "That is only 2 days after Monday. The remainder is 3.",
+      "Friday": "That is 4 days after Monday. The remainder is 3.",
+      "Saturday": "That is 5 days after Monday. The remainder is 3."
+    },
+    "tip": "Month jump: days in the month ÷ 7, then move forward by the remainder (31 days → +3, 30 days → +2)."
+  },
+  "148": {
+    "steps": [
+      "Write the letter numbers: B=2, E=5, H=8, K=11.",
+      "Each step goes up by 3.",
+      "Next: 11 + 3 = 14.",
+      "Letter 14 is N."
+    ],
+    "wrong": {
+      "M": "M is 13, only 2 steps after K. The pattern is +3.",
+      "O": "O is 15, 4 steps after K. The pattern is +3.",
+      "P": "P is 16, 5 steps after K. The pattern is +3."
+    },
+    "tip": "Letter series: change letters to numbers and find the constant jump."
+  },
+  "149": {
+    "steps": [
+      "Compare MANGO with NBOHP: M→N, A→B, N→O, G→H, O→P.",
+      "Every letter moves one step forward (+1).",
+      "Apply +1 to APPLE: A→B, P→Q, P→Q, L→M, E→F.",
+      "APPLE becomes BQQMF."
+    ],
+    "wrong": {
+      "BOOKF": "The P's became O (−1) and L became K (−1). They should move forward to Q and M.",
+      "ZOOKD": "This moves every letter one step backward (−1). The rule is +1.",
+      "BQQLF": "The L was not changed. L must become M."
+    },
+    "tip": "Apply the shift to every letter; one missed letter makes the whole answer wrong."
+  },
+  "150": {
+    "steps": [
+      "Compare TABLE with ELBAT. Reading TABLE from the end gives E-L-B-A-T.",
+      "So the code just writes the word backward.",
+      "CHAIR is C-H-A-I-R. Backward: R-I-A-H-C.",
+      "CHAIR is coded as RIAHC."
+    ],
+    "wrong": {
+      "RIACH": "The last two letters are swapped. Backward CHAIR ends in H then C: RIAHC.",
+      "CHIAR": "This is not reversed; it just swaps A and I.",
+      "RAIHC": "A and I are in the wrong order. Backward it is R-I-A-H-C."
+    },
+    "tip": "If the code has the same letters as the word, check if it is simply reversed."
+  },
+  "151": {
+    "steps": [
+      "Look for a common pattern. A perfect cube is a number times itself three times.",
+      "27 = 3 × 3 × 3 = 3³.",
+      "64 = 4 × 4 × 4 = 4³.",
+      "125 = 5 × 5 × 5 = 5³.",
+      "150 is between 5³ (125) and 6³ (216), so it is not a perfect cube. 150 is the odd one."
+    ],
+    "wrong": {
+      "27": "27 is 3³, a perfect cube like 64 and 125.",
+      "64": "64 is 4³, a perfect cube like 27 and 125.",
+      "125": "125 is 5³, a perfect cube like 27 and 64."
+    },
+    "tip": "Know your cubes: 1, 8, 27, 64, 125, 216, 343, 512, 729, 1000."
+  },
+  "152": {
+    "steps": [
+      "Ask what each unit measures.",
+      "Inch: length. Foot: length. Meter: length.",
+      "Pound: weight (mass), not length.",
+      "Pound is the odd one out."
+    ],
+    "wrong": {
+      "Inch": "Inch measures length, like foot and meter.",
+      "Foot": "Foot measures length, like inch and meter.",
+      "Meter": "Meter measures length, like inch and foot. Being metric does not matter here."
+    },
+    "tip": "For units, group by what they measure (length, weight, time, volume)."
+  },
+  "153": {
+    "steps": [
+      "Premise 1: No cats are dogs. The cats circle and dogs circle do not touch.",
+      "Premise 2: All dogs are animals. The dogs circle is inside the animals circle.",
+      "Look inside the animals circle: the dogs are there, and none of them are cats.",
+      "So at least some animals (the dogs) are not cats.",
+      "Note: the cats circle might be inside or outside 'animals'; the premises do not say."
+    ],
+    "wrong": {
+      "No cats are animals": "The premises say nothing about cats being animals or not. The cats circle could still be inside animals.",
+      "All animals are dogs": "This flips Premise 2. Dogs are inside animals, but animals is the bigger circle.",
+      "Some cats are dogs": "This contradicts Premise 1, which says no cats are dogs."
+    },
+    "tip": "No A are B + All B are C = Some C are not A."
+  },
+  "154": {
+    "steps": [
+      "Premise 1: All A are B. The A circle is inside the B circle.",
+      "Premise 2: No B is C. The B circle and C circle do not touch.",
+      "Since A is inside B, A also cannot touch C.",
+      "So no A is C."
+    ],
+    "wrong": {
+      "Some A are C": "Impossible. Every A is a B, and no B is a C.",
+      "All C are A": "C does not even touch B, so C cannot be inside A (which is inside B).",
+      "Some C are B": "This contradicts Premise 2, which says no B is C."
+    },
+    "tip": "All A are B + No B is C = No A is C."
+  },
+  "155": {
+    "steps": [
+      "Start from 'Jose's father'.",
+      "'The only son of Jose's father': Jose is a son of his father, and he is the only son. So this person is Jose.",
+      "'Ramon's father is … Jose'.",
+      "So Jose is Ramon's father."
+    ],
+    "wrong": {
+      "Uncle": "An uncle would be a brother of Ramon's father. But Jose has no brother (he is the only son), and he is the father himself.",
+      "Grandfather": "Ramon's grandfather is Jose's father, not Jose.",
+      "Brother": "A brother would share Ramon's father. Jose is the father, not a son of him."
+    },
+    "tip": "'The only son of X's father' (X being male) is X himself."
+  },
+  "156": {
+    "steps": [
+      "Start facing North.",
+      "Turn 90° clockwise (a quarter turn to the right): North → East.",
+      "Turn 180° (a half turn, facing the opposite way): East → West.",
+      "You are facing West."
+    ],
+    "wrong": {
+      "North": "You face North only at the start. After both turns you face West.",
+      "East": "East is after the first turn only. The 180° turn flips you to West.",
+      "South": "South would need one more 90° turn. 180° from East gives West."
+    },
+    "tip": "90° = quarter turn, 180° = face the opposite way, 360° = back where you started."
+  },
+  "157": {
+    "steps": [
+      "Ana is 12th from the left, so 11 students are to her left.",
+      "Students to her right: 40 − 12 = 28.",
+      "Counting from the right, those 28 come first, then Ana: 28 + 1 = 29.",
+      "Ana is 29th from the right. Formula: total − position + 1 = 40 − 12 + 1 = 29."
+    ],
+    "wrong": {
+      "28th": "28 is the number of students to her right. You must add 1 for Ana herself.",
+      "30th": "Too many. 40 − 12 + 1 = 29, not 30.",
+      "27th": "Too few. 40 − 12 + 1 = 29."
+    },
+    "tip": "Position from the other end = total − position + 1."
+  },
+  "158": {
+    "steps": [
+      "The minute hand goes around faster than the hour hand. Each time it laps (catches up to) the hour hand, they overlap.",
+      "In 12 hours the minute hand makes 12 rounds and the hour hand makes 1 round.",
+      "Laps = 12 − 1 = 11. So they overlap 11 times.",
+      "Check: they overlap at about 12:00, 1:05, 2:11, 3:16 … 10:55, and the next one is 12:00 again, which starts the next 12 hours. Between 11:00 and 12:00 there is no separate overlap."
+    ],
+    "wrong": {
+      "10": "Too few. The overlaps are about every 1 hour 5½ minutes, giving 11 in 12 hours.",
+      "12": "This counts one overlap per hour, but there is no overlap during the 11 o'clock hour except at 12:00.",
+      "24": "Far too many. Even in a full 24-hour day the hands overlap only 22 times, and the question asks about 12 hours."
+    },
+    "tip": "Hands overlap 11 times in 12 hours and 22 times in 24 hours."
+  },
+  "159": {
+    "steps": [
+      "Find how 3 becomes 27.",
+      "3 × 3 × 3 = 27, so 27 is 3 cubed (3³).",
+      "Apply the same rule to 4: 4 × 4 × 4 = 64.",
+      "The answer is 64."
+    ],
+    "wrong": {
+      "16": "16 is 4² (squared). The pattern uses the cube.",
+      "48": "48 is 4 × 12. There is no matching rule from 3 to 27.",
+      "81": "81 is 3⁴ or 9², not related to 4 by the same rule."
+    },
+    "tip": "Number analogies: test square, cube and multiply first."
+  },
+  "160": {
+    "steps": [
+      "An assumption is something the speaker quietly believes is true without saying it. Without it, the plan would not make sense.",
+      "The plan: accept applications online to shorten queues.",
+      "Queues get shorter only if many people actually apply online instead of lining up.",
+      "That can only happen if many applicants can access the internet. So this is the hidden assumption."
+    ],
+    "wrong": {
+      "Queues are caused by lazy staff": "The statement does not blame staff. The plan works by moving people online, not by fixing staff.",
+      "Online forms are free": "The plan works whether or not there is a fee. Cost is not needed for the plan to make sense.",
+      "No one will apply in person": "Too extreme. The plan only needs fewer people in line, not zero."
+    },
+    "tip": "Assumption test: if the plan collapses when you deny it, it is the assumption."
+  },
+  "161": {
+    "steps": [
+      "Ask: does one event make the other happen?",
+      "A week of heavy rain fills drains and low areas with water.",
+      "That water floods roads in low-lying areas.",
+      "So rain (I) comes first and causes the flooding (II)."
+    ],
+    "wrong": {
+      "II is the cause and I is the effect": "Flooded roads cannot make it rain. The order is backward.",
+      "Both are independent causes": "They are not separate. The flooding comes directly from the rain.",
+      "Both are effects of a common cause": "There is no third event causing both. The rain itself causes the flood."
+    },
+    "tip": "Cause–effect: the cause happens first and makes sense as the reason for the other."
+  },
+  "162": {
+    "steps": [
+      "This is data sufficiency: decide which statements give enough information to answer. You do not need the actual answer, only whether it can be found.",
+      "Statement 1 alone: Carlo is 5 years older than Dan. Without Dan's age, Carlo's age is unknown.",
+      "Statement 2 alone: Dan is 20. It says nothing about Carlo.",
+      "Together: Carlo = 20 + 5 = 25. Both are needed."
+    ],
+    "wrong": {
+      "Statement 1 alone is enough": "It only gives the difference in ages. We still need Dan's age.",
+      "Statement 2 alone is enough": "It gives Dan's age but does not connect Dan to Carlo.",
+      "Even both together are not enough": "Together they give an exact answer: 25."
+    },
+    "tip": "Data sufficiency: test each statement alone first, then together."
+  },
+  "163": {
+    "steps": [
+      "Ben is older than Carl: Ben > Carl.",
+      "Ben is younger than Dino: Dino > Ben > Carl.",
+      "Ed is older than Dino: Ed > Dino > Ben > Carl.",
+      "Oldest is Ed; second oldest is Dino."
+    ],
+    "wrong": {
+      "Ben": "Ben is third oldest, below Ed and Dino.",
+      "Carl": "Carl is the youngest.",
+      "Ed": "Ed is the oldest, not the second oldest."
+    },
+    "tip": "Turn 'younger than' into '>' the other way, then build one chain."
+  },
+  "164": {
+    "steps": [
+      "Find a rule that fits both examples.",
+      "Try squaring and adding: 2 ★ 3 = 2² + 3² = 4 + 9 = 13. Matches.",
+      "Check: 1 ★ 2 = 1² + 2² = 1 + 4 = 5. Matches.",
+      "Apply: 4 ★ 1 = 4² + 1² = 16 + 1 = 17."
+    ],
+    "wrong": {
+      "9": "This does not fit the rule a² + b². For 4 and 1 that gives 17.",
+      "15": "This is 4² − 1² = 16 − 1. The rule adds the squares, it does not subtract.",
+      "20": "This does not fit a² + b². 16 + 1 = 17."
+    },
+    "tip": "Symbol operations: test the rule on ALL given examples before using it."
+  },
+  "165": {
+    "steps": [
+      "Count the days between the 3rd and the 24th: 24 − 3 = 21 days.",
+      "Divide by 7: 21 ÷ 7 = 3 weeks, remainder 0.",
+      "A remainder of 0 means the same weekday.",
+      "The 24th is a Tuesday."
+    ],
+    "wrong": {
+      "Monday": "That would be one day before Tuesday. The remainder is 0, so no change.",
+      "Wednesday": "That would need a remainder of 1. 21 divides evenly by 7.",
+      "Thursday": "That would need a remainder of 2. 21 divides evenly by 7."
+    },
+    "tip": "Dates 7, 14, 21, 28 days apart fall on the same weekday."
+  },
+  "166": {
+    "steps": [
+      "'Only registered voters may run' means being registered is a requirement. If you are not registered, you cannot run.",
+      "As an if–then: IF someone runs, THEN they are a registered voter.",
+      "Joel is NOT a registered voter, so the THEN part is false for him.",
+      "By modus tollens (if the THEN part is false, the IF part is false), Joel may not run."
+    ],
+    "wrong": {
+      "Joel may run": "He fails the requirement. Only registered voters may run.",
+      "Joel will register": "Nothing says what Joel plans to do. This is a guess, not a conclusion.",
+      "Nothing can be concluded": "We can conclude he may not run, because he lacks the required registration."
+    },
+    "tip": "'Only X may do Y' = Y requires X. Not X → cannot do Y."
+  },
+  "167": {
+    "steps": [
+      "Turn letters into numbers and check the gaps.",
+      "ACE = 1, 3, 5 (jumps of +2, skipping one letter).",
+      "BDF = 2, 4, 6 (+2). GIK = 7, 9, 11 (+2).",
+      "MNP = 13, 14, 16 (jumps of +1, then +2). The pattern breaks.",
+      "MNP is the odd group."
+    ],
+    "wrong": {
+      "ACE": "A, C, E skips one letter each time, like BDF and GIK.",
+      "BDF": "B, D, F skips one letter each time, like ACE and GIK.",
+      "GIK": "G, I, K skips one letter each time, like ACE and BDF."
+    },
+    "tip": "Letter groups: check the gap between every pair of neighbors, not just the first pair."
+  },
+  "168": {
+    "steps": [
+      "Look at the numbers: 1, 4, 9, 16, 25.",
+      "1 = 1², 4 = 2², 9 = 3², 16 = 4², 25 = 5². These are perfect squares.",
+      "Next is 6² = 6 × 6 = 36.",
+      "Also, the gaps are 3, 5, 7, 9, so the next gap is 11: 25 + 11 = 36."
+    ],
+    "wrong": {
+      "30": "30 is not a perfect square. 25 + 11 = 36.",
+      "34": "34 is not a perfect square. The next gap is 11, not 9.",
+      "49": "49 is 7², which skips 6² = 36."
+    },
+    "tip": "Gaps of 3, 5, 7, 9 … (odd numbers) mean the series is perfect squares."
+  },
+  "169": {
+    "steps": [
+      "Find the link: a glove is worn on the hand to cover it.",
+      "Apply to foot: what is worn on the foot to cover it?",
+      "A sock.",
+      "HAND : GLOVE :: FOOT : SOCK."
+    ],
+    "wrong": {
+      "Toe": "A toe is part of the foot, not something worn on it.",
+      "Leg": "A leg is a body part connected to the foot, not something worn on it.",
+      "Walk": "Walking is what the foot does, not something worn on it."
+    },
+    "tip": "Analogy: say the relationship as a sentence ('X is worn on Y') and use it again."
+  },
+  "315": {
+    "steps": [
+      "The rule: all examinees must present a valid ID. That is a requirement.",
+      "Mark did not present a valid ID.",
+      "So Mark did not meet the requirement for examinees.",
+      "We cannot say more than this: we do not know why he failed to present it."
+    ],
+    "wrong": {
+      "Mark may take the exam": "He did not meet the requirement, so this does not follow.",
+      "Mark is not a Filipino": "Nationality is never mentioned. This is unrelated.",
+      "Mark has no ID at all": "Too strong. He may own an ID but forgot it, or it may be expired. We only know he did not present a valid one."
+    },
+    "tip": "Pick the conclusion that says exactly what the facts say, no more."
+  },
+  "316": {
+    "steps": [
+      "Ask which event leads to the other.",
+      "Jeepney operators spend a lot on fuel. When fuel prices rise sharply, their costs go up.",
+      "To cover the higher cost, they ask for a fare increase.",
+      "So the fuel price rise (I) is the cause and the fare request (II) is the effect."
+    ],
+    "wrong": {
+      "II is the cause and I is the effect": "A request for higher fares does not make world fuel prices go up. The order is backward.",
+      "Both are independent causes": "They are linked. The fare request happens because of the fuel price rise.",
+      "Both are effects of a common cause": "No third event is needed. The fuel price rise directly causes the request."
+    },
+    "tip": "Cause–effect: ask 'Did I make II happen?' If yes, I is the cause."
+  },
+  "317": {
+    "steps": [
+      "An assumption is an unstated belief the speaker needs for the advice to make sense.",
+      "The advice: bring an umbrella because it might rain.",
+      "This only makes sense if an umbrella actually helps when it rains.",
+      "So the hidden assumption is that an umbrella can protect you from rain."
+    ],
+    "wrong": {
+      "It always rains in the afternoon": "The speaker says it 'might' rain, not that it always does.",
+      "The listener owns a car": "Cars are never mentioned. The advice does not depend on this.",
+      "Weather forecasts are always wrong": "The speaker seems to trust that rain is possible. This is unrelated and extreme."
+    },
+    "tip": "Assumption: what must be true for the advice to make sense at all?"
+  },
+  "318": {
+    "steps": [
+      "This is data sufficiency. A 'yes' or 'no' answer both count as answering the question.",
+      "Statement 1 alone: x > 8. x could be 9 (not > 10) or 15 (> 10). No sure answer, so it is not enough.",
+      "Statement 2 alone: x is even and less than 12. The possible values are 10, 8, 6 … all 10 or less. So x is never greater than 10. The answer is a sure 'no'.",
+      "Statement 2 alone is enough."
+    ],
+    "wrong": {
+      "Statement 1 alone is enough": "x > 8 allows 9 (no) and 15 (yes). It gives no definite answer.",
+      "Both statements together are needed": "Statement 2 already answers the question by itself, so Statement 1 is not needed.",
+      "Even both together are not enough": "Statement 2 alone gives a definite 'no', so the data is enough."
+    },
+    "tip": "In data sufficiency, a definite 'no' is still a sufficient answer."
+  },
+  "319": {
+    "steps": [
+      "A is the brother of B, so A is male and A, B are siblings.",
+      "B is the sister of C, so C is also a sibling. A, B and C are brothers and sisters.",
+      "C is the father of D.",
+      "A is the brother of D's father, so A is D's uncle."
+    ],
+    "wrong": {
+      "Father": "D's father is C, not A.",
+      "Brother": "A is in the same generation as D's father, one level above D.",
+      "Grandfather": "A grandfather is two generations up. A is only one generation above D."
+    },
+    "tip": "Draw a mini family tree: siblings on one line, children one line below."
+  },
+  "320": {
+    "steps": [
+      "Start from Maria: 'Maria's mother'.",
+      "'Maria's mother's only brother' = Maria's uncle (her mother's brother).",
+      "'The son of' that uncle = the uncle's son.",
+      "The child of your uncle is your cousin."
+    ],
+    "wrong": {
+      "Brother": "Maria's brother would be her mother's son, not her uncle's son.",
+      "Nephew": "A nephew is the son of your brother or sister. This person is your uncle's son.",
+      "Uncle": "The uncle is the mother's brother himself, not his son."
+    },
+    "tip": "Child of your aunt or uncle = cousin; child of your brother or sister = nephew or niece."
+  },
+  "321": {
+    "steps": [
+      "Start facing East.",
+      "Turn left: from East, left is North.",
+      "Turn left again: from North, left is West.",
+      "Turn right: from West, right is North.",
+      "You face North."
+    ],
+    "wrong": {
+      "South": "South would need a right turn from East. Track each turn: North, West, North.",
+      "East": "East is only the starting direction. The turns end at North.",
+      "West": "West is after the second turn. The last right turn brings you to North."
+    },
+    "tip": "Left then right cancel. Two lefts + one right = one left overall."
+  },
+  "322": {
+    "steps": [
+      "A clock face is a full circle of 360°, split into 12 hour marks. Each mark is 360 ÷ 12 = 30°.",
+      "At 6:00 the minute hand points at 12 and the hour hand points at 6.",
+      "From 12 to 6 is 6 hour marks: 6 × 30° = 180°.",
+      "The hands point in opposite directions, a straight line: 180°."
+    ],
+    "wrong": {
+      "90°": "90° happens at 3:00 or 9:00, three marks apart.",
+      "120°": "120° happens at 4:00 or 8:00, four marks apart.",
+      "360°": "360° is a full circle. Two hands can be at most 180° apart."
+    },
+    "tip": "Each hour mark on a clock is 30°."
+  },
+  "323": {
+    "steps": [
+      "In a leap year, February has 29 days, so March 1 is 29 days after February 1.",
+      "Divide by 7: 29 ÷ 7 = 4 weeks (28 days), remainder 1.",
+      "After 4 weeks it is Saturday again. Move 1 more day: Sunday.",
+      "March 1 is a Sunday."
+    ],
+    "wrong": {
+      "Saturday": "That would be true in a normal year (28 days, remainder 0). A leap year adds one day.",
+      "Monday": "That is 2 days after Saturday. The remainder is 1.",
+      "Friday": "That goes backward. Moving forward 1 day from Saturday gives Sunday."
+    },
+    "tip": "February: 28 days → same weekday on March 1; leap year 29 days → one day later."
+  },
+  "324": {
+    "steps": [
+      "A census is an official count of all the people in a country or place.",
+      "In the Philippines, the Philippine Statistics Authority (PSA) conducts it.",
+      "So the closest meaning is 'population count'."
+    ],
+    "wrong": {
+      "Tax payment": "Paying tax is not counting people. A census collects information, not money.",
+      "Election": "An election is choosing leaders by voting, not counting the population.",
+      "Weather": "Weather has nothing to do with counting people."
+    },
+    "tip": "Word association: pick the meaning that defines the word, not just something related."
+  },
+  "325": {
+    "steps": [
+      "Ask how each official gets the position.",
+      "President: elected by the people.",
+      "Senator: elected by the people. Governor: elected by the people of the province.",
+      "Justice (of the Supreme Court): appointed by the President, not elected.",
+      "Justice is the odd one out."
+    ],
+    "wrong": {
+      "President": "The President is elected, like Senators and Governors.",
+      "Senator": "Senators are elected, like the President and Governors.",
+      "Governor": "Governors are elected, like the President and Senators."
+    },
+    "tip": "For officials, check how they get the job: elected or appointed."
+  },
+  "326": {
+    "steps": [
+      "The 1987 Constitution creates three Constitutional Commissions.",
+      "COMELEC (Commission on Elections), COA (Commission on Audit) and CSC (Civil Service Commission) are those three.",
+      "DILG (Department of the Interior and Local Government) is an executive department under the President.",
+      "DILG is the odd one out."
+    ],
+    "wrong": {
+      "COMELEC": "COMELEC is one of the three Constitutional Commissions, like COA and CSC.",
+      "COA": "COA is one of the three Constitutional Commissions, like COMELEC and CSC.",
+      "CSC": "CSC is one of the three Constitutional Commissions, like COMELEC and COA."
+    },
+    "tip": "The three Constitutional Commissions: CSC, COMELEC, COA."
+  },
+  "327": {
+    "steps": [
+      "Premise 1: No honest person is corrupt. The honest circle and corrupt circle do not touch.",
+      "Premise 2: Some officials are corrupt. The officials circle overlaps the corrupt circle.",
+      "Those corrupt officials are inside the corrupt circle, so they cannot be inside the honest circle.",
+      "So some officials are not honest."
+    ],
+    "wrong": {
+      "All officials are honest": "False. Some officials are corrupt, and no corrupt person is honest.",
+      "No official is honest": "Too strong. Only the corrupt officials are sure to be not honest. Other officials might be honest.",
+      "Some honest persons are officials": "Possible, but the premises do not prove it."
+    },
+    "tip": "No A is B + Some C are B = Some C are not A."
+  },
+  "328": {
+    "steps": [
+      "Premise: All squares are rectangles. The squares circle is inside the rectangles circle.",
+      "Fact: X is a rectangle. X is somewhere inside the rectangles circle.",
+      "X could be inside the small squares circle, or in the part of rectangles outside it.",
+      "We cannot tell which, so X may or may not be a square."
+    ],
+    "wrong": {
+      "X is a square": "This reverses the rule. All squares are rectangles, but not all rectangles are squares.",
+      "X is not a square": "We cannot rule it out. X could be a square, since squares are rectangles.",
+      "X is not a rectangle": "This contradicts the given fact that X is a rectangle."
+    },
+    "tip": "All A are B does not mean all B are A. Being in the big circle does not put you in the small one."
+  },
+  "329": {
+    "steps": [
+      "Five spots: 1 (left) to 5 (right).",
+      "History is at the far left (spot 1). Filipino is at the far right (spot 5): History _ _ _ Filipino.",
+      "Science, English and Math fill spots 2, 3, 4.",
+      "Science is left of English and Math is right of English, so the order is Science, English, Math.",
+      "Full order: History, Science, English, Math, Filipino. The middle (spot 3) is English."
+    ],
+    "wrong": {
+      "Math": "Math is in spot 4, right of English.",
+      "Science": "Science is in spot 2, left of English.",
+      "History": "History is at the far left (spot 1), not the middle."
+    },
+    "tip": "Place the fixed ends first, then fit the rest in between."
+  },
+  "330": {
+    "steps": [
+      "Each number is a letter's place in the alphabet.",
+      "3 = C, 15 = O, 4 = D, 5 = E.",
+      "Put them together: C-O-D-E.",
+      "The word is CODE."
+    ],
+    "wrong": {
+      "COME": "M is 13, but the third number is 4, which is D.",
+      "CORD": "CORD would be 3-15-18-4. The code's third number is 4 (D), not 18 (R), and it ends in 5 (E).",
+      "CAGE": "A is 1 and G is 7, but the code has 15 and 4 (O, D)."
+    },
+    "tip": "Remember O = 15 and E = 5 to decode quickly."
+  },
+  "331": {
+    "steps": [
+      "Find the link: paper is made from trees (wood pulp).",
+      "Apply to glass: glass is made from what?",
+      "Glass is made by melting sand at very high heat.",
+      "PAPER : TREE :: GLASS : SAND."
+    ],
+    "wrong": {
+      "Window": "A window is made from glass. The link runs the other way (product to raw material).",
+      "Water": "Glass is not made from water.",
+      "Bottle": "A bottle is made from glass, the reverse of the needed link."
+    },
+    "tip": "Watch the direction: 'made from' (product → raw material) is not 'used to make'."
+  },
+  "332": {
+    "steps": [
+      "Given: every manager attended the training. In circles: the managers circle is inside the attendees circle.",
+      "'No manager missed the training': same as every manager attended. True.",
+      "'If Lea is a manager, she attended': she is inside managers, so inside attendees. True.",
+      "'Anyone who missed the training is not a manager': outside attendees means outside managers too (modus tollens). True.",
+      "'Everyone who attended is a manager': the attendees circle can be bigger; staff who are not managers could also have attended. Not necessarily true."
+    ],
+    "wrong": {
+      "No manager missed the training": "This always holds. It says the same thing as 'every manager attended'.",
+      "If Lea is a manager, she attended": "This always holds. Lea, as a manager, is covered by 'every manager'.",
+      "Anyone who missed the training is not a manager": "This always holds. If a manager had missed it, the statement would be false (modus tollens)."
+    },
+    "tip": "'All A are B' cannot be flipped into 'All B are A'."
+  }
+}

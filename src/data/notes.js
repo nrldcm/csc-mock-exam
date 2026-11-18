@@ -5,20 +5,40 @@ export const NOTES = [
   // ---------------- ABOUT THE EXAM ----------------
   {
     id: 'exam', c: 'about', title: 'About the Career Service Examination',
-    summary: 'Coverage, item counts, time limits and the passing rating.',
+    summary: 'Official scope, item counts and time limits, from CSC Examination Advisory No. 10, s. 2026.',
     sections: [
-      { h: 'Two levels', table: { head: ['', 'Professional', 'Subprofessional'], rows: [
-        ['Items', '170', '165'], ['Time limit', '3 hours 10 minutes', '2 hours 40 minutes'], ['Passing rating', '80.00', '80.00'],
-        ['Verbal ability', 'English and Filipino', 'English and Filipino'], ['Numerical ability', 'Yes', 'Yes'],
-        ['Analytical ability', 'Yes', 'No'], ['Clerical operations', 'No', 'Yes'], ['General information', 'Yes', 'Yes']
+      { h: 'Source', p: 'Everything on this page comes from the Civil Service Commission’s Examination Advisory No. 10, s. 2026 (School Assignment and Important Reminders for the 09 August 2026 CSE-PPT), Part D: Scope of Examination and Other Information. Check csc.gov.ph for the advisory of your exam date.' },
+      { h: 'Items and time', table: { head: ['', 'Professional', 'Subprofessional'], rows: [
+        ['Test proper (scored)', '150 items', '145 items'], ['EDQ (personal data questionnaire, not scored)', '20 items', '20 items'], ['Total in the booklet', '170', '165'],
+        ['Time limit', '3 hours, 10 minutes', '2 hours, 40 minutes'], ['Test proper', '8:00 to 11:10 a.m.', '8:00 to 10:40 a.m.']
       ] } },
-      { h: 'General information covers', list: ['The 1987 Philippine Constitution', 'RA 6713, the Code of Conduct and Ethical Standards for Public Officials and Employees', 'Peace and human rights', 'Environment management and protection'] },
-      { h: 'Exam-day habits', list: [
+      { h: 'Coverage for both levels', table: { head: ['Subject', 'Topics (official wording)'], rows: [
+        ['General Information (in English)', 'Philippine Constitution; Code of Conduct and Ethical Standards for Public Officials and Employees (R.A. 6713); Peace and Human Rights Issues and Concepts; Environment Management and Protection'],
+        ['Verbal Ability (in English and Filipino)', 'Word meaning; Sentence completion; Error recognition; Sentence structure; Paragraph organization; Reading comprehension'],
+        ['Numerical Ability (in English)', 'Basic operations; Number sequence; Word problems']
+      ] } },
+      { h: 'Only in one level', table: { head: ['Professional', 'Subprofessional'], rows: [
+        ['Analytical Ability (in English): Word analogy; Symbolic logic/abstract reasoning; Identifying assumptions and drawing conclusions; Data interpretation', 'Clerical Ability (in English): Filing; Spelling']
+      ] } },
+      { h: 'How this app matches it', list: [
+        'The realistic mock exam has 150 (Professional) or 145 (Subprofessional) scored items in the official time limit, grouped by subject like a test booklet.',
+        'Every item in the reviewer shows which official subject and topic it practices.',
+        'The questions are original practice items written to the official scope. Actual CSC test questions are confidential: the CSC prohibits copying and sharing them (Advisory, items 2.3, 2.4 and 12.3; RA 9416, the Anti-Cheating Law).',
+        'The CSC itself does not publish or accredit any review material (Advisory, item 12.1). This app is an independent study aid.'
+      ] },
+      { h: 'Exam-day reminders from the advisory', list: [
+        'No I.D., no examination. Bring an original, valid I.D. from the accepted list.',
+        'No calculators, phones, smart watches or printed materials at your seat. Practice math without a calculator.',
+        'Scratch work only on the Test Booklet pages, not on the Answer Sheet or any other paper.',
+        'Use a black ballpen only. Shade your Examinee Number correctly: wrong or incomplete shading cancels the exam.',
+        'Be at the venue by 6:30 a.m. Gates close at exactly 7:45 a.m.',
+        'Wear proper attire (no sleeveless tops, shorts, ripped jeans or slippers).'
+      ] },
+      { h: 'Test-taking habits', list: [
         'Answer every item. A blank counts as wrong and there is no penalty for guessing.',
         'Do the easy items first, flag the hard ones and come back to them.',
-        'Keep a steady pace: about 67 seconds per item for both levels.',
-        'Shade answers as you go, not all at the end.',
-        'Always confirm current requirements and schedules on the official Civil Service Commission website.'
+        'Keep a steady pace: about 76 seconds per item (Professional) or 66 seconds (Subprofessional).',
+        'Shade answers as you go, not all at the end.'
       ] }
     ]
   },

@@ -1,6 +1,8 @@
 import { isFig } from '../data/abstract.js'
 import { CATS, DIFF } from '../data/bank.js'
 import { FigQ, OptText } from './Figure.jsx'
+import { explainFor, lessonFor } from '../lib/lessons.js'
+import { sourcesFor } from '../data/sources.js'
 import { PASS } from '../lib/config.js'
 import { examLevel } from '../lib/exam.js'
 import { fmt } from '../lib/util.js'
@@ -93,8 +95,42 @@ export function DiffCard({ items, answers }) {
   )
 }
 
+/* The long explanation: steps, why the other choices are wrong, a tip and the lesson for the topic */
+export function FullExplain({ q, onLesson }) {
+  const x = explainFor(q), lesson = onLesson ? lessonFor(q) : null, src = sourcesFor(q)
+  const wrong = x?.wrong ? q.o.map((t, i) => ({ t, i, why: x.wrong[t] })).filter(w => w.i !== q.a && w.why) : []
+  return (
+    <div className="xfull">
+      {x?.steps?.length > 0 && (
+        <div className="xsec"><b>Step by step</b><ol>{x.steps.map((s, i) => <li key={i}>{s}</li>)}</ol></div>
+      )}
+      {wrong.length > 0 && (
+        <div className="xsec">
+          <b>Why not the other choices</b>
+          <ul className="xwrong">
+            {wrong.map(w => (
+              <li key={w.i}><span className="bub">{'ABCD'[w.i]}</span><span>{!isFig(w.t) && <em>{w.t}: </em>}{w.why}</span></li>
+            ))}
+          </ul>
+        </div>
+      )}
+      {x?.tip && <div className="xtip"><b>Remember</b><p>{x.tip}</p></div>}
+      {src && (
+        <div className="xsrc">
+          <b>Basis</b>
+          <p>Official CSC scope: {src.area}{src.subtopic ? ` → ${src.subtopic}` : ''}</p>
+          {src.refs.length > 0 && (
+            <ul>{src.refs.map(r => <li key={r.url}><a href={r.url} target="_blank" rel="noopener noreferrer">{r.label}</a></li>)}</ul>
+          )}
+        </div>
+      )}
+      {lesson && <button className="btn ghost small" onClick={() => onLesson(lesson.id)}>Study the lesson: {lesson.title}</button>}
+    </div>
+  )
+}
+
 /* One item with every choice, the key, the examinee's answer and the explanation */
-export function ItemCard({ q, label, yours, hidden, showStatus, children }) {
+export function ItemCard({ q, label, yours, hidden, showStatus, onLesson, children }) {
   const st = showStatus ? (yours == null ? 'b' : yours === q.a ? 'c' : 'w') : null
   return (
     <div className="card ritem">
@@ -116,7 +152,10 @@ export function ItemCard({ q, label, yours, hidden, showStatus, children }) {
         })}
       </div>
       {!hidden && (
-        <div className="explain"><b>Explanation</b><p>The answer is {'ABCD'[q.a]}{isFig(q.o[q.a]) ? '' : `, ${q.o[q.a]}`}. {q.e}</p></div>
+        <>
+          <div className="explain"><b>Explanation</b><p>The answer is {'ABCD'[q.a]}{isFig(q.o[q.a]) ? '' : `, ${q.o[q.a]}`}. {q.e}</p></div>
+          <FullExplain q={q} onLesson={onLesson} />
+        </>
       )}
       {children}
     </div>

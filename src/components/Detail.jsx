@@ -15,7 +15,7 @@ const TESTS = {
 }
 const NAMES = { all: 'All', wrong: 'Wrong', blank: 'Blank', correct: 'Correct', flag: 'Flagged' }
 
-export default function Detail({ id, onBack, onDeleted }) {
+export default function Detail({ id, onBack, onDeleted, onLesson }) {
   const { ask, toast } = useUI()
   const [sharing, setSharing] = useState(false)
   const [filter, setFilter] = useState('all')
@@ -74,7 +74,7 @@ export default function Detail({ id, onBack, onDeleted }) {
           </div>
         </div>
         {!shown.length && <p className="empty">No items in this filter.</p>}
-        {shown.slice(0, limit).map(({ q, i }) => <ItemCard key={i} q={q} label={`Item ${i + 1}, ${CATS[q.c]}`} yours={q.ans} showStatus />)}
+        {shown.slice(0, limit).map(({ q, i }) => <ItemCard key={i} q={q} label={`Item ${i + 1}, ${CATS[q.c]}`} yours={q.ans} showStatus onLesson={onLesson} />)}
         <div className="stack">
           {shown.length > limit && <button className="btn ghost block" onClick={() => setLimit(l => l + 30)}>Show more items ({shown.length - limit} left)</button>}
           <button className="btn danger block" onClick={del}>Delete this session</button>

@@ -154,6 +154,33 @@ export async function saveBackupFile() {
   setTimeout(() => URL.revokeObjectURL(url), 2000)
   return 'downloaded'
 }
+/* Android app: keep a copy of all progress in the phone's Documents folder (survives uninstalling the app).
+   Best effort: some Android versions don't allow it, and then it quietly does nothing. */
+const AUTO_PATH = 'CSC-Mock-Exam/csc-exam-backup-latest.json'
+export async function autoBackup() {
+  if (!window.Capacitor?.isNativePlatform?.()) return false
+  try {
+    const { Filesystem, Directory, Encoding } = await import('@capacitor/filesystem')
+    if (!ls.get('csc-fs-perm', false)) { try { await Filesystem.requestPermissions() } catch { /* newer Android needs none */ } ls.set('csc-fs-perm', true) }
+    await Filesystem.writeFile({ path: AUTO_PATH, data: JSON.stringify(exportData()), directory: Directory.Documents, encoding: Encoding.UTF8, recursive: true })
+    ls.set('csc-autobackup-at', new Date().toISOString())
+    return true
+  } catch { return false }
+}
+/* Read the automatic backup left by an earlier install, if this install can see it */
+export async function readAutoBackup() {
+  if (!window.Capacitor?.isNativePlatform?.()) return null
+  try {
+    const { Filesystem, Directory, Encoding } = await import('@capacitor/filesystem')
+    const r = await Filesystem.readFile({ path: AUTO_PATH, directory: Directory.Documents, encoding: Encoding.UTF8 })
+    const text = typeof r.data === 'string' ? r.data : await r.data.text()
+    const b = JSON.parse(text)
+    return b?.app === 'csc-mock-exam' ? { text, at: b.exportedAt, sessions: (JSON.parse(b.data?.[SKEY] || '[]') || []).length } : null
+  } catch { return null }
+}
+/* True when this device has no progress yet (fresh install or cleared data) */
+export const isFreshInstall = () => !ls.get(SKEY, []).length && !ls.get('csc-xp', null) && !ls.get('csc-history', []).length
+
 /* Restore from a backup file. Sessions are merged (no duplicates); other progress takes the backup's value
    when it is further along. */
 export function importData(text) {

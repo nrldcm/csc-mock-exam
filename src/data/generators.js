@@ -16,12 +16,12 @@ function frac(n, d) {
   const w = Math.floor(n / d), r = n % d
   return w ? `${w} ${r}/${d}` : `${r}/${d}`
 }
-function mk(c, d, q, correct, wrongs, e) {
+function mk(c, d, q, correct, wrongs, e, extra) {
   const opts = [String(correct)]
   for (const w of wrongs) { const s = String(w); if (s && s !== 'undefined' && !opts.includes(s) && opts.length < 4) opts.push(s) }
   if (opts.length < 4) return null
   shuffle(opts)
-  return { c, d, q, o: opts, a: opts.indexOf(String(correct)), e, gen: true }
+  return { c, d, q, o: opts, a: opts.indexOf(String(correct)), e, gen: true, ...(extra || {}) }
 }
 const near = (x, ds) => ds.map(k => Math.round((x + k) * 100) / 100).filter(v => v > 0 && v !== x)
 const L = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
@@ -175,51 +175,95 @@ function officeItem() {
 /* ---------- Numerical ---------- */
 const NUMGEN = [
  () => { const p = pk([5,10,12,15,20,25,30,35,40,45,60,75]), n = R(2, 40) * 20, a = n * p / 100; if (!Number.isInteger(a)) return null
-   return mk('numerical', 'easy', `What is ${p}% of ${num(n)}?`, num(a), near(a, [n / 20, -n / 20, n / 10, p]).map(num), `${p}% = ${p / 100}, and ${p / 100} × ${num(n)} = ${num(a)}.`) },
+   return mk('numerical', 'easy', `What is ${p}% of ${num(n)}?`, num(a), near(a, [n / 20, -n / 20, n / 10, p]).map(num), `${p}% = ${p / 100}, and ${p / 100} × ${num(n)} = ${num(a)}.`, {
+     steps: [`“Percent” means “out of 100”, so ${p}% = ${p}/100 = ${p / 100}.`, `In math, “of” means multiply: ${p / 100} × ${num(n)}.`, `${p / 100} × ${num(n)} = ${num(a)}.`, `Check: 10% of ${num(n)} is ${num(n / 10)}. ${p}% is ${p / 10} times that: ${num(n / 10)} × ${p / 10} = ${num(a)}. ✓`],
+     tip: 'P% of a number: change P% to a decimal (move the point 2 places left), then multiply.' }) },
  () => { const p = pk([10,15,20,25,40,50,60,75]), w = R(4, 60) * 20, part = w * p / 100; if (!Number.isInteger(part)) return null
-   return mk('numerical', 'average', `${p}% of what number is ${num(part)}?`, num(w), near(w, [20, -20, w / 2, part]).map(num), `Divide by ${p / 100}: ${num(part)} ÷ ${p / 100} = ${num(w)}.`) },
+   return mk('numerical', 'average', `${p}% of what number is ${num(part)}?`, num(w), near(w, [20, -20, w / 2, part]).map(num), `Divide by ${p / 100}: ${num(part)} ÷ ${p / 100} = ${num(w)}.`, {
+     steps: [`The number we are looking for is the whole. ${p}% of the whole is ${num(part)}.`, `Write it as an equation: ${p / 100} × whole = ${num(part)}.`, `Divide both sides by ${p / 100}: whole = ${num(part)} ÷ ${p / 100} = ${num(w)}.`, `Check: ${p}% of ${num(w)} = ${p / 100} × ${num(w)} = ${num(part)}. ✓`],
+     tip: 'Know the part and the percent? Divide: whole = part ÷ percent (as a decimal).' }) },
  () => { const pr = R(6, 40) * 100, d1 = pk([10,20,25,30]), d2 = pk([5,10,15,20]), f = pr * (1 - d1 / 100) * (1 - d2 / 100); if (Math.round(f * 100) % 1) return null
+   const mid = pr * (1 - d1 / 100)
    return mk('numerical', 'difficult', `An item costs ${peso(pr)}. It is discounted ${d1}%, then an extra ${d2}% off the reduced price. What is the final price?`, peso(f),
-     [pr * (1 - (d1 + d2) / 100), pr * (1 - d1 / 100), f + pr * 0.05].map(peso), `${peso(pr)} × ${(1 - d1 / 100).toFixed(2)} = ${peso(pr * (1 - d1 / 100))}; then × ${(1 - d2 / 100).toFixed(2)} = ${peso(f)}. Successive discounts are not simply added.`) },
+     [pr * (1 - (d1 + d2) / 100), mid, f + pr * 0.05].map(peso), `${peso(pr)} × ${(1 - d1 / 100).toFixed(2)} = ${peso(mid)}; then × ${(1 - d2 / 100).toFixed(2)} = ${peso(f)}. Successive discounts are not simply added.`, {
+     steps: [`A ${d1}% discount means you pay ${100 - d1}% of the price. ${100 - d1}% = ${(1 - d1 / 100).toFixed(2)}.`, `First price: ${peso(pr)} × ${(1 - d1 / 100).toFixed(2)} = ${peso(mid)}.`, `The extra ${d2}% is taken from this NEW, lower price. You pay ${100 - d2}% of it: ${peso(mid)} × ${(1 - d2 / 100).toFixed(2)} = ${peso(f)}.`, `Trap: adding the discounts (${d1}% + ${d2}% = ${d1 + d2}%) gives ${peso(pr * (1 - (d1 + d2) / 100))}. That is wrong because the second discount is taken from a smaller price.`],
+     tip: 'Successive discounts multiply: price × (1 − first rate) × (1 − second rate).' }) },
  () => { const P = R(2, 50) * 1000, r = pk([3,4,5,6,8,10,12]), t = R(2, 5), I = P * r * t / 100
-   return mk('numerical', 'average', `What is the simple interest on ${peso(P)} at ${r}% per year for ${t} years?`, peso(I), [P * r / 100, I + P * r / 100, I * 2].map(peso), `I = P × r × t = ${num(P)} × ${r / 100} × ${t} = ${peso(I)}.`) },
+   return mk('numerical', 'average', `What is the simple interest on ${peso(P)} at ${r}% per year for ${t} years?`, peso(I), [P * r / 100, I + P * r / 100, I * 2].map(peso), `I = P × r × t = ${num(P)} × ${r / 100} × ${t} = ${peso(I)}.`, {
+     steps: ['Simple interest formula: I = P × r × t. P is the money saved or borrowed (principal), r is the yearly rate as a decimal, t is the number of years.', `P = ${peso(P)}, r = ${r}% = ${r / 100}, t = ${t} years.`, `Interest for ONE year: ${num(P)} × ${r / 100} = ${peso(P * r / 100)}.`, `Simple interest is the same every year, so for ${t} years: ${peso(P * r / 100)} × ${t} = ${peso(I)}.`],
+     tip: 'Simple interest: find one year’s interest, then multiply by the number of years.' }) },
  () => { const [a, b] = pk([[6,3],[12,6],[10,15],[20,30],[4,12],[6,12],[8,24],[9,18],[12,4],[10,40],[15,30],[12,24]]), t = a * b / (a + b), n1 = pk(['Ana','Liza','Rosa']), n2 = pk(['Ben','Carlo','Dan'])
+   const Lc = a * b / gcd(a, b), pa = Lc / a, pb = Lc / b
    return mk('numerical', 'average', `${n1} can finish a job in ${a} days. ${n2} can finish the same job in ${b} days. Working together, how many days will they take?`, num(t), [(a + b) / 2, Math.abs(a - b), t + 1, a + b].map(num),
-     `Together they do 1/${a} + 1/${b} = 1/${t} of the job per day, so ${num(t)} days.`) },
+     `Together they do 1/${a} + 1/${b} = 1/${t} of the job per day, so ${num(t)} days.`, {
+     steps: [`Think of speed of work. ${n1} finishes the job in ${a} days, so ${n1} does 1/${a} of the job each day. ${n2} does 1/${b} of the job each day.`, `Working together, add what they do in one day: 1/${a} + 1/${b}.`, `Use the common denominator ${Lc}: 1/${a} = ${pa}/${Lc} and 1/${b} = ${pb}/${Lc}. Sum: ${pa + pb}/${Lc} = 1/${t}.`, `They finish 1/${t} of the job every day, so the whole job takes ${t} days.`, `Check: in ${t} days ${n1} does ${t}/${a} and ${n2} does ${t}/${b}; ${t}/${a} + ${t}/${b} = 1 whole job. ✓`],
+     tip: 'Add the work RATES (1/a + 1/b), never the days. Together is always faster than the faster person alone.' }) },
  () => { const r = [R(1,4), R(2,5), R(3,7)], s = r[0] + r[1] + r[2], k = R(2, 9) * 500, T = s * k, big = Math.random() < 0.5, v = big ? Math.max(...r) : Math.min(...r)
    if (new Set(r).size < 3) return null
    return mk('numerical', 'average', `${peso(T)} is divided in the ratio ${r.join(' : ')}. What is the ${big ? 'largest' : 'smallest'} share?`, peso(v * k),
-     [...r.filter(x => x !== v).map(x => x * k), T / 3, (v + 1) * k].map(peso), `${s} parts = ${peso(T)}, so 1 part = ${peso(k)}. The ${big ? 'largest' : 'smallest'} share is ${v} × ${peso(k)} = ${peso(v * k)}.`) },
- () => { const ns = [R(60,99), R(60,99), R(60,99)], av = R(72, 92), x = av * 4 - ns.reduce((a, b) => a + b, 0); if (x < 50 || x > 100) return null
-   return mk('numerical', 'average', `The average of four scores is ${av}. Three of them are ${ns.join(', ')}. What is the fourth?`, x, near(x, [2, -2, 4, -4]), `Total = 4 × ${av} = ${av * 4}; ${av * 4} − ${ns.reduce((a, b) => a + b, 0)} = ${x}.`) },
+     [...r.filter(x => x !== v).map(x => x * k), T / 3, (v + 1) * k].map(peso), `${s} parts = ${peso(T)}, so 1 part = ${peso(k)}. The ${big ? 'largest' : 'smallest'} share is ${v} × ${peso(k)} = ${peso(v * k)}.`, {
+     steps: [`A ratio ${r.join(' : ')} means the money is cut into equal “parts”: ${r.join(', ')} parts for each person.`, `Total number of parts: ${r.join(' + ')} = ${s}.`, `Value of one part: ${peso(T)} ÷ ${s} = ${peso(k)}.`, `The ${big ? 'largest' : 'smallest'} share has ${v} parts: ${v} × ${peso(k)} = ${peso(v * k)}.`, `Check: ${r.map(x => peso(x * k)).join(' + ')} = ${peso(T)}. ✓`],
+     tip: 'Ratio sharing: total ÷ (sum of the ratio numbers) = one part. Then multiply.' }) },
+ () => { const ns = [R(60,99), R(60,99), R(60,99)], av = R(72, 92), sum = ns.reduce((a, b) => a + b, 0), x = av * 4 - sum; if (x < 50 || x > 100) return null
+   return mk('numerical', 'average', `The average of four scores is ${av}. Three of them are ${ns.join(', ')}. What is the fourth?`, x, near(x, [2, -2, 4, -4]), `Total = 4 × ${av} = ${av * 4}; ${av * 4} − ${sum} = ${x}.`, {
+     steps: ['Average = total ÷ number of scores. So total = average × number of scores.', `Total of all four scores: ${av} × 4 = ${av * 4}.`, `Add the three scores we know: ${ns.join(' + ')} = ${sum}.`, `The fourth score is what is left: ${av * 4} − ${sum} = ${x}.`, `Check: (${ns.join(' + ')} + ${x}) ÷ 4 = ${av * 4} ÷ 4 = ${av}. ✓`],
+     tip: 'Missing value = average × how many − sum of the known values.' }) },
  () => { const v = pk([40,45,50,55,60,65,70,75,80]), t = R(2, 6), D = v * t
    return Math.random() < 0.5
-    ? mk('numerical', 'easy', `A bus travels ${D} km at a constant ${v} km/h. How many hours does the trip take?`, t, near(t, [1, -1, 2]), `Time = distance ÷ speed = ${D} ÷ ${v} = ${t} hours.`)
-    : mk('numerical', 'easy', `A van travels at ${v} km/h for ${t} hours. How far does it go?`, `${D} km`, near(D, [v, -v, 10]).map(x => `${x} km`), `Distance = speed × time = ${v} × ${t} = ${D} km.`) },
- () => { const t = pk(['ar','geo','sec']); let s = [], nx, d, e
-   if (t === 'ar') { const a = R(1, 30), k = R(2, 12); s = [0,1,2,3,4].map(i => a + k * i); nx = a + 5 * k; d = 'easy'; e = `Each term adds ${k}: ${s[4]} + ${k} = ${nx}.` }
-   else if (t === 'geo') { const a = R(1, 5), k = pk([2, 3]); s = [0,1,2,3,4].map(i => a * k ** i); nx = a * k ** 5; d = 'easy'; e = `Each term is multiplied by ${k}: ${s[4]} × ${k} = ${nx}.` }
-   else { const a = R(1, 10), k = R(1, 4); let v = a, g = k; s = []; for (let i = 0; i < 5; i++) { s.push(v); v += g; g += 2 } nx = v; d = 'average'; e = `The differences grow by 2 each time (${s.slice(1).map((x, i) => x - s[i]).join(', ')}), so the next difference is ${nx - s[4]}: ${nx}.` }
-   return mk('numerical', d, `What comes next?\n${s.join(', ')}, ___`, nx, near(nx, [-2, 2, s[4] - s[3], 4]), e) },
+    ? mk('numerical', 'easy', `A bus travels ${D} km at a constant ${v} km/h. How many hours does the trip take?`, t, near(t, [1, -1, 2]), `Time = distance ÷ speed = ${D} ÷ ${v} = ${t} hours.`, {
+        steps: [`${v} km/h means the bus covers ${v} km every hour.`, 'Time = distance ÷ speed.', `${D} ÷ ${v} = ${t} hours.`, `Check: ${v} km × ${t} hours = ${D} km. ✓`],
+        tip: 'D = S × T. Cover what you need: T = D ÷ S, S = D ÷ T.' })
+    : mk('numerical', 'easy', `A van travels at ${v} km/h for ${t} hours. How far does it go?`, `${D} km`, near(D, [v, -v, 10]).map(x => `${x} km`), `Distance = speed × time = ${v} × ${t} = ${D} km.`, {
+        steps: [`${v} km/h means the van covers ${v} km every hour.`, 'Distance = speed × time.', `${v} × ${t} = ${D} km.`, `Check: ${D} km ÷ ${v} km/h = ${t} hours. ✓`],
+        tip: 'D = S × T. Cover what you need: T = D ÷ S, S = D ÷ T.' }) },
+ () => { const t = pk(['ar','geo','sec']); let s = [], nx, d, e, steps
+   if (t === 'ar') { const a = R(1, 30), k = R(2, 12); s = [0,1,2,3,4].map(i => a + k * i); nx = a + 5 * k; d = 'easy'; e = `Each term adds ${k}: ${s[4]} + ${k} = ${nx}.`
+     steps = [`Subtract each number from the next one to find the gaps: ${s.slice(1).map((x, i) => `${x} − ${s[i]} = ${x - s[i]}`).join(', ')}.`, `The gap is always ${k}, so we add ${k} every time.`, `Next: ${s[4]} + ${k} = ${nx}.`] }
+   else if (t === 'geo') { const a = R(1, 5), k = pk([2, 3]); s = [0,1,2,3,4].map(i => a * k ** i); nx = a * k ** 5; d = 'easy'; e = `Each term is multiplied by ${k}: ${s[4]} × ${k} = ${nx}.`
+     steps = [`The gaps grow quickly (${s.slice(1).map((x, i) => x - s[i]).join(', ')}), so try dividing instead: ${s.slice(1).map((x, i) => `${x} ÷ ${s[i]} = ${k}`).join(', ')}.`, `Every number is ${k} times the one before it.`, `Next: ${s[4]} × ${k} = ${nx}.`] }
+   else { const a = R(1, 10), k = R(1, 4); let v = a, g = k; s = []; for (let i = 0; i < 5; i++) { s.push(v); v += g; g += 2 } nx = v; d = 'average'; const gaps = s.slice(1).map((x, i) => x - s[i]); e = `The differences grow by 2 each time (${gaps.join(', ')}), so the next difference is ${nx - s[4]}: ${nx}.`
+     steps = [`Find the gaps between neighbors: ${gaps.join(', ')}.`, 'The gaps are not equal, but they grow by 2 each time.', `So the next gap is ${gaps[3]} + 2 = ${nx - s[4]}.`, `Next: ${s[4]} + ${nx - s[4]} = ${nx}.`] }
+   return mk('numerical', d, `What comes next?\n${s.join(', ')}, ___`, nx, near(nx, [-2, 2, s[4] - s[3], 4]), e, { steps, tip: 'Look at the gaps first. Same gap → add. Same ratio → multiply. Gaps that grow → find the pattern inside the gaps.' }) },
  () => { const w1 = R(4, 15), d1 = R(6, 30), w2 = R(2, 30); if (w1 === w2 || (w1 * d1) % w2) return null; const d2 = w1 * d1 / w2
-   return mk('numerical', 'average', `${w1} workers can finish a project in ${d1} days. How many days will ${w2} workers take at the same rate?`, d2, near(d2, [2, -2, d1 - d2, 4]).filter(x => Number.isInteger(x)), `${w1} × ${d1} = ${w1 * d1} worker-days; ${w1 * d1} ÷ ${w2} = ${d2} days.`) },
+   return mk('numerical', 'average', `${w1} workers can finish a project in ${d1} days. How many days will ${w2} workers take at the same rate?`, d2, near(d2, [2, -2, d1 - d2, 4]).filter(x => Number.isInteger(x)), `${w1} × ${d1} = ${w1 * d1} worker-days; ${w1 * d1} ÷ ${w2} = ${d2} days.`, {
+     steps: [`Measure the whole job in “worker-days” (one worker working one day): ${w1} workers × ${d1} days = ${w1 * d1} worker-days.`, `The job always needs ${w1 * d1} worker-days, no matter how many people work on it.`, `With ${w2} workers: ${w1 * d1} ÷ ${w2} = ${d2} days.`, `Sense check: ${w2 > w1 ? 'more workers → fewer days' : 'fewer workers → more days'} (${d2} ${w2 > w1 ? '<' : '>'} ${d1}). ✓`],
+     tip: 'Workers × days stays the same (inverse proportion): more workers, fewer days.' }) },
  () => { const b = pk([2,3,4,5,6,8,10,12]), dd = pk([2,3,4,5,6,8,10,12]); if (b === dd) return null; const a = R(1, b - 1), c = R(1, dd - 1), N = a * dd + c * b, D = b * dd
-   return mk('numerical', 'average', `${a}/${b} + ${c}/${dd} = ?`, frac(N, D), [frac(a + c, b + dd), frac(N + 1, D), frac(Math.abs(N - dd) || 1, D)], `Use the common denominator ${D}: ${a * dd}/${D} + ${c * b}/${D} = ${N}/${D} = ${frac(N, D)}.`) },
+   return mk('numerical', 'average', `${a}/${b} + ${c}/${dd} = ?`, frac(N, D), [frac(a + c, b + dd), frac(N + 1, D), frac(Math.abs(N - dd) || 1, D)], `Use the common denominator ${D}: ${a * dd}/${D} + ${c * b}/${D} = ${N}/${D} = ${frac(N, D)}.`, {
+     steps: [`The bottom numbers (denominators) are ${b} and ${dd}. You can only add fractions when the bottoms are the same.`, `Use ${D} (= ${b} × ${dd}) as the common bottom.`, `${a}/${b} = ${a * dd}/${D} (multiply top and bottom by ${dd}). ${c}/${dd} = ${c * b}/${D} (multiply top and bottom by ${b}).`, `Now add only the tops: ${a * dd} + ${c * b} = ${N}. The sum is ${N}/${D}.`, `Simplify (divide top and bottom by the same number) and change to a mixed number if the top is bigger: ${frac(N, D)}.`],
+     tip: 'Never add the bottoms. Make the denominators equal first, then add the numerators.' }) },
  () => { const [k, m] = pk([[3,2],[4,3],[5,3],[4,2]]), n = R(2, 8) * 2, B = n * (m - 1) / (k - m); if (!Number.isInteger(B)) return null
    return mk('numerical', 'difficult', `A mother is ${k} times as old as her son. In ${n} years she will be ${m} times as old as he will be. How old is the son now?`, B, near(B, [2, -2, n, 5]),
-     `${k}B + ${n} = ${m}(B + ${n}), so ${k - m}B = ${n * (m - 1)} and B = ${B}.`) },
- () => { if (Math.random() < 0.5) { const p = R(5, 90) * 100; return mk('numerical', 'easy', `An item costs ${peso(p)} before 12% VAT. What is the price with VAT?`, peso(p * 1.12), [p * 1.2, p * 1.1, p * 1.15].map(peso), `${peso(p)} × 1.12 = ${peso(p * 1.12)}.`) }
+     `${k}B + ${n} = ${m}(B + ${n}), so ${k - m}B = ${n * (m - 1)} and B = ${B}.`, {
+     steps: [`Let B be the son’s age now. The mother is ${k} times that: ${k}B.`, `In ${n} years BOTH get ${n} years older: son = B + ${n}, mother = ${k}B + ${n}.`, `Then she is ${m} times his age: ${k}B + ${n} = ${m}(B + ${n}) = ${m}B + ${m * n}.`, `Put the B’s on one side: ${k}B − ${m}B = ${m * n} − ${n}, so ${k - m}B = ${n * (m - 1)}.`, `B = ${n * (m - 1)} ÷ ${k - m} = ${B}.`, `Check: now ${B} and ${k * B}. In ${n} years: ${B + n} and ${k * B + n}, and ${m} × ${B + n} = ${m * (B + n)}. ✓`],
+     tip: 'Age problems: let one age be x, write the other in terms of x, and add the same years to BOTH people.' }) },
+ () => { if (Math.random() < 0.5) { const p = R(5, 90) * 100; return mk('numerical', 'easy', `An item costs ${peso(p)} before 12% VAT. What is the price with VAT?`, peso(p * 1.12), [p * 1.2, p * 1.1, p * 1.15].map(peso), `${peso(p)} × 1.12 = ${peso(p * 1.12)}.`, {
+     steps: ['VAT (value-added tax) is added on top of the price. 12% VAT means you pay 100% + 12% = 112% of the price.', `112% = 1.12, so: ${peso(p)} × 1.12 = ${peso(p * 1.12)}.`, `Another way: 12% of ${peso(p)} = ${peso(p * 0.12)}; ${peso(p)} + ${peso(p * 0.12)} = ${peso(p * 1.12)}. ✓`],
+     tip: 'Adding P% to a price = multiply by (1 + P/100). With 12% VAT, multiply by 1.12.' }) }
    const c = R(5, 60) * 100, m = pk([20,25,40,50]), s = c * (1 + m / 100)
-   return mk('numerical', 'average', `An item sold for ${peso(s)} earned a ${m}% profit on its cost. What was the cost?`, peso(c), [s * (1 - m / 100), s - m * 10, c + 100].map(peso), `Cost × ${1 + m / 100} = ${peso(s)}, so cost = ${peso(s)} ÷ ${1 + m / 100} = ${peso(c)}. Taking ${m}% off the selling price is a common trap.`) },
- () => { const a = R(2, 12), b = R(2, 30), c = a * R(2, 15) + b
-   return mk('numerical', 'easy', `Solve for x: ${a}x + ${b} = ${c}`, (c - b) / a, near((c - b) / a, [1, -1, 2, b]), `${a}x = ${c} − ${b} = ${c - b}, so x = ${(c - b) / a}.`) },
+   return mk('numerical', 'average', `An item sold for ${peso(s)} earned a ${m}% profit on its cost. What was the cost?`, peso(c), [s * (1 - m / 100), s - m * 10, c + 100].map(peso), `Cost × ${1 + m / 100} = ${peso(s)}, so cost = ${peso(s)} ÷ ${1 + m / 100} = ${peso(c)}. Taking ${m}% off the selling price is a common trap.`, {
+     steps: [`Profit percent is always based on the COST (what the seller paid).`, `Selling price = cost + ${m}% of cost = ${100 + m}% of cost = ${1 + m / 100} × cost.`, `So ${1 + m / 100} × cost = ${peso(s)}. Divide: cost = ${peso(s)} ÷ ${1 + m / 100} = ${peso(c)}.`, `Check: ${m}% of ${peso(c)} = ${peso(c * m / 100)}; ${peso(c)} + ${peso(c * m / 100)} = ${peso(s)}. ✓`, `Trap: ${m}% off ${peso(s)} gives ${peso(s * (1 - m / 100))}, which is wrong because the ${m}% is a percent of the cost, not of the selling price.`],
+     tip: 'To go back from selling price to cost, DIVIDE by (1 + profit rate). Do not subtract the rate.' }) },
+ () => { const a = R(2, 12), b = R(2, 30), c = a * R(2, 15) + b, x = (c - b) / a
+   return mk('numerical', 'easy', `Solve for x: ${a}x + ${b} = ${c}`, x, near(x, [1, -1, 2, b]), `${a}x = ${c} − ${b} = ${c - b}, so x = ${x}.`, {
+     steps: ['Goal: get x alone on one side.', `Undo the “+ ${b}” by subtracting ${b} from both sides: ${a}x = ${c} − ${b} = ${c - b}.`, `Undo the “× ${a}” by dividing both sides by ${a}: x = ${c - b} ÷ ${a} = ${x}.`, `Check: ${a} × ${x} + ${b} = ${a * x} + ${b} = ${c}. ✓`],
+     tip: 'Do the same thing to both sides. Undo + and − first, then × and ÷.' }) },
  () => { const l = R(4, 25), w = R(3, 20); if (l === w) return null; const per = Math.random() < 0.5
-   return per ? mk('numerical', 'easy', `A rectangle is ${l} m long and ${w} m wide. What is its perimeter?`, `${2 * (l + w)} m`, [`${l * w} m`, `${l + w} m`, `${2 * (l + w) + 2} m`], `P = 2(l + w) = 2(${l} + ${w}) = ${2 * (l + w)} m.`)
-     : mk('numerical', 'easy', `A room is ${l} m long and ${w} m wide. What is its floor area?`, `${l * w} m²`, [`${2 * (l + w)} m²`, `${l * w + l} m²`, `${l * w - w} m²`], `A = l × w = ${l} × ${w} = ${l * w} m².`) },
+   return per ? mk('numerical', 'easy', `A rectangle is ${l} m long and ${w} m wide. What is its perimeter?`, `${2 * (l + w)} m`, [`${l * w} m`, `${l + w} m`, `${2 * (l + w) + 2} m`], `P = 2(l + w) = 2(${l} + ${w}) = ${2 * (l + w)} m.`, {
+       steps: ['Perimeter is the distance all the way around the shape.', `A rectangle has 2 long sides and 2 short sides: ${l} + ${w} + ${l} + ${w}.`, `That is 2 × (${l} + ${w}) = 2 × ${l + w} = ${2 * (l + w)} m.`, `Trap: ${l} × ${w} = ${l * w} is the AREA (space inside), not the perimeter.`],
+       tip: 'Perimeter ADDS the sides (meters). Area MULTIPLIES length × width (square meters).' })
+     : mk('numerical', 'easy', `A room is ${l} m long and ${w} m wide. What is its floor area?`, `${l * w} m²`, [`${2 * (l + w)} m²`, `${l * w + l} m²`, `${l * w - w} m²`], `A = l × w = ${l} × ${w} = ${l * w} m².`, {
+       steps: ['Area is the space inside a flat shape, measured in square units (m²).', 'For a rectangle: area = length × width.', `${l} × ${w} = ${l * w} m².`, `Trap: 2 × (${l} + ${w}) = ${2 * (l + w)} is the PERIMETER (distance around), not the area.`],
+       tip: 'Perimeter ADDS the sides (meters). Area MULTIPLIES length × width (square meters).' }) },
  () => { const a = pk([4,6,8,9,10,12,14,15,16,18,20,24]), b = pk([6,8,9,10,12,15,16,18,20,21,24,30]); if (a === b) return null
    const g = gcd(a, b), l = a * b / g, isL = Math.random() < 0.5
-   return isL ? mk('numerical', 'average', `What is the least common multiple of ${a} and ${b}?`, l, [g, a * b, l * 2, l / 2].filter(x => Number.isInteger(x) && x !== l), `LCM = ${a} × ${b} ÷ GCF(${g}) = ${l}.`)
-     : mk('numerical', 'average', `What is the greatest common factor of ${a} and ${b}?`, g, [l, g * 2, Math.max(1, g - 1), g + 1].filter(x => x !== g), `The largest number that divides both ${a} and ${b} is ${g}.`) }
+   const facts = n => Array.from({ length: n }, (_, i) => i + 1).filter(i => n % i === 0).join(', ')
+   return isL ? mk('numerical', 'average', `What is the least common multiple of ${a} and ${b}?`, l, [g, a * b, l * 2, l / 2].filter(x => Number.isInteger(x) && x !== l), `LCM = ${a} × ${b} ÷ GCF(${g}) = ${l}.`, {
+       steps: [`The LCM (least common multiple) is the SMALLEST number that both ${a} and ${b} divide into evenly.`, `Shortcut: LCM = (${a} × ${b}) ÷ GCF. The GCF (biggest number that divides both) is ${g}.`, `${a} × ${b} = ${a * b}; ${a * b} ÷ ${g} = ${l}.`, `Check: ${l} ÷ ${a} = ${l / a} and ${l} ÷ ${b} = ${l / b}, both whole numbers. ✓`],
+       tip: 'GCF = biggest number that goes INTO both. LCM = smallest number both go INTO.' })
+     : mk('numerical', 'average', `What is the greatest common factor of ${a} and ${b}?`, g, [l, g * 2, Math.max(1, g - 1), g + 1].filter(x => x !== g), `The largest number that divides both ${a} and ${b} is ${g}.`, {
+       steps: [`The GCF (greatest common factor) is the BIGGEST number that divides both ${a} and ${b} evenly.`, `Factors of ${a}: ${facts(a)}.`, `Factors of ${b}: ${facts(b)}.`, `The biggest number found in both lists is ${g}.`],
+       tip: 'GCF = biggest number that goes INTO both. LCM = smallest number both go INTO.' }) }
 ]
 
 /* ---------- Analytical ---------- */

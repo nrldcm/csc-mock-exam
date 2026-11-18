@@ -1,0 +1,1205 @@
+{
+  "0": {
+    "steps": [
+      "BENEVOLENT means well-meaning, kind, and wanting to help others.",
+      "Example: “The benevolent neighbor gave free rice to families hit by the flood.”",
+      "‘Kind’ describes the same good-hearted attitude, so it is the closest meaning."
+    ],
+    "wrong": {
+      "Cruel": "Cruel means wanting to hurt others. That is the opposite of benevolent.",
+      "Lazy": "Lazy is about not wanting to work. It has nothing to do with kindness.",
+      "Angry": "Angry describes a bad mood or temper, not a kind and helpful attitude."
+    },
+    "tip": "‘Bene-’ means good (think ‘benefit’), so benevolent = good-willed, kind."
+  },
+  "1": {
+    "steps": [
+      "FRUGAL means careful with money; spending only what is needed.",
+      "Example: “A frugal student saves part of her allowance every day.”",
+      "The question asks for the OPPOSITE. Someone who spends carelessly is ‘wasteful’."
+    ],
+    "wrong": {
+      "Thrifty": "Thrifty means saving money. That is a synonym (same meaning), not the opposite.",
+      "Careful": "Careful is close to frugal in meaning, so it cannot be the opposite.",
+      "Modest": "Modest means simple or not boastful. It is not the opposite of saving money."
+    },
+    "tip": "For ‘opposite’ questions, first find the meaning, then look for the word that means the reverse."
+  },
+  "2": {
+    "steps": [
+      "The subject is who or what the sentence is about. Here there are two: ‘the manager’ and ‘the employees’, joined by ‘neither…nor’.",
+      "Rule: with ‘neither…nor’ (and ‘either…or’), the verb agrees with the subject NEARER to it.",
+      "The nearer subject is ‘employees’, which is plural, so we need a plural verb.",
+      "Correct sentence: “Neither the manager nor the employees were aware of the new policy.”"
+    ],
+    "wrong": {
+      "was": "‘Was’ is singular, but the nearer subject ‘employees’ is plural.",
+      "is": "‘Is’ is singular, and it is also present tense; the nearer subject ‘employees’ needs a plural verb.",
+      "has been": "‘Has’ is singular. A plural subject like ‘employees’ would need ‘have been’."
+    },
+    "tip": "Neither/either…nor/or: look at the subject closest to the verb and match it."
+  },
+  "3": {
+    "steps": [
+      "Find the subject: ‘Each’ (of the applicants). The phrase ‘of the applicants’ only describes it.",
+      "‘Each’ means every single one taken one at a time, so it is singular.",
+      "A singular subject in the present tense takes ‘is’.",
+      "Correct sentence: “Each of the applicants is required to submit a Personal Data Sheet.”"
+    ],
+    "wrong": {
+      "are": "‘Are’ is plural. The subject is ‘each’, which is singular; ‘applicants’ is not the subject.",
+      "were": "‘Were’ is plural (and past tense), but ‘each’ is singular.",
+      "have been": "‘Have’ is plural. A singular subject like ‘each’ would need ‘has been’."
+    },
+    "tip": "Each, every, either, neither, anyone, everyone = singular. Ignore the ‘of…’ phrase."
+  },
+  "4": {
+    "steps": [
+      "Make a sentence with the first pair: “Books are kept and displayed in a library.”",
+      "Use the same sentence for the second pair: “Paintings are kept and displayed in a ____.”",
+      "The place where paintings are displayed is a gallery."
+    ],
+    "wrong": {
+      "Artist": "An artist makes paintings. This is a maker relationship, not a place where they are kept.",
+      "Canvas": "Canvas is the material a painting is made on, not the place where it is displayed.",
+      "Frame": "A frame holds one painting. A library holds many books, so the matching place is a gallery."
+    },
+    "tip": "Turn the first pair into a sentence, then test each choice in that same sentence."
+  },
+  "5": {
+    "steps": [
+      "An idiom is a group of words whose meaning is different from the literal words.",
+      "Long ago, people used oil lamps at night. If you ‘burned the midnight oil’, you stayed awake late using the lamp.",
+      "Example: “Before the exam, Ana burned the midnight oil to review.” This means she studied late at night."
+    ],
+    "wrong": {
+      "Waste resources": "The idiom is not about wasting things; it is about staying up late to work or study.",
+      "Start a fire": "This is a literal reading of ‘burn’. Idioms are not taken word for word.",
+      "Lose one’s temper": "Losing your temper is about anger, which has nothing to do with working late."
+    },
+    "tip": "Midnight + oil lamp = working late at night."
+  },
+  "6": {
+    "steps": [
+      "Look at the double letters in each choice.",
+      "The correct spelling has TWO c’s and TWO m’s: ac-com-mo-date.",
+      "Only ‘Accommodate’ has both doubles."
+    ],
+    "wrong": {
+      "Acommodate": "This has only one c. It needs two: ‘acc-’.",
+      "Accomodate": "This has only one m. It needs two: ‘-comm-’.",
+      "Acomodate": "This has only one c and one m. It needs two of each."
+    },
+    "tip": "Accommodate is big enough to ‘accommodate’ two c’s and two m’s."
+  },
+  "7": {
+    "steps": [
+      "The subject is ‘She’, which is third-person singular (one person other than ‘I’ or ‘you’).",
+      "With he, she, or it, we use ‘does/doesn’t’, not ‘do/don’t’.",
+      "So part A, ‘don’t know’, is the error.",
+      "Correct sentence: “She doesn’t know the answer to the question asked earlier.”"
+    ],
+    "wrong": {
+      "B": "‘The answer’ is correct. It is the object of ‘know’ (the thing she does not know).",
+      "C": "‘To the question’ is correct. We say ‘the answer to a question’.",
+      "D": "‘Asked earlier’ is correct. It describes which question is meant."
+    },
+    "tip": "He/she/it → doesn’t. I/you/we/they → don’t."
+  },
+  "8": {
+    "steps": [
+      "The subject is ‘The committee’. It is a collective noun, meaning one word that names a group.",
+      "Clue: the sentence says ‘its report’. ‘Its’ is singular, so the committee is acting as ONE unit.",
+      "A singular subject takes ‘has’.",
+      "Correct sentence: “The committee has already submitted its report.”"
+    ],
+    "wrong": {
+      "have": "‘Have’ is plural, but the committee acts as one group, as shown by ‘its’.",
+      "are": "‘Are’ is plural, and ‘are submitted’ would also wrongly make the committee the thing being submitted.",
+      "were": "‘Were’ is plural, and ‘were submitted’ would wrongly mean the committee itself was submitted."
+    },
+    "tip": "Group acting together (team, committee, family) + ‘its’ → singular verb."
+  },
+  "9": {
+    "steps": [
+      "UBIQUITOUS means present or found everywhere.",
+      "Example: “Cellphones are ubiquitous; you see them in every jeepney, office and home.”",
+      "‘Present everywhere’ is exactly this meaning."
+    ],
+    "wrong": {
+      "Rare": "Rare means hard to find. That is the opposite of being everywhere.",
+      "Ancient": "Ancient means very old. Ubiquitous is about place, not age.",
+      "Unclear": "Unclear means hard to understand. It has no link to being found everywhere."
+    },
+    "tip": "Ubiquitous sounds like ‘you-bik-wi-tus’: you see it everywhere."
+  },
+  "10": {
+    "steps": [
+      "The main idea is the one big point the whole passage makes.",
+      "The passage says public officials and employees must be ‘accountable to the people’.",
+      "It then lists high standards: ‘responsibility, integrity, competence, and loyalty’.",
+      "The choice that covers both parts is: public servants are accountable and must serve with high standards."
+    ],
+    "wrong": {
+      "Public servants should be paid more": "Pay or salary is never mentioned in the passage.",
+      "Only elected officials are accountable": "The passage says ‘officials AND employees’, so it is not only elected officials.",
+      "Loyalty is owed to superiors only": "Loyalty is one item in a list, and the passage says officials are accountable ‘to the people’, not only to superiors."
+    },
+    "tip": "The main idea must cover the WHOLE passage and must not add facts that are not there."
+  },
+  "11": {
+    "steps": [
+      "Make a sentence with the first pair: “A doctor works in a hospital.”",
+      "Use the same sentence: “A teacher works in a ____.”",
+      "A teacher works in a school."
+    ],
+    "wrong": {
+      "Student": "A student is a person the teacher teaches, not the place where the teacher works.",
+      "Book": "A book is a tool a teacher uses, not a workplace.",
+      "Lesson": "A lesson is what a teacher gives, not where the teacher works."
+    },
+    "tip": "Worker : workplace. Keep the same relationship on both sides."
+  },
+  "12": {
+    "steps": [
+      "The verb ‘has been working’ is present perfect continuous: an action that started in the past and is still going on.",
+      "‘2019’ is a starting point in time (a specific year), not a length of time.",
+      "Use ‘since’ for a starting point; use ‘for’ for a length of time (e.g., ‘for five years’).",
+      "Correct sentence: “He has been working in this office since 2019.”"
+    ],
+    "wrong": {
+      "for": "‘For’ goes with a length of time like ‘for six years’, not a starting point like 2019.",
+      "from": "‘From’ needs an end point (‘from 2019 to 2022’) and is not used this way with ‘has been working’.",
+      "during": "‘During’ means within a period (‘during 2019’), which would not show that he is still working now."
+    },
+    "tip": "SINCE + starting point (since Monday, since 2019). FOR + length (for 3 days, for 5 years)."
+  },
+  "13": {
+    "steps": [
+      "VERBOSE means using too many words.",
+      "Example: “His verbose speech lasted an hour but said very little.”",
+      "The opposite is ‘concise’, which means saying a lot in few words."
+    ],
+    "wrong": {
+      "Wordy": "Wordy means the same as verbose, so it is a synonym, not the opposite.",
+      "Loud": "Loud is about volume, not the number of words.",
+      "Formal": "Formal is about style or politeness, not about being long or short."
+    },
+    "tip": "Verbose = verb(al) overload. Opposite: concise, brief."
+  },
+  "14": {
+    "steps": [
+      "‘Between’ is a preposition, a word that shows a relationship (like to, for, with, between).",
+      "A pronoun after a preposition must be an object pronoun: me, him, her, us, them.",
+      "So it must be ‘between you and me’.",
+      "Test: remove ‘you and’. You would say ‘between… me’, never ‘between… I’."
+    ],
+    "wrong": {
+      "Between you and I, the plan will fail.": "‘I’ is a subject pronoun. After the preposition ‘between’ we need the object pronoun ‘me’.",
+      "Between you and myself, the plan will fail.": "‘Myself’ is a reflexive pronoun; it is only used when ‘I’ already appears in the sentence (e.g., ‘I hurt myself’).",
+      "Between yourself and I, the plan will fail.": "This has two errors: ‘yourself’ should be ‘you’ and ‘I’ should be ‘me’."
+    },
+    "tip": "After a preposition (between, to, for, with): me, him, her, us, them."
+  },
+  "15": {
+    "steps": [
+      "This sentence imagines something that is not true: I am not you.",
+      "For unreal or imagined situations in the present, English uses the subjunctive ‘were’ for ALL subjects (I were, he were, she were).",
+      "The second half ‘I would accept’ confirms it is an imagined situation.",
+      "Correct sentence: “If I were you, I would accept the offer.”"
+    ],
+    "wrong": {
+      "am": "‘Am’ states a real fact. You cannot actually be another person, so this is an unreal condition.",
+      "was": "‘Was’ is common in casual speech, but formal and exam English uses ‘were’ for imagined situations.",
+      "be": "‘Be’ is the base form and does not fit after ‘If I’ here."
+    },
+    "tip": "‘If I were you…’: imagined situations always use ‘were’."
+  },
+  "16": {
+    "steps": [
+      "MITIGATE means to make something less severe, painful, or serious.",
+      "Example: “Planting trees can mitigate the effects of flooding.”",
+      "‘Lessen’ means to make smaller or weaker, so it matches."
+    ],
+    "wrong": {
+      "Worsen": "Worsen means to make worse. That is the opposite of mitigate.",
+      "Ignore": "Ignore means to pay no attention. Mitigate means to actively reduce a problem.",
+      "Repeat": "Repeat means to do again. It has no connection to making something less serious."
+    },
+    "tip": "Mitigate = make it milder."
+  },
+  "17": {
+    "steps": [
+      "TRANSPARENT means light passes through it, so you can see through it (like clear glass).",
+      "The opposite is something light cannot pass through.",
+      "‘Opaque’ means not see-through, like a wooden door or a concrete wall."
+    ],
+    "wrong": {
+      "Clear": "Clear means see-through, which is the same as transparent.",
+      "Honest": "Honest is a figurative meaning of transparent (an open process), so it is similar, not opposite.",
+      "Visible": "Visible means can be seen. It is not the opposite of see-through."
+    },
+    "tip": "Transparent = see-through. Opaque = cannot see through."
+  },
+  "18": {
+    "steps": [
+      "‘Despite’ already means ‘even though there was’. It is never followed by ‘of’.",
+      "The phrase ‘in spite of’ uses ‘of’, which is why people mix them up.",
+      "So part A, ‘Despite of’, is the error.",
+      "Correct sentence: “Despite the heavy rain, the employees reported to work.”"
+    ],
+    "wrong": {
+      "B": "‘The heavy rain,’ is correct. It names what happened, and the comma correctly ends the opening phrase.",
+      "C": "‘The employees’ is correct. It is the subject of the sentence.",
+      "D": "‘Reported to work’ is correct. It is the verb in the past tense, matching the past event."
+    },
+    "tip": "Say ‘despite’ OR ‘in spite of’, never ‘despite of’."
+  },
+  "19": {
+    "steps": [
+      "Make a sentence: “A pen is the tool a writer uses.”",
+      "Test: “A scalpel is the tool a ____ uses.”",
+      "A scalpel is a small, sharp knife used in operations, so the user is a surgeon."
+    ],
+    "wrong": {
+      "Hospital": "A hospital is a place, not the person who uses the scalpel.",
+      "Patient": "The patient is the person operated on, not the one who uses the tool.",
+      "Blade": "A blade is part of a scalpel, not the person who uses it."
+    },
+    "tip": "Tool : user. Ask, “Who uses this tool in their job?”"
+  },
+  "20": {
+    "steps": [
+      "Break the word: in- (not) + subordination (being under someone’s authority).",
+      "INSUBORDINATION means refusing to obey a superior’s lawful orders.",
+      "Example: “The clerk was charged with insubordination for refusing the director’s order.”"
+    ],
+    "wrong": {
+      "Lack of skill": "That is incompetence or inefficiency, not refusing to obey.",
+      "Frequent absence": "That is absenteeism or habitual absence, a different offense.",
+      "Dishonesty": "Dishonesty is lying or cheating. Insubordination is about disobeying orders."
+    },
+    "tip": "Insubordination = not acting as a subordinate = disobeying the boss."
+  },
+  "21": {
+    "steps": [
+      "This question asks what the passage SAYS, so look for the exact words.",
+      "The second sentence says: “It slows down services and increases the cost of transactions…”",
+      "That matches ‘Slows services and raises transaction costs’ word for word."
+    ],
+    "wrong": {
+      "Protects the public from fraud": "The passage never says red tape protects anyone; it describes red tape as a problem.",
+      "Applies only to private businesses": "The passage says it affects ‘citizens and businesses’, not only businesses.",
+      "Is required by law": "The passage calls red tape ‘excessive’ and ‘redundant’; it never says the law requires it."
+    },
+    "tip": "‘According to the passage’ means the answer is written in the text. Find the matching words."
+  },
+  "22": {
+    "steps": [
+      "Find the opening sentence. Sentence 2 starts with ‘First’ and names the person (Maria), so it comes first.",
+      "‘Next’ (sentence 4) comes after ‘First’: she filled it out.",
+      "‘Then’ (sentence 1): she submitted the form.",
+      "‘A week later’ (sentence 3): she got the interview call. Order: 2-4-1-3."
+    ],
+    "wrong": {
+      "2-1-4-3": "This has her submitting the form before filling it out, and ‘Next’ would come after ‘then’.",
+      "4-2-1-3": "Sentence 4 says ‘Next’ and uses ‘it’, so it cannot be the opening sentence.",
+      "2-4-3-1": "This puts the interview call before she submitted the form, which makes no sense."
+    },
+    "tip": "Follow the signal words: First → Next → Then → Later/Finally."
+  },
+  "23": {
+    "steps": [
+      "Sentence 2 introduces ‘raw water’ being collected, so it is the first step.",
+      "Sentence 3 uses ‘It’ and ‘then’: the water is filtered and disinfected.",
+      "Sentence 4 says ‘The treated water’, which must come after it was treated: it is stored.",
+      "Sentence 1 has ‘Finally’, so it is last: water is piped to homes. Order: 2-3-4-1."
+    ],
+    "wrong": {
+      "2-4-3-1": "This stores the ‘treated’ water before it has been treated (filtered).",
+      "3-2-4-1": "Sentence 3 starts with ‘It… then’, which refers back to something, so it cannot open the paragraph.",
+      "2-3-1-4": "Sentence 1 says ‘Finally’, so it must be the last sentence, not third."
+    },
+    "tip": "Words like ‘it’, ‘then’ and ‘the treated…’ point back. ‘Finally’ always goes last."
+  },
+  "24": {
+    "steps": [
+      "CANDID means honest and open; saying what you really think.",
+      "Example: “She gave a candid answer, even though the truth was hard to hear.”",
+      "‘Frank’ also means honest and direct, so it is the closest meaning."
+    ],
+    "wrong": {
+      "Secretive": "Secretive means hiding things. That is the opposite of candid.",
+      "Sweet": "Sweet means nice or pleasant. Candid people can be blunt, not necessarily sweet.",
+      "Careful": "Careful means cautious. A candid person speaks openly rather than carefully holding back."
+    },
+    "tip": "Candid = frank = straight to the point and honest."
+  },
+  "114": {
+    "steps": [
+      "OBFUSCATE means to make something confusing or hard to understand on purpose.",
+      "Example: “The contract used technical terms to obfuscate the hidden fees.”",
+      "‘Make unclear’ is the same meaning."
+    ],
+    "wrong": {
+      "Clarify": "Clarify means to make clear. That is the opposite of obfuscate.",
+      "Decorate": "Decorate means to make something look nice, not to make it confusing.",
+      "Delay": "Delay is about time. Obfuscate is about making meaning unclear."
+    },
+    "tip": "Obfuscate sounds like ‘obscure’, both mean making things unclear."
+  },
+  "115": {
+    "steps": [
+      "AMELIORATE means to make something better or improve it.",
+      "Example: “The new water system ameliorated living conditions in the barangay.”",
+      "The question asks for the OPPOSITE, so the answer is ‘worsen’."
+    ],
+    "wrong": {
+      "Improve": "Improve has the same meaning as ameliorate, so it is a synonym, not the opposite.",
+      "Praise": "Praise means to say good things about someone. It is not related to making things better or worse.",
+      "Measure": "Measure means to find the size or amount. It is not the opposite of improve."
+    },
+    "tip": "Ameliorate has ‘melior’, Latin for ‘better’. Its opposite is worsen."
+  },
+  "116": {
+    "steps": [
+      "The subject is ‘The number’. ‘Of applicants’ only describes which number.",
+      "‘The number’ is a single amount (one figure), so it is singular.",
+      "A singular subject takes ‘has’.",
+      "Correct sentence: “The number of applicants has increased this year.”"
+    ],
+    "wrong": {
+      "have": "‘Have’ is plural, but the subject ‘the number’ is singular.",
+      "are": "‘Are’ is plural, and ‘are increased’ is not the usual way to say a number went up.",
+      "were": "‘Were’ is plural and past tense, and does not fit ‘this year’ or the singular subject."
+    },
+    "tip": "THE number of → singular (has). A number of → plural (have)."
+  },
+  "117": {
+    "steps": [
+      "‘A number of’ means ‘several’ or ‘many’.",
+      "So the sentence really means “Several employees ___ on leave today,” and ‘employees’ is plural.",
+      "A plural subject in the present tense takes ‘are’.",
+      "Correct sentence: “A number of employees are on leave today.”"
+    ],
+    "wrong": {
+      "is": "‘Is’ is singular. ‘A number of’ means many, so the verb must be plural.",
+      "was": "‘Was’ is singular and past tense, but the sentence is about ‘today’ and many employees.",
+      "has been": "‘Has’ is singular. A plural subject would need ‘have been’."
+    },
+    "tip": "A number of = many → plural. The number of = one figure → singular."
+  },
+  "118": {
+    "steps": [
+      "Make a sentence: “A prologue is the opening introduction of a novel.”",
+      "Test: “A preamble is the opening introduction of a ____.”",
+      "The best-known preamble is the opening part of the Constitution, so the answer is ‘Constitution’."
+    ],
+    "wrong": {
+      "Law": "Some laws have a preamble, but ‘law’ is too general; the classic pair is preamble : constitution.",
+      "Speech": "A speech has an introduction, but it is not called a preamble.",
+      "Article": "An article is a section inside the Constitution. The preamble comes before the articles."
+    },
+    "tip": "Intro : the work it introduces. Prologue → novel, preamble → constitution."
+  },
+  "119": {
+    "steps": [
+      "The subject is ‘The report’, which is singular.",
+      "‘Along with the receipts’ is an extra phrase set off by commas. It does NOT make the subject plural.",
+      "A singular subject needs ‘was submitted’, not ‘were submitted’. So part B is the error.",
+      "Correct sentence: “The report, along with the receipts, was submitted to the accounting office yesterday.”"
+    ],
+    "wrong": {
+      "A": "‘Along with the receipts,’ is correct. It is an extra phrase that adds information.",
+      "C": "‘To the accounting’ is correct. ‘To’ shows where the report was sent.",
+      "D": "‘Office yesterday’ is correct. ‘Yesterday’ matches the past tense of the verb."
+    },
+    "tip": "Ignore phrases like ‘along with’, ‘as well as’, ‘together with’ when choosing the verb."
+  },
+  "120": {
+    "steps": [
+      "‘Who’ is a relative pronoun: it refers back to a noun before it.",
+      "Ask: who is always on time? Not just ‘she’, but ‘the employees’ (she is one of them).",
+      "‘Employees’ is plural, so ‘who’ is plural and takes ‘are’.",
+      "Correct sentence: “She is one of the employees who are always on time.”"
+    ],
+    "wrong": {
+      "is": "‘Is’ would make ‘who’ point to ‘she’ or ‘one’, but ‘who’ refers to the plural ‘employees’.",
+      "was": "‘Was’ is singular and past tense; ‘always on time’ describes a present habit of many employees.",
+      "has been": "‘Has been’ is singular; ‘who’ refers to the plural ‘employees’."
+    },
+    "tip": "In ‘one of the ___ who…’, the verb after ‘who’ matches the plural noun."
+  },
+  "121": {
+    "steps": [
+      "PRUDENT means careful and showing good judgment, especially when making decisions.",
+      "Example: “It is prudent to save money for emergencies.”",
+      "‘Wise’ means showing good judgment, so it is the closest meaning."
+    ],
+    "wrong": {
+      "Reckless": "Reckless means careless about danger. That is the opposite of prudent.",
+      "Proud": "Proud sounds a little like ‘prudent’ but means feeling pleased with yourself. The meanings are unrelated.",
+      "Quick": "Quick is about speed. A prudent person thinks carefully, which is often slow."
+    },
+    "tip": "Prudent = thinks before acting = wise."
+  },
+  "122": {
+    "steps": [
+      "This is an idiom: its meaning is not literal.",
+      "‘To cut corners’ means to save time, effort or money by skipping steps, so the work becomes poor.",
+      "Example: “The contractor cut corners by using cheap cement, and the wall cracked.”"
+    ],
+    "wrong": {
+      "Take a shorter route": "This is the literal picture of cutting a corner, but the idiom is about doing a job poorly.",
+      "Reduce staff": "Cutting staff is a different idea (downsizing). The idiom is about doing work cheaply or carelessly.",
+      "Follow every rule": "This is the opposite. Cutting corners means skipping rules or steps."
+    },
+    "tip": "Cutting corners = shortcuts that lower quality."
+  },
+  "123": {
+    "steps": [
+      "Read the clue: ‘even first-time applicants understood them’. The blank must mean easy to understand.",
+      "LUCID means clear and easy to understand.",
+      "Correct sentence: “The new guidelines were so lucid that even first-time applicants understood them.”"
+    ],
+    "wrong": {
+      "vague": "Vague means unclear. Unclear guidelines would NOT be easy for beginners to understand.",
+      "lengthy": "Lengthy means long. Being long does not explain why beginners understood them.",
+      "obsolete": "Obsolete means outdated. It does not explain why the guidelines were easy to understand."
+    },
+    "tip": "In ‘so ___ that…’ sentences, the ‘that’ part tells you the meaning of the blank."
+  },
+  "124": {
+    "steps": [
+      "This asks what the passage says, so find the exact words.",
+      "The passage says appointments “shall be made only according to merit and fitness.”",
+      "That matches ‘Merit and fitness’ exactly."
+    ],
+    "wrong": {
+      "Seniority and age": "Seniority and age are not mentioned anywhere in the passage.",
+      "Political endorsement": "Political backing is not mentioned; the passage says ‘only’ merit and fitness.",
+      "Educational degree alone": "The passage does not mention degrees, and ‘only according to merit and fitness’ rules this out."
+    },
+    "tip": "Pick the choice that repeats the passage’s key words, not one you assume is true."
+  },
+  "125": {
+    "steps": [
+      "‘Practicable’ means possible or able to be done.",
+      "‘As far as practicable’ means ‘whenever it is possible to do so’.",
+      "So exams are used when possible, but where an exam is not possible, a position may be filled another way.",
+      "This means some positions may be filled without a competitive exam."
+    ],
+    "wrong": {
+      "All positions require an examination": "If ALL positions required an exam, the writer would not need to add ‘as far as practicable’.",
+      "Examinations are optional for everyone": "The phrase allows exceptions only when an exam is not possible; it does not make exams optional for all.",
+      "Only practical skills are tested": "‘Practicable’ (possible) is not the same as ‘practical skills’. The phrase is not about what is tested."
+    },
+    "tip": "‘As far as practicable / possible’ = the rule applies, but with allowed exceptions."
+  },
+  "126": {
+    "steps": [
+      "‘By the time the director arrives’ points to a moment in the future.",
+      "We want an action that will be completed BEFORE that future moment.",
+      "That is the future perfect tense: will have + past participle.",
+      "Correct sentence: “By the time the director arrives, we will have finished the presentation.”"
+    ],
+    "wrong": {
+      "finish": "‘Finish’ is simple present and does not show the action will be done before the director arrives.",
+      "finished": "‘Finished’ is past tense, but the director’s arrival is in the future.",
+      "have finished": "‘Have finished’ is present perfect, which talks about now, not a point in the future."
+    },
+    "tip": "By the time + future event → will have + past participle."
+  },
+  "127": {
+    "steps": [
+      "This asks for the MISSPELLED word, so three are correct and one is wrong.",
+      "Check each: occurrence (double c, double r), embarrass (double r, double s), maintenance — all correct.",
+      "The correct spelling is ‘liaison’ (li-ai-son). ‘Liaision’ adds an extra ‘i’, so it is misspelled."
+    ],
+    "wrong": {
+      "Occurrence": "This is spelled correctly: double c, double r, and ending in ‘-ence’.",
+      "Embarrass": "This is spelled correctly: double r and double s.",
+      "Maintenance": "This is spelled correctly: ‘main-ten-ance’, not ‘maintainance’."
+    },
+    "tip": "Liaison: two i’s around the a (l-I-A-I-son), then just ‘-son’."
+  },
+  "198": {
+    "steps": [
+      "METICULOUS means paying very close attention to every detail.",
+      "Example: “The auditor was meticulous; she checked every receipt twice.”",
+      "‘Very careful’ means the same thing."
+    ],
+    "wrong": {
+      "Careless": "Careless means not paying attention. That is the opposite of meticulous.",
+      "Quick": "Quick is about speed. Meticulous work is careful and often slow.",
+      "Generous": "Generous means giving freely. It has nothing to do with attention to detail."
+    },
+    "tip": "Meticulous = checks every little detail."
+  },
+  "199": {
+    "steps": [
+      "SCARCE means in short supply; there is not enough of it.",
+      "Example: “Water is scarce during El Niño.”",
+      "The opposite is ‘abundant’, which means plentiful, more than enough."
+    ],
+    "wrong": {
+      "Rare": "Rare means hard to find. It is similar to scarce, not the opposite.",
+      "Small": "Small is about size, not about how much of something is available.",
+      "Expensive": "Scarce things are often expensive, but expensive is not the opposite of scarce."
+    },
+    "tip": "Scarce = too little. Abundant = a lot."
+  },
+  "200": {
+    "steps": [
+      "The subject is ‘Every one’. ‘Of the forms’ only describes it.",
+      "‘Every one’ means each single one, so it is singular.",
+      "A singular subject takes ‘has’.",
+      "Correct sentence: “Every one of the forms has been signed.”"
+    ],
+    "wrong": {
+      "have": "‘Have’ is plural. The subject is ‘every one’ (singular), not ‘forms’.",
+      "were": "‘Were’ is plural, and ‘were been signed’ is not correct English.",
+      "are": "‘Are’ is plural, and ‘are been signed’ is not correct English."
+    },
+    "tip": "Every one / each one / any one of … → singular verb."
+  },
+  "201": {
+    "steps": [
+      "Some verbs like suggest, recommend, insist and demand are followed by ‘that’ + the base form of the verb. This is called the subjunctive.",
+      "The base form is the simplest form of the verb, with no -s: submit, go, be.",
+      "So ‘she submits’ is wrong; it should be ‘she submit’. Part A is the error.",
+      "Correct sentence: “He suggested that she submit the documents before Friday.”"
+    ],
+    "wrong": {
+      "B": "‘The documents’ is correct. It is the object, the thing being submitted.",
+      "C": "‘Before’ is correct. It shows the deadline.",
+      "D": "‘Friday’ is correct. Days of the week are capitalized and need no article here."
+    },
+    "tip": "Suggest / recommend / insist that + base verb (no -s): ‘that she submit’."
+  },
+  "202": {
+    "steps": [
+      "Make a sentence: “A famine is a serious lack of food.”",
+      "Test: “A drought is a serious lack of ____.”",
+      "A drought is a long period without enough rain, so it is a lack of water."
+    ],
+    "wrong": {
+      "Farm": "Farms are affected by drought, but a drought is not a lack of farms.",
+      "Heat": "Droughts can come with heat, but a drought is not a lack of heat.",
+      "Desert": "A desert is a dry place, not the thing that is missing during a drought."
+    },
+    "tip": "Shortage : what is missing. Famine → food, drought → water."
+  },
+  "203": {
+    "steps": [
+      "An idiom’s meaning is not the same as its literal words.",
+      "‘In disguise’ means hidden or looking like something else. So a blessing in disguise is a good thing that first looked like a bad thing.",
+      "Example: “Failing the first exam was a blessing in disguise; I studied harder and passed with a high score.”"
+    ],
+    "wrong": {
+      "A hidden enemy": "A blessing is something good, not an enemy.",
+      "A secret gift": "The idiom is not about a secret present; it is about a bad event that turns out good.",
+      "A false promise": "A false promise is something that disappoints. The idiom describes something that turns out well."
+    },
+    "tip": "Blessing in disguise = bad luck that turns out to be good luck."
+  },
+  "204": {
+    "steps": [
+      "Count the people: ‘The two employees’, so exactly two.",
+      "Use ‘between’ for two people or things; use ‘among’ for three or more.",
+      "Correct sentence: “The two employees divided the work between themselves.”"
+    ],
+    "wrong": {
+      "among": "‘Among’ is for three or more. Here there are only two employees.",
+      "with": "‘Divided the work with themselves’ does not make sense; you divide something between people.",
+      "for": "‘For themselves’ means for their own benefit; it does not show the work was split between the two."
+    },
+    "tip": "Between = 2. Among = 3 or more."
+  },
+  "205": {
+    "steps": [
+      "Read the clue: the policy ‘was replaced with a new one’. So the blank must give a reason for replacing it.",
+      "OBSOLETE means outdated, no longer useful.",
+      "Correct sentence: “Because the policy was obsolete, it was replaced with a new one.”"
+    ],
+    "wrong": {
+      "popular": "A popular policy is liked. That is not a reason to replace it.",
+      "recent": "A recent policy is new. It makes no sense to replace it just because it is new.",
+      "effective": "An effective policy works well. That is a reason to keep it, not replace it."
+    },
+    "tip": "‘Because…’ sentences: the blank must logically cause the result."
+  },
+  "206": {
+    "steps": [
+      "Look for what the passage says segregation does.",
+      "The second sentence says: “It reduces the volume sent to disposal facilities and makes recycling easier.”",
+      "That is ‘less waste for disposal and easier recycling’."
+    ],
+    "wrong": {
+      "Lower garbage fees": "Fees or costs are never mentioned in the passage.",
+      "More jobs in waste collection": "Jobs are not mentioned in the passage.",
+      "Cleaner rivers": "Rivers are not mentioned. This may be true in real life but it is not in the passage."
+    },
+    "tip": "Answer only from what the passage states, even if another choice sounds true in real life."
+  },
+  "207": {
+    "steps": [
+      "DILIGENT means working hard and carefully, with steady effort.",
+      "Example: “The diligent student reviewed every night for the CSE.”",
+      "‘Hardworking’ is the closest meaning."
+    ],
+    "wrong": {
+      "Lazy": "Lazy means not wanting to work. That is the opposite of diligent.",
+      "Clever": "Clever means smart. A person can be clever without working hard.",
+      "Polite": "Polite means having good manners. It is not about effort in work."
+    },
+    "tip": "Diligent = hardworking and steady."
+  },
+  "228": {
+    "steps": [
+      "TERSE means using very few words; brief and to the point (sometimes a bit cold).",
+      "In the sentence, the manager gave a short reply to the complaint.",
+      "‘Brief’ is the closest meaning."
+    ],
+    "wrong": {
+      "Rude": "A terse reply can feel unfriendly, but terse mainly means short, not rude.",
+      "Detailed": "Detailed means long and complete. That is the opposite of terse.",
+      "Late": "Late is about time. Terse is about how short the reply is."
+    },
+    "tip": "Terse = few words."
+  },
+  "229": {
+    "steps": [
+      "The blank comes after ‘will’, so it needs a verb (an action word).",
+      "‘Affect’ is a verb meaning to influence or change something.",
+      "‘Effect’ is usually a noun meaning a result (‘the effect of the rule’).",
+      "Correct sentence: “The new rule will affect all employees.”"
+    ],
+    "wrong": {
+      "effect": "‘Effect’ is usually a noun (a result). As a verb it means ‘to bring about’, which does not fit here.",
+      "afect": "This is a misspelling. The correct spelling is ‘affect’, with double f.",
+      "effects": "‘Effects’ is a plural noun (or ‘-s’ verb form). After ‘will’ we need the base verb ‘affect’."
+    },
+    "tip": "Affect = Action (verb). Effect = End result (noun)."
+  },
+  "230": {
+    "steps": [
+      "‘To’ is a preposition, a word that shows a relationship like direction.",
+      "After a preposition, use an object pronoun: me, him, her, us, them.",
+      "Test: remove ‘the director and’. You would say ‘submit the report to me’, not ‘to I’.",
+      "Correct sentence: “Please submit the report to the director and me.”"
+    ],
+    "wrong": {
+      "I": "‘I’ is a subject pronoun. After the preposition ‘to’ we need ‘me’.",
+      "myself": "‘Myself’ is only used when ‘I’ is already the subject (‘I did it myself’). There is no ‘I’ in this sentence.",
+      "mine": "‘Mine’ shows ownership (‘the pen is mine’). You cannot submit a report ‘to mine’."
+    },
+    "tip": "Cover the other person: “to … me” sounds right, so keep “me”."
+  },
+  "231": {
+    "steps": [
+      "Turn the question into a statement: “You did call ___ for the interview.”",
+      "The blank receives the action of ‘call’, so it is the object.",
+      "Answer it with a pronoun: “You called HIM.” ‘Him’ is an object pronoun, so use ‘whom’.",
+      "Correct sentence: “Whom did you call for the interview?”"
+    ],
+    "wrong": {
+      "Who": "‘Who’ is for the subject (the one doing the action). Here the person is the one being called, so ‘whom’ is correct in formal English.",
+      "Whose": "‘Whose’ shows ownership (‘Whose folder is this?’). It does not fit before ‘did you call’.",
+      "Whoever": "‘Whoever’ is not used to start a direct question like this."
+    },
+    "tip": "If the answer is ‘him’, use whom. If the answer is ‘he’, use who. (him/whom both end in m)"
+  },
+  "232": {
+    "steps": [
+      "‘Lie’ means to rest or be in a flat position; it does NOT take an object.",
+      "‘Lay’ means to put something down; it NEEDS an object (‘lay the folders on the desk’).",
+      "The folders are just resting there; nobody is putting anything. So we need ‘lie’, whose -ing form is ‘lying’.",
+      "Correct sentence: “The folders have been lying on the desk since Monday.”"
+    ],
+    "wrong": {
+      "laying": "‘Laying’ comes from ‘lay’ (to put something down) and needs an object. The folders are not putting anything down.",
+      "laid": "‘Laid’ is the past form of ‘lay’. ‘Have been laid’ would mean someone put them there, and would not match ‘have been ___ing’.",
+      "lain": "‘Lain’ is the past participle of ‘lie’ (‘have lain’). After ‘have been’ we need the -ing form ‘lying’."
+    },
+    "tip": "Lie = rest (no object). Lay = put (needs an object)."
+  },
+  "233": {
+    "steps": [
+      "Choose ‘a’ or ‘an’ by the SOUND of the next word, not its first letter.",
+      "In ‘honest’ the h is silent, so it sounds like ‘on-est’, a vowel sound.",
+      "Use ‘an’ before a vowel sound.",
+      "Correct sentence: “She is an honest employee.”"
+    ],
+    "wrong": {
+      "a": "‘A’ is used before a consonant sound. ‘Honest’ starts with a vowel sound because the h is silent.",
+      "the": "‘The’ points to a specific, already known employee. The sentence is describing her as one honest employee in general.",
+      "no article needed": "A singular countable noun like ‘employee’ needs an article. ‘She is honest employee’ is incorrect."
+    },
+    "tip": "an hour, an honest man, a house, a university: listen to the sound."
+  },
+  "234": {
+    "steps": [
+      "The subject is ‘Neither’. ‘Of the reports’ only describes it.",
+      "‘Neither’ used alone means ‘not one and not the other’. It is treated as singular.",
+      "A singular subject takes ‘is’.",
+      "Correct sentence: “Neither of the reports is complete.”"
+    ],
+    "wrong": {
+      "are": "‘Are’ is plural, but ‘neither’ is singular. ‘Reports’ is not the subject.",
+      "were": "‘Were’ is plural, and it changes the tense to past.",
+      "have been": "‘Have’ is plural. A singular subject would need ‘has been’."
+    },
+    "tip": "Neither of / either of / each of + plural noun → singular verb."
+  },
+  "235": {
+    "steps": [
+      "Two people are compared: Ramon and his brother. Comparing two uses the comparative form.",
+      "For short words like ‘tall’, the comparative adds -er: taller.",
+      "Never use ‘more’ and ‘-er’ together.",
+      "Correct sentence: “Ramon is taller than his brother.”"
+    ],
+    "wrong": {
+      "more taller": "This is a double comparative. ‘Taller’ already means ‘more tall’, so ‘more’ is extra.",
+      "tallest": "‘Tallest’ is the superlative, used for three or more. Here only two people are compared, and ‘than’ needs a comparative.",
+      "most tall": "‘Most’ is for superlatives (three or more), and short words like ‘tall’ use -est, not ‘most’."
+    },
+    "tip": "Two things + ‘than’ → -er (or ‘more’ for long words), never both."
+  },
+  "236": {
+    "steps": [
+      "Count the items: ‘Of the three proposals’, so three are compared.",
+      "When comparing three or more, use the superlative form.",
+      "The superlative of ‘good’ is ‘best’ (good → better → best).",
+      "Correct sentence: “Of the three proposals, this one is the best.”"
+    ],
+    "wrong": {
+      "better": "‘Better’ is comparative, used for only two things. There are three proposals.",
+      "good": "‘Good’ alone does not compare. ‘The good’ also sounds wrong after ‘of the three’.",
+      "more good": "This is not standard English. ‘Good’ has special forms: better and best."
+    },
+    "tip": "Good → better (2) → best (3 or more)."
+  },
+  "237": {
+    "steps": [
+      "This sentence talks about the PAST and something that did not happen: I did not know, so I did not attend.",
+      "This is a past unreal condition (third conditional).",
+      "Pattern: If + had + past participle, … would have + past participle.",
+      "Correct sentence: “I would have attended the meeting if I had known about it.”"
+    ],
+    "wrong": {
+      "knew": "‘If I knew’ is for imagined situations in the present, not the past.",
+      "know": "‘If I know’ is for real, possible situations, not for something that did not happen in the past.",
+      "would know": "‘Would’ is not used in the if-part of a conditional sentence."
+    },
+    "tip": "Would have … if … had: both halves use ‘have/had’ for the unreal past."
+  },
+  "238": {
+    "steps": [
+      "A lobby is an enclosed space, a room with walls.",
+      "Use ‘in’ for being inside an enclosed space (in a room, in the lobby, in the car).",
+      "Correct sentence: “The applicants were told to wait in the lobby.”"
+    ],
+    "wrong": {
+      "at": "‘At’ is for a point or general location (‘at the door’, ‘at the office’). Since the people are inside the lobby, ‘in’ fits better.",
+      "on": "‘On’ is for surfaces (‘on the desk’, ‘on the floor’), not inside a room.",
+      "into": "‘Into’ shows movement toward the inside (‘walk into the lobby’). Waiting is not movement."
+    },
+    "tip": "IN = inside a space. ON = on a surface. AT = at a point. INTO = moving inside."
+  },
+  "239": {
+    "steps": [
+      "The subject is ‘Each’, which is singular. ‘Of the clerks’ only describes it.",
+      "A singular subject takes ‘has’, not ‘have’. So part B, ‘have their own’, is the error.",
+      "Formal English also uses ‘his or her own’ to match the singular ‘each’.",
+      "Correct sentence: “Each of the clerks has his or her own assigned workstation.”"
+    ],
+    "wrong": {
+      "A": "‘Each of the clerks’ is correct. It is the subject phrase.",
+      "C": "‘Assigned’ is correct. It describes the workstation.",
+      "D": "‘Workstation’ is correct. It is singular because each clerk has one."
+    },
+    "tip": "Each = one at a time → has, not have."
+  },
+  "240": {
+    "steps": [
+      "The subject is ‘The director’, which is singular.",
+      "‘As well as her assistants’ is an extra phrase between commas. It does not change the subject.",
+      "A singular subject needs ‘is attending’, not ‘are attending’. So part B is the error.",
+      "Correct sentence: “The director, as well as her assistants, is attending the conference in Cebu.”"
+    ],
+    "wrong": {
+      "A": "‘As well as her assistants,’ is correct. It is an extra phrase set off by commas.",
+      "C": "‘The conference’ is correct. It tells what she is attending.",
+      "D": "‘In Cebu’ is correct. ‘In’ is used for cities."
+    },
+    "tip": "‘As well as’, ‘along with’, ‘together with’ do not make the subject plural."
+  },
+  "241": {
+    "steps": [
+      "Check the c’s and the s’s.",
+      "The correct spelling has ONE c and TWO s’s: ne-ces-sa-ry.",
+      "Only ‘Necessary’ has this pattern."
+    ],
+    "wrong": {
+      "Neccessary": "This has two c’s. It needs only one c.",
+      "Necesary": "This has only one s. It needs two s’s.",
+      "Neccesary": "This has two c’s and one s, which is the reverse of the correct pattern."
+    },
+    "tip": "Necessary: one Collar, two Sleeves (1 c, 2 s)."
+  },
+  "242": {
+    "steps": [
+      "Start from ‘question’ and add ‘-naire’.",
+      "The correct spelling has a double n: question + n + aire = questionnaire.",
+      "Only ‘Questionnaire’ has the double n, ‘-aire’ ending, and the ‘s’ in ‘ques’."
+    ],
+    "wrong": {
+      "Questionaire": "This has only one n. It needs two: ‘questio-nn-aire’.",
+      "Questionnare": "This is missing the ‘i’ in the ending. It should be ‘-naire’.",
+      "Quetionnaire": "This is missing the ‘s’ from ‘question’."
+    },
+    "tip": "Questionnaire = question + naire (double n)."
+  },
+  "243": {
+    "steps": [
+      "Look for the letters after ‘priv’ and before the ending.",
+      "The correct spelling is p-r-i-v-i-l-e-g-e: ‘i’ after the v, ‘e’ after the l, and no d.",
+      "Only ‘Privilege’ follows this."
+    ],
+    "wrong": {
+      "Priviledge": "This has an extra d. Privilege does not end in ‘-ledge’.",
+      "Privelege": "This has an e after the v. It should be an i: ‘privi-’.",
+      "Privilage": "This has an a after the l. It should be an e: ‘-lege’."
+    },
+    "tip": "Privilege has no ‘ledge’ in it: privi + lege."
+  },
+  "244": {
+    "steps": [
+      "ADAMANT means refusing to change your mind; very firm.",
+      "In the sentence, the supervisor would not move or extend the deadline.",
+      "‘Firm and unyielding’ (not giving in) is the same meaning."
+    ],
+    "wrong": {
+      "Unsure": "Unsure means not certain. An adamant person is very certain.",
+      "Angry": "An adamant person may be calm; adamant is about being firm, not about anger.",
+      "Careless": "Careless means not paying attention. Being firm about a deadline shows the opposite."
+    },
+    "tip": "Adamant sounds like ‘diamond’, hard and unbreakable."
+  },
+  "245": {
+    "steps": [
+      "CONCEDE means to admit that something is true, or to give in.",
+      "Example: “After the count, the candidate conceded defeat.”",
+      "The question asks for the OPPOSITE. Refusing to admit something is to ‘deny’ it."
+    ],
+    "wrong": {
+      "Admit": "Admit has the same meaning as concede, so it is a synonym.",
+      "Yield": "Yield means to give in, which is also a meaning of concede.",
+      "Accept": "Accept is close to concede (accepting a loss), not the opposite."
+    },
+    "tip": "Concede = admit/give in. Opposite = deny/resist."
+  },
+  "246": {
+    "steps": [
+      "PERUSE means to read something carefully and thoroughly.",
+      "Example: “Peruse the contract before you sign it.”",
+      "‘Read carefully’ is the same meaning."
+    ],
+    "wrong": {
+      "Ignore": "Ignore means to pay no attention. Perusing means paying close attention.",
+      "Pursue": "Pursue (to chase or follow) only looks similar in spelling. It has a different meaning.",
+      "Publish": "Publish means to print and release a text, not to read it."
+    },
+    "tip": "Peruse = pore over a document (study it closely)."
+  },
+  "247": {
+    "steps": [
+      "INEVITABLE means certain to happen; it cannot be stopped or avoided.",
+      "Example: “With heavy rain all week, flooding in the low areas was inevitable.”",
+      "‘Unavoidable’ means the same thing."
+    ],
+    "wrong": {
+      "Unlikely": "Unlikely means probably will not happen. Inevitable means it surely will.",
+      "Invisible": "Invisible means cannot be seen. It only starts with the same ‘in-’.",
+      "Uncertain": "Uncertain means not sure. Inevitable means completely sure to happen."
+    },
+    "tip": "Inevitable = can’t be avoided."
+  },
+  "248": {
+    "steps": [
+      "EXONERATE means to officially clear someone of blame or guilt.",
+      "Example: “New evidence exonerated the employee, so the charges were dropped.”",
+      "The opposite is to blame or charge someone, which is ‘accuse’."
+    ],
+    "wrong": {
+      "Free": "To exonerate frees someone from blame, so ‘free’ is similar, not opposite.",
+      "Forgive": "Forgive is close in feeling (letting go of blame), not the opposite.",
+      "Release": "Release is similar to free, which is close to exonerate, not opposite."
+    },
+    "tip": "Exonerate = ex (out of) + onus (burden): taking the blame off. Opposite: accuse."
+  },
+  "249": {
+    "steps": [
+      "PROFICIENT means good at something because of skill and practice.",
+      "Example: “She is proficient in Excel and can make reports quickly.”",
+      "‘Skilled’ is the closest meaning."
+    ],
+    "wrong": {
+      "Proud": "Proud only starts with ‘pro-’ like proficient. It means pleased with yourself, not skilled.",
+      "Productive": "Productive means producing a lot. You can be productive without being highly skilled.",
+      "Professional": "Professional refers to a job or behavior suitable for work. It does not exactly mean skilled."
+    },
+    "tip": "Do not be fooled by words that only look alike (pro-). Focus on meaning."
+  },
+  "250": {
+    "steps": [
+      "An idiom is a phrase whose meaning is not literal.",
+      "Hitting a nail exactly on its head drives it in perfectly. So the idiom means to say something exactly right, especially about the cause of a problem.",
+      "Example: “When she said poor planning caused the delay, she hit the nail on the head.”"
+    ],
+    "wrong": {
+      "Hurt oneself": "This is a literal picture of hammering badly, not the idiom’s meaning.",
+      "Work as a carpenter": "This takes the hammer-and-nail image literally. The idiom is about being exactly right.",
+      "Make a mistake": "This is the opposite. Hitting the nail on the head means being exactly correct."
+    },
+    "tip": "Hit the nail on the head = exactly right."
+  },
+  "251": {
+    "steps": [
+      "This idiom is not about real beans.",
+      "‘To spill the beans’ means to tell a secret, often by accident or too early.",
+      "Example: “Someone spilled the beans about the surprise party for our boss.”"
+    ],
+    "wrong": {
+      "Waste food": "This is the literal picture of spilling beans, not the idiom’s meaning.",
+      "Make a mess": "Spilling can make a mess literally, but the idiom means revealing a secret.",
+      "Start a quarrel": "Starting a fight is a different idea. The idiom is about letting out secret information."
+    },
+    "tip": "Spill the beans = let the secret out."
+  },
+  "252": {
+    "steps": [
+      "A ‘blue moon’ is an extra full moon that happens only about once every two to three years.",
+      "So ‘once in a blue moon’ means very rarely.",
+      "Example: “My cousin from abroad visits only once in a blue moon.”"
+    ],
+    "wrong": {
+      "Every month": "A full moon happens every month, but a ‘blue moon’ is rare. The idiom means rarely, not monthly.",
+      "At night": "The idiom is about how often, not about what time of day.",
+      "Never": "Rarely still means it happens sometimes. ‘Never’ means not at all."
+    },
+    "tip": "Once in a blue moon = rarely, but not never."
+  },
+  "253": {
+    "steps": [
+      "Long ago, soldiers bit on a bullet to bear pain during surgery without medicine.",
+      "So ‘to bite the bullet’ means to face something unpleasant or difficult with courage.",
+      "Example: “He bit the bullet and told his boss about the mistake.”"
+    ],
+    "wrong": {
+      "Get hurt": "The idiom is not about getting injured; it is about bravely accepting something hard.",
+      "Eat quickly": "This is a literal reading of ‘bite’. The idiom is not about eating.",
+      "Avoid responsibility": "This is the opposite. Biting the bullet means facing the problem, not running from it."
+    },
+    "tip": "Bite the bullet = just face it bravely."
+  },
+  "254": {
+    "steps": [
+      "A wet blanket is used to put out a fire.",
+      "So a person who is ‘a wet blanket’ ‘puts out’ the fun or excitement of others.",
+      "Example: “Don’t be a wet blanket; join us at the party!”"
+    ],
+    "wrong": {
+      "Is always crying": "‘Wet’ here does not mean tears. The idiom is about ruining others’ fun.",
+      "Works very hard": "Hard work is not part of the meaning. A wet blanket kills the mood.",
+      "Is easily fooled": "A person easily fooled is ‘gullible’ or ‘naive’, which is a different idea."
+    },
+    "tip": "Wet blanket puts out the fire = kills the fun."
+  },
+  "255": {
+    "steps": [
+      "Hunters once beat bushes to scare out animals instead of going straight for them.",
+      "So ‘to beat around the bush’ means to avoid saying something directly.",
+      "Example: “Stop beating around the bush and tell me if I passed.”"
+    ],
+    "wrong": {
+      "Work in a garden": "This is the literal picture of bushes, not the idiom’s meaning.",
+      "Win a contest": "‘Beat’ here does not mean defeat someone. It is about avoiding the main point.",
+      "Search carefully": "Searching carefully is about looking for something. The idiom is about not speaking directly."
+    },
+    "tip": "Beat around the bush = not getting to the point."
+  },
+  "256": {
+    "steps": [
+      "Make a sentence: “Hot is the opposite of cold.”",
+      "Test: “Ascend is the opposite of ____.”",
+      "Ascend means to go up, so the opposite is ‘descend’, to go down."
+    ],
+    "wrong": {
+      "Climb": "Climb means to go up, which is similar to ascend, not the opposite.",
+      "Rise": "Rise also means to go up. It is a synonym of ascend.",
+      "Mountain": "A mountain is a thing you might ascend, not the opposite of ascend."
+    },
+    "tip": "Check if the first pair are opposites, synonyms, or something else, then match it."
+  },
+  "257": {
+    "steps": [
+      "Make a sentence: “An author creates a novel.”",
+      "Test: “A composer creates a ____.”",
+      "A composer writes music, so the answer is ‘Song’."
+    ],
+    "wrong": {
+      "Piano": "A piano is an instrument a composer may use, not the work the composer creates.",
+      "Orchestra": "An orchestra performs music. It is a group of musicians, not the creation.",
+      "Singer": "A singer performs songs. The composer creates them."
+    },
+    "tip": "Creator : creation. Author → novel, composer → song."
+  },
+  "258": {
+    "steps": [
+      "Make a sentence: “Minutes make up an hour” (60 minutes = 1 hour).",
+      "Test: “Months make up a ____.”",
+      "12 months make up a year."
+    ],
+    "wrong": {
+      "Week": "A week is smaller than a month, so months do not make up a week.",
+      "Day": "A day is smaller than a month, so the order is reversed.",
+      "Calendar": "A calendar is a chart that shows time, not a unit of time."
+    },
+    "tip": "Small unit : the bigger unit it builds. Keep the same direction."
+  },
+  "259": {
+    "steps": [
+      "Make a sentence: “A carpenter uses a saw as a tool.”",
+      "Test: “A tailor uses a ____ as a tool.”",
+      "A tailor sews clothes with a needle."
+    ],
+    "wrong": {
+      "Cloth": "Cloth is the material a tailor works on, not the tool. (A carpenter’s material would be wood.)",
+      "Shirt": "A shirt is the product a tailor makes, not the tool.",
+      "Shop": "A shop is the workplace, not the tool."
+    },
+    "tip": "Worker : tool. Do not confuse tool with material, product or place."
+  },
+  "260": {
+    "steps": [
+      "Make a sentence: “Bricks are put together to build a wall.”",
+      "Test: “Letters are put together to build a ____.”",
+      "Letters are combined to form a word."
+    ],
+    "wrong": {
+      "Pen": "A pen is a tool for writing letters. It is not made of letters.",
+      "Mail": "‘Letter’ here means a letter of the alphabet, not a mailed letter. This choice uses the wrong meaning.",
+      "Alphabet": "The alphabet is the full list of letters, not something you build by putting letters together like bricks."
+    },
+    "tip": "Part : whole that is built from it. Watch out for words with two meanings."
+  },
+  "261": {
+    "steps": [
+      "Sentence 2 introduces the topic (the agency launched an online appointment system), so it opens.",
+      "Sentence 3 explains how it works: applicants choose a time slot.",
+      "Sentence 1 starts with ‘As a result’, so it must come after the cause: the queue got shorter.",
+      "Sentence 4 talks about ‘next year’, the future plan, so it comes last. Order: 2-3-1-4."
+    ],
+    "wrong": {
+      "2-1-3-4": "This gives the result before explaining how the system works. The explanation (3) should come before the result.",
+      "3-2-1-4": "Sentence 3 says ‘now’ about a system that has not been introduced yet, so it cannot open the paragraph.",
+      "2-3-4-1": "This puts the result (1) after the future plan, separating ‘As a result’ from its cause."
+    },
+    "tip": "Action → explanation → result (‘As a result’) → future plan."
+  },
+  "262": {
+    "steps": [
+      "Sentence 2 introduces the topic: the town planned a new bridge. It opens the paragraph.",
+      "Sentence 4 tells when work started: January.",
+      "Sentence 1 begins with ‘However’, which shows a problem against the plan: rain delays.",
+      "Sentence 3 says ‘finally’ opened in September, so it is last. Order: 2-4-1-3."
+    ],
+    "wrong": {
+      "4-2-1-3": "This puts the start of construction before the bridge is introduced, so we would not know what was being built.",
+      "2-1-4-3": "This says the work was delayed before construction even began.",
+      "4-1-2-3": "This starts with construction and the delay before introducing the bridge and the plan."
+    },
+    "tip": "Plan → start → ‘However’ (problem) → ‘finally’ (ending)."
+  },
+  "263": {
+    "steps": [
+      "A good opening sentence must make sense alone; it cannot point back to something before it.",
+      "Look for words that refer back: ‘For this reason’ (A), ‘These files’ (C), ‘then’ (D).",
+      "Sentence B states a general problem with no back-reference: paper records take space and get damaged.",
+      "So B is the best opening sentence."
+    ],
+    "wrong": {
+      "A": "‘For this reason’ refers to a reason given earlier, so A must come after another sentence.",
+      "C": "‘These files’ refers to files already mentioned, so C cannot be first.",
+      "D": "‘Then’ shows a step after something else happened, so D cannot be first."
+    },
+    "tip": "Words like this, these, then, however, as a result usually cannot start a paragraph."
+  },
+  "264": {
+    "steps": [
+      "This is a NOT question: find the item the passage does NOT list.",
+      "The passage lists: procedure, person responsible, maximum time, fees, and documents needed.",
+      "Salary of the employee is not in that list."
+    ],
+    "wrong": {
+      "The fees to be paid": "Fees are mentioned: “…the fees, and the documents needed.”",
+      "The maximum time for each step": "Time is mentioned: “…the maximum time it takes…”",
+      "The documents needed": "Documents are mentioned: “…and the documents needed.”"
+    },
+    "tip": "For NOT questions, cross out each choice you can find in the passage."
+  },
+  "265": {
+    "steps": [
+      "This asks where the Charter must be posted, so look for a place.",
+      "The last sentence says: “Offices must post it in a visible place and on their website.”",
+      "That matches ‘In a visible place and on the office website’."
+    ],
+    "wrong": {
+      "Only in the head office": "The passage does not mention a head office, and it says the website too, not ‘only’ one place.",
+      "Only in newspapers": "Newspapers are not mentioned in the passage.",
+      "In the mayor’s office": "The mayor’s office is not mentioned. Every office must post its own Charter."
+    },
+    "tip": "Be careful with ‘only’ in choices; it often makes them wrong."
+  },
+  "266": {
+    "steps": [
+      "Use context clues: the passage is about ‘the variety of life on Earth’ (biodiversity).",
+      "‘Mega-’ means very large or many; ‘diverse’ means varied.",
+      "So a megadiverse country has a very large variety of living things."
+    ],
+    "wrong": {
+      "Having very large animals": "‘Mega’ here describes the amount of variety, not the size of animals.",
+      "Having many islands": "The Philippines has many islands, but the passage is about variety of life, not geography.",
+      "Having polluted habitats": "Pollution is mentioned as a threat, not as the meaning of megadiverse."
+    },
+    "tip": "Break the word into parts (mega + diverse) and check it against the passage’s topic."
+  },
+  "267": {
+    "steps": [
+      "This is a NOT question: find the threat the passage does not name.",
+      "The passage lists the threats: “habitat loss, pollution and over-harvesting.”",
+      "Typhoons are not in that list."
+    ],
+    "wrong": {
+      "Habitat loss": "Habitat loss is named in the passage as a threat.",
+      "Pollution": "Pollution is named in the passage as a threat.",
+      "Over-harvesting": "Over-harvesting is named in the passage as a threat."
+    },
+    "tip": "For NOT questions, the answer is the one thing missing from the passage’s list."
+  },
+  "268": {
+    "steps": [
+      "Sentence 1 states a claim: raising the minimum wage causes job losses.",
+      "Sentence 2 starts with ‘Yet’, a signal word for contrast, and gives evidence against the claim: little or no job loss from moderate increases.",
+      "So the author’s purpose is to question (challenge) that claim."
+    ],
+    "wrong": {
+      "Argue that every wage increase is harmful": "The author gives evidence that moderate increases did NOT hurt jobs, which is the opposite.",
+      "Explain how wages are computed": "The passage does not explain any computation of wages.",
+      "Describe how to apply for a job": "Job applications are not discussed at all."
+    },
+    "tip": "‘Some say… Yet…’ means the author is challenging what ‘some say’."
+  }
+}

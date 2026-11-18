@@ -4,6 +4,13 @@
    The position in the array is the item's stable id (used to store sessions compactly),
    so add new items at the END only. */
 import { EXTRA } from './bank2.js'
+// Items written to the official CSC scope (each carries its topic t, full explanation x, and sources src)
+import { ITEMS as V3 } from './bank3/verbal.js'
+import { ITEMS as F3 } from './bank3/filipino.js'
+import { ITEMS as N3 } from './bank3/numerical.js'
+import { ITEMS as A3 } from './bank3/analytical.js'
+import { ITEMS as G3 } from './bank3/general.js'
+import { ITEMS as C3 } from './bank3/clerical.js'
 
 export const CATS = {
   verbal: 'Verbal ability (English)', filipino: 'Verbal ability (Filipino)',
@@ -46,7 +53,7 @@ export const BANK = [
  {c:"filipino",q:"Tumakbo siya ____ mabilis papunta sa opisina.",o:["ng","nang","nag","naang"],a:1,e:"Ginagamit ang “nang” bilang pang-abay na nagsasaad ng paraan ng kilos."},
  {c:"filipino",q:"Ang taong “balat-sibuyas” ay:",o:["Madaling masaktan o maramdamin","Mayaman","Maputi ang balat","Mahilig magluto"],a:0,e:"Idyoma ito para sa taong sensitibo o madaling masaktan."},
  {c:"filipino",q:"Ano ang kasingkahulugan ng MATIWASAY?",o:["Magulo","Payapa","Maingay","Malungkot"],a:1,e:"Ang matiwasay ay tahimik at payapa."},
- {c:"filipino",q:"Aalis ____ siya bukas ng umaga.",o:["raw","daw","rin","din"],a:1,e:"Ginagamit ang “daw” kapag nagtatapos sa katinig ang sinusundang salita (aalis)."},
+ {c:"filipino",q:"Piliin ang wastong salita (ang ibig sabihin ay “reportedly”):\nAalis ____ siya bukas ng umaga.",o:["raw","daw","rin","din"],a:1,e:"Ginagamit ang “daw” kapag nagtatapos sa katinig ang sinusundang salita (aalis)."},
  {c:"filipino",q:"Sino ang tinutukoy na “ilaw ng tahanan”?",o:["Ama","Ina","Anak","Lolo"],a:1,e:"Ang ina ang tinatawag na ilaw ng tahanan; ang ama ang haligi."},
  {c:"filipino",q:"Ano ang kasalungat ng MAPAGBIGAY?",o:["Maramot","Mabait","Masipag","Matulungin"],a:0,e:"Ang maramot ay ayaw magbigay o magbahagi."},
  {c:"filipino",q:"Ang taong “kapit-tuko” ay:",o:["Mahigpit ang hawak at ayaw bumitaw","Takot sa hayop","Mahilig umakyat","Mabilis kumilos"],a:0,e:"Idyoma ito para sa taong mahigpit kumapit, sa tao man o sa posisyon."},
@@ -259,6 +266,8 @@ export const BANK = [
 ]
 
 BANK.push(...EXTRA)
+// Fixed order: the position in BANK is the item id saved in sessions. Only append within the LAST file.
+BANK.push(...V3, ...F3, ...N3, ...A3, ...G3, ...C3)
 BANK.forEach((q, i) => { q.id = i })
 
 /* Difficulty: estimated from the reasoning steps each item needs (easy = recall or one step,

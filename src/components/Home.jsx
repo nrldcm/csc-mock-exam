@@ -1,12 +1,13 @@
 import { useMemo, useState } from 'react'
 import { CATS, DIFF } from '../data/bank.js'
-import { LEVELS, MODES, PASS, SEC_PER_ITEM, levelPool } from '../lib/config.js'
+import { LEVELS, MODES, PASS, levelPool, secPerItem } from '../lib/config.js'
 import { SESSION_KEY, weakestCat } from '../lib/exam.js'
 import { BADGES, RANKS, SKEY, liveStreak, rankOf, triviaToday } from '../lib/progress.js'
 import { ls } from '../lib/storage.js'
 import { avg, dayDiff, dayKey, fmt, fmtTime } from '../lib/util.js'
 import { Footer, Icon, Masthead } from './common.jsx'
 import { DonateCard } from './Donate.jsx'
+import RestoreCard from './RestoreCard.jsx'
 import { useUI } from './ui.jsx'
 
 export default function Home({ level, setLevel, mode, setMode, diff, setDiff, timed, setTimed, onStart, onResume, onTrivia, go }) {
@@ -31,6 +32,7 @@ export default function Home({ level, setLevel, mode, setMode, diff, setDiff, ti
     <>
       <Masthead title="Civil Service Mock Exam" sub={`Career Service ${L.name}, 80.00 passing rating`} />
       <main className="wrap has-nav" id="main">
+        <RestoreCard onRestored={() => refresh(x => x + 1)} />
         {sess && (
           <div className="card" style={{ borderColor: 'var(--seal)' }}>
             <h2>You have an exam in progress</h2>
@@ -83,7 +85,7 @@ export default function Home({ level, setLevel, mode, setMode, diff, setDiff, ti
               </div>
               {!(real || mode === 'endless') && (
                 <div className="switch">
-                  <div><b>Timer</b><small>{timed ? `${fmtTime(n * SEC_PER_ITEM)} for ${n} items, the same pace as the actual exam` : 'Off: take as long as you need'}</small></div>
+                  <div><b>Timer</b><small>{timed ? `${fmtTime(n * secPerItem(level))} for ${n} items, the same pace as the actual exam` : 'Off: take as long as you need'}</small></div>
                   <button className="tog" role="switch" aria-checked={timed} aria-label="Timer" onClick={() => setTimed(!timed)} />
                 </div>
               )}

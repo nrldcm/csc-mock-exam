@@ -8,7 +8,9 @@
     "prebuild": "pwa-assets-generator",
     "build": "vite build",
     "preview": "vite preview --host",
-    "icons": "pwa-assets-generator"
+    "icons": "pwa-assets-generator",
+    "test": "node tests/logic.test.mjs",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "@capacitor/android": "^7.0.0",
@@ -25,6 +27,7 @@
   },
   "devDependencies": {
     "@capacitor/assets": "^3.0.5",
+    "@playwright/test": "^1.48.2",
     "@capacitor/cli": "^7.0.0",
     "@vite-pwa/assets-generator": "^0.2.6",
     "@vitejs/plugin-react": "^4.3.4",

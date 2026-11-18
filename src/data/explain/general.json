@@ -1,0 +1,1101 @@
+{
+  "89": {
+    "steps": [
+      "The 1987 Constitution is the supreme (highest) law of the Philippines.",
+      "Every other law, ordinance or government act must agree with it. If a law goes against the Constitution, the courts can strike it down as unconstitutional.",
+      "Think of it as the master rulebook: it creates the government, divides its powers, and lists the rights of the people.",
+      "Words like \"supreme law\", \"fundamental law\" or \"highest law of the land\" in a question point to the Constitution."
+    ],
+    "wrong": {
+      "Civil Code": "The Civil Code covers private matters like family, property and contracts. It is an ordinary law and must follow the Constitution.",
+      "Revised Penal Code": "The Revised Penal Code defines crimes and their penalties. It is an ordinary law below the Constitution.",
+      "Local Government Code": "The Local Government Code (RA 7160) governs provinces, cities, municipalities and barangays. It is an ordinary law below the Constitution."
+    },
+    "tip": "Constitution on top; all other laws must bow to it."
+  },
+  "90": {
+    "steps": [
+      "RA 6713 is the Code of Conduct and Ethical Standards for Public Officials and Employees, passed in 1989.",
+      "It tells government workers how to behave: the eight norms of conduct, duties like answering letters promptly, prohibited acts like accepting gifts, and filing the SALN.",
+      "Its goal is honest, simple and efficient public service, because government workers are paid by the people.",
+      "If a question mentions norms of conduct, simple living, SALN or political neutrality, think RA 6713."
+    ],
+    "wrong": {
+      "Anti-Graft and Corrupt Practices Act": "That is RA 3019 (1960), which lists corrupt acts of public officers.",
+      "Ease of Doing Business Act": "That is RA 11032 (2018), which speeds up government transactions and created the Anti-Red Tape Authority.",
+      "Civil Service Law": "The Civil Service Law is a separate body of rules on hiring, promotion and discipline in government. It is not RA 6713."
+    },
+    "tip": "6713 = Code of Conduct: \"how to act\" as a public servant."
+  },
+  "91": {
+    "steps": [
+      "\"Public office is a public trust\" is the opening line of Article XI, Section 1, titled Accountability of Public Officers.",
+      "It means a government position is not personal property. It is entrusted by the people, so officials must serve with responsibility, integrity, loyalty and efficiency.",
+      "Article XI also covers impeachment and the Ombudsman, all tools for keeping officials accountable.",
+      "Accountability, impeachment, Ombudsman, public trust: all are in Article XI."
+    ],
+    "wrong": {
+      "Article II": "Article II is the Declaration of Principles and State Policies (for example, sovereignty resides in the people).",
+      "Article III": "Article III is the Bill of Rights.",
+      "Article IX": "Article IX covers the Constitutional Commissions: CSC, COMELEC and COA."
+    },
+    "tip": "XI = eleven = \"I'll be accountable.\""
+  },
+  "92": {
+    "steps": [
+      "RA 11032 is the Ease of Doing Business and Efficient Government Service Delivery Act of 2018.",
+      "It amended the Anti-Red Tape Act of 2007 (RA 9485) to make government transactions faster and simpler.",
+      "It set processing deadlines (3, 7 and 20 working days) and created the Anti-Red Tape Authority (ARTA).",
+      "If a question mentions ease of doing business, ARTA or red tape after 2018, the answer is RA 11032."
+    ],
+    "wrong": {
+      "RA 9485": "RA 9485 is the older Anti-Red Tape Act of 2007, which RA 11032 amended.",
+      "RA 10173": "RA 10173 is the Data Privacy Act of 2012.",
+      "RA 9184": "RA 9184 is the Government Procurement Reform Act, about how government buys goods and services."
+    },
+    "tip": "Ease of Doing Business 2018 = RA 11032 (the newest number, the newest law)."
+  },
+  "93": {
+    "steps": [
+      "Under RA 11032, a simple transaction must be finished within 3 working days.",
+      "The full set: simple = 3 working days, complex = 7 working days, highly technical = 20 working days.",
+      "This exists so citizens are not kept waiting for weeks for simple papers like certificates.",
+      "Working days do not count weekends and holidays."
+    ],
+    "wrong": {
+      "1 working day": "There is no 1-day maximum for simple transactions under RA 11032.",
+      "7 working days": "7 working days is the limit for complex transactions.",
+      "20 working days": "20 working days is the limit for highly technical applications."
+    },
+    "tip": "3 - 7 - 20: Simple, Complex, Highly technical."
+  },
+  "94": {
+    "steps": [
+      "RA 9003 is the Ecological Solid Waste Management Act of 2000.",
+      "It deals with garbage: segregation at source, recycling, composting, Materials Recovery Facilities, and banning open dumps.",
+      "It makes LGUs, especially barangays, responsible for managing waste."
+    ],
+    "wrong": {
+      "RA 8749": "RA 8749 is the Philippine Clean Air Act of 1999.",
+      "RA 9275": "RA 9275 is the Philippine Clean Water Act of 2004, not solid waste.",
+      "RA 9729": "RA 9729 is the Climate Change Act of 2009."
+    },
+    "tip": "9003 = year 2000 = garbage (solid waste)."
+  },
+  "95": {
+    "steps": [
+      "RA 8749 is the Philippine Clean Air Act of 1999.",
+      "It aims to reduce air pollution from vehicles, factories and burning.",
+      "It bans incineration of waste that gives off poisonous and toxic fumes."
+    ],
+    "wrong": {
+      "RA 9003": "RA 9003 is the Ecological Solid Waste Management Act of 2000.",
+      "RA 9275": "RA 9275 is the Philippine Clean Water Act of 2004.",
+      "RA 7160": "RA 7160 is the Local Government Code of 1991."
+    },
+    "tip": "Air came first (1999, RA 8749), then garbage (2000, RA 9003), then water (2004, RA 9275)."
+  },
+  "96": {
+    "steps": [
+      "A Senator serves a term of 6 years (Article VI, Section 4).",
+      "A Senator cannot serve more than two consecutive terms, so 12 straight years at most.",
+      "The longer term (compared to 3 years for House members) gives the Senate more stability and a national view."
+    ],
+    "wrong": {
+      "3 years": "3 years is the term of a Member of the House of Representatives.",
+      "4 years": "No national elective office in the 1987 Constitution has a 4-year term.",
+      "9 years": "There is no 9-year term for Senators."
+    },
+    "tip": "Senate: 24 members, 6-year terms, age 35."
+  },
+  "97": {
+    "steps": [
+      "The Senate has 24 Senators (Article VI, Section 2).",
+      "They are elected at large, meaning voters from the whole country vote for them, not just one district.",
+      "Because of staggered terms, about half (12) are elected every three years."
+    ],
+    "wrong": {
+      "12": "12 is the number of Senators elected in each regular election, not the total.",
+      "30": "The Senate does not have 30 members.",
+      "36": "The Senate does not have 36 members."
+    },
+    "tip": "Senate = 2 dozen = 24."
+  },
+  "98": {
+    "steps": [
+      "Article IX creates only three Constitutional Commissions: the Civil Service Commission (CSC), the Commission on Elections (COMELEC) and the Commission on Audit (COA).",
+      "The Commission on Human Rights (CHR) is created in a different article, Article XIII (Social Justice and Human Rights).",
+      "So CHR is a constitutional body, but it is not one of the three Constitutional Commissions."
+    ],
+    "wrong": {
+      "Civil Service Commission": "The CSC is a Constitutional Commission under Article IX-B.",
+      "Commission on Elections": "COMELEC is a Constitutional Commission under Article IX-C.",
+      "Commission on Audit": "COA is a Constitutional Commission under Article IX-D."
+    },
+    "tip": "Article IX: B-C-D = CSC, COMELEC, COA. CHR lives in XIII."
+  },
+  "99": {
+    "steps": [
+      "A candidate for President must be at least 40 years old on the day of the election (Article VII, Section 2).",
+      "Other requirements: natural-born citizen, registered voter, able to read and write, and a resident of the Philippines for at least 10 years before the election.",
+      "The higher age is meant to ensure maturity and experience for the highest office."
+    ],
+    "wrong": {
+      "35": "35 is the minimum age for a Senator.",
+      "45": "45 is not a constitutional age requirement for President.",
+      "50": "50 is not a constitutional age requirement for President."
+    },
+    "tip": "Ages: House 25, Senate 35, President 40."
+  },
+  "100": {
+    "steps": [
+      "The Bill of Rights is Article III of the 1987 Constitution.",
+      "It protects people from abuse by the government: due process, free speech, freedom of religion, privacy, rights of the accused, and more.",
+      "These rights limit what the government can do to you."
+    ],
+    "wrong": {
+      "Article I": "Article I is National Territory.",
+      "Article II": "Article II is the Declaration of Principles and State Policies.",
+      "Article IV": "Article IV is Citizenship."
+    },
+    "tip": "I Territory, II Principles, III Rights, IV Citizenship."
+  },
+  "101": {
+    "steps": [
+      "Under RA 6713, public officials and employees file their SALN every year on or before April 30.",
+      "SALN means Statement of Assets, Liabilities and Net Worth: a list of what you own, what you owe, and your net worth.",
+      "It exists so the public can check if an official's wealth suddenly grows beyond their salary, which may signal corruption."
+    ],
+    "wrong": {
+      "January 31": "January 31 is not the SALN deadline under RA 6713.",
+      "June 30": "June 30 is not the SALN deadline under RA 6713.",
+      "December 31": "December 31 is the cut-off date of what you report in the SALN, but the filing deadline is April 30."
+    },
+    "tip": "SALN due in April, every year."
+  },
+  "102": {
+    "steps": [
+      "The UN General Assembly adopted the Universal Declaration of Human Rights (UDHR) on December 10, 1948, in Paris.",
+      "It was written after World War II so the horrors of that war would never happen again.",
+      "December 10 is now celebrated as Human Rights Day."
+    ],
+    "wrong": {
+      "1945": "1945 is the year the United Nations was founded.",
+      "1966": "1966 is the year the two International Covenants (on civil and political rights, and on economic, social and cultural rights) were adopted.",
+      "1986": "1986 is the year of the EDSA People Power Revolution in the Philippines."
+    },
+    "tip": "UN 1945, UDHR 1948, Human Rights Day December 10."
+  },
+  "103": {
+    "steps": [
+      "RA 9729 is the Climate Change Act of 2009.",
+      "It made climate change part of government planning and created the Climate Change Commission.",
+      "Climate change = RA 9729; disaster risk reduction = RA 10121."
+    ],
+    "wrong": {
+      "RA 10121": "RA 10121 is the Philippine Disaster Risk Reduction and Management Act of 2010.",
+      "RA 9003": "RA 9003 is the Ecological Solid Waste Management Act of 2000.",
+      "RA 8749": "RA 8749 is the Philippine Clean Air Act of 1999."
+    },
+    "tip": "Climate 2009 = RA 9729."
+  },
+  "104": {
+    "steps": [
+      "The President serves a single term of 6 years and is not eligible for any reelection (Article VII, Section 4).",
+      "This rule came from history: the framers wanted to stop any President from staying in power for too long, as happened during martial law.",
+      "With no reelection, the President also does not need to use the office to campaign for another term."
+    ],
+    "wrong": {
+      "4 years, one reelection": "This describes the US system, not the Philippines.",
+      "6 years, one reelection": "The term is 6 years, but the President cannot be reelected at all.",
+      "5 years, no reelection": "The term is 6 years, not 5."
+    },
+    "tip": "President: one shot, six years."
+  },
+  "105": {
+    "steps": [
+      "RA 10173 is the Data Privacy Act of 2012.",
+      "It protects personal information (like your name, address and ID numbers) collected by government and private companies.",
+      "It created the National Privacy Commission to enforce it."
+    ],
+    "wrong": {
+      "RA 10175": "RA 10175 is the Cybercrime Prevention Act of 2012, a different law from the same year.",
+      "RA 11032": "RA 11032 is the Ease of Doing Business Act of 2018.",
+      "RA 9485": "RA 9485 is the Anti-Red Tape Act of 2007."
+    },
+    "tip": "Privacy 10173 vs Cybercrime 10175: 3 = privacy, 5 = crime."
+  },
+  "106": {
+    "steps": [
+      "A Senator must be at least 35 years old on election day (Article VI, Section 3).",
+      "Other requirements: natural-born citizen, able to read and write, registered voter, and a resident of the Philippines for at least 2 years before the election."
+    ],
+    "wrong": {
+      "25": "25 is the minimum age for a Member of the House of Representatives.",
+      "30": "30 is not a constitutional age requirement for Senator.",
+      "40": "40 is the minimum age for President and Vice President."
+    },
+    "tip": "House 25, Senate 35, President 40."
+  },
+  "107": {
+    "steps": [
+      "RA 7160 is the Local Government Code of 1991.",
+      "It gives provinces, cities, municipalities and barangays more power and resources to govern themselves (decentralization).",
+      "Questions about LGU powers, barangay officials or local taxes usually point to RA 7160."
+    ],
+    "wrong": {
+      "RA 6713": "RA 6713 is the Code of Conduct and Ethical Standards for Public Officials and Employees.",
+      "RA 9485": "RA 9485 is the Anti-Red Tape Act of 2007.",
+      "RA 8749": "RA 8749 is the Philippine Clean Air Act of 1999."
+    },
+    "tip": "LGC 1991 = RA 7160."
+  },
+  "108": {
+    "steps": [
+      "The sun on the Philippine flag has 8 rays.",
+      "They stand for the first eight provinces that rose against Spain: Manila, Cavite, Bulacan, Pampanga, Nueva Ecija, Bataan, Laguna and Batangas.",
+      "The three stars stand for Luzon, Visayas and Mindanao."
+    ],
+    "wrong": {
+      "5": "The sun does not have 5 rays.",
+      "7": "The sun does not have 7 rays.",
+      "12": "The sun does not have 12 rays."
+    },
+    "tip": "8 rays, 3 stars."
+  },
+  "109": {
+    "steps": [
+      "In 2015 the UN adopted 17 Sustainable Development Goals (SDGs) as part of the 2030 Agenda.",
+      "They include ending poverty and hunger, quality education, gender equality, clean water, climate action and more.",
+      "They replaced the 8 Millennium Development Goals (MDGs)."
+    ],
+    "wrong": {
+      "8": "8 is the number of the older Millennium Development Goals, not the SDGs.",
+      "12": "There are not 12 SDGs.",
+      "20": "There are not 20 SDGs."
+    },
+    "tip": "17 goals by 2030."
+  },
+  "110": {
+    "steps": [
+      "RA 9710 is the Magna Carta of Women, passed in 2009.",
+      "It is a broad women's rights law that removes discrimination against women in all areas of life.",
+      "\"Magna Carta\" is Latin for \"great charter\", a big list of rights."
+    ],
+    "wrong": {
+      "RA 7877": "RA 7877 is the Anti-Sexual Harassment Act of 1995.",
+      "RA 9262": "RA 9262 is the Anti-Violence Against Women and Their Children Act of 2004.",
+      "RA 11313": "RA 11313 is the Safe Spaces Act of 2019."
+    },
+    "tip": "Magna Carta of Women = 9710 (passed 2009)."
+  },
+  "111": {
+    "steps": [
+      "RA 11313 is the Safe Spaces Act of 2019, also called the Bawal Bastos Law.",
+      "It punishes gender-based sexual harassment in streets, public places, online, workplaces and schools, like catcalling and unwanted comments.",
+      "It covers more places than the older Anti-Sexual Harassment Act, which focused on work and school."
+    ],
+    "wrong": {
+      "RA 7877": "RA 7877 is the older Anti-Sexual Harassment Act of 1995.",
+      "RA 10173": "RA 10173 is the Data Privacy Act of 2012.",
+      "RA 9710": "RA 9710 is the Magna Carta of Women."
+    },
+    "tip": "Safe Spaces / Bawal Bastos = RA 11313."
+  },
+  "112": {
+    "steps": [
+      "Inalienable means something cannot be taken away or given up.",
+      "Human rights belong to you because you are human. Nobody can sell them, and you cannot surrender them.",
+      "A right may be limited in some lawful cases, but the person never stops owning it."
+    ],
+    "wrong": {
+      "Universal": "Universal means human rights belong to everyone everywhere.",
+      "Indivisible": "Indivisible means all rights are equally important and cannot be separated.",
+      "Relative": "Relative is not a characteristic of human rights."
+    },
+    "tip": "In-ALIEN-able: cannot be made someone else's."
+  },
+  "113": {
+    "steps": [
+      "RA 10121 is the Philippine Disaster Risk Reduction and Management Act of 2010.",
+      "It focuses on preparing for disasters before they happen, not just responding after.",
+      "It created the National Disaster Risk Reduction and Management Council (NDRRMC)."
+    ],
+    "wrong": {
+      "RA 9729": "RA 9729 is the Climate Change Act of 2009.",
+      "RA 9003": "RA 9003 is the Ecological Solid Waste Management Act of 2000.",
+      "RA 7160": "RA 7160 is the Local Government Code of 1991."
+    },
+    "tip": "Disaster 2010 = RA 10121; NDRRMC."
+  },
+  "218": {
+    "steps": [
+      "Article XIV, Section 6 says the national language of the Philippines is Filipino.",
+      "Filipino is meant to grow and be enriched by existing Philippine and other languages, not just one language."
+    ],
+    "wrong": {
+      "Tagalog": "Tagalog is a regional language and the main base of Filipino, but it is not the name of the national language.",
+      "English": "English is an official language, not the national language.",
+      "Pilipino": "Pilipino was an older name for the national language before the 1987 Constitution."
+    },
+    "tip": "National language: Filipino with an F."
+  },
+  "219": {
+    "steps": [
+      "Article XIV, Section 7: the official languages are Filipino and, until otherwise provided by law, English.",
+      "This means both are used in government and schools, but Congress could change the status of English by law.",
+      "Regional languages are auxiliary (helping) official languages in their regions."
+    ],
+    "wrong": {
+      "Filipino only": "English is also an official language.",
+      "English only": "Filipino is also an official language, and it is the national language.",
+      "Filipino, English and Spanish": "Spanish is not an official language; the Constitution only promotes Spanish and Arabic on a voluntary and optional basis."
+    },
+    "tip": "Official = Filipino + English (for now)."
+  },
+  "220": {
+    "steps": [
+      "A Member of the House of Representatives serves 3 years (Article VI, Section 7).",
+      "They cannot serve more than three consecutive terms, so 9 straight years at most.",
+      "Shorter terms keep district representatives close and answerable to their voters."
+    ],
+    "wrong": {
+      "2 years": "2 years is the US House term, not the Philippines.",
+      "4 years": "No national elective office here has a 4-year term.",
+      "6 years": "6 years is the term of a Senator and of the President."
+    },
+    "tip": "House: 3 years x 3 terms max."
+  },
+  "221": {
+    "steps": [
+      "The President may declare martial law or suspend the privilege of the writ of habeas corpus for not more than 60 days (Article VII, Section 18).",
+      "The President must report to Congress within 48 hours. Congress may revoke it or extend it.",
+      "The limit exists because of the long martial law period before 1986: the framers wanted strict checks."
+    ],
+    "wrong": {
+      "30 days": "30 days is the period within which the Supreme Court must decide a case questioning martial law, not its length.",
+      "90 days": "90 days is not the constitutional limit.",
+      "6 months": "6 months is far beyond the 60-day limit."
+    },
+    "tip": "Martial law: 60 days, report in 48 hours."
+  },
+  "222": {
+    "steps": [
+      "Only Congress can declare the existence of a state of war (Article VI, Section 23).",
+      "It needs a two-thirds vote of both Houses in joint session, voting separately.",
+      "War affects the whole nation, so the decision belongs to the people's representatives, not one person."
+    ],
+    "wrong": {
+      "The President": "The President is Commander-in-Chief and commands the armed forces, but cannot declare war.",
+      "The Supreme Court": "The Supreme Court decides cases; it has no power to declare war.",
+      "The Armed Forces": "The Armed Forces follow civilian authority and cannot declare war."
+    },
+    "tip": "Congress declares war; the President commands the troops."
+  },
+  "223": {
+    "steps": [
+      "A Member of the House must be at least 25 years old on election day (Article VI, Section 6).",
+      "Other requirements: natural-born citizen, able to read and write, registered voter in the district, and a resident there for at least 1 year (except party-list representatives)."
+    ],
+    "wrong": {
+      "21": "21 is not the age requirement for the House.",
+      "30": "30 is not the age requirement for the House.",
+      "35": "35 is the minimum age for a Senator."
+    },
+    "tip": "House 25, Senate 35, President 40."
+  },
+  "224": {
+    "steps": [
+      "The CSC Chairman and Commissioners serve 7 years without reappointment (Article IX-B, Section 1).",
+      "COMELEC and COA members have the same 7-year rule.",
+      "No reappointment protects independence: they do not need to please anyone to keep their job."
+    ],
+    "wrong": {
+      "5 years, with reappointment": "There is no 5-year term, and reappointment is not allowed.",
+      "6 years, without reappointment": "The term is 7 years, not 6.",
+      "9 years, without reappointment": "The term is 7 years, not 9."
+    },
+    "tip": "Constitutional Commissions: lucky 7, one time only."
+  },
+  "225": {
+    "steps": [
+      "RA 3019 is the Anti-Graft and Corrupt Practices Act, passed in 1960.",
+      "It lists corrupt acts of public officers, like asking for money in exchange for a government favor.",
+      "It is one of the oldest anti-corruption laws still in use."
+    ],
+    "wrong": {
+      "RA 6713": "RA 6713 is the Code of Conduct and Ethical Standards for Public Officials and Employees.",
+      "RA 7080": "RA 7080 is the Anti-Plunder Act.",
+      "RA 9485": "RA 9485 is the Anti-Red Tape Act of 2007."
+    },
+    "tip": "Anti-Graft = RA 3019 (1960)."
+  },
+  "226": {
+    "steps": [
+      "Political partisanship is NOT a norm of RA 6713. The real norm is political neutrality.",
+      "Neutrality means serving everyone fairly regardless of their party.",
+      "The eight norms: commitment to public interest, professionalism, justness and sincerity, political neutrality, responsiveness to the public, nationalism and patriotism, commitment to democracy, simple living."
+    ],
+    "wrong": {
+      "Commitment to public interest": "This is a real norm: put the public's interest above personal interest.",
+      "Justness and sincerity": "This is a real norm: be fair, honest and sincere.",
+      "Simple living": "This is a real norm: live modestly and avoid showing off wealth."
+    },
+    "tip": "RA 6713 says neutral, never partisan."
+  },
+  "227": {
+    "steps": [
+      "RA 8371 is the Indigenous Peoples' Rights Act (IPRA) of 1997.",
+      "It protects the rights of indigenous peoples to their ancestral domains, culture and self-governance.",
+      "It created the National Commission on Indigenous Peoples (NCIP)."
+    ],
+    "wrong": {
+      "RA 7160": "RA 7160 is the Local Government Code of 1991.",
+      "RA 9710": "RA 9710 is the Magna Carta of Women.",
+      "RA 8749": "RA 8749 is the Philippine Clean Air Act of 1999."
+    },
+    "tip": "IPRA 1997 = RA 8371."
+  },
+  "347": {
+    "steps": [
+      "The 1987 Constitution was ratified by the people in a plebiscite on February 2, 1987.",
+      "Ratified means approved by the people through a vote, which made it take effect.",
+      "It was written after the 1986 EDSA People Power Revolution."
+    ],
+    "wrong": {
+      "February 25, 1986": "February 25, 1986 is the end of the EDSA People Power Revolution.",
+      "June 12, 1898": "June 12, 1898 is the declaration of Philippine independence from Spain.",
+      "July 4, 1946": "July 4, 1946 is when the US recognized Philippine independence."
+    },
+    "tip": "1987 Constitution approved 2-2-87."
+  },
+  "348": {
+    "steps": [
+      "The 1987 Constitution has 18 articles plus a Preamble.",
+      "It starts with Article I (National Territory) and ends with Article XVIII (Transitory Provisions)."
+    ],
+    "wrong": {
+      "15": "15 is not the number of articles.",
+      "16": "16 is not the number of articles; Article XVI is General Provisions.",
+      "22": "22 is not the number of articles."
+    },
+    "tip": "Constitution = 18 articles, like turning 18."
+  },
+  "349": {
+    "steps": [
+      "This is Article II, Section 1 (Declaration of Principles and State Policies).",
+      "The full line: the Philippines is a democratic and republican State; sovereignty resides in the people and all government authority emanates from them.",
+      "It means the people are the true source of power. Officials only borrow that power."
+    ],
+    "wrong": {
+      "Article I": "Article I is National Territory.",
+      "Article III": "Article III is the Bill of Rights.",
+      "Article VI": "Article VI is the Legislative Department."
+    },
+    "tip": "Article II = basic principles; people are the boss."
+  },
+  "350": {
+    "steps": [
+      "Legislative power (making laws) belongs to the Congress of the Philippines (Article VI, Section 1).",
+      "Congress has two houses: the Senate and the House of Representatives.",
+      "The people also keep some lawmaking power through initiative and referendum."
+    ],
+    "wrong": {
+      "The President": "The President holds executive power (carrying out laws).",
+      "The Supreme Court": "The Supreme Court holds judicial power (deciding cases).",
+      "The Senate only": "The Senate is only one of the two houses of Congress."
+    },
+    "tip": "Make laws = Congress; enforce = President; interpret = courts."
+  },
+  "351": {
+    "steps": [
+      "The Supreme Court has a Chief Justice and 14 Associate Justices (Article VIII, Section 4).",
+      "That makes 15 members in total.",
+      "It can sit en banc (all together) or in divisions of three, five or seven."
+    ],
+    "wrong": {
+      "12": "12 is not the number of Associate Justices.",
+      "15": "15 is the total including the Chief Justice; the Associate Justices number 14.",
+      "9": "9 is the size of the US Supreme Court, not ours."
+    },
+    "tip": "1 Chief + 14 Associates = 15."
+  },
+  "352": {
+    "steps": [
+      "Supreme Court Justices hold office until age 70 or until they become unable to do their work (Article VIII, Section 11).",
+      "Having no fixed term protects judges from political pressure."
+    ],
+    "wrong": {
+      "65": "65 is not the retirement age for Justices.",
+      "75": "75 is not the retirement age for Justices.",
+      "60": "60 is not the retirement age for Justices."
+    },
+    "tip": "Justices retire at 70."
+  },
+  "353": {
+    "steps": [
+      "The House of Representatives has the exclusive power to initiate all impeachment cases (Article XI, Section 3).",
+      "The House acts like the prosecutor: it brings the charges.",
+      "The Senate then tries the case."
+    ],
+    "wrong": {
+      "The Senate": "The Senate tries and decides impeachment cases; it does not initiate them.",
+      "The Supreme Court": "The Supreme Court has no role in starting impeachment.",
+      "The Ombudsman": "The Ombudsman investigates officials, but it cannot start impeachment, and the Ombudsman can be impeached."
+    },
+    "tip": "House accuses, Senate judges."
+  },
+  "354": {
+    "steps": [
+      "The Senate has the sole power to try and decide impeachment cases (Article XI, Section 3).",
+      "The Senators act as the judges in the impeachment trial."
+    ],
+    "wrong": {
+      "The House of Representatives": "The House initiates impeachment; it does not try the case.",
+      "The Supreme Court": "The Supreme Court does not try impeachment cases.",
+      "The Sandiganbayan": "The Sandiganbayan is the anti-graft court that tries criminal cases against officials, not impeachment."
+    },
+    "tip": "House accuses, Senate judges."
+  },
+  "355": {
+    "steps": [
+      "Conviction needs two-thirds of all the Members of the Senate (Article XI, Section 3).",
+      "With 24 Senators, that means at least 16 votes.",
+      "The high number protects officials from being removed for purely political reasons."
+    ],
+    "wrong": {
+      "A majority of all Senators": "A simple majority is not enough to convict.",
+      "Three-fourths of all Senators": "Three-fourths is not the required vote.",
+      "One-third of the House": "One-third of all House Members is the vote needed to impeach (send the case to the Senate), not to convict."
+    },
+    "tip": "1/3 of House to impeach, 2/3 of Senate to convict."
+  },
+  "356": {
+    "steps": [
+      "Senators are NOT impeachable.",
+      "Impeachable officers (Article XI, Section 2): President, Vice President, Supreme Court Members, Constitutional Commission Members, and the Ombudsman.",
+      "A Senator can still be disciplined or expelled by the Senate itself."
+    ],
+    "wrong": {
+      "The President": "The President is impeachable.",
+      "Members of the Supreme Court": "Supreme Court Members are impeachable.",
+      "The Ombudsman": "The Ombudsman is impeachable."
+    },
+    "tip": "Impeachable: P, VP, SC, ConCom, Ombudsman. No legislators."
+  },
+  "357": {
+    "steps": [
+      "The CSC has a Chairman and 2 Commissioners (Article IX-B, Section 1), so 3 members in all.",
+      "COA also has a Chairman and 2 Commissioners. COMELEC is bigger: a Chairman and 6 Commissioners."
+    ],
+    "wrong": {
+      "4": "The CSC does not have 4 Commissioners.",
+      "6": "6 Commissioners is COMELEC, not CSC.",
+      "8": "The CSC does not have 8 Commissioners."
+    },
+    "tip": "CSC and COA: 1 + 2. COMELEC: 1 + 6."
+  },
+  "358": {
+    "steps": [
+      "Under Article V, Section 1, you may vote if you are a Filipino citizen, at least 18, have lived in the Philippines at least 1 year and in your voting place at least 6 months before the election.",
+      "No literacy, property or similar requirement may be imposed, so the poor are not shut out of voting."
+    ],
+    "wrong": {
+      "Citizens at least 21 years old": "The voting age is 18, not 21.",
+      "All residents regardless of citizenship": "Only citizens may vote; foreigners living here cannot.",
+      "Citizens at least 18 years old who own property": "The Constitution bans any property requirement for voting."
+    },
+    "tip": "Vote: Citizen, 18, 1 year PH, 6 months place."
+  },
+  "359": {
+    "steps": [
+      "A people's initiative needs a petition signed by at least 12% of all registered voters (Article XVII, Section 2).",
+      "Every legislative district must also be represented by at least 3% of its registered voters.",
+      "This lets ordinary citizens propose changes to the Constitution, but only with wide support across the country."
+    ],
+    "wrong": {
+      "3%": "3% is the minimum per legislative district, not the national total.",
+      "10%": "10% is not the national threshold for amending the Constitution.",
+      "20%": "20% is not the threshold."
+    },
+    "tip": "12% nationwide, 3% per district."
+  },
+  "360": {
+    "steps": [
+      "Article XVI, Section 1: the flag is red, white and blue, with a sun and three stars.",
+      "Blue for peace and justice, red for patriotism and valor, white triangle for equality.",
+      "The sun has 8 rays; the stars stand for Luzon, Visayas and Mindanao."
+    ],
+    "wrong": {
+      "Red, yellow and blue": "Yellow is the color of the sun and stars, but the flag's colors are red, white and blue.",
+      "Blue and white with a sun": "This leaves out red and the three stars.",
+      "Red and blue with three stars only": "This leaves out the white triangle and the sun."
+    },
+    "tip": "Red, white, blue + sun + 3 stars."
+  },
+  "361": {
+    "steps": [
+      "The Commission on Human Rights is created in Article XIII, Social Justice and Human Rights (Section 17).",
+      "It investigates human rights violations, especially those involving civil and political rights.",
+      "It is not one of the three Article IX Commissions."
+    ],
+    "wrong": {
+      "Article III": "Article III is the Bill of Rights, which lists rights but does not create the CHR.",
+      "Article IX": "Article IX creates CSC, COMELEC and COA only.",
+      "Article XI": "Article XI is Accountability of Public Officers (impeachment, Ombudsman)."
+    },
+    "tip": "CHR = XIII (Human Rights is in the title of XIII)."
+  },
+  "362": {
+    "steps": [
+      "The civil service covers all government branches and agencies, including government-owned or controlled corporations (GOCCs) with original charters (Article IX-B, Section 2).",
+      "An original charter means the GOCC was created by a special law, like GSIS or SSS.",
+      "GOCCs formed under the general corporation law are not covered."
+    ],
+    "wrong": {
+      "All private corporations": "Private companies are not part of government, so they are outside the civil service.",
+      "Foreign embassies": "Foreign embassies belong to other countries' governments.",
+      "Political parties": "Political parties are private groups, not government agencies."
+    },
+    "tip": "GOCC with original charter = civil service."
+  },
+  "363": {
+    "steps": [
+      "Civil servants may not engage, directly or indirectly, in electioneering or partisan political campaigns (Article IX-B, Section 2).",
+      "This keeps government service neutral, so citizens are served the same way whoever wins.",
+      "They may still vote; they just cannot campaign."
+    ],
+    "wrong": {
+      "Sports activity": "Joining sports is not prohibited.",
+      "Religious activity": "Freedom of religion is protected; civil servants may practice their faith.",
+      "Cooperative": "Joining a cooperative is allowed."
+    },
+    "tip": "Government workers vote but do not campaign."
+  },
+  "364": {
+    "steps": [
+      "The Civil Service Commission is the central personnel agency of government (Article IX-B, Section 3).",
+      "It handles hiring standards, exams (like this one), promotions and discipline of government workers."
+    ],
+    "wrong": {
+      "Department of Labor and Employment": "DOLE handles private-sector workers and labor issues.",
+      "Commission on Audit": "COA audits government spending.",
+      "Department of Budget and Management": "DBM prepares and manages the national budget."
+    },
+    "tip": "Personnel of government = CSC."
+  },
+  "365": {
+    "steps": [
+      "Article XI, Section 12 calls the Ombudsman and his Deputies \"protectors of the people\".",
+      "They must act promptly on complaints against public officials and employees."
+    ],
+    "wrong": {
+      "Guardians of the Constitution": "This is a phrase often linked to the Supreme Court, not the Ombudsman.",
+      "Fiscalizers of Congress": "This is not a constitutional title of the Ombudsman.",
+      "Keepers of the treasury": "This is not a constitutional title of the Ombudsman."
+    },
+    "tip": "Ombudsman = protector of the people."
+  },
+  "366": {
+    "steps": [
+      "RA 6713, Section 5 requires officials to respond to letters and requests within 15 working days from receipt.",
+      "This prevents citizens from being ignored by government offices."
+    ],
+    "wrong": {
+      "5": "5 working days is not the period set by RA 6713.",
+      "10": "10 working days is not the period set by RA 6713.",
+      "30": "30 days is the deadline for filing a SALN after assuming office, not for answering letters."
+    },
+    "tip": "Letters: reply within 15 working days."
+  },
+  "367": {
+    "steps": [
+      "Simple living is one of the eight norms of conduct in RA 6713, Section 4.",
+      "It means public servants should live modestly and not flaunt wealth, since they serve the people.",
+      "The other norms: commitment to public interest, professionalism, justness and sincerity, political neutrality, responsiveness to the public, nationalism and patriotism, commitment to democracy."
+    ],
+    "wrong": {
+      "Seniority": "Seniority is not one of the norms.",
+      "Party loyalty": "The norm is political neutrality, the opposite of party loyalty.",
+      "Profit orientation": "Public service is not about profit; the norm is commitment to public interest."
+    },
+    "tip": "Public servant = simple life."
+  },
+  "368": {
+    "steps": [
+      "Professionalism in RA 6713, Section 4 means doing your job with the highest degree of excellence, professionalism, intelligence and skill.",
+      "It is about how well you work, not whether you have a license."
+    ],
+    "wrong": {
+      "Earn a professional license": "Having a license is not what this norm means.",
+      "Work only during office hours": "This is not the meaning of professionalism under RA 6713.",
+      "Avoid dealing with the public": "Public servants should be responsive to the public, not avoid it."
+    },
+    "tip": "Professionalism = excellence, intelligence, skill."
+  },
+  "369": {
+    "steps": [
+      "Political neutrality means serving everyone without unfair discrimination, regardless of party affiliation or preference (RA 6713, Section 4).",
+      "It ensures all citizens get the same service no matter whom they support."
+    ],
+    "wrong": {
+      "Not vote in elections": "Public servants can still vote.",
+      "Join the ruling party": "Joining a party for favor goes against neutrality.",
+      "Avoid talking about the government": "Neutrality does not mean silence about government."
+    },
+    "tip": "Neutral = same service for all parties."
+  },
+  "370": {
+    "steps": [
+      "RA 6713, Section 7 prohibits soliciting or accepting gifts, favors or anything of monetary value in connection with official duties.",
+      "Gifts can create a sense of owing someone, which leads to unfair service.",
+      "This is one of the most common RA 6713 questions."
+    ],
+    "wrong": {
+      "Filing a SALN": "Filing a SALN is required by RA 6713, not prohibited.",
+      "Attending a seminar": "Attending a seminar is a normal and allowed activity.",
+      "Answering letters promptly": "RA 6713 actually requires answering letters within 15 working days."
+    },
+    "tip": "No gifts for official work."
+  },
+  "371": {
+    "steps": [
+      "A new official must file the SALN within 30 days after assuming office (RA 6713, Section 8).",
+      "Then every year on or before April 30, and again within 30 days after leaving the service.",
+      "Filing at the start gives a baseline to compare later wealth against."
+    ],
+    "wrong": {
+      "15": "15 working days is the period to answer letters, not to file the SALN.",
+      "60": "60 days is not the SALN deadline.",
+      "90": "90 days is not the SALN deadline."
+    },
+    "tip": "SALN: 30 days in, every April 30, 30 days out."
+  },
+  "372": {
+    "steps": [
+      "Under RA 7080 (Anti-Plunder Act), as amended, plunder involves ill-gotten wealth of at least ₱50 million.",
+      "Plunder is a very serious crime of amassing huge amounts of stolen public money.",
+      "Smaller corrupt acts may fall under the Anti-Graft law (RA 3019) instead."
+    ],
+    "wrong": {
+      "₱1 million": "₱1 million is too low; it is not the plunder threshold.",
+      "₱10 million": "₱10 million is not the plunder threshold.",
+      "₱100 million": "₱100 million is above the threshold; plunder starts at ₱50 million."
+    },
+    "tip": "Plunder: 50 million and up."
+  },
+  "373": {
+    "steps": [
+      "Under RA 11032, highly technical applications must be acted on within 20 working days.",
+      "These involve detailed review, like technical evaluation or inspections.",
+      "Full set: simple 3, complex 7, highly technical 20 working days."
+    ],
+    "wrong": {
+      "3": "3 working days is for simple transactions.",
+      "7": "7 working days is for complex transactions.",
+      "15": "15 working days is the RA 6713 deadline to answer letters, not an RA 11032 category."
+    },
+    "tip": "3 - 7 - 20."
+  },
+  "374": {
+    "steps": [
+      "RA 11032 created the Anti-Red Tape Authority (ARTA).",
+      "ARTA implements the law, monitors compliance, and receives complaints about slow or difficult government services.",
+      "It is attached to the Office of the President."
+    ],
+    "wrong": {
+      "Civil Service Commission": "The CSC is the central personnel agency; it was not created by RA 11032.",
+      "Department of Trade and Industry": "DTI handles trade and business but is not the agency created by RA 11032.",
+      "Office of the Ombudsman": "The Ombudsman investigates officials; it was created by the Constitution, not RA 11032."
+    },
+    "tip": "Anti-Red Tape Act -> Anti-Red Tape Authority."
+  },
+  "375": {
+    "steps": [
+      "The Data Privacy Act (RA 10173) created the National Privacy Commission (NPC).",
+      "The NPC enforces the law, handles complaints, and checks that personal data is handled properly."
+    ],
+    "wrong": {
+      "Department of Information and Communications Technology": "DICT handles ICT policy and programs but is not the agency that administers the Data Privacy Act.",
+      "National Bureau of Investigation": "The NBI investigates crimes but does not administer the Data Privacy Act.",
+      "Securities and Exchange Commission": "The SEC regulates corporations and securities."
+    },
+    "tip": "Data Privacy -> National Privacy Commission."
+  },
+  "376": {
+    "steps": [
+      "The Universal Declaration of Human Rights has 30 articles.",
+      "They cover civil, political, economic, social and cultural rights."
+    ],
+    "wrong": {
+      "10": "10 is not the number of UDHR articles; December 10 is Human Rights Day.",
+      "25": "25 is not the number of UDHR articles.",
+      "45": "45 is not the number of UDHR articles."
+    },
+    "tip": "UDHR: 30 articles."
+  },
+  "377": {
+    "steps": [
+      "Civil and political rights are called first-generation rights.",
+      "Examples: free speech, voting, fair trial, freedom of religion.",
+      "They mainly protect individuals from government abuse."
+    ],
+    "wrong": {
+      "Second-generation rights": "Second-generation rights are economic, social and cultural rights (education, work).",
+      "Third-generation rights": "Third-generation rights are solidarity rights (development, healthy environment).",
+      "Collective rights": "Collective rights belong to groups, like peoples or communities."
+    },
+    "tip": "1st = freedom; 2nd = welfare; 3rd = solidarity."
+  },
+  "378": {
+    "steps": [
+      "Education, work and social security are economic, social and cultural rights.",
+      "These are second-generation rights.",
+      "They usually need the government to act and provide, like building schools."
+    ],
+    "wrong": {
+      "Civil rights": "Civil rights include free speech and fair trial.",
+      "Solidarity rights": "Solidarity rights are third-generation, like the right to development.",
+      "Political rights": "Political rights include voting and running for office."
+    },
+    "tip": "2nd generation = school, job, social security."
+  },
+  "379": {
+    "steps": [
+      "The right to development and the right to a healthy environment are third-generation (solidarity) rights.",
+      "They belong to communities and peoples, not just individuals.",
+      "They need cooperation among nations to achieve."
+    ],
+    "wrong": {
+      "First-generation rights": "First-generation rights are civil and political.",
+      "Second-generation rights": "Second-generation rights are economic, social and cultural.",
+      "Political rights": "Political rights are part of the first generation."
+    },
+    "tip": "3rd generation = shared rights for everyone together."
+  },
+  "380": {
+    "steps": [
+      "Universal means human rights belong to everyone, everywhere.",
+      "Race, sex, religion or nationality do not matter."
+    ],
+    "wrong": {
+      "Inalienable": "Inalienable means they cannot be taken away or given up.",
+      "Absolute": "Many rights can be lawfully limited, so they are not absolute.",
+      "Optional": "Human rights are not optional."
+    },
+    "tip": "Universal = for the whole universe of people."
+  },
+  "381": {
+    "steps": [
+      "Interdependent and indivisible means rights depend on one another.",
+      "Example: without education, it is hard to exercise free speech and voting well.",
+      "Violating one right often harms others."
+    ],
+    "wrong": {
+      "Universal": "Universal means they belong to everyone.",
+      "Relative": "Relative is not a characteristic of human rights.",
+      "Temporary": "Human rights are not temporary."
+    },
+    "tip": "Rights are a package: one affects all."
+  },
+  "382": {
+    "steps": [
+      "Negative peace is simply the absence of war or direct violence.",
+      "Positive peace goes further: justice, fairness and the removal of structural violence.",
+      "These terms come from peace studies (Johan Galtung)."
+    ],
+    "wrong": {
+      "Positive peace": "Positive peace needs justice and fairness, not just no war.",
+      "Structural peace": "This is not the standard term for the absence of violence.",
+      "Cultural peace": "This is not the standard term for the absence of violence."
+    },
+    "tip": "Negative = no war yet; positive = real justice."
+  },
+  "383": {
+    "steps": [
+      "Structural violence is harm caused by unfair social systems, not a single attacker.",
+      "Examples: poverty, hunger, discrimination built into how society works.",
+      "It harms people slowly, often unseen."
+    ],
+    "wrong": {
+      "Direct violence": "Direct violence is physical harm done by one person or group, like hitting or shooting.",
+      "Physical violence": "Physical violence is bodily harm, a type of direct violence.",
+      "Domestic violence": "Domestic violence happens within the home or family."
+    },
+    "tip": "Structural = built into the system."
+  },
+  "384": {
+    "steps": [
+      "International humanitarian law (IHL) is the set of rules that protects people during armed conflict.",
+      "It protects civilians, the wounded, the sick and prisoners of war.",
+      "Also called the law of war or law of armed conflict."
+    ],
+    "wrong": {
+      "Civil law": "Civil law deals with private relations like property and contracts.",
+      "Labor law": "Labor law deals with workers and employers.",
+      "Administrative law": "Administrative law governs government agencies."
+    },
+    "tip": "War rules = IHL."
+  },
+  "385": {
+    "steps": [
+      "The four Geneva Conventions were adopted in 1949, after World War II.",
+      "They form the core of international humanitarian law."
+    ],
+    "wrong": {
+      "1919": "1919 is the year of the Treaty of Versailles after World War I.",
+      "1945": "1945 is the founding year of the United Nations.",
+      "1966": "1966 is the year the two International Covenants on human rights were adopted."
+    },
+    "tip": "Geneva = 1949, one year after UDHR 1948."
+  },
+  "386": {
+    "steps": [
+      "Human Rights Day is December 10.",
+      "It marks the adoption of the UDHR on December 10, 1948."
+    ],
+    "wrong": {
+      "June 12": "June 12 is Philippine Independence Day.",
+      "August 21": "August 21 is Ninoy Aquino Day.",
+      "October 24": "October 24 is United Nations Day."
+    },
+    "tip": "December 10 = Human Rights Day."
+  },
+  "387": {
+    "steps": [
+      "RA 9003 requires a Materials Recovery Facility (MRF) in every barangay or cluster of barangays.",
+      "An MRF receives, sorts and recovers recyclable and compostable waste.",
+      "It reduces what goes to disposal sites."
+    ],
+    "wrong": {
+      "Sanitary landfill": "A sanitary landfill is a final disposal site, usually run at the city or municipal level, not per barangay.",
+      "Incinerator": "Incineration that gives off toxic fumes is banned by the Clean Air Act.",
+      "Water treatment plant": "Water treatment is related to the Clean Water Act, not RA 9003."
+    },
+    "tip": "MRF = barangay sorting center."
+  },
+  "388": {
+    "steps": [
+      "RA 9003 prohibits open dumping of garbage.",
+      "Open dumps pollute soil, water and air, and spread disease.",
+      "The law promotes segregation, recycling and composting instead."
+    ],
+    "wrong": {
+      "Composting": "Composting is encouraged by RA 9003.",
+      "Recycling": "Recycling is encouraged by RA 9003.",
+      "Segregation at source": "Segregation at source is required by RA 9003."
+    },
+    "tip": "RA 9003: segregate, recycle, compost; no open dumps."
+  },
+  "389": {
+    "steps": [
+      "The Clean Air Act (RA 8749) bans incineration of municipal, biomedical and hazardous waste that emits poisonous and toxic fumes.",
+      "Burning trash releases harmful chemicals into the air we breathe."
+    ],
+    "wrong": {
+      "Composting": "Composting is allowed and encouraged.",
+      "Recycling": "Recycling is allowed and encouraged.",
+      "Sanitary landfilling": "Sanitary landfills are an allowed disposal method under RA 9003."
+    },
+    "tip": "Clean Air Act: no toxic burning."
+  },
+  "390": {
+    "steps": [
+      "The Montreal Protocol (1987) phases out ozone-depleting substances like CFCs.",
+      "The ozone layer protects us from harmful ultraviolet rays."
+    ],
+    "wrong": {
+      "Kyoto Protocol": "The Kyoto Protocol (1997) set greenhouse gas reduction targets.",
+      "Paris Agreement": "The Paris Agreement (2015) aims to limit global warming.",
+      "Basel Convention": "The Basel Convention controls the movement of hazardous waste across borders."
+    },
+    "tip": "Montreal = ozone."
+  },
+  "391": {
+    "steps": [
+      "The Paris Agreement (2015) aims to keep global warming well below 2°C, and to pursue efforts to limit it to 1.5°C.",
+      "It is under the UN Framework Convention on Climate Change."
+    ],
+    "wrong": {
+      "Kyoto Protocol": "The Kyoto Protocol (1997) is an older climate treaty.",
+      "Montreal Protocol": "The Montreal Protocol (1987) protects the ozone layer.",
+      "Rio Declaration": "The Rio Declaration (1992) set principles on environment and development."
+    },
+    "tip": "Paris 2015 = below 2°C."
+  },
+  "392": {
+    "steps": [
+      "Sustainable development meets present needs without compromising future generations' ability to meet theirs.",
+      "This definition comes from the Brundtland Report (1987).",
+      "It balances economic growth, social welfare and environmental protection."
+    ],
+    "wrong": {
+      "Industrialization": "Industrialization is growth of factories and industry.",
+      "Urbanization": "Urbanization is the growth of cities.",
+      "Globalization": "Globalization is the increasing connection of countries."
+    },
+    "tip": "Sustainable = enough for now, enough for later."
+  },
+  "393": {
+    "steps": [
+      "Gases that trap heat in the atmosphere, like carbon dioxide and methane, are greenhouse gases.",
+      "They act like the glass of a greenhouse, warming the Earth.",
+      "Too much of them causes global warming and climate change."
+    ],
+    "wrong": {
+      "Noble gases": "Noble gases (helium, neon, argon) are unreactive elements in chemistry.",
+      "Ozone gases": "Ozone is a single gas that forms the ozone layer; carbon dioxide and methane are not ozone.",
+      "Inert gases": "Inert gases is another name for noble gases."
+    },
+    "tip": "Heat-trapping gases = greenhouse gases."
+  },
+  "394": {
+    "steps": [
+      "Earth Day is observed every April 22.",
+      "It is a day to raise awareness about protecting the environment."
+    ],
+    "wrong": {
+      "March 22": "March 22 is World Water Day.",
+      "June 5": "June 5 is World Environment Day.",
+      "December 10": "December 10 is Human Rights Day."
+    },
+    "tip": "Earth Day: April 22."
+  },
+  "395": {
+    "steps": [
+      "World Environment Day is June 5.",
+      "It is the UN's day for environmental awareness and action."
+    ],
+    "wrong": {
+      "April 22": "April 22 is Earth Day.",
+      "September 16": "September 16 is the International Day for the Preservation of the Ozone Layer.",
+      "October 24": "October 24 is United Nations Day."
+    },
+    "tip": "June 5 = World Environment Day."
+  },
+  "396": {
+    "steps": [
+      "The three Rs are Reduce, Reuse, Recycle.",
+      "Reduce means using less; reuse means using items again; recycle means turning waste into new materials.",
+      "Reducing waste first is the best option."
+    ],
+    "wrong": {
+      "Remove, reuse, refuse": "This is not the standard three Rs.",
+      "Reduce, recover, reject": "This is not the standard three Rs.",
+      "Repair, return, remove": "This is not the standard three Rs."
+    },
+    "tip": "Reduce first, then reuse, then recycle."
+  },
+  "397": {
+    "steps": [
+      "RA 9729, the Climate Change Act of 2009, created the Climate Change Commission.",
+      "The Commission coordinates climate change policies and programs of the government."
+    ],
+    "wrong": {
+      "RA 9003": "RA 9003 is the Ecological Solid Waste Management Act of 2000.",
+      "RA 8749": "RA 8749 is the Philippine Clean Air Act of 1999.",
+      "RA 10121": "RA 10121 is the Disaster Risk Reduction and Management Act of 2010, which created the NDRRMC."
+    },
+    "tip": "Climate Change Commission = RA 9729."
+  }
+}

@@ -9,7 +9,8 @@ Developed by Norell Mantilla — https://linkedin.com/in/nrldcm
 
 ## Features
 
-- **Realistic mock exam**: 170 items / 3 h 10 min (Professional), 165 items / 2 h 40 min (Subprofessional), OMR-style answer sheet, flags, auto-submit
+- **Realistic mock exam** following CSC Examination Advisory No. 10, s. 2026: 150 test items / 3 h 10 min (Professional), 145 / 2 h 40 min (Subprofessional) — the official 170/165 totals include 20 unscored EDQ items. OMR-style answer sheet, flags, auto-submit
+- **Every item labeled with its official CSC topic**; General Information items link to the law or Constitution text they are based on (Lawphil, UN)
 - **Practice modes**: practice with answers, unlimited practice, weakest-subject drill, per-subject practice, daily trivia
 - **Study notes**: lessons for every part of the coverage (verbal, Filipino, numerical, analytical, clerical, Constitution, RA 6713, peace and human rights, environment)
 - **Reviewer**: ~400 written items with explanations + unlimited generated items (math, logic and clerical answers are computed)
@@ -32,12 +33,12 @@ open it on the phone, then **Install app / Add to Home screen**.
 
 ## CI/CD (GitHub Actions)
 
-Every push to `main` runs two workflows:
+`.github/workflows/build-apk.yml` (keep this file name: its run number is the Android versionCode):
 
-| Workflow | Output |
-|---|---|
-| `.github/workflows/build-apk.yml` | Android APK (Capacitor) published as a **GitHub Release** `v1.0.<run>` |
-| `.github/workflows/deploy-pages.yml` | Web app (installable PWA) on **GitHub Pages** |
+1. **Regression tests**: `npm test` (logic: items, explanations, sources, generators, exam builder, backup) and `npx playwright test` (the built app clicked through at phone and tablet sizes).
+2. Only if the tests pass: **signed Android APK** published as a GitHub Release `v1.0.<run>`, and the **web app** deployed to GitHub Pages.
+
+Pull requests run the tests only.
 
 ### One-time setup
 

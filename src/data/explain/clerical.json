@@ -1,0 +1,673 @@
+{
+  "82": {
+    "steps": [
+      "Compare surnames first. “Santiago” vs “Santos”: S-a-n-t match. The 5th letter is “i” vs “o”. i comes before o, so Santiago, Lea is 1st.",
+      "The other three are all “Santos”, so compare their first names letter by letter.",
+      "“Mar” vs “Maria”: after “Mar”, the first has nothing and the second has “i”. Nothing comes before something, so Santos, Mar B. is 2nd.",
+      "“Maria” vs “Mario”: M-a-r-i match. The 5th letter is “a” vs “o”. a comes before o, so Maria is 3rd and Mario is 4th.",
+      "Order: Santiago, Lea; Santos, Mar B.; Santos, Maria L.; Santos, Mario A. The third is Santos, Maria L."
+    ],
+    "wrong": {
+      "Santiago, Lea": "This is 1st, not 3rd: “Santi” (i) comes before “Santo” (o).",
+      "Santos, Mar B.": "This is 2nd: “Mar” runs out before “Maria”, and nothing comes before something.",
+      "Santos, Mario A.": "This is 4th (last): “Mario” has o where “Maria” has a, and a comes first."
+    },
+    "tip": "Compare one letter at a time; a name that runs out first goes first."
+  },
+  "83": {
+    "steps": [
+      "Split the original into groups: PH | 4813 | QX7.",
+      "Check each option group by group against PH, 4813 and QX7.",
+      "Only PH-4813-QX7 matches all three groups exactly."
+    ],
+    "wrong": {
+      "PH-4831-QX7": "Middle group is 4831, not 4813: the last two digits 1 and 3 are swapped.",
+      "PH-4813-OX7": "Last group starts with the letter O, not Q. Q has a small tail; O does not.",
+      "PH-4318-QX7": "Middle group is 4318, not 4813: the 8 and the 3 are swapped."
+    },
+    "tip": "Check one group at a time, and watch look-alikes such as O/Q and O/0."
+  },
+  "84": {
+    "steps": [
+      "Split each address into parts: barangay and city.",
+      "Barangay: “Brgy. San Isidro” vs “Brgy. San Isidro”. Same.",
+      "City: “Tagum City” vs “Tagum Ctiy”. Look at the letters: C-i-t-y vs C-t-i-y. The 2nd and 3rd letters (i and t) are swapped.",
+      "Only the city part is different."
+    ],
+    "wrong": {
+      "Exactly alike": "Not alike: “City” is spelled “Ctiy” in the second address.",
+      "Different in the barangay": "Both say “Brgy. San Isidro” letter for letter.",
+      "Different in both": "Only the city differs; the barangay is the same."
+    },
+    "tip": "Read slowly, letter by letter; swapped letters are easy to miss."
+  },
+  "85": {
+    "steps": [
+      "The dates are written month/day/year. Compare the year first.",
+      "Two dates are in 2023 (12/01/2023 and 11/28/2023); the other two are in 2024, so they are later.",
+      "Between the 2023 dates, compare the month: 11 (November) comes before 12 (December).",
+      "So 11/28/2023 (November 28, 2023) is the earliest."
+    ],
+    "wrong": {
+      "03/15/2024": "Year 2024 is later than 2023.",
+      "12/01/2023": "Same year as the answer, but month 12 (December) comes after month 11 (November).",
+      "01/30/2024": "January is an early month, but the year 2024 is later than 2023. Year comes first."
+    },
+    "tip": "For dates, compare year first, then month, then day."
+  },
+  "86": {
+    "steps": [
+      "Count each word separately, including capital A.",
+      "“Accountability”: A-c-c-o-u-n-t-a-b-i-l-i-t-y. The capital A at the start and the a after “t” = 2.",
+      "“and”: a-n-d = 1.",
+      "“transparency”: t-r-a-n-s-p-a-r-e-n-c-y. The a after “tr” and the a after “sp” = 2.",
+      "Add: 2 + 1 + 2 = 5."
+    ],
+    "wrong": {
+      "4": "Too few. This usually happens when you skip the capital A at the start of “Accountability”.",
+      "6": "Too many. Recount each word: 2 + 1 + 2 = 5.",
+      "7": "Too many. There are only 5 a's: 2 in Accountability, 1 in and, 2 in transparency."
+    },
+    "tip": "Count word by word, write each count down, then add."
+  },
+  "87": {
+    "steps": [
+      "Split the original at the commas: 7 | 040 | 318.",
+      "Check each option group by group.",
+      "Only 7,040,318 has 7, then 040, then 318."
+    ],
+    "wrong": {
+      "7,040,381": "Last group is 381, not 318: the 1 and 8 are swapped.",
+      "7,004,318": "Middle group is 004, not 040: the 0 and 4 are swapped.",
+      "7,400,318": "Middle group is 400, not 040: the 4 moved to the front."
+    },
+    "tip": "Compare numbers one comma group at a time."
+  },
+  "88": {
+    "steps": [
+      "All four start with “Department of”, so skip that and compare the next word.",
+      "The words are Education, Energy, Finance, Health. E comes before F and H.",
+      "Education vs Energy: both start with E. The 2nd letter is “d” vs “n”. d comes before n.",
+      "Order: Education, Energy, Finance, Health. Department of Education is first."
+    ],
+    "wrong": {
+      "Department of Health": "H comes after E and F, so Health is last.",
+      "Department of Finance": "F comes after E, so Finance is 3rd.",
+      "Department of Energy": "“En” comes after “Ed” (n is after d), so Energy is 2nd."
+    },
+    "tip": "Skip the words that are the same; the first different letter decides."
+  },
+  "170": {
+    "steps": [
+      "Compare surnames first: Ramil, Ramirez, Ramos, Ramos.",
+      "“Ramil” vs “Ramirez”: R-a-m-i match. The 5th letter is “l” vs “r”. l comes before r, so Ramil is 1st and Ramirez is 2nd.",
+      "“Ramirez” vs “Ramos”: R-a-m match. The 4th letter is “i” vs “o”. i comes first, so both Ramos names come after Ramirez.",
+      "The two Ramos names have the same surname, so compare first names: “Carlo” vs “Celia”. The 2nd letter is “a” vs “e”. a comes first.",
+      "Order: Ramil, Teo; Ramirez, Jose; Ramos, Carlo; Ramos, Celia. The last is Ramos, Celia."
+    ],
+    "wrong": {
+      "Ramil, Teo": "This is 1st: “Ramil” (l) comes before “Ramirez” (r) and “Ramos” (o after i).",
+      "Ramirez, Jose": "This is 2nd: “Rami” comes before “Ramo”.",
+      "Ramos, Carlo": "This is 3rd: same surname as Celia, but “Ca” comes before “Ce”."
+    },
+    "tip": "When surnames are the same, the first name decides."
+  },
+  "171": {
+    "steps": [
+      "Split the original into groups: 482 | 305 | 117 | 000.",
+      "Check each option group by group.",
+      "Only TIN 482-305-117-000 matches all four groups."
+    ],
+    "wrong": {
+      "TIN 482-305-171-000": "Third group is 171, not 117: the 1 and 7 are swapped.",
+      "TIN 482-350-117-000": "Second group is 350, not 305: the 0 and 5 are swapped.",
+      "TIN 428-305-117-000": "First group is 428, not 482: the 8 and 2 are swapped."
+    },
+    "tip": "Check long ID numbers one dash group at a time."
+  },
+  "172": {
+    "steps": [
+      "Split each name into parts: surname, first name, middle initial.",
+      "Surname: “Dela Cruz” vs “Dela Cruz”. Same.",
+      "First name: N-o-r-b-e-r-t-o vs N-o-b-e-r-t-o. The 3rd letter “r” is missing in the second name.",
+      "Middle initial: “M.” vs “M.”. Same. So only the first name differs."
+    ],
+    "wrong": {
+      "Exactly alike": "Not alike: “Noberto” is missing the first r of “Norberto”.",
+      "Different in surname": "Both surnames are “Dela Cruz” letter for letter.",
+      "Different in middle initial": "Both middle initials are “M.”."
+    },
+    "tip": "Compare a name part by part: surname, first name, middle initial."
+  },
+  "173": {
+    "steps": [
+      "Both ends start with 2045, so the answer must also start with 2045.",
+      "Now the second group must be between 118 and 131.",
+      "Check: 110 is below 118; 132 is above 131; 125 is between (118 < 125 < 131).",
+      "So 2045-125 fits."
+    ],
+    "wrong": {
+      "2045-110": "110 is less than 118, so it comes before 2045-118, not after.",
+      "2045-132": "132 is more than 131, so it comes after 2045-131.",
+      "2054-120": "The first group is 2054, not 2045 (4 and 5 swapped). It is a different series and comes after all 2045 files."
+    },
+    "tip": "Check the first group first; only then look at the second group."
+  },
+  "174": {
+    "steps": [
+      "Count each group separately.",
+      "7471: 7, 4, 7, 1 = 2 sevens.",
+      "7077: 7, 0, 7, 7 = 3 sevens.",
+      "1717: 1, 7, 1, 7 = 2 sevens.",
+      "Add: 2 + 3 + 2 = 7."
+    ],
+    "wrong": {
+      "5": "Too few. Recount: 7471 has 2, 7077 has 3, 1717 has 2.",
+      "6": "One short. People often count only 2 sevens in 7077, but it has 3.",
+      "8": "Too many. The total is 2 + 3 + 2 = 7."
+    },
+    "tip": "Count each group on its own, write the number down, then add."
+  },
+  "175": {
+    "steps": [
+      "Letter by letter means you compare the names exactly as spelled. “Mc” is M-c, not “Mac”.",
+      "2nd letters: Mabini (a), Macaraeg (a), Magsaysay (a), McArthur (c). The three with “a” come before McArthur.",
+      "3rd letters of the “Ma” names: Mabini (b), Macaraeg (c), Magsaysay (g). b comes first.",
+      "Order: Mabini, Macaraeg, Magsaysay, McArthur. Mabini is first."
+    ],
+    "wrong": {
+      "McArthur": "Its 2nd letter is c, which comes after a, so it is last. Do not read “Mc” as “Mac”.",
+      "Macaraeg": "Its 3rd letter is c, which comes after the b in Mabini, so it is 2nd.",
+      "Magsaysay": "Its 3rd letter is g, which comes after b and c, so it is 3rd."
+    },
+    "tip": "Letter by letter: file names exactly as spelled (Mc = M-c)."
+  },
+  "176": {
+    "steps": [
+      "Split each line into two parts: reference number and amount.",
+      "Reference: “00918-AX” vs “00918-AX”. Same.",
+      "Amount: ₱12,450.75 vs ₱12,540.75. The “12” and “.75” match, but the middle group is 450 vs 540: the 4 and 5 are swapped.",
+      "Only the amount is different."
+    ],
+    "wrong": {
+      "Exactly alike": "Not alike: 12,450.75 became 12,540.75.",
+      "Different in reference number": "Both reference numbers are 00918-AX exactly.",
+      "Different in both": "Only the amount changed; the reference number is the same."
+    },
+    "tip": "In money amounts, check every digit group; swapped digits change the value."
+  },
+  "177": {
+    "steps": [
+      "All dates are in 2025, so compare the months: January, then February, then March.",
+      "Two dates are in March: March 1 and March 3. Day 1 comes before day 3.",
+      "Order: January 30, February 28, March 1, March 3.",
+      "The third date is March 1, 2025."
+    ],
+    "wrong": {
+      "March 3, 2025": "This is 4th (last): it is after March 1.",
+      "January 30, 2025": "This is 1st: January is the earliest month.",
+      "February 28, 2025": "This is 2nd: February comes after January but before March."
+    },
+    "tip": "Same year: compare months. Same month: compare days."
+  },
+  "178": {
+    "steps": [
+      "“Villa” vs “Villamor”: after “Villa”, the first has nothing and the second has “m”. Nothing comes before something, so Villa, Teo is 1st.",
+      "“Villamor” vs “Villanueva”: after “Villa”, the next letter is “m” vs “n”. m comes before n, so Villamor, Ana is 2nd.",
+      "The two Villanueva names: “Carla” vs “Carlo”. After “Carl”, it is “a” vs “o”. a comes first.",
+      "Order: Villa, Teo; Villamor, Ana; Villanueva, Carla; Villanueva, Carlo. Second is Villamor, Ana."
+    ],
+    "wrong": {
+      "Villa, Teo": "This is 1st: “Villa” ends where the others continue, and nothing comes before something.",
+      "Villanueva, Carla": "This is 3rd: “Villan” (n) comes after “Villam” (m).",
+      "Villanueva, Carlo": "This is 4th: same surname as Carla, but “Carlo” (o) comes after “Carla” (a)."
+    },
+    "tip": "Nothing comes before something: Villa goes before Villamor."
+  },
+  "179": {
+    "steps": [
+      "Compare surnames first: three are “Domingo” and one is “Dominguez”.",
+      "“Domingo” vs “Dominguez”: D-o-m-i-n-g match. The 7th letter is “o” vs “u”. o comes before u, so every Domingo comes before Dominguez.",
+      "Inside Domingo, compare first names: Ramon (Ra) comes first; then “Renato” vs “Rene”: after “Ren”, it is “a” vs “e”, so Renato comes before Rene.",
+      "Order: Domingo, Ramon; Domingo, Renato; Domingo, Rene; Dominguez, Ana. The last is Dominguez, Ana."
+    ],
+    "wrong": {
+      "Domingo, Ramon": "This is 1st: Domingo surname, and “Ra” comes before “Re”.",
+      "Domingo, Renato": "This is 2nd: “Rena” comes before “Rene”.",
+      "Domingo, Rene": "This is 3rd: it is last among the Domingo names, but every Domingo comes before Dominguez."
+    },
+    "tip": "Surname first; the first name matters only when surnames are the same."
+  },
+  "180": {
+    "steps": [
+      "Split the original into groups: 34 | 5678912 | 3.",
+      "Check each option group by group; read the long middle group in small chunks: 567-891-2.",
+      "Only 34-5678912-3 matches every group."
+    ],
+    "wrong": {
+      "34-5678921-3": "Middle group ends in 21, not 12: the last two digits are swapped.",
+      "34-5687912-3": "Middle group starts 5687, not 5678: the 7 and 8 are swapped.",
+      "43-5678912-3": "First group is 43, not 34: the 3 and 4 are swapped."
+    },
+    "tip": "Break long numbers into small chunks and compare chunk by chunk."
+  },
+  "181": {
+    "steps": [
+      "Split the original into groups: 0045 | 2210 | 98.",
+      "Check each option group by group.",
+      "Only 0045-2210-98 matches all three groups."
+    ],
+    "wrong": {
+      "0045-2201-98": "Middle group is 2201, not 2210: the 1 and 0 are swapped.",
+      "0054-2210-98": "First group is 0054, not 0045: the 4 and 5 are swapped.",
+      "0045-2210-89": "Last group is 89, not 98: the 9 and 8 are swapped."
+    },
+    "tip": "Compare account numbers one dash group at a time."
+  },
+  "182": {
+    "steps": [
+      "Split each address into parts: purok, barangay, city.",
+      "Purok: “Purok 5” vs “Purok 5”. Same.",
+      "Barangay: “Brgy. Apokon” vs “Brgy. Apokon”. Same.",
+      "City: “Tagum City” vs “Tagum City”. Same. Every character matches."
+    ],
+    "wrong": {
+      "Different in the purok": "Both say Purok 5.",
+      "Different in the barangay": "Both say Brgy. Apokon, letter for letter.",
+      "Different in the city": "Both say Tagum City, letter for letter."
+    },
+    "tip": "Do not assume there must be a difference; sometimes both are identical."
+  },
+  "183": {
+    "steps": [
+      "Split each entry into two parts: name and number.",
+      "Name: “Juan P. Reyes” vs “Juan P. Reyes”. Same.",
+      "Number groups: 0917 = 0917, 123 = 123, but 4567 vs 4576: the last two digits 6 and 7 are swapped.",
+      "Only the number is different."
+    ],
+    "wrong": {
+      "Exactly alike": "Not alike: the last group is 4567 in one and 4576 in the other.",
+      "Different in the name": "Both names are “Juan P. Reyes” exactly.",
+      "Different in both": "Only the number differs; the name is the same."
+    },
+    "tip": "Check phone numbers group by group, especially the last digits."
+  },
+  "184": {
+    "steps": [
+      "Write out the letters: E-X-C-E-L-L-E-N-C-E.",
+      "Mark each E: 1st letter, 4th letter, 7th letter, 10th letter.",
+      "That is 4 E's."
+    ],
+    "wrong": {
+      "3": "One short. People often miss the last E at the end of the word.",
+      "5": "Too many. Only the 1st, 4th, 7th and 10th letters are E.",
+      "6": "Too many. The word has 10 letters and only 4 of them are E."
+    },
+    "tip": "Spell the word out letter by letter and tick each match."
+  },
+  "185": {
+    "steps": [
+      "Compare years first: three dates are in 2026 and one (July 1, 2025) is in 2025. 2026 is later.",
+      "Among the 2026 dates, compare months: May comes before June.",
+      "Two dates are in June: June 3 and June 30. Day 30 is after day 3.",
+      "So June 30, 2026 is the latest."
+    ],
+    "wrong": {
+      "July 1, 2025": "July is a later month, but the year 2025 is earlier than 2026. Year comes first.",
+      "May 31, 2026": "May comes before June in the same year.",
+      "June 3, 2026": "Same month as the answer, but day 3 is before day 30."
+    },
+    "tip": "Latest date: biggest year, then biggest month, then biggest day."
+  },
+  "186": {
+    "steps": [
+      "All four numbers start with 1, so look at the 2nd digit: 1048 (0), 1084 (0), 1408 (4), 1004 (0). 1408 has the biggest, so it is highest.",
+      "For the three that start with 10, look at the 3rd digit: 1004 (0), 1048 (4), 1084 (8).",
+      "Order from lowest: 1004, 1048, 1084, 1408.",
+      "The second is 1048."
+    ],
+    "wrong": {
+      "1004": "This is the lowest (1st): its 3rd digit is 0.",
+      "1084": "This is 3rd: its 3rd digit 8 is bigger than the 4 in 1048.",
+      "1408": "This is the highest (4th): its 2nd digit is 4, while the others have 0."
+    },
+    "tip": "Same number of digits: compare from the left, one digit at a time."
+  },
+  "187": {
+    "steps": [
+      "Check each pair: compare the letters, then the four digits.",
+      "AB-1234 / AB-1234: same. LM-5566 / LM-5566: same. QR-3030 / QR-3030: same.",
+      "XZ-9087 / XZ-9078: letters match and “90” matches, but then 87 vs 78: the 8 and 7 are swapped.",
+      "So XZ-9087 and XZ-9078 is the pair that is NOT alike."
+    ],
+    "wrong": {
+      "AB-1234 and AB-1234": "Both sides are identical, letter for letter and digit for digit.",
+      "LM-5566 and LM-5566": "Both sides are identical.",
+      "QR-3030 and QR-3030": "Both sides are identical."
+    },
+    "tip": "For “NOT alike”, hunt for the one pair with any difference."
+  },
+  "188": {
+    "steps": [
+      "Ask: what is this memo mainly about? Leave credits are the vacation and sick leave days that employees earn.",
+      "Personnel (human resources) files hold records about employees: hiring, appointments, attendance, leave and benefits.",
+      "So a memo on employee leave credits goes under Personnel."
+    ],
+    "wrong": {
+      "Procurement": "Procurement is for buying supplies, equipment and services, not employee leave.",
+      "Finance": "Finance is for budgets, payments and disbursements. Leave credits are counted in days and kept in employee records.",
+      "Legal": "Legal is for cases, contracts and legal opinions."
+    },
+    "tip": "If it is about employees, file it under Personnel."
+  },
+  "189": {
+    "steps": [
+      "Ask: what is this record mainly about? A purchase request asks the office to buy something (printer ink).",
+      "Procurement files hold records of buying goods and services: purchase requests, canvass, bids and purchase orders.",
+      "So the purchase request goes under Procurement."
+    ],
+    "wrong": {
+      "Personnel": "Personnel is for employee records such as leave and appointments.",
+      "Training": "Training is for seminars, workshops and learning programs.",
+      "Legal": "Legal is for cases, contracts and legal opinions."
+    },
+    "tip": "Anything about buying goes under Procurement."
+  },
+  "190": {
+    "steps": [
+      "Rule: “i before e, except after c.”",
+      "In this word the letters come right after “c”, so write e first, then i: c-e-i.",
+      "Correct spelling: R-E-C-E-I-V-E."
+    ],
+    "wrong": {
+      "Recieve": "The i and e are reversed after c; after c it is “ei”.",
+      "Receeve": "It has a double e and no i.",
+      "Receve": "It is missing the i."
+    },
+    "tip": "i before e, except after c: rec-EI-ve."
+  },
+  "191": {
+    "steps": [
+      "All four start with “Bureau of”, so compare the next word: Corrections, Customs, Fire Protection, Immigration.",
+      "Two start with C. “Corrections” vs “Customs”: the 2nd letter is “o” vs “u”. o comes before u, so Corrections is 1st and Customs is 2nd.",
+      "Then F (Fire Protection) is 3rd and I (Immigration) is 4th.",
+      "The second is Bureau of Customs."
+    ],
+    "wrong": {
+      "Bureau of Corrections": "This is 1st: “Co” comes before “Cu”.",
+      "Bureau of Fire Protection": "This is 3rd: F comes after C.",
+      "Bureau of Immigration": "This is 4th: I comes after C and F."
+    },
+    "tip": "Skip the shared words; the first different letter decides."
+  },
+  "192": {
+    "steps": [
+      "Count each group separately.",
+      "1005: 1, 0, 0, 5 = 2 zeros.",
+      "2030: 2, 0, 3, 0 = 2 zeros.",
+      "4000: 4, 0, 0, 0 = 3 zeros.",
+      "Add: 2 + 2 + 3 = 7."
+    ],
+    "wrong": {
+      "5": "Too few. Recount: 1005 has 2, 2030 has 2, 4000 has 3.",
+      "6": "One short. A common slip is missing the last 0 in 2030.",
+      "8": "Too many. The total is 2 + 2 + 3 = 7."
+    },
+    "tip": "Count each group on its own, write it down, then add."
+  },
+  "193": {
+    "steps": [
+      "Split each line into parts: room, floor, building.",
+      "Room: “Rm. 214” vs “Rm. 241”. The 1 and 4 are swapped.",
+      "Floor: “2nd Flr.” vs “2nd Flr.”. Same.",
+      "Building: “Capitol Bldg.” vs “Capitol Bldg.”. Same. Only the room number differs."
+    ],
+    "wrong": {
+      "Exactly alike": "Not alike: room 214 became 241.",
+      "Different in floor": "Both say “2nd Flr.”.",
+      "Different in building": "Both say “Capitol Bldg.”."
+    },
+    "tip": "Compare part by part; one swapped digit is enough to make them different."
+  },
+  "194": {
+    "steps": [
+      "Rule: sort by letter first. The A codes (A-30, A-4) come before the B codes (B-12, B-2).",
+      "Inside the A codes, sort the numbers by value: 4 is smaller than 30.",
+      "Order: A-4, A-30, B-2, B-12. A-4 is first."
+    ],
+    "wrong": {
+      "A-30": "This is 2nd. Its first digit 3 looks smaller than 4, but the rule says numerical order, and 30 is bigger than 4.",
+      "B-2": "This is 3rd: every A code comes before any B code.",
+      "B-12": "This is 4th (last): it is a B code, and 12 is bigger than 2."
+    },
+    "tip": "Letter first, then number by its full value (4 before 30)."
+  },
+  "195": {
+    "steps": [
+      "AM means before noon (morning). PM means after noon. 12:15 PM is 15 minutes after noon.",
+      "8:45 AM, 9:30 AM and 11:50 AM are all in the morning, before noon.",
+      "So 12:15 PM is the latest."
+    ],
+    "wrong": {
+      "8:45 AM": "This is the earliest of the four.",
+      "9:30 AM": "Still in the morning, before noon.",
+      "11:50 AM": "Close, but it is 10 minutes before noon, 25 minutes earlier than 12:15 PM."
+    },
+    "tip": "12 PM is noon; a PM time is later than any AM time on the same day."
+  },
+  "196": {
+    "steps": [
+      "Split the original into parts: Ma. | Cristina | B. | Gonzales.",
+      "Check each option part by part: first name C-r-i-s-t-i-n-a, middle initial B., surname ending in s.",
+      "Only Ma. Cristina B. Gonzales matches every part."
+    ],
+    "wrong": {
+      "Ma. Christina B. Gonzales": "First name has an extra h: “Chr” instead of “Cr”.",
+      "Ma. Cristina B. Gonzalez": "Surname ends in z instead of s.",
+      "Ma. Cristina D. Gonzales": "Middle initial is D instead of B."
+    },
+    "tip": "Check names part by part, including small endings like s/z."
+  },
+  "197": {
+    "steps": [
+      "Check each pair letter by letter.",
+      "Tagum / Tagun: the last letter is m vs n. Panabo / Panobo: the 4th letter is a vs o. Carmen / Carmin: the 5th letter is e vs i.",
+      "Davao del Norte / Davao del Norte: every letter matches.",
+      "So the Davao del Norte pair is exactly alike."
+    ],
+    "wrong": {
+      "Tagum and Tagun": "The last letter differs: m vs n.",
+      "Panabo and Panobo": "The 4th letter differs: a vs o.",
+      "Carmen and Carmin": "The 5th letter differs: e vs i."
+    },
+    "tip": "Watch look-alike letters such as m/n, a/o and e/i."
+  },
+  "333": {
+    "steps": [
+      "Letter by letter means you ignore the spaces and read each surname as one word.",
+      "Del Rosario = DELROSARIO, Dela Cruz = DELACRUZ, De Leon = DELEON, Delgado = DELGADO.",
+      "The first three letters D-E-L are the same in all. Look at the 4th letter: R, A, E, G.",
+      "Alphabet order: A, E, G, R. So the order is Dela Cruz, De Leon, Delgado, Del Rosario. Dela Cruz is first."
+    ],
+    "wrong": {
+      "Del Rosario, Ben": "Its 4th letter is R, the latest of the four, so it is last.",
+      "De Leon, Carlo": "This is 2nd: its 4th letter is E (DELE...). The space after “De” does not count in letter-by-letter filing.",
+      "Delgado, Rita": "This is 3rd: its 4th letter is G, which comes after A and E."
+    },
+    "tip": "Letter by letter: drop the spaces and compare as one word."
+  },
+  "334": {
+    "steps": [
+      "All surnames are “Santos”, so compare what comes after: Jose, Jose Jr., Joseph, Josefa.",
+      "All start with “Jose”. After “Jose”, plain “Jose” has nothing, while the others have more (Jr., p, fa).",
+      "Nothing comes before something, so Santos, Jose comes first."
+    ],
+    "wrong": {
+      "Santos, Jose Jr.": "Same name plus “Jr.”. Plain “Jose” has nothing after it, so it goes ahead of “Jose Jr.”.",
+      "Santos, Joseph": "After “Jose”, Joseph still has “ph”. Nothing comes before something.",
+      "Santos, Josefa": "After “Jose”, Josefa still has “fa”. Nothing comes before something."
+    },
+    "tip": "Nothing comes before something: the shortest matching name goes first."
+  },
+  "335": {
+    "steps": [
+      "Alphabetic filing arranges records by name, A to Z.",
+      "Numeric filing arranges records by number, such as file or case numbers.",
+      "Geographic filing arranges records by place: region, province, city or barangay.",
+      "Chronological filing arranges records by date. So the system based on place is Geographic."
+    ],
+    "wrong": {
+      "Alphabetic": "Sorts by name, A to Z, not by place.",
+      "Numeric": "Sorts by assigned numbers, not by place.",
+      "Chronological": "Sorts by date, not by place."
+    },
+    "tip": "Geo = earth, land, place."
+  },
+  "336": {
+    "steps": [
+      "Chronological filing arranges records by date, oldest to newest or newest to oldest.",
+      "Subject filing groups records by topic; geographic by place; alphanumeric by codes that mix letters and numbers.",
+      "So the system based on date is Chronological."
+    ],
+    "wrong": {
+      "Subject": "Groups records by topic (e.g. Personnel, Procurement), not by date.",
+      "Geographic": "Groups records by place, not by date.",
+      "Alphanumeric": "Sorts by codes that mix letters and numbers (e.g. A-12), not by date."
+    },
+    "tip": "Chrono = time, so chronological = by date."
+  },
+  "337": {
+    "steps": [
+      "The usual order of a business letter: heading/date, inside address, salutation, body, complimentary close, signature line.",
+      "The salutation is the greeting, such as “Dear Sir:”.",
+      "It comes right before the body, so Salutation is the answer."
+    ],
+    "wrong": {
+      "Inside address": "It comes before the salutation, so it is two steps before the body.",
+      "Complimentary close": "It comes after the body (e.g. “Very truly yours,”).",
+      "Signature line": "It comes at the very end, after the complimentary close."
+    },
+    "tip": "Greet (salutation), talk (body), say goodbye (close), then sign."
+  },
+  "338": {
+    "steps": [
+      "In the full block style, every part (date, inside address, salutation, body, closing and signature) starts at the left margin.",
+      "There are no indented paragraphs and nothing is centered or pushed to the right.",
+      "So “Every line starts at the left margin” is correct."
+    ],
+    "wrong": {
+      "The date is centered": "In full block the date is also at the left margin. A centered or right-side date belongs to other styles, such as modified block.",
+      "Paragraphs are indented": "Indented paragraphs belong to the semi-block style, not full block.",
+      "The closing is on the right": "A closing toward the right belongs to the modified block style; in full block it is at the left margin."
+    },
+    "tip": "Full block = everything flush left."
+  },
+  "339": {
+    "steps": [
+      "“CONFIDENTIAL” means the content is private or sensitive.",
+      "Only people who are authorized and need the information for their work may see it.",
+      "So it should be shown only to authorized persons and kept secure."
+    ],
+    "wrong": {
+      "Posted on the bulletin board": "A bulletin board is public; this is the opposite of confidential.",
+      "Shared with all staff": "Not all staff are authorized; confidential means limited access.",
+      "Thrown away after reading": "Confidential records must be kept safely; they can be disposed of only under the proper retention and disposal rules."
+    },
+    "tip": "Confidential = need-to-know only."
+  },
+  "340": {
+    "steps": [
+      "Active records are used often and are kept in the office for easy access.",
+      "Inactive records are seldom used but must still be kept until their retention period ends, usually in storage.",
+      "Vital records are essential for the agency to keep running or to protect rights; draft records are unfinished versions.",
+      "Records that are seldom used but must be kept for a set period are Inactive records."
+    ],
+    "wrong": {
+      "Active records": "Active records are used often, not seldom.",
+      "Vital records": "Vital records are defined by importance (the agency cannot function without them), not by how seldom they are used.",
+      "Draft records": "Drafts are unfinished versions of documents, not stored records awaiting their retention period."
+    },
+    "tip": "Active = used often; inactive = rarely used but still kept."
+  },
+  "341": {
+    "steps": [
+      "Split the original: 12 | 050478291 | 6.",
+      "Break the long middle group into chunks of three: 050 | 478 | 291.",
+      "Compare each option chunk by chunk. Only 12-050478291-6 matches all chunks."
+    ],
+    "wrong": {
+      "12-050478219-6": "Last chunk is 219, not 291: the 9 and 1 are swapped.",
+      "12-050487291-6": "Middle chunk is 487, not 478: the 7 and 8 are swapped.",
+      "12-005478291-6": "First chunk is 005, not 050: the 0 and 5 are swapped."
+    },
+    "tip": "Break long numbers into chunks of three, then compare chunk by chunk."
+  },
+  "342": {
+    "steps": [
+      "Check each pair digit by digit.",
+      "BDO-4471 / BDO-4471: alike. LBP-1188 / LBP-1188: alike.",
+      "PNB-9032 / PNB-9023: the last two digits 3 and 2 are swapped. Not alike.",
+      "DBP-5605 / DBP-5650: the last two digits 0 and 5 are swapped. Not alike.",
+      "Alike pairs: BDO and LBP = 2."
+    ],
+    "wrong": {
+      "1": "Too few: both the BDO and the LBP pairs match exactly.",
+      "3": "Too many: PNB (9032 vs 9023) and DBP (5605 vs 5650) both have swapped digits.",
+      "4": "That would mean all pairs match, but the PNB and DBP pairs do not."
+    },
+    "tip": "Mark each pair alike or not alike, then count the marks."
+  },
+  "343": {
+    "steps": [
+      "Rule: sort by the first number (by value), then by the second number.",
+      "First numbers: 2, 2, 12, 2. Since 2 is less than 12, all the “2-” files come before 12-001.",
+      "Among the “2-” files, compare the second numbers by value: 041 (41), 104, 140. 41 < 104 < 140.",
+      "Order: 2-041, 2-104, 2-140, 12-001. The third file is 2-140."
+    ],
+    "wrong": {
+      "2-104": "This is 2nd: 104 is bigger than 41 but smaller than 140.",
+      "2-041": "This is 1st: 41 is the smallest second number among the “2-” files.",
+      "12-001": "This is last: 12 is bigger than 2, even though it starts with the digit 1."
+    },
+    "tip": "Compare numbers by their full value, not by their first digit."
+  },
+  "344": {
+    "steps": [
+      "Break the word down: re + commend + ation.",
+      "“Commend” has one c and two m's: c-o-m-m-e-n-d.",
+      "So the correct spelling is R-E-C-O-M-M-E-N-D-A-T-I-O-N: one c, double m, and “e” after the m's."
+    ],
+    "wrong": {
+      "Reccomendation": "It doubles the c and uses only one m; it should be one c and two m's.",
+      "Recomendation": "It is missing one m.",
+      "Recommandation": "It has “a” after the m's instead of “e” (that is the French spelling)."
+    },
+    "tip": "Recommend = re + commend: one c, two m's."
+  },
+  "345": {
+    "steps": [
+      "A memorandum (memo) is a short written message used inside an office or agency.",
+      "It is used for announcements, instructions, reminders and policies sent to employees or other units of the same organization.",
+      "So its main use is communication within an office or agency."
+    ],
+    "wrong": {
+      "Letters to foreign governments": "Communication with other governments is external and uses formal letters or diplomatic notes, not memos.",
+      "Personal letters": "Personal letters are private, not official office communication.",
+      "Court decisions": "Court decisions are issued by courts as rulings, not as office memos."
+    },
+    "tip": "Memo = inside the office; letter = outside."
+  },
+  "346": {
+    "steps": [
+      "The receiving stamp records the exact date and time the office got the letter.",
+      "That date is the starting point for counting the deadline to act or reply. Under RA 6713, offices must respond within 15 working days.",
+      "With the stamp, anyone can check whether the letter was acted on in time."
+    ],
+    "wrong": {
+      "Make it look official": "The stamp is not decoration; its purpose is to record when the letter was received.",
+      "Replace the signature": "A receiving stamp cannot take the place of the sender's or an official's signature.",
+      "Mark it as confidential": "Confidentiality is marked separately (e.g. “CONFIDENTIAL”); the receiving stamp only records receipt."
+    },
+    "tip": "The receiving stamp starts the clock."
+  }
+}

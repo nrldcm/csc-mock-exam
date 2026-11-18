@@ -1,22 +1,84 @@
-name: Build Android APK
+name: CI/CD (tests, Android APK, web app)
 
-# CI/CD: every push to main builds the Android app and publishes it as a GitHub Release.
+# Every push to main: run the regression tests; only if they pass, build and release the signed APK
+# and deploy the web app to GitHub Pages. Pull requests run the tests only.
+# Keep this FILE NAME: the run number is the Android versionCode, and a new file would restart it at 1.
 on:
   push:
     branches: [main]
-    paths-ignore: ['signing/**', '**.md']
+    paths-ignore: ['signing/**', '**.md', 'social/**']
+  pull_request:
   workflow_dispatch:
 
 permissions:
   contents: write
 
-# One build at a time, so the signing key is never created twice
+# One run at a time, so the signing key is never created twice
 concurrency:
   group: build-apk
   cancel-in-progress: false
 
 jobs:
+  test:
+    name: Regression tests (logic + phone/tablet end-to-end)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: Install dependencies
+        run: npm install --no-fund --no-audit
+      - name: Logic regression tests
+        run: npm test
+      - name: Build web app
+        run: npm run build
+      - name: Install Chromium for end-to-end tests
+        run: npx playwright install --with-deps chromium
+      - name: End-to-end tests (phone and tablet)
+        run: npx playwright test
+      - name: Upload test report
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: playwright-report
+          retention-days: 7
+
+  pages-build:
+    name: Build web app for GitHub Pages
+    needs: test
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - run: npm install --no-fund --no-audit
+      - run: npm run build
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  pages-deploy:
+    name: Deploy to GitHub Pages
+    needs: pages-build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
+
   apk:
+    name: Build and release signed Android APK
+    needs: test
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
@@ -47,6 +109,13 @@ jobs:
       - name: Add Android platform
         run: npx cap add android
 
+      - name: Storage permission for automatic backups on older Android (9 and 10)
+        run: |
+          M=android/app/src/main/AndroidManifest.xml
+          sed -i 's#</manifest>#    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="29" />\n    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />\n</manifest>#' "$M"
+          sed -i '0,/<application/s##<application android:requestLegacyExternalStorage="true"#' "$M"
+          grep -nE "uses-permission|requestLegacy" "$M"
+
       - name: Set version (one higher every build, so updates install over the old app)
         run: |
           sed -i -E "s/versionCode [0-9]+/versionCode ${{ github.run_number }}/" android/app/build.gradle
@@ -63,20 +132,23 @@ jobs:
       - name: Copy web build into the Android project
         run: npx cap sync android
 
-      # Release signing. Needs one repository secret: ANDROID_KEYSTORE_PASSWORD (a long random password).
+      # Release signing. Needs one REPOSITORY secret: ANDROID_KEYSTORE_PASSWORD (a long random password).
       # First run: creates the key, encrypts it with that password (AES-256) and commits signing/release.keystore.enc.
-      # Later runs: decrypt and reuse the same key, so every release installs as an update.
-      # Without the secret, a debug build is produced instead.
+      # Later runs: decrypt and reuse the same key, so every release installs as an update and keeps user data.
+      # No debug fallback: a debug build has a throwaway key, which forces users to uninstall (and lose progress).
       - name: Prepare signing key
         id: sign
         env:
           KS_PASS: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
         run: |
           if [ -z "$KS_PASS" ]; then
-            echo "::warning::ANDROID_KEYSTORE_PASSWORD secret not set; building a debug APK."
-            echo "mode=debug" >> "$GITHUB_OUTPUT"; exit 0
+            echo "::error title=Missing signing secret::Add a REPOSITORY secret named ANDROID_KEYSTORE_PASSWORD (Settings > Secrets and variables > Actions > Secrets tab > New repository secret). Not a Variable, not an Environment secret."
+            exit 1
           fi
           KS="$RUNNER_TEMP/release.keystore"
+          # Always use the key that is on main now (an earlier run may have just created it)
+          git fetch --quiet origin main
+          git checkout origin/main -- signing/release.keystore.enc 2>/dev/null || true
           if [ -f signing/release.keystore.enc ]; then
             openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -in signing/release.keystore.enc -out "$KS" -pass env:KS_PASS
           else
@@ -90,7 +162,8 @@ jobs:
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add signing/release.keystore.enc
             git commit -m "Add encrypted release signing key [skip ci]"
-            git push
+            git pull --rebase --autostash --quiet origin main
+            git push origin HEAD:main
           fi
           echo "mode=release" >> "$GITHUB_OUTPUT"
 
@@ -100,18 +173,22 @@ jobs:
           KS_PASS: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
         run: |
           chmod +x gradlew
-          if [ "${{ steps.sign.outputs.mode }}" = "release" ]; then
-            ./gradlew assembleRelease --no-daemon \
-              -Pandroid.injected.signing.store.file="$RUNNER_TEMP/release.keystore" \
-              -Pandroid.injected.signing.store.password="$KS_PASS" \
-              -Pandroid.injected.signing.key.alias=csc \
-              -Pandroid.injected.signing.key.password="$KS_PASS"
-            cp app/build/outputs/apk/release/app-release.apk ../CSC-Mock-Exam.apk
-          else
-            ./gradlew assembleDebug --no-daemon
-            cp app/build/outputs/apk/debug/app-debug.apk ../CSC-Mock-Exam.apk
-          fi
+          ./gradlew assembleRelease --no-daemon \
+            -Pandroid.injected.signing.store.file="$RUNNER_TEMP/release.keystore" \
+            -Pandroid.injected.signing.store.password="$KS_PASS" \
+            -Pandroid.injected.signing.key.alias=csc \
+            -Pandroid.injected.signing.key.password="$KS_PASS"
+          cp app/build/outputs/apk/release/app-release.apk ../CSC-Mock-Exam.apk
           rm -f "$RUNNER_TEMP/release.keystore"
+
+      # The certificate fingerprint must be identical in every release; if it ever changes, updates will not install
+      - name: Signing certificate fingerprint
+        run: |
+          AS="$(ls -d "$ANDROID_HOME"/build-tools/*/ | sort -V | tail -1)apksigner"
+          "$AS" verify --print-certs CSC-Mock-Exam.apk | tee cert.txt
+          FP=$(grep -m1 'SHA-256 digest' cert.txt | awk '{print $NF}')
+          if [ -z "$FP" ]; then echo "::error::APK is not signed"; exit 1; fi
+          echo "CERT_SHA256=$FP" >> "$GITHUB_ENV"
 
       - uses: actions/upload-artifact@v4
         with:
@@ -131,7 +208,10 @@ jobs:
             **Install:** download `CSC-Mock-Exam.apk` on your phone or tablet, open it, and allow "Install unknown apps" when asked.
             **Updates:** the app checks for new versions when you open it. Tap *Update now*, then *Install*; the update installs over the old app and keeps your sessions.
 
-            Build: **${{ steps.sign.outputs.mode }}**${{ steps.sign.outputs.mode == 'debug' && ' (temporary signing key: to update from an older build you may need to uninstall first, so back up your sessions in My sessions → Back up to a file).' || ' (signed; installs as an update over earlier releases and keeps your data).' }}
+            Signed release build. Installs as an update over earlier signed releases and keeps your data.
+            Signing certificate SHA-256: `${{ env.CERT_SHA256 }}`
+
+            Coming from v1.0.5 or older? Those were test builds with a temporary key. Back up first (My sessions → Back up to a file), uninstall once, install this version, then Restore. After this, updates never need an uninstall.
 
             Independent study aid. Not affiliated with or endorsed by the Civil Service Commission.
             Developed by Norell Mantilla — https://linkedin.com/in/nrldcm

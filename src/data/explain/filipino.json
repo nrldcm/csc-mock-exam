@@ -1,0 +1,511 @@
+{
+  "25": {
+    "steps": [
+      "Ang MAPAGKUMBABA ay taong hindi nagmamataas at hindi ipinagyayabang ang sarili (humble).",
+      "Halimbawa: “Kahit mayaman na siya, mapagkumbaba pa rin siya at bumabati sa lahat.”",
+      "Ang “mababang-loob” ay may parehong kahulugan: taong hindi palalo o hambog. Kaya ito ang kasingkahulugan."
+    ],
+    "wrong": {
+      "Mayabang": "Kabaligtaran ito. Ang mayabang ay nagmamalaki o nagmamataas (arrogant).",
+      "Matapang": "Ang matapang ay walang takot (brave); walang kinalaman sa pagiging hindi palalo.",
+      "Masipag": "Ang masipag ay mahilig magtrabaho (hardworking); ibang katangian ito."
+    },
+    "tip": "Mapagkumbaba = mababang-loob = hindi mayabang."
+  },
+  "26": {
+    "steps": [
+      "Sawikain (idiom) ang “nagsusunog ng kilay”; hindi ito literal na pagsunog ng kilay.",
+      "Noong wala pang kuryente, nag-aaral ang mga estudyante sa tabi ng kandila o gasera hanggang hatinggabi, kaya parang nadadarang sa apoy ang kanilang kilay.",
+      "Halimbawa: “Gabi-gabing nagsusunog ng kilay si Liza para makapasa sa pagsusulit.”",
+      "Kaya ang ibig sabihin nito ay nag-aaral nang mabuti."
+    ],
+    "wrong": {
+      "Nagluluto": "Literal na pagbasa ito sa salitang “sunog”; hindi tungkol sa pagluluto ang sawikain.",
+      "Nagagalit": "Walang kinalaman sa galit; “mainit ang ulo” ang sawikain para sa galit.",
+      "Nagpapaganda": "Baka maisip ito dahil sa salitang “kilay,” pero hindi pagpapaganda ang kahulugan ng sawikain."
+    },
+    "tip": "Nagsusunog ng kilay = puyat sa pag-aaral."
+  },
+  "27": {
+    "steps": [
+      "Ang MASAGANA ay marami, sobra-sobra, o mayaman sa ani at pagkain (abundant).",
+      "Ang SALAT ay kulang o kapos (lacking).",
+      "Halimbawa: “Masagana ang ani ngayong taon, pero salat ang ani noong tagtuyot.”",
+      "Magkabaligtaran ang “marami” at “kulang,” kaya Salat ang kasalungat."
+    ],
+    "wrong": {
+      "Sagana": "Ito ang salitang-ugat ng masagana at pareho ang kahulugan; kasingkahulugan ito, hindi kasalungat.",
+      "Malawak": "Ang malawak ay malaki ang sakop (wide); tungkol ito sa lawak, hindi sa dami.",
+      "Matagumpay": "Ang matagumpay ay nagtagumpay (successful); hindi ito kabaligtaran ng masagana."
+    },
+    "tip": "Kasalungat = kabaligtaran. Sagana ↔ salat."
+  },
+  "28": {
+    "steps": [
+      "Tuntunin: Ginagamit ang “nang” bago ang salitang nagsasabi KUNG PAANO ginawa ang kilos (pang-abay na pamaraan). Ginagamit ang “ng” bago ang pangngalan (bagay o tao).",
+      "Itanong: “Paano siya tumakbo?” Sagot: “mabilis.” Kaya ang “mabilis” ay nagsasabi ng paraan ng pagtakbo.",
+      "Dahil paraan ito, “nang” ang tama: “Tumakbo siya nang mabilis papunta sa opisina.”"
+    ],
+    "wrong": {
+      "ng": "Ginagamit ang “ng” bago ang pangngalan (hal. kumain ng mangga). Ang “mabilis” ay hindi bagay kundi paraan ng kilos.",
+      "nag": "Panlapi ito ng pandiwa (hal. nag-aral), hindi salitang pang-ugnay; hindi ito tumatayo nang mag-isa sa pangungusap.",
+      "naang": "Walang ganitong salita sa Filipino; mali ang baybay."
+    },
+    "tip": "Sumasagot sa “paano?” → NANG. Bago ang bagay o pangngalan → NG."
+  },
+  "29": {
+    "steps": [
+      "Sawikain ang “balat-sibuyas.” Ang balat ng sibuyas ay napakanipis at madaling mapunit.",
+      "Kaya ang taong balat-sibuyas ay parang manipis ang damdamin: madaling masaktan, mapikon o umiyak sa kaunting biro o puna (sensitive).",
+      "Halimbawa: “Huwag mo siyang biruin nang ganyan; balat-sibuyas iyan.”"
+    ],
+    "wrong": {
+      "Mayaman": "Walang kinalaman sa pera ang sawikain.",
+      "Maputi ang balat": "Literal na pagbasa ito; hindi tungkol sa kulay ng balat ang sawikain.",
+      "Mahilig magluto": "May sibuyas sa sawikain, pero hindi tungkol sa pagluluto ang kahulugan nito."
+    },
+    "tip": "Manipis tulad ng balat ng sibuyas = madaling masaktan."
+  },
+  "30": {
+    "steps": [
+      "Ang MATIWASAY ay tahimik, maayos, at walang gulo o problema (peaceful).",
+      "Halimbawa: “Matiwasay na namumuhay ang mag-anak sa probinsiya.”",
+      "Ang “payapa” ay tahimik at walang gulo rin, kaya ito ang kasingkahulugan."
+    ],
+    "wrong": {
+      "Magulo": "Kabaligtaran ito ng matiwasay; ang magulo ay walang kaayusan.",
+      "Maingay": "Kabaligtaran ito ng tahimik, kaya hindi kasingkahulugan.",
+      "Malungkot": "Damdamin ito (sad). Ang matiwasay ay tungkol sa katahimikan at kaayusan, hindi sa lungkot."
+    },
+    "tip": "Matiwasay = payapa = tahimik at walang gulo."
+  },
+  "31": {
+    "steps": [
+      "Tuntunin: “daw/din” kapag ang naunang salita ay nagtatapos sa KATINIG (consonant). “raw/rin” kapag nagtatapos sa PATINIG (a, e, i, o, u) o sa w at y.",
+      "Ang naunang salita ay “aalis,” na nagtatapos sa “s,” isang katinig. Kaya “daw” o “din” lamang ang puwede; tanggal ang “raw” at “rin.”",
+      "Ang “daw” ay nangangahulugang ayon sa sinabi ng iba (reportedly). Ang pangungusap ay balitang narinig lamang: “Aalis daw siya bukas ng umaga.”"
+    ],
+    "wrong": {
+      "raw": "Tama ang kahulugan, pero ang “raw” ay ginagamit lamang pagkatapos ng patinig. Ang “aalis” ay nagtatapos sa katinig na “s.”",
+      "rin": "Mali ang anyo (pang-patinig ito) at ang kahulugan nito ay “also,” hindi balitang galing sa iba.",
+      "din": "Tama ang anyo pagkatapos ng katinig, pero ang “din” ay “also” (pati siya). Walang ibang taong binanggit na aalis din, kaya ang angkop ay ang balitang galing sa iba: “daw.”"
+    },
+    "tip": "Katinig ang dulo → D (daw/din). Patinig ang dulo → R (raw/rin)."
+  },
+  "32": {
+    "steps": [
+      "Sawikain ang “ilaw ng tahanan.” Ang ilaw ay nagbibigay ng liwanag, gabay at init sa loob ng bahay.",
+      "Ang ina ang tinatawag na ilaw ng tahanan dahil siya ang nag-aaruga, gumagabay at nagbibigay-sigla sa pamilya.",
+      "Halimbawa: “Si Nanay ang ilaw ng aming tahanan.” Ang ama naman ang “haligi ng tahanan.”"
+    ],
+    "wrong": {
+      "Ama": "Ang ama ang “haligi ng tahanan” (pillar), hindi ang ilaw.",
+      "Anak": "Walang sawikaing “ilaw ng tahanan” para sa anak.",
+      "Lolo": "Walang sawikaing “ilaw ng tahanan” para sa lolo."
+    },
+    "tip": "Ina = ilaw, Ama = haligi."
+  },
+  "33": {
+    "steps": [
+      "Ang MAPAGBIGAY ay mahilig magbigay at magbahagi sa iba (generous).",
+      "Ang MARAMOT ay ayaw magbigay o magbahagi; kuripot (stingy).",
+      "Halimbawa: “Mapagbigay si Lola sa mga kapitbahay, pero maramot ang kanyang pamangkin.” Magkabaligtaran sila, kaya Maramot ang sagot."
+    ],
+    "wrong": {
+      "Mabait": "Ang mabait ay mabuting-loob (kind); kadalasang kasama pa ng pagiging mapagbigay, hindi kabaligtaran.",
+      "Masipag": "Ang masipag ay mahilig magtrabaho (hardworking); ibang katangian ito.",
+      "Matulungin": "Halos kapareho ito ng mapagbigay (helpful), kaya hindi kasalungat."
+    },
+    "tip": "Mapagbigay ↔ maramot (kuripot)."
+  },
+  "34": {
+    "steps": [
+      "Sawikain ang “kapit-tuko.” Ang tuko (gecko) ay dumidikit nang mahigpit sa pader at mahirap tanggalin.",
+      "Kaya ang taong kapit-tuko ay mahigpit kumapit at ayaw bumitaw, sa tao man, sa pera, o sa posisyon.",
+      "Halimbawa: “Kapit-tuko sa puwesto ang opisyal kahit tapos na ang kanyang termino.”"
+    ],
+    "wrong": {
+      "Takot sa hayop": "Walang kinalaman sa takot; ginamit lamang ang tuko bilang paghahambing.",
+      "Mahilig umakyat": "Umaakyat nga ang tuko sa pader, pero ang diin ng sawikain ay sa mahigpit na pagkapit.",
+      "Mabilis kumilos": "Hindi tungkol sa bilis ang sawikain."
+    },
+    "tip": "Kapit-tuko = ayaw bumitaw."
+  },
+  "128": {
+    "steps": [
+      "Ang MALUMBAY ay malungkot o mapanglaw (sad, gloomy).",
+      "Halimbawa: “Malumbay ang dalaga mula nang umalis ang kanyang kasintahan.”",
+      "Pareho ang kahulugan ng malumbay at malungkot, kaya Malungkot ang sagot."
+    ],
+    "wrong": {
+      "Masaya": "Kabaligtaran ito ng malumbay.",
+      "Galit": "Ibang damdamin ito (anger), hindi lungkot.",
+      "Pagod": "Kalagayan ng katawan ito (tired), hindi damdamin ng lungkot."
+    },
+    "tip": "Malumbay = malungkot = mapanglaw."
+  },
+  "129": {
+    "steps": [
+      "Sawikain ang “bukas-palad.” Ang palad ay ang loob ng kamay (palm).",
+      "Kapag bukas ang palad, laging handang magbigay at tumulong ang tao.",
+      "Halimbawa: “Bukas-palad si Mang Ben sa mga nasalanta ng bagyo.” Kaya ang kahulugan ay mapagbigay."
+    ],
+    "wrong": {
+      "Maramot": "Kabaligtaran ito; ang maramot ay ayaw magbigay, para bang laging nakasara ang kamay.",
+      "Masipag": "Ang masipag ay mahilig magtrabaho; ibang katangian ito.",
+      "Palaaway": "Ang palaaway ay mahilig makipag-away; walang kaugnayan sa pagbibigay."
+    },
+    "tip": "Bukas ang palad = laging handang magbigay."
+  },
+  "130": {
+    "steps": [
+      "Ang MAILAP ay hindi agad lumalapit, madaling matakot at lumalayo kapag nilapitan (shy, hard to catch), gaya ng ibong mailap.",
+      "Ang MAAMO ay madaling lapitan at hawakan (tame, gentle).",
+      "Halimbawa: “Mailap ang pusang gala, pero maamo ang pusa naming alaga.” Magkabaligtaran sila, kaya Maamo ang sagot."
+    ],
+    "wrong": {
+      "Mabangis": "Ang mabangis ay malupit o mapanganib (fierce); mahirap ding lapitan, kaya kahawig ng mailap at hindi kasalungat.",
+      "Mabilis": "Tungkol ito sa bilis; maaaring mabilis tumakbo ang hayop na mailap, pero hindi ito kabaligtaran.",
+      "Matapang": "Ang matapang ay walang takot (brave); hindi ito kabaligtaran ng mailap."
+    },
+    "tip": "Mailap ↔ maamo."
+  },
+  "269": {
+    "steps": [
+      "Tuntunin: Ginagamit ang “ng” bago ang pangngalan na tumatanggap ng kilos (layon o object).",
+      "Itanong: “Ano ang kinain niya?” Sagot: “mangga,” isang pangngalan (bagay).",
+      "Kaya “ng” ang tama: “Kumain siya ng mangga kahapon.”"
+    ],
+    "wrong": {
+      "nang": "Ginagamit ang “nang” para sa paraan (nang mabilis), para sa “noong,” o sa gitna ng inuulit na pandiwa. Ang “mangga” ay bagay, kaya hindi ito angkop.",
+      "nag": "Panlapi ito ng pandiwa (hal. nag-aral), hindi salitang pang-ugnay.",
+      "na": "Ang “na” ay pang-angkop o nangangahulugang “already”; mali ang “kumain siya na mangga.”"
+    },
+    "tip": "Sumasagot sa “ano?” (bagay) → NG."
+  },
+  "270": {
+    "steps": [
+      "Tuntunin: Ginagamit ang “nang” sa pagitan ng pandiwang inuulit para ipakitang tuloy-tuloy o paulit-ulit ang kilos.",
+      "Sa pangungusap, inuulit ang “tawa,” kaya “nang” ang ilalagay sa gitna.",
+      "Wastong pangungusap: “Tawa nang tawa ang mga bata sa palabas.” Iba pang halimbawa: “takbo nang takbo,” “kain nang kain.”"
+    ],
+    "wrong": {
+      "ng": "Ginagamit ang “ng” bago ang pangngalan, hindi sa gitna ng inuulit na kilos.",
+      "na": "Ang “na” ay pang-angkop o nangangahulugang “already”; hindi ito ginagamit sa pag-uulit ng pandiwa.",
+      "pa": "Ang “pa” ay nangangahulugang “still” o “more”; walang kahulugan ang “tawa pa tawa.”"
+    },
+    "tip": "Inuulit na kilos → NANG sa gitna (takbo nang takbo)."
+  },
+  "271": {
+    "steps": [
+      "Tuntunin: Ginagamit ang “nang” kapag ang kahulugan nito ay “noong” (when, sa isang tiyak na pangyayari sa nakaraan).",
+      "Subukan palitan: “Noong dumating ang bisita, nagluluto pa si Ana.” Tama ang diwa, kaya “nang” ang tamang salita.",
+      "Wastong pangungusap: “Nang dumating ang bisita, nagluluto pa si Ana.”"
+    ],
+    "wrong": {
+      "Ng": "Ang “ng” ay ginagamit bago ang pangngalan; hindi ito nagsisimula ng bahagi ng pangungusap na nagsasabi ng panahon.",
+      "Kung": "Ang “kung” ay “if,” isang kondisyon na hindi pa tiyak. Ang pangungusap ay tungkol sa pangyayaring naganap na.",
+      "Kapag": "Ang “kapag” ay para sa nakagawian o mangyayari pa lamang (whenever). Ang pagdating ng bisita ay isang tiyak na pangyayari sa nakaraan."
+    },
+    "tip": "Kung mapapalitan ng “noong” → NANG."
+  },
+  "272": {
+    "steps": [
+      "Ang hinihinging kahulugan ay “also,” kaya “rin” o “din” lamang ang pagpipilian (ang “raw/daw” ay “reportedly”).",
+      "Tuntunin: “rin” kapag ang naunang salita ay nagtatapos sa PATINIG (a, e, i, o, u) o w/y; “din” kapag nagtatapos sa KATINIG.",
+      "Ang naunang salita ay “sasama,” na nagtatapos sa patinig na “a.” Kaya: “Sasama rin ako sa pulong.”"
+    ],
+    "wrong": {
+      "din": "Tama ang kahulugan (also), pero ginagamit lang ang “din” pagkatapos ng katinig. Ang “sasama” ay nagtatapos sa patinig.",
+      "raw": "Tama ang anyo pagkatapos ng patinig, pero ang kahulugan nito ay “reportedly,” hindi “also.”",
+      "daw": "Mali ang kahulugan (reportedly) at mali rin ang anyo (pang-katinig ito)."
+    },
+    "tip": "Patinig ang dulo → R (rin/raw); katinig ang dulo → D (din/daw)."
+  },
+  "273": {
+    "steps": [
+      "Ang hinihinging kahulugan ay “reportedly” (ayon sa iba), kaya “raw” o “daw” lamang ang pagpipilian.",
+      "Tuntunin: “daw” kapag ang naunang salita ay nagtatapos sa KATINIG; “raw” kapag nagtatapos sa PATINIG o w/y.",
+      "Ang naunang salita ay “pagod,” na nagtatapos sa katinig na “d.” Kaya: “Pagod daw si Ben kaya hindi siya pumasok.”"
+    ],
+    "wrong": {
+      "raw": "Tama ang kahulugan, pero ang “raw” ay ginagamit lang pagkatapos ng patinig. Ang “pagod” ay nagtatapos sa katinig na “d.”",
+      "rin": "Mali ang kahulugan (also) at mali rin ang anyo (pang-patinig ito).",
+      "din": "Tama ang anyo pagkatapos ng katinig, pero ang kahulugan nito ay “also,” hindi “reportedly.”"
+    },
+    "tip": "Katinig ang dulo → D (daw/din); patinig ang dulo → R (raw/rin)."
+  },
+  "274": {
+    "steps": [
+      "Tuntunin: Ang “may” ay sinusundan agad ng pangngalan, pandiwa, pang-uri o “mga” (hal. may payong, may kumakatok, may bagong kotse).",
+      "Ang “mayroon” ay ginagamit kapag sinusundan ng kataga gaya ng ba, pa, nga, o ng panghalip gaya ng ka, siya, kami (hal. mayroon ka, mayroon ba).",
+      "Sa pangungusap, ang kasunod ay “ka” (panghalip) at “ba” (kataga). Kaya: “Mayroon ka bang dalang payong?”"
+    ],
+    "wrong": {
+      "May": "Hindi puwedeng sundan ng panghalip na “ka” ang “may.” Tama lamang ito kung pangngalan ang kasunod: “May payong ka ba?”",
+      "Meron": "Pinaikling anyo ito sa pang-araw-araw na usapan (colloquial); hindi ito ang wastong anyo sa pormal na pagsulat.",
+      "Mayron": "Mali ang baybay; ang tama ay “mayroon.”"
+    },
+    "tip": "MAY + pangngalan; MAYROON + ka/siya/ba."
+  },
+  "275": {
+    "steps": [
+      "Tuntunin: “Pahirin” ay alisin ang isang bagay sa pamamagitan ng pagpahid (wipe off). “Pahiran” ay lagyan ng isang bagay (apply).",
+      "Sa pangungusap, ang pawis ay aalisin sa noo, hindi ilalagay.",
+      "Kaya: “Pahirin mo ang pawis sa iyong noo.” Ihambing: “Pahiran mo ng gamot ang sugat.”"
+    ],
+    "wrong": {
+      "Pahiran": "Para sa paglalagay ito (pahiran ng gamot). Hindi natin nilalagyan ng pawis ang noo; inaalis natin ito.",
+      "Pahidan": "Hindi wastong anyo; ang d ng “pahid” ay nagiging r kapag dinagdagan ng hulapi (pahiran, pahirin).",
+      "Pahiranin": "Walang ganitong salita; dalawang hulapi ang pinagsama nang mali."
+    },
+    "tip": "PahirIN = alisIN; pahirAN = lagyAN."
+  },
+  "276": {
+    "steps": [
+      "Tuntunin: “Pahiran” ay lagyan ng isang bagay ang isang lugar o bagay (apply). “Pahirin” ay alisin (wipe off).",
+      "Sa pangungusap, ang langis ay ilalagay sa bisagra ng pinto.",
+      "Kaya: “Pahiran mo ng langis ang bisagra ng pinto.”"
+    ],
+    "wrong": {
+      "Pahirin": "Para sa pag-aalis ito (pahirin ang pawis). Hindi inaalis ang langis kundi inilalagay.",
+      "Pahid": "Salitang-ugat lamang ito; kulang ang panlapi para maging utos na may “mo.”",
+      "Pinahid": "Naganap na (past) ang anyo nito, kaya hindi bagay sa utos na gagawin pa lamang."
+    },
+    "tip": "PahirAN = lagyAN; pahirIN = alisIN."
+  },
+  "277": {
+    "steps": [
+      "Tuntunin: “Subukin” ay suriin o alamin kung maayos o gumagana ang isang bagay (test). “Subukan” ay tiktikan o manmanan nang palihim (spy on).",
+      "Sa pangungusap, aalamin kung gumagana ang bolpen, kaya ito ay pagsusuri.",
+      "Kaya: “Subukin mo ang bagong bolpen kung gumagana ito.”"
+    ],
+    "wrong": {
+      "Subukan": "Sa wastong gamit, ang “subukan” ay tiktikan nang palihim (hal. “Subukan mo kung ano ang ginagawa nila sa loob”), hindi pagsusuri ng bagay.",
+      "Subok": "Salitang-ugat lamang ito; hindi kumpletong anyo ng utos.",
+      "Sinubukan": "Naganap na (past) ang anyo nito at mula sa “subukan,” kaya hindi bagay sa utos na gagawin pa lamang."
+    },
+    "tip": "Subukin = i-test; subukan = manmanan."
+  },
+  "278": {
+    "steps": [
+      "Tuntunin: “Sundin” ay tuparin o gawin ang utos, payo o bilin (obey). “Sundan” ay gayahin o puntahan ang pinuntahan ng iba (follow).",
+      "Sa pangungusap, ang payo ng magulang ay tutuparin, kaya “sundin.”",
+      "Kaya: “Sundin mo ang payo ng iyong mga magulang.” Ihambing: “Sundan mo ang kotse.”"
+    ],
+    "wrong": {
+      "Sundan": "Para sa pagsunod sa tao o daan (sundan ang kotse), hindi sa pagtupad ng payo.",
+      "Sinundan": "Naganap na (past) ang anyo nito at mula sa “sundan,” kaya mali sa diwa at sa panahunan.",
+      "Sundanan": "Walang ganitong salita sa Filipino."
+    },
+    "tip": "Sundin ang utos o payo; sundan ang tao o daan."
+  },
+  "279": {
+    "steps": [
+      "Tuntunin: “Walisin” ang ginagamit para sa bagay o dumi na aalisin (hal. walisin ang dahon). “Walisan” ang ginagamit para sa lugar na lilinisin (hal. walisan ang bakuran).",
+      "Sa pangungusap, ang tinutukoy ay ang tuyong dahon, ang bagay na aalisin.",
+      "Kaya: “Walisin mo ang mga tuyong dahon sa bakuran.”"
+    ],
+    "wrong": {
+      "Walisan": "Para sa lugar ito (walisan ang bakuran). Ang tinutukoy ay ang dahon na aalisin, hindi ang lugar.",
+      "Walis": "Pangngalan ito (broom) o salitang-ugat; hindi ito anyong pang-utos.",
+      "Winalisan": "Naganap na (past) ang anyo nito at para sa lugar, kaya mali sa diwa at sa panahunan."
+    },
+    "tip": "Walisin ang dumi; walisan ang lugar."
+  },
+  "280": {
+    "steps": [
+      "Sawikain ang “makapal ang mukha.” Parang sobrang kapal ng mukha kaya hindi tumatagos ang hiya.",
+      "Ang ibig sabihin ay taong walang hiya o hindi marunong mahiya.",
+      "Halimbawa: “Makapal ang mukha niya; nangutang ulit kahit hindi pa nagbabayad.”"
+    ],
+    "wrong": {
+      "Mataba": "Literal na pagbasa ito; hindi tungkol sa katawan ang sawikain.",
+      "Mapagpakumbaba": "Halos kabaligtaran ito; ang mapagpakumbaba ay hindi nagmamataas at marunong mahiya.",
+      "Maganda": "Tungkol sa itsura ito; walang kinalaman sa sawikain."
+    },
+    "tip": "Makapal ang mukha = walang hiya."
+  },
+  "281": {
+    "steps": [
+      "Sawikain ang “ningas-kugon.” Ang kugon (cogon grass) ay mabilis magliyab pero mabilis ding namamatay ang apoy.",
+      "Kaya ang taong ningas-kugon ay masigasig lamang sa umpisa, pero agad nawawalan ng gana.",
+      "Halimbawa: “Ningas-kugon siya; masipag sa unang linggo ng diet, tapos tumigil na.”"
+    ],
+    "wrong": {
+      "Mainitin ang ulo": "Baka maisip ito dahil sa apoy, pero ang sawikain ay tungkol sa sigasig na hindi tumatagal, hindi sa galit.",
+      "Matiyaga hanggang dulo": "Kabaligtaran ito ng ningas-kugon.",
+      "Mahilig magsunog": "Literal na pagbasa ito sa salitang “ningas.”"
+    },
+    "tip": "Ningas-kugon = mabilis magliyab, mabilis mamatay."
+  },
+  "282": {
+    "steps": [
+      "Sawikain ang “kabiyak ng dibdib.” Ang “biyak” ay kalahati.",
+      "Ang asawa ay itinuturing na kalahati ng iyong puso o buhay, kaya siya ang kabiyak ng dibdib.",
+      "Halimbawa: “Kasama ni Mang Jose ang kanyang kabiyak ng dibdib sa pista.”"
+    ],
+    "wrong": {
+      "Kaibigan": "Hindi kabiyak ng dibdib ang tawag sa kaibigan; asawa lamang ang tinutukoy ng sawikain.",
+      "Kapatid": "Kadugo ang kapatid, pero hindi siya ang tinutukoy na kabiyak ng dibdib.",
+      "Kaaway": "Kabaligtaran ito ng taong minamahal."
+    },
+    "tip": "Kabiyak ng dibdib = asawa (kalahati ng puso)."
+  },
+  "283": {
+    "steps": [
+      "Sawikain ang “itaga sa bato.” Ang anumang inukit o tinaga sa bato ay hindi nabubura.",
+      "Kaya ang ibig sabihin ay tandaan nang mabuti dahil tiyak na tutuparin ang sinabi o pangako.",
+      "Halimbawa: “Itaga mo sa bato: babalikan kita pagkatapos ng isang taon.”"
+    ],
+    "wrong": {
+      "Magalit": "Walang kinalaman sa galit ang sawikain.",
+      "Magtrabaho nang mabigat": "Baka maisip ito dahil mabigat ang bato, pero tungkol sa pangakong hindi mabubura ang sawikain.",
+      "Kalimutan": "Kabaligtaran ito; ang itaga sa bato ay tandaan habambuhay."
+    },
+    "tip": "Nakaukit sa bato = hindi mabubura, tiyak na tutuparin."
+  },
+  "284": {
+    "steps": [
+      "Sawikain ang “butas ang bulsa.” Kapag butas ang bulsa, nahuhulog at nawawala ang pera.",
+      "Kaya ang ibig sabihin ay walang pera o ubos na ang pera.",
+      "Halimbawa: “Hindi ako makakasama sa sine; butas ang bulsa ko ngayon.”"
+    ],
+    "wrong": {
+      "Maraming pera": "Kabaligtaran ito ng kahulugan ng sawikain.",
+      "Sira ang damit": "Literal na pagbasa ito; hindi tungkol sa damit ang sawikain.",
+      "Mahilig mamili": "Maaaring maubos ang pera dahil dito, pero ang sawikain ay tumutukoy sa kalagayang walang pera."
+    },
+    "tip": "Butas ang bulsa = walang pera."
+  },
+  "285": {
+    "steps": [
+      "Sawikain ang “taingang kawali.” Ang hawakan ng kawali ay tinatawag na “tainga,” pero hindi ito nakaririnig kahit malapit sa ingay ng pagluluto.",
+      "Kaya ang taong taingang kawali ay nagkukunwaring hindi nakaririnig; nagbibingi-bingihan.",
+      "Halimbawa: “Tinatawag na siya ni Nanay para maghugas ng pinggan, pero nagtataingang kawali siya.”"
+    ],
+    "wrong": {
+      "Mahusay makinig": "Kabaligtaran ito ng nagbibingi-bingihan.",
+      "May malaking tainga": "Literal na pagbasa ito; hindi tungkol sa laki ng tainga ang sawikain.",
+      "Madaldal": "Tungkol sa pagsasalita ito (talkative), hindi sa pakikinig."
+    },
+    "tip": "Taingang kawali = kunwaring bingi."
+  },
+  "286": {
+    "steps": [
+      "Sawikain ang “bahag ang buntot.” Kapag takot ang aso, ibinababa at isinisingit nito ang buntot sa pagitan ng mga hita.",
+      "Kaya ang taong bahag ang buntot ay duwag o takot humarap sa laban.",
+      "Halimbawa: “Nang hamunin siya, bahag ang buntot na umuwi ang mayabang.”"
+    ],
+    "wrong": {
+      "Matapang": "Kabaligtaran ito ng duwag.",
+      "Masaya": "Ang masayang aso ay kumakawag ang buntot, hindi ibinabahag.",
+      "Mayabang": "Walang kinalaman sa pagmamalaki ang sawikain; takot ang ipinapakita nito."
+    },
+    "tip": "Bahag ang buntot = duwag (parang asong takot)."
+  },
+  "287": {
+    "steps": [
+      "Ang “anak-pawis” ay tumutukoy sa mga taong nabubuhay sa sariling pagod at pawis.",
+      "Sila ang mga manggagawa, magsasaka at iba pang naghahanapbuhay gamit ang lakas ng katawan.",
+      "Halimbawa: “Ipinaglalaban ng unyon ang karapatan ng mga anak-pawis.”"
+    ],
+    "wrong": {
+      "Mayaman": "Kabaligtaran ito; ang anak-pawis ay karaniwang mahirap na manggagawa.",
+      "Batang pawisin": "Literal na pagbasa ito sa salitang “anak” at “pawis.”",
+      "Atleta": "Pinagpapawisan din ang atleta, pero ang sawikain ay tumutukoy sa uring manggagawa."
+    },
+    "tip": "Anak-pawis = manggagawang nabubuhay sa sariling pawis."
+  },
+  "288": {
+    "steps": [
+      "Sawikain ang “mababaw ang luha.” Parang nasa ibabaw lang ang luha kaya madaling tumulo.",
+      "Kaya ang taong mababaw ang luha ay madaling umiyak, kahit sa maliit na bagay; iyakin.",
+      "Halimbawa: “Mababaw ang luha ni Ana; umiiyak siya kahit sa patalastas sa TV.”"
+    ],
+    "wrong": {
+      "Masayahin": "Malayo ito sa kahulugan; ang sawikain ay tungkol sa madaling pag-iyak.",
+      "Matapang": "Walang kinalaman sa tapang ang sawikain.",
+      "Malungkot": "Ang malungkot ay damdamin. Ang mababaw ang luha ay madaling lumuha, kahit sa tuwa o sa pelikula, kaya mas tumpak ang iyakin."
+    },
+    "tip": "Mababaw ang luha = iyakin."
+  },
+  "289": {
+    "steps": [
+      "Sawikain ang “haligi ng tahanan.” Ang haligi (pillar) ang nagpapatibay at sumusuporta sa buong bahay.",
+      "Ang ama ang tinatawag na haligi dahil siya ang tradisyonal na nagtataguyod at nagbibigay-lakas sa pamilya.",
+      "Halimbawa: “Si Tatay ang haligi ng aming tahanan.” Ang ina naman ang “ilaw ng tahanan.”"
+    ],
+    "wrong": {
+      "Ina": "Ang ina ang “ilaw ng tahanan,” hindi ang haligi.",
+      "Panganay": "Panganay ang pinakamatandang anak; hindi siya ang tinatawag na haligi.",
+      "Lolo": "Walang sawikaing “haligi ng tahanan” para sa lolo."
+    },
+    "tip": "Ama = haligi, Ina = ilaw."
+  },
+  "290": {
+    "steps": [
+      "Ang HINAGPIS ay matinding kalungkutan o dalamhati (deep grief, anguish).",
+      "Halimbawa: “Hindi maipaliwanag ang hinagpis ng ina nang mawala ang kanyang anak.”",
+      "Kaya ang kasingkahulugan ay matinding kalungkutan."
+    ],
+    "wrong": {
+      "Galit": "Ibang damdamin ito (anger), hindi lungkot.",
+      "Saya": "Kabaligtaran ito ng hinagpis.",
+      "Takot": "Ibang damdamin ito (fear), hindi dalamhati."
+    },
+    "tip": "Hinagpis = dalamhati = matinding lungkot."
+  },
+  "291": {
+    "steps": [
+      "Ang MASINOP ay maingat at maayos sa gamit, at hindi nag-aaksaya (careful, orderly).",
+      "Ang BURARA ay pabaya, makalat at walang ingat sa gamit (careless, messy).",
+      "Halimbawa: “Masinop si Ate sa kanyang mga gamit, pero burara ang kanyang kapatid.” Magkabaligtaran sila, kaya Burara ang sagot."
+    ],
+    "wrong": {
+      "Maayos": "Kasingkahulugan ito ng masinop, hindi kasalungat.",
+      "Matipid": "Kahawig ito ng masinop (hindi nag-aaksaya), kaya hindi kasalungat.",
+      "Malinis": "Kaugnay ito ng pagiging masinop, hindi kabaligtaran."
+    },
+    "tip": "Masinop ↔ burara."
+  },
+  "292": {
+    "steps": [
+      "Ang PANAGHOY ay malakas na pag-iyak o pananangis dahil sa matinding lungkot (wailing, lament).",
+      "Ang PAGTANGIS ay pag-iyak din nang may pighati, kaya magkasingkahulugan sila.",
+      "Halimbawa: “Narinig sa buong baryo ang panaghoy ng mga naulila.”"
+    ],
+    "wrong": {
+      "Pag-awit": "Ang pag-awit ay pagkanta (singing); walang lungkot na ipinahihiwatig.",
+      "Pagtawa": "Kabaligtaran ito ng pag-iyak.",
+      "Pagsigaw sa galit": "Malakas din ang tunog nito, pero galit ang damdamin, hindi lungkot."
+    },
+    "tip": "Panaghoy = pagtangis = malakas na pag-iyak."
+  },
+  "293": {
+    "steps": [
+      "Ang MAPANGLAW ay malungkot at malamlam (gloomy, melancholy).",
+      "Halimbawa: “Mapanglaw ang bahay mula nang umalis ang mga bata.”",
+      "Ang kabaligtaran ng malungkot ay masaya, kaya Masaya ang sagot."
+    ],
+    "wrong": {
+      "Malungkot": "Kasingkahulugan ito ng mapanglaw, hindi kasalungat.",
+      "Tahimik": "Maaaring tahimik ang mapanglaw na lugar, kaya hindi ito kabaligtaran.",
+      "Madilim": "Kaugnay ito (madilim at malungkot ang mapanglaw na gabi), hindi kabaligtaran."
+    },
+    "tip": "Mapanglaw ↔ masaya."
+  },
+  "294": {
+    "steps": [
+      "Ang DALISAY ay puro, malinis, busilak o walang halo (pure).",
+      "Halimbawa: “Dalisay ang kanyang hangarin na makatulong sa kapwa.”",
+      "Kaya ang kasingkahulugan ay puro o malinis."
+    ],
+    "wrong": {
+      "Marumi": "Kabaligtaran ito ng dalisay.",
+      "Mabigat": "Tungkol ito sa timbang (heavy), walang kaugnayan sa kalinisan.",
+      "Malabo": "Ang malabo ay hindi malinaw (cloudy); halos kabaligtaran ito ng puro at malinis."
+    },
+    "tip": "Dalisay = puro = walang halo."
+  }
+}

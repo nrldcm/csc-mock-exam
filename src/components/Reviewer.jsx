@@ -9,7 +9,7 @@ import { ListSkeleton } from './ui.jsx'
 
 const STEP = 25
 
-export default function Reviewer({ level, onPractice }) {
+export default function Reviewer({ level, onPractice, onLesson }) {
   const L = LEVELS[level]
   const lp = useMemo(() => levelPool(level), [level])
   const [src, setSrc] = useState('bank')
@@ -101,7 +101,7 @@ export default function Reviewer({ level, onPractice }) {
           {gen.map((x, i) => {
             const hidden = hide && !revealed.has('g' + i)
             return (
-              <ItemCard key={i} q={x} label={`New item ${i + 1}, ${CATS[x.c]}`} hidden={hidden}>
+              <ItemCard key={i} q={x} label={`New item ${i + 1}, ${CATS[x.c]}`} hidden={hidden} onLesson={onLesson}>
                 {hidden && <div className="ractions"><button className="btn small" onClick={() => reveal('g' + i)}>Show answer</button></div>}
               </ItemCard>
             )
@@ -113,7 +113,7 @@ export default function Reviewer({ level, onPractice }) {
           {shown.slice(0, limit).map(x => {
             const hidden = hide && !revealed.has(x.id)
             return (
-              <ItemCard key={x.id} q={x} label={`No. ${x.id + 1}, ${CATS[x.c]}`} hidden={hidden}>
+              <ItemCard key={x.id} q={x} label={`No. ${x.id + 1}, ${CATS[x.c]}`} hidden={hidden} onLesson={onLesson}>
                 <div className="ractions">
                   {hidden && <button className="btn small" onClick={() => reveal(x.id)}>Show answer</button>}
                   <button className={`btn ghost small${done.has(x.id) ? ' done' : ''}`} onClick={() => toggleStudied(x.id)} aria-pressed={done.has(x.id)}>{done.has(x.id) ? '✓ Studied' : 'Mark as studied'}</button>

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { CATS } from '../data/bank.js'
-import { NOTES, NOTE_GROUPS } from '../data/notes.js'
+import { NOTES, NOTE_GROUPS } from '../data/allNotes.js'
 import { LEVELS } from '../lib/config.js'
 import { grantBadge } from '../lib/progress.js'
 import { ls } from '../lib/storage.js'
@@ -43,7 +43,7 @@ export function NotesList({ level, onOpen }) {
   )
 }
 
-export function NoteView({ id, onBack, onOpen, onPractice }) {
+export function NoteView({ id, onBack, onOpen, onPractice, backLabel = 'Back' }) {
   const { toast } = useUI()
   const i = NOTES.findIndex(n => n.id === id)
   const n = NOTES[i]
@@ -59,7 +59,7 @@ export function NoteView({ id, onBack, onOpen, onPractice }) {
   const prev = NOTES[i - 1], next = NOTES[i + 1]
   return (
     <>
-      <TopBar left="Back" onLeft={onBack} title="Study notes" right={`${i + 1}/${NOTES.length}`} />
+      <TopBar left={backLabel} onLeft={onBack} title="Study notes" right={`${i + 1}/${NOTES.length}`} />
       <main className="wrap narrow" id="main">
         <div className="card note">
           <span className="qsection">{CATS[n.c] || 'Overview'}</span>
@@ -70,6 +70,13 @@ export function NoteView({ id, onBack, onOpen, onPractice }) {
               <h3>{s.h}</h3>
               {s.p && <p>{s.p}</p>}
               {s.list && <ul>{s.list.map((x, j) => <li key={j}>{x}</li>)}</ul>}
+              {s.examples && s.examples.map((ex, j) => (
+                <div className="wex" key={`x${j}`}>
+                  <div className="wq">Example {j + 1}. {ex.q}</div>
+                  <ol>{ex.steps.map((st, m) => <li key={m}>{st}</li>)}</ol>
+                  <div className="wa">Answer: {ex.a}</div>
+                </div>
+              ))}
               {s.table && (
                 <div className="tablewrap">
                   <table className="ntable">

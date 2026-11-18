@@ -1,0 +1,2124 @@
+[
+  {
+    "id": "math-order-of-operations",
+    "c": "numerical",
+    "title": "Whole numbers and order of operations (PEMDAS)",
+    "summary": "Do the operations in the right order so you always get the one correct answer.",
+    "sections": [
+      {
+        "h": "What this is about",
+        "p": "Whole numbers are 0, 1, 2, 3, 4 and so on (no fractions, no decimals, no negatives). An expression is a math “sentence” such as 8 − 2 × 3. When an expression has more than one operation, everyone must agree which one to do first, or two people would get two different answers. That agreement is called the order of operations, remembered as PEMDAS."
+      },
+      {
+        "h": "PEMDAS, step by step",
+        "table": {
+          "head": [
+            "Letter",
+            "Stands for",
+            "What to do"
+          ],
+          "rows": [
+            [
+              "P",
+              "Parentheses",
+              "Work inside ( ), [ ] or { } first. A fraction bar also acts like parentheses: (6 + 4) ÷ 2 is the same as 6 + 4 over 2."
+            ],
+            [
+              "E",
+              "Exponents",
+              "Powers and roots next. 3² = 3 × 3 = 9."
+            ],
+            [
+              "M D",
+              "Multiplication and Division",
+              "Same rank. Do them from LEFT to RIGHT, whichever comes first."
+            ],
+            [
+              "A S",
+              "Addition and Subtraction",
+              "Same rank. Do them from LEFT to RIGHT, whichever comes first."
+            ]
+          ]
+        }
+      },
+      {
+        "h": "Why multiplication comes before addition",
+        "p": "Multiplication is a shortcut for repeated addition. In 8 − 2 × 3, the part 2 × 3 means “two groups of 3”, which is one amount: 6. So you must finish that amount first before you can take it away from 8. That is why 8 − 2 × 3 = 8 − 6 = 2, not 6 × 3 = 18."
+      },
+      {
+        "h": "Common mistakes",
+        "list": [
+          "Working left to right without looking: 8 − 2 × 3 is 2, not 18.",
+          "Thinking M always comes before D. They are equal. 24 ÷ 4 × 2 = 6 × 2 = 12, not 24 ÷ 8 = 3.",
+          "Thinking A always comes before S. They are equal. 10 − 4 + 3 = 6 + 3 = 9, not 10 − 7 = 3.",
+          "Letting an exponent spread too far. In 2 × 3², only the 3 is squared: 2 × 9 = 18, not 6² = 36.",
+          "Forgetting that a long fraction bar groups the top and the bottom."
+        ]
+      },
+      {
+        "h": "Quick divisibility checks (useful for whole numbers)",
+        "table": {
+          "head": [
+            "Divisible by",
+            "Rule",
+            "Example"
+          ],
+          "rows": [
+            [
+              "2",
+              "Last digit is even (0, 2, 4, 6, 8)",
+              "538"
+            ],
+            [
+              "3",
+              "Sum of digits is divisible by 3",
+              "471: 4 + 7 + 1 = 12"
+            ],
+            [
+              "4",
+              "Last two digits form a number divisible by 4",
+              "1,316: 16 ÷ 4 = 4"
+            ],
+            [
+              "5",
+              "Ends in 0 or 5",
+              "2,345"
+            ],
+            [
+              "6",
+              "Divisible by both 2 and 3",
+              "534: even, and 5 + 3 + 4 = 12"
+            ],
+            [
+              "9",
+              "Sum of digits is divisible by 9",
+              "729: 7 + 2 + 9 = 18"
+            ],
+            [
+              "10",
+              "Ends in 0",
+              "4,560"
+            ]
+          ]
+        }
+      },
+      {
+        "h": "Worked examples",
+        "examples": [
+          {
+            "q": "Evaluate 8 − 2 × 3.",
+            "steps": [
+              "There are no parentheses and no exponents.",
+              "Multiplication comes before subtraction: 2 × 3 = 6.",
+              "Now subtract: 8 − 6 = 2."
+            ],
+            "a": "2 (the trap answer is 18)"
+          },
+          {
+            "q": "Evaluate 48 ÷ 6 × 2 + 5.",
+            "steps": [
+              "Division and multiplication are equal rank, so go left to right.",
+              "Leftmost first: 48 ÷ 6 = 8.",
+              "Next: 8 × 2 = 16.",
+              "Last, addition: 16 + 5 = 21."
+            ],
+            "a": "21"
+          },
+          {
+            "q": "Evaluate 5 + 3 × (12 − 4)² ÷ 8.",
+            "steps": [
+              "Parentheses: 12 − 4 = 8. The expression becomes 5 + 3 × 8² ÷ 8.",
+              "Exponent: 8² = 8 × 8 = 64. Now 5 + 3 × 64 ÷ 8.",
+              "Multiplication and division, left to right: 3 × 64 = 192, then 192 ÷ 8 = 24.",
+              "Addition: 5 + 24 = 29."
+            ],
+            "a": "29"
+          },
+          {
+            "q": "At a sari-sari store you buy 3 packs of biscuits at ₱12 each and 2 bottles of softdrinks at ₱25 each. You pay with ₱100. How much is your change?",
+            "steps": [
+              "Write one expression: 100 − (3 × 12 + 2 × 25).",
+              "Inside the parentheses, multiply first: 3 × 12 = 36 and 2 × 25 = 50.",
+              "Still inside: 36 + 50 = 86. This is the total bill.",
+              "Outside: 100 − 86 = 14.",
+              "Check: 86 + 14 = 100. Correct."
+            ],
+            "a": "₱14"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "math-fractions",
+    "c": "numerical",
+    "title": "Fractions",
+    "summary": "What fractions mean and how to simplify, add, subtract, multiply and divide them.",
+    "sections": [
+      {
+        "h": "What a fraction means",
+        "p": "A fraction shows part of a whole. In 3/4, the whole is cut into 4 equal pieces and you have 3 of them. The bottom number is the denominator: it tells how many equal pieces the whole is cut into. The top number is the numerator: it tells how many of those pieces you have. The denominator can never be 0, because you cannot cut something into zero pieces."
+      },
+      {
+        "h": "Words you need",
+        "list": [
+          "Proper fraction: top is smaller than bottom, like 2/5. It is less than 1.",
+          "Improper fraction: top is equal to or bigger than bottom, like 7/4. It is 1 or more.",
+          "Mixed number: a whole number plus a fraction, like 2 1/3 (two and one-third).",
+          "Equivalent fractions: different-looking fractions with the same value, like 1/2 = 2/4 = 3/6.",
+          "GCF (greatest common factor): the biggest number that divides both numbers exactly. GCF of 18 and 24 is 6.",
+          "LCD (least common denominator): the smallest number that both denominators divide into. LCD of 4 and 6 is 12.",
+          "Reciprocal: the fraction flipped upside down. The reciprocal of 2/5 is 5/2."
+        ]
+      },
+      {
+        "h": "The rules",
+        "table": {
+          "head": [
+            "Task",
+            "How",
+            "Example"
+          ],
+          "rows": [
+            [
+              "Simplify",
+              "Divide top and bottom by their GCF",
+              "18/24: GCF is 6, so 18 ÷ 6 = 3 and 24 ÷ 6 = 4 → 3/4"
+            ],
+            [
+              "Add or subtract, same denominator",
+              "Add or subtract the tops, keep the bottom",
+              "2/7 + 3/7 = 5/7"
+            ],
+            [
+              "Add or subtract, different denominators",
+              "Change both to the LCD first, then add the tops",
+              "1/2 + 1/3 = 3/6 + 2/6 = 5/6"
+            ],
+            [
+              "Multiply",
+              "Top × top, bottom × bottom",
+              "2/3 × 4/5 = 8/15"
+            ],
+            [
+              "Divide",
+              "Keep the first, change ÷ to ×, flip the second",
+              "3/4 ÷ 2/5 = 3/4 × 5/2 = 15/8"
+            ],
+            [
+              "Mixed → improper",
+              "(whole × bottom + top) over bottom",
+              "2 1/3 = (2 × 3 + 1)/3 = 7/3"
+            ],
+            [
+              "Improper → mixed",
+              "Divide top by bottom; remainder goes on top",
+              "17/5: 17 ÷ 5 = 3 remainder 2 → 3 2/5"
+            ]
+          ]
+        }
+      },
+      {
+        "h": "Why these rules work",
+        "list": [
+          "Multiplying top and bottom by the same number is the same as multiplying by 1 (for example 3/3), so the value does not change. That is why 1/2 = 3/6.",
+          "You can only add pieces of the same size. Halves and thirds are different sizes, so turn both into sixths first. 1/2 + 1/3 is 3 sixths + 2 sixths = 5 sixths.",
+          "Dividing asks “how many of these fit?” 6 ÷ 1/2 asks how many halves fit in 6. Each whole has 2 halves, so 6 × 2 = 12. That is why dividing by 1/2 is the same as multiplying by 2/1."
+        ]
+      },
+      {
+        "h": "How to find the LCD quickly",
+        "p": "List the multiples of the bigger denominator until you reach one the smaller denominator divides into. For 4 and 6: multiples of 6 are 6, 12, … and 12 ÷ 4 = 3 exactly, so the LCD is 12."
+      },
+      {
+        "h": "Common mistakes",
+        "list": [
+          "Adding the denominators: 1/2 + 1/3 is NOT 2/5. It is 5/6.",
+          "Multiplying mixed numbers piece by piece: 1 1/2 × 1 1/2 is NOT 1 1/4. Change to 3/2 × 3/2 = 9/4 = 2 1/4.",
+          "Flipping the wrong fraction when dividing. Flip only the second one (the divisor).",
+          "Forgetting to simplify the final answer."
+        ]
+      },
+      {
+        "h": "Worked examples",
+        "examples": [
+          {
+            "q": "Add 3/4 + 5/6.",
+            "steps": [
+              "Denominators are different, so find the LCD of 4 and 6. Multiples of 6: 6, 12. 12 ÷ 4 = 3 exactly, so LCD = 12.",
+              "Change 3/4: 12 ÷ 4 = 3, so multiply top and bottom by 3: (3 × 3)/(4 × 3) = 9/12.",
+              "Change 5/6: 12 ÷ 6 = 2, so multiply top and bottom by 2: (5 × 2)/(6 × 2) = 10/12.",
+              "Add the tops: 9/12 + 10/12 = 19/12.",
+              "Change to a mixed number: 19 ÷ 12 = 1 remainder 7, so 1 7/12."
+            ],
+            "a": "19/12 = 1 7/12"
+          },
+          {
+            "q": "Aling Rosa had 3 1/2 kg of rice. She cooked 1 3/4 kg. How much rice is left?",
+            "steps": [
+              "Change to improper fractions: 3 1/2 = (3 × 2 + 1)/2 = 7/2. 1 3/4 = (1 × 4 + 3)/4 = 7/4.",
+              "LCD of 2 and 4 is 4. Change 7/2: (7 × 2)/(2 × 2) = 14/4.",
+              "Subtract: 14/4 − 7/4 = 7/4.",
+              "Change back: 7 ÷ 4 = 1 remainder 3, so 1 3/4.",
+              "Check: 1 3/4 + 1 3/4 = 7/4 + 7/4 = 14/4 = 3 2/4 = 3 1/2. Correct."
+            ],
+            "a": "1 3/4 kg"
+          },
+          {
+            "q": "A student spends 2/3 of a ₱450 weekly allowance on fare. How much is spent on fare?",
+            "steps": [
+              "“2/3 of” means multiply: 2/3 × 450.",
+              "Divide by the bottom first to keep numbers small: 450 ÷ 3 = 150. This is one-third.",
+              "Multiply by the top: 150 × 2 = 300. This is two-thirds.",
+              "Check: the rest is 450 − 300 = 150, which is 1/3 of 450. Correct."
+            ],
+            "a": "₱300"
+          },
+          {
+            "q": "A 7 1/2 metre cloth is cut into pieces 3/4 m long. How many pieces are there?",
+            "steps": [
+              "This asks how many 3/4 fit into 7 1/2, so divide: 7 1/2 ÷ 3/4.",
+              "Change the mixed number: 7 1/2 = (7 × 2 + 1)/2 = 15/2.",
+              "Keep, change, flip: 15/2 ÷ 3/4 = 15/2 × 4/3.",
+              "Multiply: top 15 × 4 = 60, bottom 2 × 3 = 6, so 60/6 = 10.",
+              "Check: 10 × 3/4 = 30/4 = 7 2/4 = 7 1/2. Correct."
+            ],
+            "a": "10 pieces"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "math-decimals",
+    "c": "numerical",
+    "title": "Decimals and rounding",
+    "summary": "Read, compute with and round decimal numbers, especially peso amounts.",
+    "sections": [
+      {
+        "h": "What a decimal is",
+        "p": "A decimal is another way to write a fraction whose denominator is 10, 100, 1,000 and so on. The dot is the decimal point. Digits to the left are whole numbers; digits to the right are parts of one. ₱45.75 means 45 whole pesos and 75 hundredths of a peso (75 centavos)."
+      },
+      {
+        "h": "Place value",
+        "table": {
+          "head": [
+            "Digit in 3.457",
+            "Place",
+            "Value"
+          ],
+          "rows": [
+            [
+              "3",
+              "ones",
+              "3"
+            ],
+            [
+              "4",
+              "tenths",
+              "4/10 = 0.4"
+            ],
+            [
+              "5",
+              "hundredths",
+              "5/100 = 0.05"
+            ],
+            [
+              "7",
+              "thousandths",
+              "7/1000 = 0.007"
+            ]
+          ]
+        }
+      },
+      {
+        "h": "The rules",
+        "list": [
+          "Add or subtract: line up the decimal points. Fill empty places with zeros (8.5 becomes 8.50).",
+          "Multiply: ignore the points, multiply as whole numbers, then count the total number of decimal places in both numbers and put that many in the answer. 0.4 × 0.3: 4 × 3 = 12, two places total → 0.12.",
+          "Divide by a decimal: move the point in the divisor to the right until it is a whole number, and move the point in the dividend the same number of places. 6.3 ÷ 0.07 becomes 630 ÷ 7 = 90. This works because you multiplied both numbers by 100, which does not change the answer (like equivalent fractions).",
+          "Multiply by 10, 100, 1,000: move the point 1, 2, 3 places to the right. Divide: move it to the left.",
+          "Fraction to decimal: divide the top by the bottom. 3/8 = 3 ÷ 8 = 0.375.",
+          "Decimal to fraction: write it over 10, 100 or 1,000, then simplify. 0.45 = 45/100 = 9/20.",
+          "Comparing: give both the same number of places. 0.5 = 0.50, and 0.50 > 0.45."
+        ]
+      },
+      {
+        "h": "Rounding",
+        "p": "Rounding makes a number shorter while keeping it close to the real value. Find the place you are rounding to, then look at ONE digit to its right. If that digit is 5, 6, 7, 8 or 9, add 1 to your place. If it is 0, 1, 2, 3 or 4, keep your place as it is. Then drop everything after it. Example: 3.4567 to the nearest hundredth. The hundredths digit is 5. The digit after it is 6, so round up: 3.46."
+      },
+      {
+        "h": "Common mistakes",
+        "list": [
+          "Not lining up the points when adding: 12.5 + 3.25 is 15.75, not 4.50 or 157.5.",
+          "Counting decimal places wrong when multiplying.",
+          "Thinking 0.45 is bigger than 0.5 because 45 is bigger than 5.",
+          "Rounding in steps. 2.449 to the nearest tenth: look only at the hundredths digit (4), so the answer is 2.4. Do not round to 2.45 first and then to 2.5."
+        ]
+      },
+      {
+        "h": "Worked examples",
+        "examples": [
+          {
+            "q": "At the grocery you buy items costing ₱45.75, ₱120.50 and ₱8.25. You pay with ₱200. What is your change?",
+            "steps": [
+              "Line up the points and add: 45.75 + 120.50 = 166.25.",
+              "Add the last item: 166.25 + 8.25 = 174.50.",
+              "Subtract from what you paid: 200.00 − 174.50 = 25.50.",
+              "Check: 174.50 + 25.50 = 200.00. Correct."
+            ],
+            "a": "₱25.50"
+          },
+          {
+            "q": "Pork costs ₱320.40 per kg. How much is 2.5 kg?",
+            "steps": [
+              "Split 2.5 into 2 + 0.5 to make it easy.",
+              "2 kg: 320.40 × 2 = 640.80.",
+              "0.5 kg is half a kilo: 320.40 ÷ 2 = 160.20.",
+              "Add: 640.80 + 160.20 = 801.00.",
+              "Check with the counting rule: 32040 × 25 = 801000. Places: 320.40 has 2, 2.5 has 1, total 3 → 801.000 = 801.00. Same answer."
+            ],
+            "a": "₱801.00"
+          },
+          {
+            "q": "How many 0.25-litre cups can be filled from 3.5 litres of juice?",
+            "steps": [
+              "Divide: 3.5 ÷ 0.25.",
+              "Move the point in 0.25 two places right to make 25. Move the point in 3.5 two places right too: 350.",
+              "Now 350 ÷ 25 = 14.",
+              "Check: 14 × 0.25 = 3.50. Correct."
+            ],
+            "a": "14 cups"
+          },
+          {
+            "q": "A computed price is ₱52.375 per kg. Round it (a) to the nearest centavo and (b) to the nearest peso.",
+            "steps": [
+              "(a) Nearest centavo means nearest hundredth. The hundredths digit is 7. The next digit is 5, which is 5 or more, so round up: 7 becomes 8 → 52.38.",
+              "(b) Nearest peso means nearest whole number. The ones digit is 2. The next digit (tenths) is 3, which is 4 or less, so keep it → 52."
+            ],
+            "a": "(a) ₱52.38  (b) ₱52"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "math-percent",
+    "c": "numerical",
+    "title": "Percent",
+    "summary": "Percent of a number, what percent, percent change, VAT and successive discounts.",
+    "sections": [
+      {
+        "h": "What percent means",
+        "p": "Percent means “per hundred”. 25% means 25 out of every 100, which is 25/100 = 0.25. To change a percent to a decimal, divide by 100 (move the point 2 places left): 12% = 0.12, 7.5% = 0.075. To change a decimal to a percent, multiply by 100: 0.4 = 40%."
+      },
+      {
+        "h": "One formula covers most problems",
+        "p": "Part = Rate × Whole. The rate is the percent written as a decimal. The whole (also called the base) is the amount you are taking the percent OF. If you know any two, you can find the third."
+      },
+      {
+        "h": "The rules",
+        "table": {
+          "head": [
+            "You want",
+            "Formula",
+            "Example"
+          ],
+          "rows": [
+            [
+              "The part",
+              "rate × whole",
+              "20% of 350 = 0.20 × 350 = 70"
+            ],
+            [
+              "The rate (what percent)",
+              "part ÷ whole × 100",
+              "18 of 45 employees: 18 ÷ 45 = 0.4 → 40%"
+            ],
+            [
+              "The whole",
+              "part ÷ rate",
+              "64 is 40% of what? 64 ÷ 0.40 = 160"
+            ],
+            [
+              "Percent change",
+              "(new − old) ÷ old × 100",
+              "₱50 to ₱45: (45 − 50) ÷ 50 = −0.10 → 10% decrease"
+            ],
+            [
+              "Increase by r%",
+              "old × (1 + r)",
+              "₱800 up 15%: 800 × 1.15 = 920"
+            ],
+            [
+              "Decrease by r%",
+              "old × (1 − r)",
+              "₱800 down 15%: 800 × 0.85 = 680"
+            ],
+            [
+              "Add 12% VAT",
+              "price × 1.12",
+              "₱500 × 1.12 = ₱560"
+            ],
+            [
+              "Remove VAT from a VAT-inclusive price",
+              "price ÷ 1.12",
+              "₱560 ÷ 1.12 = ₱500 (VAT = ₱60)"
+            ],
+            [
+              "Successive discounts",
+              "multiply the remaining parts",
+              "20% then 10%: 0.80 × 0.90 = 0.72 → 28% off in total"
+            ]
+          ]
+        }
+      },
+      {
+        "h": "Why successive changes multiply",
+        "p": "The second discount is taken from the NEW, smaller price, not from the original. So 20% off then 10% off is not 30% off. You keep 80%, then you keep 90% of that: 0.80 × 0.90 = 0.72, so you pay 72% and save 28%. The same reason explains why +20% then −20% does not bring you back: 1.20 × 0.80 = 0.96, a 4% loss."
+      },
+      {
+        "h": "Mental math tricks",
+        "list": [
+          "10%: move the point one place left. 10% of ₱3,450 = ₱345.",
+          "5% is half of 10%. 5% of ₱3,450 = ₱172.50.",
+          "15% = 10% + 5%. 15% of ₱3,450 = 345 + 172.50 = ₱517.50.",
+          "1%: move the point two places left. 1% of ₱3,450 = ₱34.50.",
+          "x% of y = y% of x. 8% of 50 is the same as 50% of 8 = 4."
+        ]
+      },
+      {
+        "h": "Common mistakes",
+        "list": [
+          "Using the new value as the base in percent change. Always divide by the OLD value.",
+          "Adding successive discounts (20% + 10% = 30%). Multiply instead.",
+          "Removing VAT by taking 12% off the inclusive price. ₱560 − 12% of 560 = ₱492.80 is wrong; ₱560 ÷ 1.12 = ₱500 is right.",
+          "Forgetting to change the percent to a decimal: 15% is 0.15, not 15."
+        ]
+      },
+      {
+        "h": "Worked examples",
+        "examples": [
+          {
+            "q": "An employee saves ₱3,600 a month, which is 15% of her monthly salary. What is her salary?",
+            "steps": [
+              "₱3,600 is the part, 15% = 0.15 is the rate, and the salary is the whole.",
+              "Whole = part ÷ rate = 3,600 ÷ 0.15.",
+              "Move both points two places: 360,000 ÷ 15 = 24,000.",
+              "Check: 0.15 × 24,000 = 3,600. Correct."
+            ],
+            "a": "₱24,000"
+          },
+          {
+            "q": "The minimum jeepney fare went up from ₱12 to ₱13. What is the percent increase?",
+            "steps": [
+              "Change = new − old = 13 − 12 = 1.",
+              "Divide by the OLD fare: 1 ÷ 12 = 0.0833…",
+              "Multiply by 100: 0.0833… × 100 ≈ 8.33%.",
+              "Check: 12 × 1.0833 ≈ 13.00. Correct."
+            ],
+            "a": "about 8.33% increase"
+          },
+          {
+            "q": "(a) A laptop costs ₱25,000 before VAT. What is the price with 12% VAT? (b) A receipt shows ₱560, VAT included. How much of it is VAT?",
+            "steps": [
+              "(a) VAT = 25,000 × 0.12 = 3,000.",
+              "(a) Price with VAT = 25,000 + 3,000 = 28,000. (Same as 25,000 × 1.12.)",
+              "(b) ₱560 is 112% of the base price, so base = 560 ÷ 1.12 = 500.",
+              "(b) VAT = 560 − 500 = 60.",
+              "Check (b): 500 × 1.12 = 560. Correct."
+            ],
+            "a": "(a) ₱28,000  (b) VAT is ₱60"
+          },
+          {
+            "q": "Shoes are marked ₱2,000. The store gives 20% off, then an extra 10% off the sale price. What do you pay, and what is the total discount rate?",
+            "steps": [
+              "First discount: you pay 80%. 2,000 × 0.80 = 1,600.",
+              "Second discount is on ₱1,600: you pay 90%. 1,600 × 0.90 = 1,440.",
+              "Total saved: 2,000 − 1,440 = 560.",
+              "Total discount rate: 560 ÷ 2,000 = 0.28 = 28%.",
+              "Check with the shortcut: 0.80 × 0.90 = 0.72; 2,000 × 0.72 = 1,440. Correct. (A flat 30% would give ₱1,400, which is the trap answer.)"
+            ],
+            "a": "₱1,440; total discount 28%"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "math-ratio-proportion",
+    "c": "numerical",
+    "title": "Ratio and proportion",
+    "summary": "Compare amounts, share in a ratio, and tell direct from inverse proportion.",
+    "sections": [
+      {
+        "h": "What a ratio is",
+        "p": "A ratio compares two or more amounts. A ratio of 2:3 (read “2 to 3”) means for every 2 of the first, there are 3 of the second. It can also be written as 2/3. Order matters: boys to girls 2:3 is not the same as girls to boys. You can simplify a ratio like a fraction: 12:18 = 2:3 (divide both by 6). Both amounts must be in the same unit: 30 minutes to 2 hours is 30:120 = 1:4."
+      },
+      {
+        "h": "What a proportion is",
+        "p": "A proportion says two ratios are equal, like 2/3 = 8/12. In any proportion a/b = c/d, the cross products are equal: a × d = b × c. This lets you find a missing number. For 2/3 = 8/x: 2 × x = 3 × 8, so 2x = 24 and x = 12."
+      },
+      {
+        "h": "The rules",
+        "table": {
+          "head": [
+            "Situation",
+            "Method",
+            "Example"
+          ],
+          "rows": [
+            [
+              "Share an amount in a ratio",
+              "Add the parts, find the value of one part, multiply",
+              "₱36,000 in 2:3:4 → 9 parts → ₱4,000 per part → ₱8,000, ₱12,000, ₱16,000"
+            ],
+            [
+              "Direct proportion",
+              "Both go up together. y ÷ x stays the same",
+              "More kilos of rice → more pesos"
+            ],
+            [
+              "Inverse proportion",
+              "One goes up, the other goes down. x × y stays the same",
+              "More workers → fewer days"
+            ],
+            [
+              "Unit rate",
+              "Find the value of ONE, then multiply",
+              "₱260 for 5 kg → ₱52 per kg"
+            ]
+          ]
+        }
+      },
+      {
+        "h": "Direct or inverse? Ask this question",
+        "p": "Ask: “If one amount doubles, what happens to the other?” If it also doubles, it is direct proportion (cost of more items, distance in more hours at the same speed). If it is cut in half, it is inverse proportion (more workers, fewer days; faster speed, less time for the same trip)."
+      },
+      {
+        "h": "Common mistakes",
+        "list": [
+          "Writing the ratio in the wrong order. Follow the order in the question.",
+          "Dividing the total by one part instead of the sum of the parts.",
+          "Using direct proportion when the situation is inverse (and the other way around).",
+          "Comparing amounts in different units (minutes and hours, cm and m)."
+        ]
+      },
+      {
+        "h": "Worked examples",
+        "examples": [
+          {
+            "q": "Ana and Ben share a ₱12,000 bonus in the ratio 3:5. How much does each get?",
+            "steps": [
+              "Total parts: 3 + 5 = 8.",
+              "One part: 12,000 ÷ 8 = 1,500.",
+              "Ana gets 3 parts: 3 × 1,500 = 4,500.",
+              "Ben gets 5 parts: 5 × 1,500 = 7,500.",
+              "Check: 4,500 + 7,500 = 12,000, and 4,500:7,500 simplifies to 3:5 (divide both by 1,500). Correct."
+            ],
+            "a": "Ana ₱4,500, Ben ₱7,500"
+          },
+          {
+            "q": "5 kg of rice costs ₱260. How much do 8 kg cost?",
+            "steps": [
+              "More rice costs more, so this is direct proportion.",
+              "Unit rate: 260 ÷ 5 = 52 pesos per kg.",
+              "For 8 kg: 52 × 8 = 416.",
+              "Check with cross products: 5/260 = 8/x → 5x = 260 × 8 = 2,080 → x = 2,080 ÷ 5 = 416. Same answer."
+            ],
+            "a": "₱416"
+          },
+          {
+            "q": "6 workers can finish a job in 10 days. How many days will 4 workers take, working at the same rate?",
+            "steps": [
+              "Fewer workers need more days, so this is inverse proportion.",
+              "Total work = workers × days = 6 × 10 = 60 worker-days.",
+              "With 4 workers: 60 ÷ 4 = 15 days.",
+              "Check: 4 × 15 = 60. Correct."
+            ],
+            "a": "15 days"
+          },
+          {
+            "q": "A map has a scale of 1:50,000. Two towns are 4 cm apart on the map. How far apart are they in real life, in kilometres?",
+            "steps": [
+              "1:50,000 means 1 cm on the map is 50,000 cm in real life (direct proportion).",
+              "4 cm on the map: 4 × 50,000 = 200,000 cm.",
+              "Change to metres (100 cm = 1 m): 200,000 ÷ 100 = 2,000 m.",
+              "Change to kilometres (1,000 m = 1 km): 2,000 ÷ 1,000 = 2 km."
+            ],
+            "a": "2 km"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "math-basic-algebra",
+    "c": "numerical",
+    "title": "Basic algebra: solving equations",
+    "summary": "Find the unknown number and turn word sentences into equations.",
+    "sections": [
+      {
+        "h": "What algebra is",
+        "p": "Algebra uses a letter, usually x, to stand for a number we do not know yet. The letter is called a variable. An equation is a statement that two things are equal, like x + 5 = 12. Think of it as a balanced weighing scale: the left side weighs the same as the right side. If you add, subtract, multiply or divide one side, you must do exactly the same to the other side, or the scale tips. Your goal is to get x alone on one side."
+      },
+      {
+        "h": "Words you need",
+        "list": [
+          "Variable: a letter that stands for an unknown number (x, y, n).",
+          "Constant: a plain number, like 7.",
+          "Coefficient: the number multiplied by the variable. In 3x, the coefficient is 3. 3x means 3 × x.",
+          "Like terms: terms with the same variable, like 3x and 5x. You can combine them: 3x + 5x = 8x.",
+          "Inverse operations: operations that undo each other. Addition undoes subtraction; multiplication undoes division."
+        ]
+      },
+      {
+        "h": "Steps to solve",
+        "list": [
+          "1. Remove parentheses by multiplying: 3(x + 4) = 3x + 12.",
+          "2. Combine like terms on each side.",
+          "3. If x is on both sides, subtract one x-term from both sides so x is on one side only.",
+          "4. Undo addition or subtraction first (move plain numbers away from x).",
+          "5. Undo multiplication or division last (divide by the coefficient).",
+          "6. Check by putting your answer back into the ORIGINAL equation.",
+          "Why this order? It is PEMDAS backwards. You unwrap x the opposite way it was wrapped, like taking off socks after shoes."
+        ]
+      },
+      {
+        "h": "Turning words into math",
+        "table": {
+          "head": [
+            "Words",
+            "Math",
+            "Example"
+          ],
+          "rows": [
+            [
+              "sum, more than, increased by, plus",
+              "+",
+              "a number increased by 8 → x + 8"
+            ],
+            [
+              "difference, decreased by, minus",
+              "−",
+              "a number decreased by 3 → x − 3"
+            ],
+            [
+              "less than (order flips!)",
+              "−",
+              "5 less than a number → x − 5"
+            ],
+            [
+              "times, product, of, twice, thrice",
+              "×",
+              "twice a number → 2x; half of a number → x/2"
+            ],
+            [
+              "quotient, divided by, per",
+              "÷",
+              "a number divided by 4 → x/4"
+            ],
+            [
+              "is, equals, will be, gives",
+              "=",
+              "… is 50 → = 50"
+            ],
+            [
+              "consecutive integers",
+              "x, x + 1, x + 2",
+              "three numbers in a row"
+            ],
+            [
+              "consecutive even or odd integers",
+              "x, x + 2, x + 4",
+              "even: 10, 12, 14"
+            ]
+          ]
+        }
+      },
+      {
+        "h": "Common mistakes",
+        "list": [
+          "Writing “5 less than x” as 5 − x. It is x − 5.",
+          "Doing something to one side only.",
+          "Multiplying only the first term in parentheses: 3(x + 4) is 3x + 12, not 3x + 4.",
+          "Sign errors when moving a term: when +7 leaves one side, it becomes −7 on the other side (because you subtracted 7 from both sides).",
+          "Stopping at x when the question asks for something else (for example, the largest of three numbers)."
+        ]
+      },
+      {
+        "h": "Worked examples",
+        "examples": [
+          {
+            "q": "Solve (a) x + 15 = 42 and (b) x/4 = 9.",
+            "steps": [
+              "(a) 15 is added to x. Undo it by subtracting 15 from both sides: x + 15 − 15 = 42 − 15, so x = 27.",
+              "(a) Check: 27 + 15 = 42. Correct.",
+              "(b) x is divided by 4. Undo it by multiplying both sides by 4: x = 9 × 4 = 36.",
+              "(b) Check: 36 ÷ 4 = 9. Correct."
+            ],
+            "a": "(a) x = 27  (b) x = 36"
+          },
+          {
+            "q": "Solve 5x + 4 = 2x + 19.",
+            "steps": [
+              "x is on both sides. Subtract 2x from both sides: 5x − 2x + 4 = 19, so 3x + 4 = 19.",
+              "Undo the + 4: subtract 4 from both sides: 3x = 19 − 4 = 15.",
+              "Undo the × 3: divide both sides by 3: x = 15 ÷ 3 = 5.",
+              "Check: left side 5 × 5 + 4 = 25 + 4 = 29. Right side 2 × 5 + 19 = 10 + 19 = 29. Both are 29. Correct."
+            ],
+            "a": "x = 5"
+          },
+          {
+            "q": "Liza spent ₱300 on 4 notebooks and a ₱60 pen. How much is one notebook?",
+            "steps": [
+              "Let x = price of one notebook. 4 notebooks cost 4x.",
+              "Equation: 4x + 60 = 300.",
+              "Subtract 60 from both sides: 4x = 240.",
+              "Divide both sides by 4: x = 60.",
+              "Check: 4 × 60 + 60 = 240 + 60 = 300. Correct."
+            ],
+            "a": "₱60 each"
+          },
+          {
+            "q": "The sum of three consecutive integers is 72. What is the largest?",
+            "steps": [
+              "Let the numbers be x, x + 1 and x + 2.",
+              "Equation: x + (x + 1) + (x + 2) = 72.",
+              "Combine like terms: 3x + 3 = 72.",
+              "Subtract 3: 3x = 69. Divide by 3: x = 23.",
+              "The numbers are 23, 24 and 25. The largest is 25.",
+              "Check: 23 + 24 + 25 = 72. Correct."
+            ],
+            "a": "25"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "math-age-problems",
+    "c": "numerical",
+    "title": "Word problems: age problems",
+    "summary": "Set up ages now, in the past and in the future, then solve one equation.",
+    "sections": [
+      {
+        "h": "The big idea",
+        "p": "Age problems talk about people’s ages now, some years ago, and some years from now. The key fact: time passes equally for everyone. In 5 years, EVERY person is 5 years older. Five years ago, EVERY person was 5 years younger. Because of this, the difference between two people’s ages never changes. A mother who is 28 years older than her daughter will always be 28 years older."
+      },
+      {
+        "h": "Method",
+        "list": [
+          "1. Let x be the present age of one person, usually the youngest or the one everyone else is compared to.",
+          "2. Write every other person’s present age using x.",
+          "3. Make a small table: Person | Now | Past (subtract n) | Future (add n). Shift EVERY person by the same number of years.",
+          "4. Read the condition (“twice”, “sum is”) for the time it talks about, and write one equation.",
+          "5. Solve, then answer exactly what is asked, and check with the original sentences."
+        ]
+      },
+      {
+        "h": "Translations",
+        "table": {
+          "head": [
+            "Words",
+            "Math (Ben’s age now = x)"
+          ],
+          "rows": [
+            [
+              "Ana is 3 times as old as Ben",
+              "Ana = 3x"
+            ],
+            [
+              "Ana is 4 years older than Ben",
+              "Ana = x + 4"
+            ],
+            [
+              "Ben 5 years ago",
+              "x − 5"
+            ],
+            [
+              "Ana in 10 years",
+              "3x + 10 (if Ana = 3x now)"
+            ],
+            [
+              "In 10 years Ana will be twice Ben’s age",
+              "3x + 10 = 2(x + 10)"
+            ],
+            [
+              "The sum of their ages is 40",
+              "x + 3x = 40"
+            ]
+          ]
+        }
+      },
+      {
+        "h": "Common mistakes",
+        "list": [
+          "Adding the years to only one person.",
+          "Shifting the years after applying “twice”. “In 10 years Ana will be twice Ben’s age” is 3x + 10 = 2(x + 10), NOT 3x + 10 = 2x + 10.",
+          "Answering x when the question asks for the other person’s age.",
+          "Forgetting to check. A negative age or a parent younger than the child means a mistake."
+        ]
+      },
+      {
+        "h": "Worked examples",
+        "examples": [
+          {
+            "q": "Ana is 3 times as old as Ben. In 10 years, Ana will be twice as old as Ben. How old are they now?",
+            "steps": [
+              "Let Ben’s age now = x. Then Ana now = 3x.",
+              "In 10 years: Ben = x + 10, Ana = 3x + 10.",
+              "Condition: Ana will be twice Ben, so 3x + 10 = 2(x + 10).",
+              "Remove parentheses: 3x + 10 = 2x + 20.",
+              "Subtract 2x from both sides: x + 10 = 20. Subtract 10: x = 10.",
+              "Ben is 10, Ana is 3 × 10 = 30.",
+              "Check: in 10 years Ben is 20 and Ana is 40, and 40 = 2 × 20. Correct."
+            ],
+            "a": "Ben is 10, Ana is 30"
+          },
+          {
+            "q": "A father is 26 years older than his son. The sum of their ages is 50. How old is each?",
+            "steps": [
+              "Let the son’s age = x. The father = x + 26.",
+              "Sum: x + (x + 26) = 50.",
+              "Combine: 2x + 26 = 50.",
+              "Subtract 26: 2x = 24. Divide by 2: x = 12.",
+              "Son is 12; father is 12 + 26 = 38.",
+              "Check: 12 + 38 = 50 and 38 − 12 = 26. Correct."
+            ],
+            "a": "Son 12, father 38"
+          },
+          {
+            "q": "Liza is 29 years old now. Five years ago, she was 4 times as old as her niece was then. How old is the niece now?",
+            "steps": [
+              "Let the niece’s age now = x. Five years ago she was x − 5.",
+              "Liza five years ago: 29 − 5 = 24.",
+              "Condition: 24 = 4(x − 5).",
+              "Divide both sides by 4: 6 = x − 5.",
+              "Add 5: x = 11.",
+              "Check: five years ago the niece was 6 and Liza was 24, and 24 = 4 × 6. Correct."
+            ],
+            "a": "11 years old"
+          },
+          {
+            "q": "A mother is 36 and her daughter is 8. In how many years will the mother be exactly 3 times as old as her daughter?",
+            "steps": [
+              "Let n = number of years from now. Then mother = 36 + n, daughter = 8 + n.",
+              "Condition: 36 + n = 3(8 + n).",
+              "Remove parentheses: 36 + n = 24 + 3n.",
+              "Subtract n from both sides: 36 = 24 + 2n. Subtract 24: 12 = 2n. Divide by 2: n = 6.",
+              "Check: in 6 years the daughter is 14 and the mother is 42, and 42 = 3 × 14. Correct.",
+              "Shortcut using the fixed difference: the gap is always 36 − 8 = 28. When the mother is 3 times the daughter, the gap equals 2 times the daughter’s age, so 28 = 2 × daughter → daughter = 14. That is 14 − 8 = 6 years from now."
+            ],
+            "a": "in 6 years"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "math-work-problems",
+    "c": "numerical",
+    "title": "Word problems: work problems",
+    "summary": "Working together, pipes filling and draining, and workers × days.",
+    "sections": [
+      {
+        "h": "The big idea: think in rates",
+        "p": "A work problem asks how long a job takes. The trick is to think about how much of the job is done in ONE hour (or one day). This is the rate. If Juan paints a room in 6 hours, then each hour he paints 1/6 of the room. When people work together, their rates ADD, because each hour both of them are painting. You never add the times."
+      },
+      {
+        "h": "Formulas",
+        "table": {
+          "head": [
+            "Situation",
+            "Formula",
+            "Note"
+          ],
+          "rows": [
+            [
+              "Rate of one worker",
+              "rate = 1 ÷ time alone",
+              "6 hours alone → 1/6 of the job per hour"
+            ],
+            [
+              "Work done",
+              "work = rate × time",
+              "1/6 per hour × 3 hours = 1/2 of the job"
+            ],
+            [
+              "Two working together",
+              "1/a + 1/b = 1/t",
+              "t is the time together"
+            ],
+            [
+              "Shortcut for two",
+              "t = (a × b) ÷ (a + b)",
+              "6 and 3 hours: 18 ÷ 9 = 2 hours"
+            ],
+            [
+              "One fills, one drains",
+              "1/fill − 1/drain = 1/t",
+              "The drain works against you, so subtract"
+            ],
+            [
+              "Workers and days",
+              "workers × days = total work (stays the same)",
+              "Inverse proportion: more workers, fewer days"
+            ]
+          ]
+        }
+      },
+      {
+        "h": "Why you cannot average the times",
+        "p": "If Juan takes 6 hours and Pedro takes 3 hours, working together must be FASTER than Pedro alone, because Juan is helping. So the answer must be less than 3 hours. Adding the times (9 hours) or averaging them (4.5 hours) gives a slower time, which makes no sense. Use this as a quick check: the time together is always less than the fastest worker’s time alone."
+      },
+      {
+        "h": "Common mistakes",
+        "list": [
+          "Adding or averaging the times instead of the rates.",
+          "Forgetting to flip at the end. If 1/t = 1/2, then t = 2, not 1/2.",
+          "Adding the drain’s rate instead of subtracting it.",
+          "Leaving a decimal in hours when the choices are in hours and minutes. 2.4 hours = 2 hours + 0.4 × 60 minutes = 2 hours 24 minutes."
+        ]
+      },
+      {
+        "h": "Worked examples",
+        "examples": [
+          {
+            "q": "Juan can paint a room in 6 hours. Pedro can paint the same room in 3 hours. How long will it take them working together?",
+            "steps": [
+              "Juan’s rate: 1/6 of the room per hour. Pedro’s rate: 1/3 per hour.",
+              "Use the LCD 6: 1/3 = 2/6.",
+              "Together: 1/6 + 2/6 = 3/6 = 1/2 of the room per hour.",
+              "If they do 1/2 each hour, the whole room takes 2 hours (flip 1/2 to get 2).",
+              "Shortcut: (6 × 3) ÷ (6 + 3) = 18 ÷ 9 = 2.",
+              "Check: in 2 hours Juan does 2/6 = 1/3 and Pedro does 2/3. 1/3 + 2/3 = 1 whole room. Correct."
+            ],
+            "a": "2 hours"
+          },
+          {
+            "q": "A pipe can fill a water tank in 4 hours. A leak can empty the full tank in 6 hours. If the tank starts empty and both are open, how long to fill it?",
+            "steps": [
+              "Filling rate: 1/4 of the tank per hour. Leak rate: 1/6 per hour, working against the pipe.",
+              "Net rate: 1/4 − 1/6. LCD is 12: 3/12 − 2/12 = 1/12 of the tank per hour.",
+              "Flip: the tank fills in 12 hours.",
+              "Check: in 12 hours the pipe puts in 12 ÷ 4 = 3 tanks of water and the leak removes 12 ÷ 6 = 2 tanks. 3 − 2 = 1 full tank. Correct."
+            ],
+            "a": "12 hours"
+          },
+          {
+            "q": "8 workers can build a fence in 15 days. How many workers are needed to finish the same fence in 10 days?",
+            "steps": [
+              "Total work = 8 × 15 = 120 worker-days. This amount of work does not change.",
+              "Workers needed = 120 ÷ 10 = 12.",
+              "Check: 12 workers × 10 days = 120 worker-days. Correct. (Fewer days needs more workers, which makes sense.)"
+            ],
+            "a": "12 workers"
+          },
+          {
+            "q": "Clerk A can encode a batch of forms in 10 days; Clerk B in 15 days. They work together for 3 days, then A is reassigned. How many more days does B need to finish?",
+            "steps": [
+              "A’s rate: 1/10 per day. B’s rate: 1/15 per day.",
+              "Together: 1/10 + 1/15. LCD is 30: 3/30 + 2/30 = 5/30 = 1/6 per day.",
+              "In 3 days together: 3 × 1/6 = 3/6 = 1/2 of the batch is done.",
+              "Remaining: 1 − 1/2 = 1/2 of the batch.",
+              "B alone: time = work ÷ rate = 1/2 ÷ 1/15 = 1/2 × 15 = 15/2 = 7.5 days.",
+              "Check: in 7.5 days B does 7.5 × 1/15 = 7.5/15 = 1/2. Correct."
+            ],
+            "a": "7.5 more days"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "math-distance-rate-time",
+    "c": "numerical",
+    "title": "Word problems: distance, rate and time",
+    "summary": "Use d = r × t for one traveller, two travellers and round trips.",
+    "sections": [
+      {
+        "h": "The big idea",
+        "p": "Distance is how far you go. Rate is your speed, how far you go in one unit of time, like 40 kilometres per hour (km/h). Time is how long you travel. They are connected by one formula: distance = rate × time. If a jeepney goes 40 km each hour for 2 hours, it covers 40 × 2 = 80 km."
+      },
+      {
+        "h": "Formulas",
+        "table": {
+          "head": [
+            "To find",
+            "Formula",
+            "Example"
+          ],
+          "rows": [
+            [
+              "Distance",
+              "d = r × t",
+              "60 km/h for 3 h → 180 km"
+            ],
+            [
+              "Rate (speed)",
+              "r = d ÷ t",
+              "180 km in 3 h → 60 km/h"
+            ],
+            [
+              "Time",
+              "t = d ÷ r",
+              "180 km at 60 km/h → 3 h"
+            ],
+            [
+              "Moving in opposite directions (toward or away from each other)",
+              "add the speeds",
+              "50 km/h and 70 km/h → gap changes by 120 km each hour"
+            ],
+            [
+              "Same direction (one chasing the other)",
+              "subtract the speeds",
+              "80 km/h chasing 60 km/h → gains 20 km each hour"
+            ],
+            [
+              "Average speed for a whole trip",
+              "total distance ÷ total time",
+              "NOT the average of the speeds"
+            ]
+          ]
+        }
+      },
+      {
+        "h": "Keep the units the same",
+        "list": [
+          "If speed is in km/h, time must be in hours. Change minutes to hours by dividing by 60.",
+          "15 min = 0.25 h; 20 min = 1/3 h; 30 min = 0.5 h; 45 min = 0.75 h; 90 min = 1.5 h.",
+          "To change hours to minutes, multiply by 60: 0.4 h = 24 min."
+        ]
+      },
+      {
+        "h": "Why we add or subtract speeds",
+        "p": "Two buses driving toward each other each close part of the gap every hour, so the gap shrinks by BOTH their distances: add the speeds. When a car chases a van on the same road, the van keeps moving away while the car moves closer, so the car only gains the difference: subtract the speeds."
+      },
+      {
+        "h": "Common mistakes",
+        "list": [
+          "Mixing minutes with km/h without converting.",
+          "Averaging two speeds for a round trip. You spend more time at the slower speed, so the true average is lower than the simple average.",
+          "Adding speeds when both go the same direction (or subtracting when they go opposite ways).",
+          "Forgetting the head start when one traveller leaves earlier."
+        ]
+      },
+      {
+        "h": "Worked examples",
+        "examples": [
+          {
+            "q": "A jeepney travels 18 km in 45 minutes. What is its average speed in km/h?",
+            "steps": [
+              "Change the time to hours: 45 ÷ 60 = 0.75 h.",
+              "r = d ÷ t = 18 ÷ 0.75.",
+              "Move the points two places: 1,800 ÷ 75 = 24.",
+              "Check: 24 km/h × 0.75 h = 18 km. Correct."
+            ],
+            "a": "24 km/h"
+          },
+          {
+            "q": "Two buses are 360 km apart. They leave at the same time and drive toward each other, one at 50 km/h and the other at 70 km/h. After how many hours do they meet?",
+            "steps": [
+              "They move toward each other, so add the speeds: 50 + 70 = 120 km/h. The gap shrinks by 120 km every hour.",
+              "Time = 360 ÷ 120 = 3 hours.",
+              "Check: in 3 hours the first bus goes 50 × 3 = 150 km and the second goes 70 × 3 = 210 km. 150 + 210 = 360 km. Correct."
+            ],
+            "a": "3 hours"
+          },
+          {
+            "q": "A van leaves the office at 8:00 AM going 60 km/h. A car leaves the same office at 9:00 AM on the same road going 80 km/h. At what time does the car catch up?",
+            "steps": [
+              "Head start: the van drives alone for 1 hour, so it is 60 × 1 = 60 km ahead at 9:00 AM.",
+              "Same direction, so subtract the speeds: 80 − 60 = 20 km/h. The car gains 20 km each hour.",
+              "Time to close 60 km: 60 ÷ 20 = 3 hours after 9:00 AM, which is 12:00 noon.",
+              "Check: by noon the van has driven 4 hours: 60 × 4 = 240 km. The car has driven 3 hours: 80 × 3 = 240 km. Same place. Correct."
+            ],
+            "a": "12:00 noon"
+          },
+          {
+            "q": "Mark drives 120 km to the province at 40 km/h and returns the same 120 km at 60 km/h. What is his average speed for the whole trip?",
+            "steps": [
+              "Time going: 120 ÷ 40 = 3 h.",
+              "Time returning: 120 ÷ 60 = 2 h.",
+              "Total distance: 120 + 120 = 240 km. Total time: 3 + 2 = 5 h.",
+              "Average speed = 240 ÷ 5 = 48 km/h.",
+              "Note: the simple average (40 + 60) ÷ 2 = 50 is the trap answer. He spent more hours at the slower speed, so the true average is lower."
+            ],
+            "a": "48 km/h"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "math-money-problems",
+    "c": "numerical",
+    "title": "Word problems: money (interest, profit, discount, markup)",
+    "summary": "Simple and compound interest, profit and loss, discount and markup.",
+    "sections": [
+      {
+        "h": "Words you need",
+        "list": [
+          "Principal (P): the money you deposit or borrow at the start.",
+          "Interest rate (r): the percent charged or earned per year, written as a decimal (6% = 0.06).",
+          "Time (t): in YEARS. 9 months = 9/12 = 0.75 year.",
+          "Interest (I): the extra money earned or paid.",
+          "Cost price: what the seller paid for the item.",
+          "Selling price: what the customer pays.",
+          "Marked (list) price: the price on the tag before any discount.",
+          "Markup: an amount added to the cost to get the selling or marked price.",
+          "Discount: an amount taken off the marked price."
+        ]
+      },
+      {
+        "h": "Formulas",
+        "table": {
+          "head": [
+            "Topic",
+            "Formula",
+            "Example"
+          ],
+          "rows": [
+            [
+              "Simple interest",
+              "I = P × r × t",
+              "₱10,000 at 5% for 2 years: 10,000 × 0.05 × 2 = ₱1,000"
+            ],
+            [
+              "Amount (simple)",
+              "A = P + I",
+              "10,000 + 1,000 = ₱11,000"
+            ],
+            [
+              "Compound interest (once a year)",
+              "A = P × (1 + r)ⁿ, n = number of years",
+              "₱10,000 at 5% for 2 years: 10,000 × 1.05 × 1.05 = ₱11,025"
+            ],
+            [
+              "Profit",
+              "selling price − cost",
+              "Buy ₱80, sell ₱100 → profit ₱20"
+            ],
+            [
+              "Loss",
+              "cost − selling price",
+              "Buy ₱80, sell ₱70 → loss ₱10"
+            ],
+            [
+              "Profit or loss percent",
+              "profit (or loss) ÷ COST × 100",
+              "20 ÷ 80 = 25% profit"
+            ],
+            [
+              "Markup",
+              "cost × (1 + markup rate)",
+              "₱800 cost, 50% markup → ₱1,200"
+            ],
+            [
+              "Discount",
+              "marked price × (1 − discount rate)",
+              "₱1,200 less 20% → ₱960"
+            ]
+          ]
+        }
+      },
+      {
+        "h": "Simple vs compound: why compound grows faster",
+        "p": "In simple interest, you earn interest only on the original principal, so you get the same amount every year. In compound interest, the interest is added to the balance, and next year you earn interest on that bigger balance too. Interest earns interest. That is why, after the first year, compound interest is always more than simple interest at the same rate."
+      },
+      {
+        "h": "Common mistakes",
+        "list": [
+          "Using 5 instead of 0.05 for 5%.",
+          "Using months as years. Always divide months by 12.",
+          "Computing profit percent on the selling price. It is based on the COST unless the question says otherwise.",
+          "Thinking a 25% markup and then a 25% discount gives back the cost. 100 × 1.25 = 125; 125 × 0.75 = 93.75, a loss."
+        ]
+      },
+      {
+        "h": "Worked examples",
+        "examples": [
+          {
+            "q": "Rina borrows ₱50,000 from a cooperative at 6% simple interest per year. How much interest does she owe after 9 months, and what is the total to pay?",
+            "steps": [
+              "P = 50,000; r = 6% = 0.06; t = 9 months = 9/12 = 0.75 year.",
+              "I = 50,000 × 0.06 × 0.75.",
+              "50,000 × 0.06 = 3,000 (one year of interest).",
+              "3,000 × 0.75 = 2,250.",
+              "Total = 50,000 + 2,250 = 52,250."
+            ],
+            "a": "Interest ₱2,250; total ₱52,250"
+          },
+          {
+            "q": "₱10,000 is deposited at 5% interest compounded once a year. How much is in the account after 3 years?",
+            "steps": [
+              "Year 1: 10,000 × 1.05 = 10,500.",
+              "Year 2: 10,500 × 1.05 = 10,500 + 525 = 11,025.",
+              "Year 3: 11,025 × 1.05 = 11,025 + 551.25 = 11,576.25.",
+              "Interest earned: 11,576.25 − 10,000 = 1,576.25.",
+              "Compare: simple interest would give only 10,000 × 0.05 × 3 = 1,500."
+            ],
+            "a": "₱11,576.25"
+          },
+          {
+            "q": "A sari-sari store buys a case of 24 softdrinks for ₱480 and sells each bottle for ₱25. What is the profit per bottle, the profit percent, and the total profit?",
+            "steps": [
+              "Cost per bottle: 480 ÷ 24 = 20.",
+              "Profit per bottle: 25 − 20 = 5.",
+              "Profit percent (based on cost): 5 ÷ 20 = 0.25 = 25%.",
+              "Total profit: 24 × 5 = 120.",
+              "Check: total sales 24 × 25 = 600; 600 − 480 = 120. Correct."
+            ],
+            "a": "₱5 per bottle, 25%, ₱120 total"
+          },
+          {
+            "q": "A shop buys a fan for ₱800, marks it up 50%, then sells it at 20% off the marked price. What is the profit and the profit percent?",
+            "steps": [
+              "Marked price: 800 × 1.50 = 1,200.",
+              "Selling price after 20% off: 1,200 × 0.80 = 960.",
+              "Profit: 960 − 800 = 160.",
+              "Profit percent: 160 ÷ 800 = 0.20 = 20%.",
+              "Check with the shortcut: 1.50 × 0.80 = 1.20, so the selling price is 120% of cost, a 20% profit. Correct."
+            ],
+            "a": "Profit ₱160, which is 20%"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "math-mixtures",
+    "c": "numerical",
+    "title": "Word problems: mixtures",
+    "summary": "Mix solutions or goods of different strengths or prices.",
+    "sections": [
+      {
+        "h": "The big idea",
+        "p": "A mixture problem combines two things that have different strengths (like 20% and 40% alcohol) or different prices (like rice at ₱48 and ₱60 per kg). The key idea: the amount of the pure ingredient you put in is the same amount you get out. Mixing does not create or destroy it. For prices, the total peso value before mixing equals the total value after mixing."
+      },
+      {
+        "h": "Words you need",
+        "list": [
+          "Solution: a liquid mix, like salt water or alcohol and water.",
+          "Concentration: the percent of the mix that is the pure ingredient. A 30% salt solution is 30% salt and 70% water.",
+          "Pure amount = concentration × total amount. 20 L of a 30% solution has 0.30 × 20 = 6 L of pure ingredient."
+        ]
+      },
+      {
+        "h": "Formulas",
+        "table": {
+          "head": [
+            "Situation",
+            "Equation"
+          ],
+          "rows": [
+            [
+              "Mix two solutions",
+              "c₁ × A + c₂ × B = c_final × (A + B)"
+            ],
+            [
+              "Add pure water",
+              "the pure amount stays the same; only the total grows"
+            ],
+            [
+              "Mix two goods by price",
+              "p₁ × q₁ + p₂ × q₂ = p_mix × (q₁ + q₂)"
+            ],
+            [
+              "Shortcut (alligation)",
+              "cheap : dear = (dear − mix) : (mix − cheap)"
+            ]
+          ]
+        }
+      },
+      {
+        "h": "Common mistakes",
+        "list": [
+          "Averaging the percents when the amounts are different. 10 L of 20% plus 30 L of 40% is not 30%.",
+          "Forgetting that the total amount increases when you add water.",
+          "Mixing percent and decimal forms in the same equation.",
+          "Answering only one amount when the question asks for both."
+        ]
+      },
+      {
+        "h": "Worked examples",
+        "examples": [
+          {
+            "q": "10 L of 20% alcohol is mixed with 30 L of 40% alcohol. What is the concentration of the mixture?",
+            "steps": [
+              "Pure alcohol in the first: 0.20 × 10 = 2 L.",
+              "Pure alcohol in the second: 0.40 × 30 = 12 L.",
+              "Total pure alcohol: 2 + 12 = 14 L. Total mixture: 10 + 30 = 40 L.",
+              "Concentration: 14 ÷ 40 = 0.35 = 35%.",
+              "Note: the simple average 30% is wrong because there is more of the 40% solution, so the answer leans toward 40%."
+            ],
+            "a": "35%"
+          },
+          {
+            "q": "How much water must be added to 20 L of a 30% salt solution to make it a 20% solution?",
+            "steps": [
+              "Salt now: 0.30 × 20 = 6 L. Adding water does not change this.",
+              "Let w = litres of water added. New total = 20 + w.",
+              "Salt must be 20% of the new total: 6 = 0.20 × (20 + w).",
+              "Divide both sides by 0.20: 30 = 20 + w, so w = 10.",
+              "Check: 6 ÷ 30 = 0.20 = 20%. Correct."
+            ],
+            "a": "10 L of water"
+          },
+          {
+            "q": "A store mixes rice worth ₱48 per kg with rice worth ₱60 per kg to make 30 kg worth ₱52 per kg. How many kg of each kind are used?",
+            "steps": [
+              "Let x = kg of ₱48 rice. Then 30 − x = kg of ₱60 rice.",
+              "Value equation: 48x + 60(30 − x) = 52 × 30.",
+              "Multiply out: 48x + 1,800 − 60x = 1,560.",
+              "Combine: −12x + 1,800 = 1,560. Subtract 1,800: −12x = −240. Divide by −12: x = 20.",
+              "So 20 kg of ₱48 rice and 30 − 20 = 10 kg of ₱60 rice.",
+              "Check: 20 × 48 = 960; 10 × 60 = 600; 960 + 600 = 1,560; 1,560 ÷ 30 = 52. Correct.",
+              "Shortcut: cheap : dear = (60 − 52) : (52 − 48) = 8 : 4 = 2 : 1. Two parts of 30 kg is 20 kg, one part is 10 kg. Same answer."
+            ],
+            "a": "20 kg of ₱48 rice and 10 kg of ₱60 rice"
+          },
+          {
+            "q": "How many litres of a 50% solution must be added to 10 L of a 20% solution to get a 30% solution?",
+            "steps": [
+              "Let x = litres of the 50% solution.",
+              "Pure amount: 0.20 × 10 + 0.50x = 0.30 × (10 + x).",
+              "Multiply out: 2 + 0.5x = 3 + 0.3x.",
+              "Subtract 0.3x from both sides: 2 + 0.2x = 3. Subtract 2: 0.2x = 1. Divide by 0.2: x = 5.",
+              "Check: pure amount 2 + 0.50 × 5 = 2 + 2.5 = 4.5 L; total 10 + 5 = 15 L; 4.5 ÷ 15 = 0.30 = 30%. Correct."
+            ],
+            "a": "5 L"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "math-number-series",
+    "c": "numerical",
+    "title": "Number series",
+    "summary": "Find the rule behind a list of numbers and give the next term.",
+    "sections": [
+      {
+        "h": "What a number series is",
+        "p": "A number series is a list of numbers that follows a hidden rule. Each number is called a term. Your job is to discover the rule and use it to find the next or missing term. The best first move is always the same: write the differences between neighbouring terms (subtract each term from the next one) under the series. Most patterns show up there."
+      },
+      {
+        "h": "Pattern types",
+        "table": {
+          "head": [
+            "Type",
+            "Example",
+            "Rule",
+            "Next"
+          ],
+          "rows": [
+            [
+              "Arithmetic (same difference)",
+              "5, 9, 13, 17, 21",
+              "+4 each time",
+              "25"
+            ],
+            [
+              "Geometric (same multiplier)",
+              "3, 6, 12, 24, 48",
+              "×2 each time",
+              "96"
+            ],
+            [
+              "Geometric (dividing)",
+              "81, 27, 9, 3",
+              "÷3 each time",
+              "1"
+            ],
+            [
+              "Growing differences",
+              "2, 3, 5, 8, 12, 17",
+              "+1, +2, +3, +4, +5",
+              "23"
+            ],
+            [
+              "Squares",
+              "1, 4, 9, 16, 25",
+              "1², 2², 3², 4², 5²",
+              "36"
+            ],
+            [
+              "Cubes",
+              "1, 8, 27, 64",
+              "1³, 2³, 3³, 4³",
+              "125"
+            ],
+            [
+              "Primes",
+              "2, 3, 5, 7, 11, 13",
+              "numbers with exactly two factors",
+              "17"
+            ],
+            [
+              "Fibonacci",
+              "1, 1, 2, 3, 5, 8, 13",
+              "each term = sum of the two before",
+              "21"
+            ],
+            [
+              "Alternating operations",
+              "3, 6, 4, 8, 6, 12",
+              "×2, −2, ×2, −2 …",
+              "10"
+            ],
+            [
+              "Two series mixed together",
+              "1, 10, 3, 20, 5, 30",
+              "odd places 1, 3, 5; even places 10, 20, 30",
+              "7"
+            ]
+          ]
+        }
+      },
+      {
+        "h": "Numbers worth memorising",
+        "list": [
+          "Squares: 1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225.",
+          "Cubes: 1, 8, 27, 64, 125, 216, 343, 512, 729, 1,000.",
+          "Primes below 50: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47. A prime has exactly two factors, 1 and itself. 1 is NOT prime, and 2 is the only even prime.",
+          "Powers of 2: 2, 4, 8, 16, 32, 64, 128, 256, 512, 1,024."
+        ]
+      },
+      {
+        "h": "Check in this order",
+        "list": [
+          "1. Same difference? (arithmetic)",
+          "2. Same ratio? Divide each term by the one before. (geometric)",
+          "3. Do the differences themselves make a pattern? (growing differences)",
+          "4. Are the terms near squares or cubes (like n² + 1)?",
+          "5. Primes or Fibonacci?",
+          "6. If the series jumps up and down, try alternating operations or split it into two series (odd places and even places)."
+        ]
+      },
+      {
+        "h": "Common mistakes",
+        "list": [
+          "Deciding the rule from only the first two terms. Test it on ALL the terms.",
+          "Treating 1 as a prime number.",
+          "Missing a second layer: if the differences are not equal, take the differences of the differences.",
+          "Not considering two mixed series when the numbers zig-zag."
+        ]
+      },
+      {
+        "h": "Worked examples",
+        "examples": [
+          {
+            "q": "2, 6, 18, 54, __",
+            "steps": [
+              "Differences: 4, 12, 36. Not equal, so it is not arithmetic.",
+              "Ratios: 6 ÷ 2 = 3, 18 ÷ 6 = 3, 54 ÷ 18 = 3. Same ratio, so it is geometric with ×3.",
+              "Next: 54 × 3 = 162."
+            ],
+            "a": "162"
+          },
+          {
+            "q": "4, 6, 10, 16, 24, __",
+            "steps": [
+              "Differences: 6 − 4 = 2, 10 − 6 = 4, 16 − 10 = 6, 24 − 16 = 8.",
+              "The differences go up by 2 each time: 2, 4, 6, 8, so the next difference is 10.",
+              "Next: 24 + 10 = 34."
+            ],
+            "a": "34"
+          },
+          {
+            "q": "2, 5, 10, 17, 26, __",
+            "steps": [
+              "Differences: 3, 5, 7, 9 (odd numbers), so the next difference is 11. Next term: 26 + 11 = 37.",
+              "Another way to see it: each term is a square plus 1. 1 + 1, 4 + 1, 9 + 1, 16 + 1, 25 + 1. Next is 36 + 1 = 37.",
+              "Both methods agree."
+            ],
+            "a": "37"
+          },
+          {
+            "q": "5, 10, 8, 16, 14, __",
+            "steps": [
+              "Differences: +5, −2, +8, −2. Up and down, so try alternating operations.",
+              "5 × 2 = 10, 10 − 2 = 8, 8 × 2 = 16, 16 − 2 = 14. The rule is ×2, −2, repeating.",
+              "The next step is ×2: 14 × 2 = 28."
+            ],
+            "a": "28"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "math-geometry-measurement",
+    "c": "numerical",
+    "title": "Geometry and measurement",
+    "summary": "Perimeter, area, volume, circles, the Pythagorean theorem and unit conversions.",
+    "sections": [
+      {
+        "h": "Three different measurements",
+        "list": [
+          "Perimeter: the distance AROUND a flat shape, like the length of fence around a lot. Measured in units such as m or cm.",
+          "Area: the amount of flat surface INSIDE a shape, like the floor you will tile. Measured in square units (m², cm²) because you are counting how many 1-by-1 squares fit.",
+          "Volume: the space inside a 3D object, like how much water a tank holds. Measured in cubic units (m³, cm³) because you are counting 1-by-1-by-1 cubes."
+        ]
+      },
+      {
+        "h": "Formulas",
+        "table": {
+          "head": [
+            "Shape",
+            "Perimeter or circumference",
+            "Area or volume"
+          ],
+          "rows": [
+            [
+              "Square (side s)",
+              "P = 4s",
+              "A = s²"
+            ],
+            [
+              "Rectangle (length l, width w)",
+              "P = 2(l + w)",
+              "A = l × w"
+            ],
+            [
+              "Triangle (base b, height h)",
+              "add the three sides",
+              "A = ½ × b × h"
+            ],
+            [
+              "Parallelogram",
+              "add the four sides",
+              "A = b × h"
+            ],
+            [
+              "Trapezoid (parallel sides a and b)",
+              "add the four sides",
+              "A = ½ × (a + b) × h"
+            ],
+            [
+              "Circle (radius r)",
+              "C = 2πr = πd",
+              "A = πr²"
+            ],
+            [
+              "Cube (edge s)",
+              "—",
+              "V = s³"
+            ],
+            [
+              "Rectangular box",
+              "—",
+              "V = l × w × h"
+            ],
+            [
+              "Cylinder",
+              "—",
+              "V = πr²h"
+            ]
+          ]
+        }
+      },
+      {
+        "h": "Circles and π",
+        "p": "The radius (r) is the distance from the centre to the edge. The diameter (d) goes all the way across through the centre, so d = 2r. π (pi) is the number you get when you divide any circle’s circumference by its diameter. It is always about 3.1416. Use 3.14 or 22/7 as the question tells you. 22/7 is easiest when the radius is a multiple of 7."
+      },
+      {
+        "h": "Pythagorean theorem",
+        "p": "This works only for a right triangle (one angle is 90°, a square corner). The longest side, across from the right angle, is the hypotenuse (c). The other two sides are the legs (a and b). The rule is a² + b² = c². Common whole-number sets: 3-4-5, 6-8-10, 5-12-13, 8-15-17. If you see two of these numbers, you know the third immediately."
+      },
+      {
+        "h": "Unit conversions",
+        "table": {
+          "head": [
+            "Type",
+            "Conversions"
+          ],
+          "rows": [
+            [
+              "Length",
+              "1 km = 1,000 m; 1 m = 100 cm; 1 cm = 10 mm; 1 inch = 2.54 cm; 1 foot = 12 inches; 1 yard = 3 feet"
+            ],
+            [
+              "Area",
+              "1 m² = 10,000 cm² (because 100 cm × 100 cm); 1 hectare = 10,000 m²"
+            ],
+            [
+              "Volume",
+              "1 L = 1,000 mL = 1,000 cm³; 1 m³ = 1,000 L"
+            ],
+            [
+              "Mass",
+              "1 kg = 1,000 g; 1 metric ton = 1,000 kg"
+            ],
+            [
+              "Time",
+              "1 hour = 60 min; 1 min = 60 s; 1 day = 24 hours"
+            ]
+          ]
+        }
+      },
+      {
+        "h": "Common mistakes",
+        "list": [
+          "Using the diameter where the formula needs the radius. Halve it first.",
+          "Forgetting the ½ in the triangle area formula.",
+          "Converting area with the length factor: 1 m² is 10,000 cm², not 100 cm².",
+          "Mixing units, such as metres and centimetres, in one formula.",
+          "Putting the hypotenuse on the wrong side. c is always the longest side."
+        ]
+      },
+      {
+        "h": "Worked examples",
+        "examples": [
+          {
+            "q": "An office room is 4 m long and 3.5 m wide. (a) How many 50 cm × 50 cm floor tiles are needed? (b) How long is the baseboard around the room?",
+            "steps": [
+              "(a) Floor area: 4 × 3.5 = 14 m².",
+              "(a) One tile: 50 cm = 0.5 m, so 0.5 × 0.5 = 0.25 m².",
+              "(a) Tiles needed: 14 ÷ 0.25 = 1,400 ÷ 25 = 56.",
+              "(a) Check: along the length 4 ÷ 0.5 = 8 tiles, along the width 3.5 ÷ 0.5 = 7 tiles, and 8 × 7 = 56. Correct.",
+              "(b) Perimeter: 2 × (4 + 3.5) = 2 × 7.5 = 15 m."
+            ],
+            "a": "(a) 56 tiles  (b) 15 m"
+          },
+          {
+            "q": "A round table has a radius of 0.7 m. Using π = 22/7, find its area and circumference.",
+            "steps": [
+              "Area = πr² = 22/7 × 0.7 × 0.7.",
+              "0.7 × 0.7 = 0.49.",
+              "22/7 × 0.49: 0.49 ÷ 7 = 0.07, then 0.07 × 22 = 1.54.",
+              "Circumference = 2πr = 2 × 22/7 × 0.7.",
+              "0.7 ÷ 7 = 0.1, then 0.1 × 22 = 2.2, then 2 × 2.2 = 4.4."
+            ],
+            "a": "Area 1.54 m²; circumference 4.4 m"
+          },
+          {
+            "q": "A cylindrical water tank has a radius of 0.5 m and a height of 1.2 m. Using π = 3.14, how many litres does it hold?",
+            "steps": [
+              "V = πr²h = 3.14 × 0.5² × 1.2.",
+              "0.5² = 0.5 × 0.5 = 0.25.",
+              "0.25 × 1.2 = 0.3.",
+              "3.14 × 0.3 = 0.942 m³.",
+              "Change to litres (1 m³ = 1,000 L): 0.942 × 1,000 = 942 L."
+            ],
+            "a": "942 litres"
+          },
+          {
+            "q": "A 5 m ladder leans against a wall. Its foot is 3 m from the wall. How high up the wall does it reach?",
+            "steps": [
+              "The wall and ground make a right angle. The ladder is the hypotenuse: c = 5. One leg is 3. Let h be the height.",
+              "3² + h² = 5², so 9 + h² = 25.",
+              "Subtract 9: h² = 16.",
+              "Square root: h = √16 = 4.",
+              "Check: 3-4-5 is a common right-triangle set. 9 + 16 = 25. Correct."
+            ],
+            "a": "4 m"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "math-statistics-data",
+    "c": "numerical",
+    "title": "Statistics and data interpretation",
+    "summary": "Mean, median, mode, range, and reading tables and percent shares.",
+    "sections": [
+      {
+        "h": "What statistics is",
+        "p": "Statistics is about summarising a group of numbers (data) with a few useful values. The most common summary values tell you the “centre” of the data: the mean, the median and the mode. Data interpretation items give you a table or chart and ask you to read it and compute something from it."
+      },
+      {
+        "h": "Key terms and formulas",
+        "table": {
+          "head": [
+            "Term",
+            "Meaning",
+            "How to get it"
+          ],
+          "rows": [
+            [
+              "Mean (average)",
+              "the fair-share value",
+              "sum of all values ÷ number of values"
+            ],
+            [
+              "Median",
+              "the middle value",
+              "sort from lowest to highest; take the middle. If there are two middle values, average them"
+            ],
+            [
+              "Mode",
+              "the most common value",
+              "the value that appears most often (there can be none, or more than one)"
+            ],
+            [
+              "Range",
+              "how spread out the data is",
+              "highest − lowest"
+            ],
+            [
+              "Missing value",
+              "the value needed to reach a target mean",
+              "target mean × count − sum of the known values"
+            ],
+            [
+              "Weighted mean",
+              "mean when groups have different sizes",
+              "Σ(value × count) ÷ total count"
+            ],
+            [
+              "Percent share",
+              "a part’s share of the total",
+              "part ÷ total × 100"
+            ],
+            [
+              "Pie chart angle",
+              "a part’s slice of a circle",
+              "share × 360°"
+            ]
+          ]
+        }
+      },
+      {
+        "h": "Why the median is useful",
+        "p": "The mean can be pulled by one extreme number. If four employees earn ₱20,000 and the manager earns ₱120,000, the mean is (80,000 + 120,000) ÷ 5 = ₱40,000, which is more than four of the five people earn. The median (₱20,000) shows the typical salary better."
+      },
+      {
+        "h": "Median with an even count",
+        "p": "For 12, 7, 3, 15, 9, 10: sort first to get 3, 7, 9, 10, 12, 15. There are 6 values, so the two middle ones are 9 and 10. Median = (9 + 10) ÷ 2 = 9.5."
+      },
+      {
+        "h": "How to read a table",
+        "list": [
+          "Read the title and the units first. “Amounts in thousands of pesos” means 450 is ₱450,000.",
+          "Find the exact row and column the question asks about.",
+          "If a total row is not given, add it yourself and write it down.",
+          "Answer the exact question: amount, difference, percent, or ratio."
+        ]
+      },
+      {
+        "h": "Sample table: annual office budget",
+        "table": {
+          "head": [
+            "Item",
+            "Amount (₱)"
+          ],
+          "rows": [
+            [
+              "Salaries",
+              "450,000"
+            ],
+            [
+              "Supplies",
+              "75,000"
+            ],
+            [
+              "Utilities",
+              "150,000"
+            ],
+            [
+              "Travel",
+              "75,000"
+            ]
+          ]
+        }
+      },
+      {
+        "h": "Common mistakes",
+        "list": [
+          "Forgetting to sort the data before finding the median.",
+          "Averaging two averages when the groups have different sizes. Use the weighted mean.",
+          "Ignoring units like “in thousands” or “in %”.",
+          "Dividing by the wrong total when computing a percent share."
+        ]
+      },
+      {
+        "h": "Worked examples",
+        "examples": [
+          {
+            "q": "Five exam scores are 78, 85, 92, 85, 70. Find the mean, median, mode and range.",
+            "steps": [
+              "Sum: 78 + 85 = 163; 163 + 92 = 255; 255 + 85 = 340; 340 + 70 = 410.",
+              "Mean: 410 ÷ 5 = 82.",
+              "Sort: 70, 78, 85, 85, 92. The middle (3rd) value is 85, so the median is 85.",
+              "Mode: 85 appears twice, more than any other, so the mode is 85.",
+              "Range: 92 − 70 = 22."
+            ],
+            "a": "Mean 82, median 85, mode 85, range 22"
+          },
+          {
+            "q": "Maria’s average on 4 exams is 82. What must she score on the 5th exam to raise her average to 84?",
+            "steps": [
+              "Total needed for 5 exams: 84 × 5 = 420.",
+              "Total so far: 82 × 4 = 328.",
+              "Score needed: 420 − 328 = 92.",
+              "Check: (328 + 92) ÷ 5 = 420 ÷ 5 = 84. Correct."
+            ],
+            "a": "92"
+          },
+          {
+            "q": "Using the sample office budget table: (a) What percent of the budget goes to utilities? (b) What angle would utilities get in a pie chart? (c) Salaries are how many times supplies?",
+            "steps": [
+              "Total: 450,000 + 75,000 = 525,000; 525,000 + 150,000 = 675,000; 675,000 + 75,000 = 750,000.",
+              "(a) 150,000 ÷ 750,000 = 15 ÷ 75 = 0.20 = 20%.",
+              "(b) 0.20 × 360° = 72°.",
+              "(c) 450,000 ÷ 75,000 = 450 ÷ 75 = 6."
+            ],
+            "a": "(a) 20%  (b) 72°  (c) 6 times"
+          },
+          {
+            "q": "In a section, 3 employees earn ₱20,000 a month and 2 earn ₱30,000. What is the mean salary?",
+            "steps": [
+              "The groups have different sizes, so use the weighted mean.",
+              "Total of the first group: 3 × 20,000 = 60,000.",
+              "Total of the second group: 2 × 30,000 = 60,000.",
+              "Total of all salaries: 60,000 + 60,000 = 120,000. Number of employees: 3 + 2 = 5.",
+              "Mean: 120,000 ÷ 5 = 24,000.",
+              "Note: (20,000 + 30,000) ÷ 2 = 25,000 is the trap answer because it ignores the group sizes."
+            ],
+            "a": "₱24,000"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "math-exponents-roots",
+    "c": "numerical",
+    "title": "Exponents, square roots and scientific notation",
+    "summary": "Powers, the laws of exponents, square roots and writing very big or very small numbers.",
+    "sections": [
+      {
+        "h": "What an exponent is",
+        "p": "An exponent is a short way to write repeated multiplication. In 2⁵, the 2 is the base and the small 5 is the exponent (or power). It means multiply 2 by itself 5 times: 2 × 2 × 2 × 2 × 2 = 32. A number to the power 2 is “squared” (5² = 25). A number to the power 3 is “cubed” (4³ = 64)."
+      },
+      {
+        "h": "Laws of exponents (same base only)",
+        "table": {
+          "head": [
+            "Law",
+            "Rule",
+            "Example"
+          ],
+          "rows": [
+            [
+              "Multiply",
+              "aᵐ × aⁿ = aᵐ⁺ⁿ (add the exponents)",
+              "2³ × 2² = 2⁵ = 32"
+            ],
+            [
+              "Divide",
+              "aᵐ ÷ aⁿ = aᵐ⁻ⁿ (subtract the exponents)",
+              "5⁶ ÷ 5⁴ = 5² = 25"
+            ],
+            [
+              "Power of a power",
+              "(aᵐ)ⁿ = aᵐˣⁿ (multiply the exponents)",
+              "(3²)³ = 3⁶ = 729"
+            ],
+            [
+              "Power of a product",
+              "(ab)ⁿ = aⁿ × bⁿ",
+              "(2 × 5)² = 4 × 25 = 100"
+            ],
+            [
+              "Zero exponent",
+              "a⁰ = 1 (a not 0)",
+              "7⁰ = 1"
+            ],
+            [
+              "Negative exponent",
+              "a⁻ⁿ = 1 ÷ aⁿ",
+              "2⁻³ = 1/8"
+            ]
+          ]
+        }
+      },
+      {
+        "h": "Why the laws work",
+        "list": [
+          "Multiply: 2³ × 2² is (2 × 2 × 2) × (2 × 2). Count the 2s: there are 3 + 2 = 5 of them, so 2⁵.",
+          "Divide: 5⁶ ÷ 5⁴ cancels four 5s from the top and bottom, leaving 6 − 4 = 2 of them, so 5².",
+          "Zero: 2³ ÷ 2³ is a number divided by itself, which is 1. By the divide law it is also 2³⁻³ = 2⁰. So 2⁰ must equal 1."
+        ]
+      },
+      {
+        "h": "Square roots",
+        "p": "The square root (√) asks: “What number times itself gives this?” √49 = 7 because 7 × 7 = 49. Numbers like 1, 4, 9, 16, 25, 36, 49, 64, 81, 100 are perfect squares and have whole-number roots. To simplify a root, pull out a perfect square: √72 = √(36 × 2) = √36 × √2 = 6√2. To estimate, find the perfect squares around it: √50 is between √49 = 7 and √64 = 8, very close to 7 (about 7.07). The cube root (∛) asks what number times itself three times gives the value: ∛27 = 3 because 3 × 3 × 3 = 27."
+      },
+      {
+        "h": "Scientific notation",
+        "p": "Scientific notation writes very big or very small numbers as a × 10ⁿ, where a is at least 1 but less than 10. Count how many places the decimal point moves. Moving left (big number) gives a positive power: 4,500,000 = 4.5 × 10⁶. Moving right (small number) gives a negative power: 0.00072 = 7.2 × 10⁻⁴. To multiply numbers in this form, multiply the front numbers and add the powers of 10."
+      },
+      {
+        "h": "Common mistakes",
+        "list": [
+          "Multiplying the base by the exponent: 2³ is 8, not 6.",
+          "Signs: (−3)² = (−3) × (−3) = 9, but −3² = −(3 × 3) = −9.",
+          "Adding exponents when the bases are different: 2³ × 3² is 8 × 9 = 72, not 6⁵.",
+          "Splitting a root over addition: √(9 + 16) = √25 = 5, not √9 + √16 = 7.",
+          "Leaving the front number 10 or more in scientific notation: 45 × 10⁵ should be 4.5 × 10⁶."
+        ]
+      },
+      {
+        "h": "Worked examples",
+        "examples": [
+          {
+            "q": "Simplify 2³ × 2⁴ ÷ 2⁵.",
+            "steps": [
+              "Same base, so add the exponents when multiplying: 2³ × 2⁴ = 2³⁺⁴ = 2⁷.",
+              "Subtract when dividing: 2⁷ ÷ 2⁵ = 2⁷⁻⁵ = 2².",
+              "2² = 4.",
+              "Check the long way: 8 × 16 = 128; 128 ÷ 32 = 4. Correct."
+            ],
+            "a": "4"
+          },
+          {
+            "q": "A square lot has an area of 225 m². How long is one side, and how much fencing goes around it?",
+            "steps": [
+              "Area of a square = side², so side = √225.",
+              "15 × 15 = 225, so the side is 15 m.",
+              "Perimeter = 4 × 15 = 60 m."
+            ],
+            "a": "Side 15 m; fencing 60 m"
+          },
+          {
+            "q": "Write 112,000,000 in scientific notation.",
+            "steps": [
+              "Put the decimal point after the first digit: 1.12.",
+              "Count the places the point moved from the end of 112,000,000 to after the 1: 8 places to the left.",
+              "Moving left for a big number gives a positive power: 1.12 × 10⁸.",
+              "Check: 1.12 × 100,000,000 = 112,000,000. Correct."
+            ],
+            "a": "1.12 × 10⁸"
+          },
+          {
+            "q": "Compute (3 × 10⁴) × (4 × 10⁵) and write the answer in scientific notation.",
+            "steps": [
+              "Multiply the front numbers: 3 × 4 = 12.",
+              "Add the powers of 10: 10⁴ × 10⁵ = 10⁴⁺⁵ = 10⁹. So far: 12 × 10⁹.",
+              "12 is not less than 10, so rewrite 12 as 1.2 × 10¹: 1.2 × 10¹ × 10⁹ = 1.2 × 10¹⁰.",
+              "Check: 30,000 × 400,000 = 12,000,000,000, and 1.2 × 10¹⁰ = 12,000,000,000. Correct."
+            ],
+            "a": "1.2 × 10¹⁰"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "math-speed-tips",
+    "c": "numerical",
+    "title": "Speed tips for the numerical part",
+    "summary": "Estimate, eliminate, plug in the choices and manage your time.",
+    "sections": [
+      {
+        "h": "Why speed matters",
+        "p": "The Professional exam has 150 scored test items in 3 hours 10 minutes (190 minutes), and the Subprofessional has 145 in 2 hours 40 minutes (160 minutes), according to CSC Examination Advisory No. 10, s. 2026. That is only about one minute per item across ALL subjects, and calculators are not allowed. Many math items can be answered faster without full computation, because you only need to pick the right choice, not show your solution."
+      },
+      {
+        "h": "Five tools",
+        "table": {
+          "head": [
+            "Tool",
+            "How",
+            "When to use it"
+          ],
+          "rows": [
+            [
+              "Estimate",
+              "Round the numbers and compute roughly",
+              "The choices are far apart"
+            ],
+            [
+              "Last digit",
+              "Multiply only the last digits to know how the answer ends",
+              "Choices are close but end in different digits"
+            ],
+            [
+              "Eliminate",
+              "Cross out choices that are impossible (too big, too small, wrong sign, odd when it must be even)",
+              "Always, before computing"
+            ],
+            [
+              "Plug in the choices (backsolving)",
+              "Test each choice in the problem; start with a middle value",
+              "Age, number and “find the number” problems"
+            ],
+            [
+              "Sense check",
+              "Does the answer make sense? Two workers together must be faster than either alone",
+              "Work, mixture, average and speed problems"
+            ]
+          ]
+        }
+      },
+      {
+        "h": "Time management",
+        "list": [
+          "Do the easy items first. If an item takes more than about 2 minutes, mark your best guess, flag it and move on.",
+          "Answer every item. A blank counts as wrong and there is no penalty for guessing, so always shade something.",
+          "Write small, neat scratch work so you can check it quickly.",
+          "Memorise the common fraction–percent pairs (1/8 = 12.5%, 3/8 = 37.5%, 1/3 ≈ 33.3%) and squares up to 15² so you do not compute them.",
+          "Read the last sentence of a word problem first so you know exactly what is being asked."
+        ]
+      },
+      {
+        "h": "Common mistakes",
+        "list": [
+          "Spending 5 minutes on one hard item and running out of time for 5 easy ones.",
+          "Picking the first choice that “looks right” without checking units (cm vs m, hours vs minutes).",
+          "Picking a trap answer that is the result of a common mistake (like 18 for 8 − 2 × 3, or 30% for 20% then 10% off).",
+          "Leaving items blank."
+        ]
+      },
+      {
+        "h": "Worked examples",
+        "examples": [
+          {
+            "q": "498 × 21 = ?  (A) 1,458  (B) 10,458  (C) 104,580  (D) 9,458",
+            "steps": [
+              "Estimate: 498 is about 500 and 21 is about 20. 500 × 20 = 10,000.",
+              "Only (B) 10,458 and (D) 9,458 are near 10,000. Since 498 × 21 is a bit more than 498 × 20 = 9,960, the answer must be above 9,960, which rules out (D).",
+              "Exact check: 498 × 21 = 498 × 20 + 498 = 9,960 + 498 = 10,458."
+            ],
+            "a": "(B) 10,458"
+          },
+          {
+            "q": "37 × 43 = ?  (A) 1,591  (B) 1,594  (C) 1,598  (D) 1,603",
+            "steps": [
+              "Last digits: 7 × 3 = 21, so the answer must end in 1.",
+              "Only (A) 1,591 ends in 1.",
+              "Exact check: 37 × 43 = 37 × 40 + 37 × 3 = 1,480 + 111 = 1,591."
+            ],
+            "a": "(A) 1,591"
+          },
+          {
+            "q": "A mother is 4 times as old as her son. In 5 years she will be 3 times as old as him. How old is the son now?  (A) 5  (B) 10  (C) 12  (D) 15",
+            "steps": [
+              "Plug in the choices instead of setting up an equation.",
+              "Try (A) 5: mother is 20. In 5 years: son 10, mother 25. Is 25 = 3 × 10 = 30? No.",
+              "Try (B) 10: mother is 40. In 5 years: son 15, mother 45. Is 45 = 3 × 15 = 45? Yes.",
+              "Algebra check: 4x + 5 = 3(x + 5) → 4x + 5 = 3x + 15 → x = 10. Same answer."
+            ],
+            "a": "(B) 10"
+          },
+          {
+            "q": "On the Professional exam, about how many seconds do you have per item on average?",
+            "steps": [
+              "Total time: 3 hours 10 minutes = 3 × 60 + 10 = 180 + 10 = 190 minutes.",
+              "The test proper has 150 scored items (the other 20 in the booklet are a short personal-data questionnaire).",
+              "Per item: 190 ÷ 150 ≈ 1.27 minutes.",
+              "In seconds: 1.27 × 60 ≈ 76 seconds.",
+              "Lesson: if an item is taking more than 2 minutes, guess, flag it and move on."
+            ],
+            "a": "about 76 seconds per item"
+          }
+        ]
+      }
+    ]
+  }
+]

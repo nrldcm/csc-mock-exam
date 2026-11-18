@@ -1,0 +1,1126 @@
+{
+  "35": {
+    "steps": [
+      "Percent means 'out of 100', so 15% = 15/100 = 0.15.",
+      "'Of' means multiply. So 15% of 840 = 0.15 × 840.",
+      "Break it into easy parts. 10% of 840 = 840 ÷ 10 = 84.",
+      "5% is half of 10%: 84 ÷ 2 = 42.",
+      "15% = 10% + 5% = 84 + 42 = 126.",
+      "Check: 0.15 × 840 = 126. The answer is 126."
+    ],
+    "wrong": {
+      "112": "Too small. 112 ÷ 840 is only about 13.3%, not 15%. Using 10% (84) + 5% (42) gives 126.",
+      "134": "Too big. 134 ÷ 840 is about 16%, not 15%. A slip when adding the 10% and 5% parts gives numbers like this.",
+      "142": "Too big. 142 ÷ 840 is about 16.9%. The correct 15% is 84 + 42 = 126."
+    },
+    "tip": "Find 10% by moving the decimal point one place left, then build other percents from it (5% is half of 10%)."
+  },
+  "36": {
+    "steps": [
+      "Look at the gaps (differences) between terms.",
+      "6 − 2 = 4, 12 − 6 = 6, 20 − 12 = 8, 30 − 20 = 10.",
+      "The gaps are 4, 6, 8, 10. Each gap is 2 more than the one before.",
+      "So the next gap is 10 + 2 = 12.",
+      "Next term = 30 + 12 = 42.",
+      "Check another way: the terms are 1×2, 2×3, 3×4, 4×5, 5×6, so next is 6×7 = 42."
+    ],
+    "wrong": {
+      "40": "This adds 10 again (30 + 10). But the gaps grow by 2 each time, so the next gap is 12, not 10.",
+      "44": "This adds 14 (30 + 14), skipping the gap of 12.",
+      "36": "This adds only 6 (30 + 6). The gaps are getting bigger, so the next gap must be more than 10."
+    },
+    "tip": "For number series, write the differences between terms first. If the differences change, look at the differences of the differences."
+  },
+  "37": {
+    "steps": [
+      "Check the gaps first: 9 − 3 = 6, 27 − 9 = 18, 81 − 27 = 54. The gaps are not equal, so try dividing.",
+      "Ratio means one term divided by the term before it.",
+      "9 ÷ 3 = 3, 27 ÷ 9 = 3, 81 ÷ 27 = 3. Every term is the one before it × 3.",
+      "Next term = 81 × 3 = 243.",
+      "Check: these are powers of 3: 3¹ = 3, 3² = 9, 3³ = 27, 3⁴ = 81, 3⁵ = 243."
+    ],
+    "wrong": {
+      "162": "This is 81 × 2. The pattern multiplies by 3, not 2.",
+      "216": "This is 6 × 6 × 6, which is not part of this pattern. 81 × 3 = 243, not 216.",
+      "324": "This is 81 × 4. The multiplier stays at 3 every time."
+    },
+    "tip": "If the gaps grow fast, divide each term by the one before it. A constant ratio means multiply by the same number."
+  },
+  "38": {
+    "steps": [
+      "Think in 'part of the job per day' (this is called the work rate).",
+      "Ana finishes in 6 days, so each day she does 1/6 of the job.",
+      "Ben finishes in 3 days, so each day he does 1/3 of the job.",
+      "Together per day: 1/6 + 1/3. Make the bottoms (denominators) the same: 1/3 = 2/6. So 1/6 + 2/6 = 3/6 = 1/2 of the job per day.",
+      "If they do 1/2 of the job each day, the whole job takes 1 ÷ 1/2 = 2 days.",
+      "Check: in 2 days Ana does 2/6 and Ben does 4/6. 2/6 + 4/6 = 6/6 = 1 whole job."
+    ],
+    "wrong": {
+      "3": "This is Ben's time working alone. With Ana helping, the job must finish faster than 3 days.",
+      "4": "This is slower than Ben alone (3 days). Adding a helper can never make the job slower.",
+      "4.5": "This is the average of 6 and 3: (6 + 3) ÷ 2 = 4.5. Times are not averaged; you add the work rates."
+    },
+    "tip": "Working together: add the rates (1/a + 1/b), then flip the answer to get the time. Together is always faster than the fastest person alone."
+  },
+  "39": {
+    "steps": [
+      "A 25% discount means you pay 100% − 25% = 75% of the price.",
+      "Price after the first discount: ₱1,200 × 0.75 = ₱900.",
+      "The extra 10% is taken from the new price (₱900), not from ₱1,200. You pay 100% − 10% = 90%.",
+      "Final price: ₱900 × 0.90 = ₱810.",
+      "Check: 10% of ₱900 is ₱90, and ₱900 − ₱90 = ₱810. It is less than ₱900, which makes sense after another discount."
+    ],
+    "wrong": {
+      "₱780": "This takes 25% + 10% = 35% off at once: ₱1,200 × 0.65 = ₱780. Successive discounts are not added, because the 10% is taken from the smaller price.",
+      "₱840": "This is ₱1,200 × 0.70, a 30% discount. No step in the problem gives 30%. The second discount is 10% of ₱900 = ₱90, so the price is ₱810.",
+      "₱900": "This is the price after only the first 25% discount. The extra 10% still has to come off."
+    },
+    "tip": "Successive discounts multiply: price × (1 − 0.25) × (1 − 0.10). Never just add the percents."
+  },
+  "40": {
+    "steps": [
+      "The average (mean) is the total of the numbers divided by how many numbers there are.",
+      "Add them: 85 + 90 = 175, 175 + 78 = 253, 253 + 92 = 345, 345 + 80 = 425.",
+      "There are 5 numbers.",
+      "Average = 425 ÷ 5 = 85.",
+      "Check: 85 × 5 = 425, which matches the total."
+    ],
+    "wrong": {
+      "84": "84 × 5 = 420, but the total is 425. This comes from an addition slip.",
+      "86": "86 × 5 = 430, but the total is 425.",
+      "87": "87 × 5 = 435, but the total is 425."
+    },
+    "tip": "Average = sum ÷ count. Check by multiplying the average by the count; it must equal the sum."
+  },
+  "41": {
+    "steps": [
+      "Time = distance ÷ speed.",
+      "Time = 180 km ÷ 60 km/h = 3 hours.",
+      "The question asks for minutes. 1 hour = 60 minutes.",
+      "3 hours × 60 = 180 minutes.",
+      "Check: in 180 minutes (3 hours) at 60 km per hour the bus goes 3 × 60 = 180 km."
+    ],
+    "wrong": {
+      "120": "120 minutes is 2 hours. In 2 hours at 60 km/h the bus goes only 2 × 60 = 120 km, not 180 km.",
+      "150": "150 minutes is 2.5 hours. 2.5 × 60 = 150 km, not 180 km.",
+      "210": "210 minutes is 3.5 hours. 3.5 × 60 = 210 km, which is too far."
+    },
+    "tip": "Time = distance ÷ speed. Then convert: hours × 60 = minutes."
+  },
+  "42": {
+    "steps": [
+      "The ratio 3 : 5 means for every 3 boys there are 5 girls.",
+      "Total parts = 3 + 5 = 8 parts.",
+      "The 8 parts make up 64 students, so 1 part = 64 ÷ 8 = 8 students.",
+      "Girls have 5 parts: 5 × 8 = 40 girls.",
+      "Check: boys = 3 × 8 = 24. 24 + 40 = 64 students, and 24 : 40 simplifies to 3 : 5 (divide both by 8)."
+    ],
+    "wrong": {
+      "24": "This is the number of boys (3 × 8). The question asks for girls.",
+      "36": "If girls were 36, boys would be 64 − 36 = 28. The ratio 28 : 36 = 7 : 9, not 3 : 5.",
+      "45": "If girls were 45, boys would be 64 − 45 = 19. The ratio 19 : 45 is not 3 : 5."
+    },
+    "tip": "Ratio problems: add the ratio parts, divide the total by that sum to get one part, then multiply."
+  },
+  "43": {
+    "steps": [
+      "Simple interest uses the formula I = P × r × t. P is the principal (the money deposited or borrowed), r is the yearly rate as a decimal, and t is the time in years.",
+      "P = ₱20,000, r = 6% = 0.06, t = 3 years.",
+      "Interest for 1 year: ₱20,000 × 0.06 = ₱1,200.",
+      "Interest for 3 years: ₱1,200 × 3 = ₱3,600.",
+      "Check: simple interest is the same each year, so ₱1,200 + ₱1,200 + ₱1,200 = ₱3,600."
+    ],
+    "wrong": {
+      "₱1,200": "This is the interest for only 1 year. The money is kept for 3 years.",
+      "₱3,000": "This is what a 5% rate would give (₱20,000 × 0.05 × 3). The rate is 6%.",
+      "₱4,200": "This is what a 7% rate would give (₱20,000 × 0.07 × 3). The rate is 6%."
+    },
+    "tip": "Simple interest: I = P × r × t. Find one year's interest, then multiply by the number of years."
+  },
+  "44": {
+    "steps": [
+      "To add fractions, the denominators (bottom numbers) must be the same.",
+      "The smallest number that both 4 and 3 divide into is 12. So use 12 as the common denominator.",
+      "3/4 = (3 × 3)/(4 × 3) = 9/12.",
+      "2/3 = (2 × 4)/(3 × 4) = 8/12.",
+      "Add the top numbers (numerators): 9/12 + 8/12 = 17/12.",
+      "17/12 is more than 1. 17 ÷ 12 = 1 remainder 5, so 17/12 = 1 5/12.",
+      "Check: 3/4 = 0.75 and 2/3 ≈ 0.67. 0.75 + 0.67 ≈ 1.42, and 1 5/12 ≈ 1.42."
+    ],
+    "wrong": {
+      "5/7": "This adds top to top and bottom to bottom: (3 + 2)/(4 + 3). Fractions cannot be added that way. Also, 5/7 is less than 1, but 3/4 alone is almost 1.",
+      "1 1/12": "This is 13/12. It comes from writing 2/3 as 4/12 by mistake. The correct value is 2/3 = 8/12.",
+      "1 1/3": "This is 16/12. It comes from writing 3/4 as 8/12 by mistake. The correct value is 3/4 = 9/12."
+    },
+    "tip": "Add fractions only after giving them the same denominator. Then add the numerators and keep the denominator."
+  },
+  "45": {
+    "steps": [
+      "Let b = Ben's age now. Ana is three times as old, so Ana = 3b.",
+      "In 10 years, Ben will be b + 10 and Ana will be 3b + 10.",
+      "Then Ana will be twice Ben's age: 3b + 10 = 2(b + 10).",
+      "Multiply out the right side: 3b + 10 = 2b + 20.",
+      "Subtract 2b from both sides: b + 10 = 20. Subtract 10: b = 10.",
+      "Check: Ben is 10 and Ana is 30 now. In 10 years Ben is 20 and Ana is 40, and 40 is twice 20."
+    ],
+    "wrong": {
+      "5": "Ben 5 means Ana is 15. In 10 years: Ben 15, Ana 25. 25 is not twice 15.",
+      "15": "Ben 15 means Ana is 45. In 10 years: Ben 25, Ana 55. 55 is not twice 25.",
+      "20": "This is Ben's age 10 years from now, not his age today. Ben 20 now would make Ana 60, and in 10 years 70 is not twice 30."
+    },
+    "tip": "Age problems: let a letter be the present age, add the same number of years to every person, then write the equation."
+  },
+  "46": {
+    "steps": [
+      "Fewer workers need more days. This is an inverse proportion: when one goes down, the other goes up.",
+      "Find the total work in worker-days (1 worker-day = the work one worker does in one day).",
+      "Total work = 8 workers × 12 days = 96 worker-days.",
+      "With 6 workers: days = 96 ÷ 6 = 16 days.",
+      "Check: 6 × 16 = 96 worker-days, the same job. And 16 is more than 12, which makes sense with fewer workers."
+    ],
+    "wrong": {
+      "9": "This is 12 × 6 ÷ 8 = 9, treating it as if fewer workers need fewer days. With fewer workers the wall takes longer.",
+      "14": "This just adds 2 days because there are 2 fewer workers. Check: 6 × 14 = 84 worker-days, but the job needs 96.",
+      "18": "Check: 6 × 18 = 108 worker-days, but the job needs only 96."
+    },
+    "tip": "Workers × days = total work. Keep the total the same and divide by the new number of workers."
+  },
+  "47": {
+    "steps": [
+      "Look at how each term is made from the ones before it.",
+      "1 + 1 = 2, 1 + 2 = 3, 2 + 3 = 5, 3 + 5 = 8.",
+      "Each term is the sum of the two terms before it. (This is called the Fibonacci sequence.)",
+      "Next term = 5 + 8 = 13.",
+      "Check: the gaps are 0, 1, 1, 2, 3, and the next gap 5 is the term two places back. 8 + 5 = 13."
+    ],
+    "wrong": {
+      "11": "This is 8 + 3. The rule adds the two previous terms, 5 + 8, not 3.",
+      "12": "This is 8 + 4. Each new term is the sum of the last two terms: 5 + 8 = 13.",
+      "14": "This is 8 + 6. The correct sum of the last two terms is 5 + 8 = 13."
+    },
+    "tip": "If the gaps in a series look like the series itself (1, 1, 2, 3, 5…), add the last two terms."
+  },
+  "48": {
+    "steps": [
+      "Ignore the decimal points first: 25 × 4 = 100.",
+      "Count the digits after the decimal point in each number: 0.25 has 2, and 0.4 has 1. Total = 2 + 1 = 3 decimal places.",
+      "Put 3 decimal places in 100: 0.100.",
+      "0.100 is the same as 0.1.",
+      "Check: 0.25 is one quarter (¼). One quarter of 0.4 is 0.4 ÷ 4 = 0.1."
+    ],
+    "wrong": {
+      "0.01": "This uses 4 decimal places (0.0100) instead of 3. Only 2 + 1 = 3 places are needed.",
+      "1.0": "This puts in too few decimal places. Multiplying two numbers smaller than 1 always gives an answer smaller than both, so it cannot be 1.",
+      "0.001": "This puts the 3 decimal places on 1 instead of 100. 25 × 4 is 100, so the answer is 0.100 = 0.1."
+    },
+    "tip": "Multiply decimals as whole numbers, then give the answer as many decimal places as both numbers have together."
+  },
+  "49": {
+    "steps": [
+      "Perimeter is the distance all the way around the shape (add all the sides).",
+      "A rectangle has 2 lengths and 2 widths: 12 m, 7 m, 12 m, 7 m.",
+      "Add: 12 + 7 = 19 m (one length plus one width).",
+      "Double it: 2 × 19 = 38 m.",
+      "Check: 12 + 12 + 7 + 7 = 38 m."
+    ],
+    "wrong": {
+      "19 m": "This adds only one length and one width (12 + 7). A rectangle has four sides, so you must double it.",
+      "84 m": "This is 12 × 7 = 84, which is the area (in m²), not the perimeter.",
+      "42 m": "No correct method gives 42. Adding all four sides gives 12 + 7 + 12 + 7 = 38 m."
+    },
+    "tip": "Rectangle perimeter = 2 × (length + width). Area = length × width. Do not mix them up."
+  },
+  "50": {
+    "steps": [
+      "Change each letter to its place in the alphabet: A = 1, C = 3, F = 6, J = 10, O = 15.",
+      "Find the gaps: 3 − 1 = 2, 6 − 3 = 3, 10 − 6 = 4, 15 − 10 = 5.",
+      "The gaps grow by 1 each time: 2, 3, 4, 5. So the next gap is 6.",
+      "Next position = 15 + 6 = 21.",
+      "The 21st letter is U (P = 16, Q = 17, R = 18, S = 19, T = 20, U = 21)."
+    ],
+    "wrong": {
+      "S": "S is the 19th letter, a gap of only 4 from O. The gaps grow, so the next gap is 6.",
+      "T": "T is the 20th letter, a gap of 5 from O. That repeats the last gap instead of growing to 6.",
+      "V": "V is the 22nd letter, a gap of 7 from O. The next gap is 6, not 7."
+    },
+    "tip": "For letter series, turn letters into numbers (A = 1, B = 2, …) and look at the gaps."
+  },
+  "51": {
+    "steps": [
+      "First find the cost of one pen (the unit price).",
+      "₱75 ÷ 5 pens = ₱15 per pen.",
+      "Cost of 12 pens: ₱15 × 12 = ₱180.",
+      "Check: 12 pens is a bit more than twice 5 pens, and ₱180 is a bit more than twice ₱75 (₱150)."
+    ],
+    "wrong": {
+      "₱150": "This is the cost of 10 pens (₱15 × 10), not 12.",
+      "₱165": "This is the cost of 11 pens (₱15 × 11), not 12.",
+      "₱195": "This is the cost of 13 pens (₱15 × 13), not 12."
+    },
+    "tip": "Find the price of one, then multiply by how many you need."
+  },
+  "52": {
+    "steps": [
+      "Let the unknown number be N. '40% of N is 64' means 0.40 × N = 64.",
+      "To find N, divide both sides by 0.40: N = 64 ÷ 0.40.",
+      "64 ÷ 0.40 is the same as 640 ÷ 4 = 160.",
+      "Check: 40% of 160 = 0.40 × 160 = 64. Correct."
+    ],
+    "wrong": {
+      "120": "40% of 120 = 0.40 × 120 = 48, not 64.",
+      "144": "40% of 144 = 0.40 × 144 = 57.6, not 64.",
+      "256": "This is 64 × 4. You must divide by 0.40 (not multiply by 4). Check: 40% of 256 = 102.4, not 64."
+    },
+    "tip": "'P% of what number is X?' → divide: X ÷ (P/100)."
+  },
+  "53": {
+    "steps": [
+      "Goal: get x alone on one side.",
+      "Subtract 7 from both sides: 2x + 7 − 7 = 31 − 7, so 2x = 24.",
+      "Divide both sides by 2: x = 24 ÷ 2 = 12.",
+      "Check: 2 × 12 + 7 = 24 + 7 = 31. Correct."
+    ],
+    "wrong": {
+      "10": "Check: 2 × 10 + 7 = 27, not 31.",
+      "14": "Check: 2 × 14 + 7 = 35, not 31.",
+      "19": "This adds 7 instead of subtracting it: (31 + 7) ÷ 2 = 19. Check: 2 × 19 + 7 = 45, not 31."
+    },
+    "tip": "Undo operations in reverse order: first undo the + 7 (subtract 7), then undo the × 2 (divide by 2). Always plug your answer back in."
+  },
+  "54": {
+    "steps": [
+      "Find the raise: 8% of ₱15,000.",
+      "10% of ₱15,000 = ₱1,500, so 1% = ₱150.",
+      "8% = 8 × ₱150 = ₱1,200. This is the amount of the raise.",
+      "New salary = ₱15,000 + ₱1,200 = ₱16,200.",
+      "Shortcut: ₱15,000 × 1.08 = ₱16,200 (1.08 means the old 100% plus 8%)."
+    ],
+    "wrong": {
+      "₱15,800": "This adds only ₱800, as if 8% meant ₱800. 8% of ₱15,000 is ₱1,200.",
+      "₱16,000": "This adds ₱1,000, which is only about 6.7% of ₱15,000.",
+      "₱16,500": "This adds ₱1,500, which is a 10% raise, not 8%."
+    },
+    "tip": "Increase by P%: multiply by (1 + P/100). An 8% raise means × 1.08."
+  },
+  "55": {
+    "steps": [
+      "Find the gaps between terms.",
+      "100 − 95 = 5, 95 − 85 = 10, 85 − 70 = 15, 70 − 50 = 20.",
+      "The amount subtracted grows by 5 each time: 5, 10, 15, 20. So next we subtract 25.",
+      "Next term = 50 − 25 = 25."
+    ],
+    "wrong": {
+      "20": "This subtracts 30 (50 − 30). The next amount to subtract is 25, not 30.",
+      "30": "This subtracts 20 again (50 − 20). But the amount subtracted grows by 5 each time.",
+      "35": "This subtracts only 15 (50 − 15). The amounts subtracted keep getting bigger, so it must be 25."
+    },
+    "tip": "In a decreasing series, write down what is subtracted each time and look for a pattern in those numbers."
+  },
+  "56": {
+    "steps": [
+      "The least common multiple (LCM) is the smallest number that both numbers divide into evenly.",
+      "List multiples of 18: 18, 36, 54, …",
+      "Test each with 12: 18 ÷ 12 = 1.5 (not whole). 36 ÷ 12 = 3 (whole).",
+      "So the LCM is 36.",
+      "Prime-factor method: 12 = 2 × 2 × 3 = 2² × 3, and 18 = 2 × 3 × 3 = 2 × 3². Take the highest power of each prime: 2² × 3² = 4 × 9 = 36."
+    ],
+    "wrong": {
+      "6": "6 is the greatest common factor (GCF), the biggest number that divides both. The LCM must be a multiple of both, so it cannot be smaller than 18.",
+      "24": "24 is a multiple of 12, but 24 ÷ 18 = 1.33, not a whole number.",
+      "72": "72 is a common multiple (72 ÷ 12 = 6, 72 ÷ 18 = 4), but it is not the least. 36 is smaller and also works."
+    },
+    "tip": "LCM: list the multiples of the bigger number and stop at the first one the smaller number divides evenly."
+  },
+  "57": {
+    "steps": [
+      "Use the rate per hour. Pipe A fills 1/4 of the tank each hour.",
+      "Pipe B drains (empties) 1/6 of the tank each hour, so its rate counts as negative.",
+      "Net rate = 1/4 − 1/6. Common denominator 12: 1/4 = 3/12 and 1/6 = 2/12. So 3/12 − 2/12 = 1/12 of the tank per hour.",
+      "If 1/12 of the tank fills each hour, the full tank takes 12 hours.",
+      "Check: in 12 hours A puts in 12 ÷ 4 = 3 tanks of water and B drains 12 ÷ 6 = 2 tanks. 3 − 2 = 1 full tank."
+    ],
+    "wrong": {
+      "2.4 hours": "This adds the rates (1/4 + 1/6 = 5/12, then 12 ÷ 5 = 2.4), as if both pipes were filling. Pipe B drains, so you subtract.",
+      "10 hours": "This just adds the times (4 + 6). Times are never added; work with rates per hour.",
+      "24 hours": "This multiplies the times (4 × 6). The net rate is 1/12 per hour, which gives 12 hours."
+    },
+    "tip": "Filling pipes add (+), draining pipes subtract (−). Work with rates, then flip the net rate to get the time."
+  },
+  "58": {
+    "steps": [
+      "A 25% profit on cost means the selling price = cost + 25% of cost = 125% of the cost.",
+      "So cost × 1.25 = ₱1,500.",
+      "Cost = ₱1,500 ÷ 1.25 = ₱1,200.",
+      "Check: 25% of ₱1,200 = ₱300. ₱1,200 + ₱300 = ₱1,500. Correct."
+    ],
+    "wrong": {
+      "₱1,125": "This takes 25% of the selling price off: ₱1,500 × 0.75 = ₱1,125. The 25% profit is based on the cost, not the selling price. Check: ₱1,125 × 1.25 = ₱1,406.25, not ₱1,500.",
+      "₱1,250": "Check: ₱1,250 × 1.25 = ₱1,562.50, not ₱1,500.",
+      "₱1,275": "This is ₱1,500 × 0.85 (15% off), which has no basis here. Check: ₱1,275 × 1.25 = ₱1,593.75, not ₱1,500."
+    },
+    "tip": "Profit percent is based on cost: selling price = cost × (1 + profit%). To get the cost, divide."
+  },
+  "59": {
+    "steps": [
+      "A full circle is 360°. The clock face has 12 hour marks.",
+      "So the angle between two neighboring hour marks is 360° ÷ 12 = 30°.",
+      "At 3:00 the minute hand points at 12 and the hour hand points at 3.",
+      "From 12 to 3 is 3 hour marks: 3 × 30° = 90°.",
+      "Check: 3:00 looks like an 'L' shape, which is a right angle (90°)."
+    ],
+    "wrong": {
+      "45°": "45° is only 1.5 hour marks (1.5 × 30°). The hands at 3:00 are 3 marks apart.",
+      "60°": "60° is 2 hour marks apart, like at 2:00.",
+      "120°": "120° is 4 hour marks apart, like at 4:00."
+    },
+    "tip": "Each hour mark on a clock is 30° apart (360° ÷ 12)."
+  },
+  "60": {
+    "steps": [
+      "Add the four months one at a time.",
+      "January + February: 120 + 150 = 270.",
+      "Add March: 270 + 90 = 360.",
+      "Add April: 360 + 180 = 540.",
+      "Check: pair them a different way. 120 + 180 = 300 and 150 + 90 = 240. 300 + 240 = 540."
+    ],
+    "wrong": {
+      "500": "This is 40 short of the real total. 120 + 150 + 90 + 180 = 540.",
+      "520": "This is 20 short of the real total, an addition slip.",
+      "560": "This is 20 more than the real total, an addition slip."
+    },
+    "tip": "When adding a list, pair numbers that make round totals (120 + 180 = 300) to avoid slips."
+  },
+  "61": {
+    "steps": [
+      "Percent increase = (new − old) ÷ old × 100%.",
+      "Old value (March) = 90. New value (April) = 180.",
+      "Increase = 180 − 90 = 90 applicants.",
+      "Percent increase = 90 ÷ 90 × 100% = 1 × 100% = 100%.",
+      "Check: a 100% increase means the number doubled. 90 × 2 = 180. Correct."
+    ],
+    "wrong": {
+      "50%": "This divides the increase by the new value: 90 ÷ 180 = 50%. Always divide by the old (starting) value.",
+      "90%": "90 is the increase in number of applicants, not the percent. You still need to divide by the old value.",
+      "200%": "This is 180 ÷ 90 = 2 = 200%. That says April is 200% of March, but the increase is only 100%."
+    },
+    "tip": "Percent change = change ÷ original × 100%. Doubling is a 100% increase, not 200%."
+  },
+  "62": {
+    "steps": [
+      "Average = total ÷ number of months.",
+      "Total: 120 + 150 = 270, 270 + 90 = 360, 360 + 180 = 540.",
+      "There are 4 months.",
+      "Average = 540 ÷ 4 = 135.",
+      "Check: 135 × 4 = 540."
+    ],
+    "wrong": {
+      "125": "This is 500 ÷ 4. It comes from a wrong total of 500. The total is 540.",
+      "130": "This is 520 ÷ 4. It comes from a wrong total of 520. The total is 540.",
+      "140": "This is 560 ÷ 4. It comes from a wrong total of 560. The total is 540."
+    },
+    "tip": "Average = sum ÷ count. Get the sum right first; most wrong choices come from a wrong sum."
+  },
+  "63": {
+    "steps": [
+      "Share of the total = part ÷ total × 100%.",
+      "Total for four months: 120 + 150 + 90 + 180 = 540.",
+      "February had 150.",
+      "150 ÷ 540 = 0.2777…, which is about 0.28.",
+      "0.28 × 100% = 28%.",
+      "Check: 28% of 540 ≈ 0.28 × 540 = 151.2, very close to 150."
+    ],
+    "wrong": {
+      "25%": "This assumes each month is an equal quarter (1 ÷ 4). February is above the average month, so its share is more than 25%.",
+      "30%": "This is 150 ÷ 500, which uses a wrong total. The total is 540.",
+      "33%": "This is 150 ÷ 450, as if March (90) were left out of the total. All four months make 540."
+    },
+    "tip": "Share = part ÷ whole. Always use the full total of all categories as the whole."
+  },
+  "131": {
+    "steps": [
+      "A fraction means division: 3/8 = 3 ÷ 8.",
+      "3 ÷ 8 = 0.375.",
+      "To change a decimal to a percent, multiply by 100 (move the decimal point two places right): 0.375 × 100 = 37.5%.",
+      "Check: 1/8 = 12.5%, so 3/8 = 3 × 12.5% = 37.5%."
+    ],
+    "wrong": {
+      "38%": "This is 37.5% rounded. The exact value 37.5% is one of the choices, so pick the exact one.",
+      "35%": "35% = 0.35, and 0.35 × 8 = 2.8, not 3. So 35% is not 3/8.",
+      "30.8%": "30.8% = 0.308, and 0.308 × 8 ≈ 2.46, not 3."
+    },
+    "tip": "Fraction to percent: divide top by bottom, then × 100. Memorize 1/8 = 12.5%."
+  },
+  "132": {
+    "steps": [
+      "Salaries and supplies together take 35% + 25% = 60% of the budget.",
+      "Utilities get the rest: 100% − 60% = 40%.",
+      "40% of ₱48,000 = 0.40 × ₱48,000 = ₱19,200.",
+      "Check: salaries = 0.35 × ₱48,000 = ₱16,800 and supplies = 0.25 × ₱48,000 = ₱12,000. ₱16,800 + ₱12,000 + ₱19,200 = ₱48,000."
+    ],
+    "wrong": {
+      "₱16,800": "This is the salaries share (35% of ₱48,000), not utilities.",
+      "₱18,000": "This is 37.5% of ₱48,000. Utilities get 40%, which is ₱19,200.",
+      "₱20,400": "This is 42.5% of ₱48,000. Utilities get 100% − 35% − 25% = 40%."
+    },
+    "tip": "'The rest' = 100% minus all the other percents. Find that percent first, then multiply."
+  },
+  "133": {
+    "steps": [
+      "Find the gaps: 11 − 5 = 6, 23 − 11 = 12, 47 − 23 = 24. The gaps double each time.",
+      "Now look for a rule from term to term: 5 × 2 + 1 = 11, 11 × 2 + 1 = 23, 23 × 2 + 1 = 47.",
+      "So each term is the previous term doubled, plus 1.",
+      "Next term = 47 × 2 + 1 = 94 + 1 = 95.",
+      "Check with the gaps: the next gap is 24 × 2 = 48, and 47 + 48 = 95."
+    ],
+    "wrong": {
+      "94": "This doubles 47 but forgets to add 1.",
+      "96": "This is 47 × 2 + 2. The rule adds 1, not 2.",
+      "99": "This adds 52 to 47. The gaps double (6, 12, 24), so the next gap is 48, giving 95."
+    },
+    "tip": "If the gaps double, try 'multiply by 2, then add or subtract a small number.'"
+  },
+  "134": {
+    "steps": [
+      "A prime number is a whole number greater than 1 that can only be divided evenly by 1 and itself.",
+      "2, 3, 5, 7, 11, 13 are the first six prime numbers in order.",
+      "Check the numbers after 13: 14 = 2 × 7 (not prime), 15 = 3 × 5 (not prime), 16 = 2 × 8 (not prime).",
+      "17 can only be divided by 1 and 17, so it is prime.",
+      "The next term is 17."
+    ],
+    "wrong": {
+      "15": "15 = 3 × 5, so it is not a prime number.",
+      "16": "16 is even (16 = 2 × 8), so it is not prime.",
+      "19": "19 is prime, but it skips 17. The series lists every prime in order."
+    },
+    "tip": "If a series has odd gaps like 1, 2, 2, 4, 2, check whether it lists prime numbers."
+  },
+  "135": {
+    "steps": [
+      "The car uses 8 liters for every 100 km.",
+      "How many 100 km blocks are in 350 km? 350 ÷ 100 = 3.5 blocks.",
+      "Fuel needed = 3.5 × 8 liters = 28 liters.",
+      "Check: 300 km needs 3 × 8 = 24 liters, and the extra 50 km needs half of 8 = 4 liters. 24 + 4 = 28 liters."
+    ],
+    "wrong": {
+      "24": "This is the fuel for only 300 km (3 × 8). The extra 50 km still needs 4 more liters.",
+      "26": "This is 3.25 × 8, the fuel for 325 km, not 350 km.",
+      "30": "This is 3.75 × 8, the fuel for 375 km, not 350 km."
+    },
+    "tip": "Rate problems: find how many 'units' of distance you have (350 ÷ 100), then multiply by the amount per unit."
+  },
+  "136": {
+    "steps": [
+      "Average = total ÷ count, so total = average × count.",
+      "Total of all four numbers = 25 × 4 = 100.",
+      "Sum of the three known numbers: 20 + 30 = 50, 50 + 18 = 68.",
+      "Fourth number = 100 − 68 = 32.",
+      "Check: 20 + 30 + 18 + 32 = 100, and 100 ÷ 4 = 25."
+    ],
+    "wrong": {
+      "28": "Total would be 68 + 28 = 96, and 96 ÷ 4 = 24, not 25.",
+      "30": "Total would be 68 + 30 = 98, and 98 ÷ 4 = 24.5, not 25.",
+      "34": "Total would be 68 + 34 = 102, and 102 ÷ 4 = 25.5, not 25."
+    },
+    "tip": "Missing number in an average: total = average × count, then subtract the numbers you know."
+  },
+  "137": {
+    "steps": [
+      "Finishing faster needs more workers. This is an inverse proportion.",
+      "Total work = 12 workers × 15 days = 180 worker-days.",
+      "To finish in 10 days: workers needed = 180 ÷ 10 = 18 workers.",
+      "Check: 18 × 10 = 180 worker-days, the same job. And 18 is more than 12, which makes sense for a shorter deadline."
+    ],
+    "wrong": {
+      "14": "14 × 10 = 140 worker-days, but the project needs 180.",
+      "16": "16 × 10 = 160 worker-days, but the project needs 180.",
+      "20": "20 × 10 = 200 worker-days, more than the 180 needed. It is not the exact number."
+    },
+    "tip": "Workers × days stays the same for the same job. Find that total, then divide by the new number of days."
+  },
+  "138": {
+    "steps": [
+      "Use an easy starting price: ₱100.",
+      "Increase by 20%: ₱100 × 1.20 = ₱120.",
+      "Decrease the new price by 20%: 20% of ₱120 = ₱24, so ₱120 − ₱24 = ₱96.",
+      "The price went from ₱100 to ₱96, a drop of ₱4 out of ₱100 = 4% decrease.",
+      "Shortcut: 1.20 × 0.80 = 0.96, which is 4% less than 1."
+    ],
+    "wrong": {
+      "No change": "This assumes +20% and −20% cancel out. They do not, because the 20% decrease is taken from a bigger price (₱120).",
+      "4% increase": "The size is right but the direction is wrong. The final price (₱96) is lower than the start (₱100).",
+      "2% decrease": "Check with ₱100: the final price is ₱96, which is a 4% drop, not 2%."
+    },
+    "tip": "Up P% then down P% always ends lower. Use a starting value of ₱100 to see it fast."
+  },
+  "139": {
+    "steps": [
+      "Compounded yearly means each year's interest is added to the balance, and next year's interest is computed on that new balance.",
+      "Year 1 interest: 10% of ₱10,000 = ₱1,000. Balance = ₱10,000 + ₱1,000 = ₱11,000.",
+      "Year 2 interest: 10% of ₱11,000 = ₱1,100. Balance = ₱11,000 + ₱1,100 = ₱12,100.",
+      "Shortcut: ₱10,000 × 1.1 × 1.1 = ₱10,000 × 1.21 = ₱12,100.",
+      "Check: the balance is more than the simple-interest result (₱12,000), which is expected with compounding."
+    ],
+    "wrong": {
+      "₱12,000": "This is simple interest: ₱1,000 each year for 2 years. With compounding, year 2 earns interest on ₱11,000, which is ₱1,100.",
+      "₱12,200": "This adds ₱1,100 interest for both years. Year 1 earns only ₱1,000 because the balance is still ₱10,000.",
+      "₱11,000": "This is the balance after only 1 year."
+    },
+    "tip": "Compound interest: multiply by (1 + rate) once for each year. Here: × 1.1 × 1.1."
+  },
+  "140": {
+    "steps": [
+      "The area of a circle is A = π × r², where r is the radius (the distance from the center to the edge) and r² means r × r.",
+      "r = 7 cm, so r² = 7 × 7 = 49.",
+      "A = 22/7 × 49.",
+      "49 ÷ 7 = 7, then 22 × 7 = 154.",
+      "Area = 154 cm². (Area is measured in square units.)"
+    ],
+    "wrong": {
+      "44 cm²": "This is 2 × 22/7 × 7 = 44, which is the circumference (the distance around the circle), not the area.",
+      "88 cm²": "This is double the circumference (2 × 44). Area needs r × r, not just r.",
+      "308 cm²": "This is 22/7 × 14 × 7, using the diameter (14) in place of one radius. It is twice the correct area."
+    },
+    "tip": "Circle: area = πr², circumference = 2πr. With π = 22/7 and r = 7, cancel the 7 first."
+  },
+  "141": {
+    "steps": [
+      "Consecutive even numbers go up by 2, like 10, 12, 14. Let the smallest be x. Then the numbers are x, x + 2, x + 4.",
+      "Their sum: x + (x + 2) + (x + 4) = 3x + 6 = 78.",
+      "Subtract 6: 3x = 72. Divide by 3: x = 24.",
+      "The numbers are 24, 26, 28. The largest is 28.",
+      "Check: 24 + 26 + 28 = 78."
+    ],
+    "wrong": {
+      "24": "24 is the smallest of the three numbers. The question asks for the largest.",
+      "26": "26 is the middle number (78 ÷ 3 = 26). The largest is 26 + 2 = 28.",
+      "30": "If 30 were the largest, the numbers would be 26, 28, 30, which add to 84, not 78."
+    },
+    "tip": "For three consecutive numbers, the sum ÷ 3 gives the middle one. Then step up or down."
+  },
+  "142": {
+    "steps": [
+      "The rate is per minute, so change the time to minutes.",
+      "2 hours = 2 × 60 = 120 minutes. Add 20 minutes: 120 + 20 = 140 minutes.",
+      "Words typed = 45 words per minute × 140 minutes.",
+      "45 × 100 = 4,500 and 45 × 40 = 1,800. 4,500 + 1,800 = 6,300 words.",
+      "Check: 2 hours alone is 45 × 120 = 5,400 words, and 20 more minutes adds 45 × 20 = 900. 5,400 + 900 = 6,300."
+    ],
+    "wrong": {
+      "5,400": "This counts only 2 hours (120 minutes) and forgets the extra 20 minutes.",
+      "6,750": "This uses 150 minutes (2.5 hours). But 2 hours 20 minutes is 140 minutes, not 2.5 hours.",
+      "7,200": "This uses 160 minutes, which is 2 hours 40 minutes, not 2 hours 20 minutes."
+    },
+    "tip": "Change all time to the same unit as the rate before multiplying. 20 minutes is not 0.2 hours."
+  },
+  "143": {
+    "steps": [
+      "Two-fifths (2/5) of all employees are women, and that equals 60.",
+      "If 2 parts out of 5 are 60 people, then 1 part = 60 ÷ 2 = 30 people.",
+      "All employees are 5 parts: 5 × 30 = 150.",
+      "Same thing as division: 60 ÷ 2/5 = 60 × 5/2 = 300/2 = 150.",
+      "Check: 2/5 of 150 = 150 ÷ 5 × 2 = 30 × 2 = 60 women."
+    ],
+    "wrong": {
+      "100": "This uses 3/5 instead of 2/5 (60 × 5/3 = 100). Check: 2/5 of 100 = 40, not 60.",
+      "120": "This is just 60 × 2. Check: 2/5 of 120 = 48, not 60.",
+      "180": "This is 60 × 3. Check: 2/5 of 180 = 72, not 60."
+    },
+    "tip": "If a fraction of the whole is known, divide by the fraction (multiply by its flip) to get the whole."
+  },
+  "144": {
+    "steps": [
+      "Scientific notation writes a number as (a number from 1 up to less than 10) × (a power of 10).",
+      "To make 0.0045 into 4.5, move the decimal point to the right: 0.0045 → 0.045 → 0.45 → 4.5. That is 3 places.",
+      "Moving the point right means the original number is small, so the power of 10 is negative: 10⁻³.",
+      "So 0.0045 = 4.5 × 10⁻³.",
+      "Check: 10⁻³ = 1/1,000 = 0.001, and 4.5 × 0.001 = 0.0045."
+    ],
+    "wrong": {
+      "4.5 × 10⁻²": "This equals 4.5 × 0.01 = 0.045, which is ten times too big. The point moves 3 places, not 2.",
+      "45 × 10⁻⁴": "This has the right value (45 × 0.0001 = 0.0045), but it is not scientific notation, because 45 is not between 1 and 10.",
+      "4.5 × 10³": "This equals 4,500, a big number. Small numbers (less than 1) need a negative power of 10."
+    },
+    "tip": "Count how many places the decimal point moves to make a number from 1 to 9.99. Moving right gives a negative power."
+  },
+  "145": {
+    "steps": [
+      "When two cars go in opposite directions, the distance between them grows by both speeds added together.",
+      "Separation speed = 50 km/h + 70 km/h = 120 km/h.",
+      "Time = distance ÷ speed = 360 km ÷ 120 km/h = 3 hours.",
+      "Check: in 3 hours, car 1 goes 50 × 3 = 150 km and car 2 goes 70 × 3 = 210 km. 150 + 210 = 360 km apart."
+    ],
+    "wrong": {
+      "2": "In 2 hours they are only 120 × 2 = 240 km apart.",
+      "4": "In 4 hours they are 120 × 4 = 480 km apart, too far.",
+      "6": "This divides 360 by 60, the average speed of one car. Both cars move apart, so use 50 + 70 = 120 km/h."
+    },
+    "tip": "Opposite directions: add the speeds. Same direction: subtract the speeds."
+  },
+  "146": {
+    "steps": [
+      "Find the year's total: ₱12,000 + ₱15,000 = ₱27,000, ₱27,000 + ₱18,000 = ₱45,000, ₱45,000 + ₱15,000 = ₱60,000.",
+      "Q3 (third quarter) spending was ₱18,000.",
+      "Percent = part ÷ total × 100% = ₱18,000 ÷ ₱60,000 × 100%.",
+      "18,000 ÷ 60,000 = 0.30, and 0.30 × 100% = 30%.",
+      "Check: 30% of ₱60,000 = ₱18,000."
+    ],
+    "wrong": {
+      "25%": "This assumes each quarter is an equal 1/4 of the year. Q3 spent more than the others, so its share is more than 25%.",
+      "28%": "28% of ₱60,000 = ₱16,800, not ₱18,000.",
+      "36%": "This is ₱18,000 ÷ ₱50,000, which uses a wrong total. The full year is ₱60,000."
+    },
+    "tip": "Percent of total = part ÷ whole × 100%. Add every item to get the whole first."
+  },
+  "147": {
+    "steps": [
+      "The median is the middle value after the numbers are put in order from smallest to largest.",
+      "Sort: 3, 4, 7, 9, 12.",
+      "There are 5 numbers, so the middle one is the 3rd: 3, 4, [7], 9, 12.",
+      "The median is 7.",
+      "Check: there are two numbers below 7 (3 and 4) and two above it (9 and 12)."
+    ],
+    "wrong": {
+      "4": "4 is the 2nd number in the sorted list, not the middle one.",
+      "8": "8 is not in the list. With an odd count of numbers, the median is one of the numbers itself.",
+      "9": "9 is the middle of the unsorted list (7, 3, 9, 4, 12). You must sort the numbers first."
+    },
+    "tip": "Median: sort first, then take the middle. With an even count, average the two middle values."
+  },
+  "208": {
+    "steps": [
+      "Work from the inside out. First find 25% of 800.",
+      "25% = 1/4, so 800 ÷ 4 = 200.",
+      "Now find 25% of 200: 200 ÷ 4 = 50.",
+      "Shortcut: 1/4 × 1/4 = 1/16, and 800 ÷ 16 = 50.",
+      "Check: 50 × 4 = 200 and 200 × 4 = 800."
+    ],
+    "wrong": {
+      "40": "This is 5% of 800 (800 ÷ 20). Taking 25% twice is 1/16 of 800, which is 50.",
+      "100": "This is 1/8 of 800, as if the two 25% steps were 12.5%. It is 1/4 of 1/4 = 1/16.",
+      "200": "This is 25% of 800 only once. You must take 25% again, of 200."
+    },
+    "tip": "'Percent of percent' multiplies: 25% of 25% = 1/4 × 1/4 = 1/16."
+  },
+  "209": {
+    "steps": [
+      "VAT (value-added tax) is added on top of the price.",
+      "12% of ₱500 = 0.12 × ₱500 = ₱60. This is the tax.",
+      "Price with VAT = ₱500 + ₱60 = ₱560.",
+      "Shortcut: ₱500 × 1.12 = ₱560."
+    ],
+    "wrong": {
+      "₱512": "This adds ₱12 instead of 12%. 12% of ₱500 is ₱60.",
+      "₱550": "This adds ₱50, which is 10%, not 12%.",
+      "₱600": "This adds ₱100, which is 20%, not 12%."
+    },
+    "tip": "Adding 12% VAT: multiply the price by 1.12."
+  },
+  "210": {
+    "steps": [
+      "Gaps: 14 − 7 = 7, 28 − 14 = 14, 56 − 28 = 28. The gaps are not equal, so check the ratio.",
+      "14 ÷ 7 = 2, 28 ÷ 14 = 2, 56 ÷ 28 = 2. Each term is doubled.",
+      "Next term = 56 × 2 = 112.",
+      "Check: the next gap equals the last term (56), and 56 + 56 = 112."
+    ],
+    "wrong": {
+      "84": "This adds the previous term: 56 + 28. The rule is to double: 56 + 56 = 112.",
+      "98": "This is 56 + 42. Each term is exactly double the one before.",
+      "124": "This is 56 + 68. Doubling 56 gives 112, not 124."
+    },
+    "tip": "If each gap equals the term before it, the series is doubling (× 2)."
+  },
+  "211": {
+    "steps": [
+      "Gaps: 81 − 27 = 54, 27 − 9 = 18, 9 − 3 = 6. Not equal, so try dividing.",
+      "81 ÷ 27 = 3, 27 ÷ 9 = 3, 9 ÷ 3 = 3. Each term is the one before divided by 3.",
+      "Next term = 3 ÷ 3 = 1.",
+      "Check: the gaps 54, 18, 6 are also each divided by 3, so the next gap is 2. 3 − 2 = 1."
+    ],
+    "wrong": {
+      "0": "This subtracts 3 (3 − 3). The rule is divide by 3, not subtract 3.",
+      "1.5": "This divides by 2 (3 ÷ 2). The divisor is always 3.",
+      "2": "This subtracts 1 (3 − 1). Dividing 3 by 3 gives 1."
+    },
+    "tip": "A shrinking series with shrinking gaps is often dividing by the same number each time."
+  },
+  "212": {
+    "steps": [
+      "Total cost of the shirts: 3 × ₱350 = ₱1,050.",
+      "Change = amount paid − total cost.",
+      "Change = ₱2,000 − ₱1,050 = ₱950.",
+      "Check: ₱1,050 + ₱950 = ₱2,000."
+    ],
+    "wrong": {
+      "₱850": "This is ₱2,000 − ₱1,150, as if the shirts cost ₱1,150. 3 × ₱350 = ₱1,050.",
+      "₱900": "Check: ₱1,050 + ₱900 = ₱1,950, not ₱2,000. ₱50 is missing.",
+      "₱1,050": "This is the total cost of the shirts, not the change."
+    },
+    "tip": "Change = money given − total cost. Check by adding the change back to the cost."
+  },
+  "213": {
+    "steps": [
+      "The ratio 2 : 3 : 4 has 2 + 3 + 4 = 9 parts in total.",
+      "Each part is worth ₱36,000 ÷ 9 = ₱4,000.",
+      "The largest share has 4 parts: 4 × ₱4,000 = ₱16,000.",
+      "Check: the shares are 2 × 4,000 = ₱8,000, 3 × 4,000 = ₱12,000, and ₱16,000. ₱8,000 + ₱12,000 + ₱16,000 = ₱36,000."
+    ],
+    "wrong": {
+      "₱12,000": "This is the middle share (3 parts × ₱4,000). It is also what an equal 3-way split gives. The largest share is 4 parts.",
+      "₱14,000": "₱14,000 ÷ ₱4,000 = 3.5 parts. No share has 3.5 parts.",
+      "₱18,000": "This is half of ₱36,000. The largest share is 4 out of 9 parts, which is less than half."
+    },
+    "tip": "Ratio sharing: total ÷ (sum of ratio numbers) = one part. Multiply by each person's number."
+  },
+  "214": {
+    "steps": [
+      "Total hours = hours per day × number of days = 8 × 22.",
+      "Break it up: 8 × 20 = 160 and 8 × 2 = 16.",
+      "160 + 16 = 176 hours.",
+      "Check: 176 ÷ 8 = 22 days."
+    ],
+    "wrong": {
+      "156": "This is 20 hours too few, a multiplication slip. 8 × 22 = 176.",
+      "166": "This is 10 hours too few. 8 × 20 = 160, plus 8 × 2 = 16, gives 176.",
+      "186": "This is 10 hours too many. Also, 186 ÷ 8 is not a whole number (23.25)."
+    },
+    "tip": "Split the harder number into easy parts: 8 × 22 = 8 × 20 + 8 × 2."
+  },
+  "215": {
+    "steps": [
+      "A fraction means division: 7/20 = 7 ÷ 20.",
+      "Easier way: make the denominator (bottom number) 100. Multiply top and bottom by 5: 7/20 = 35/100.",
+      "35/100 = 0.35 (35 hundredths).",
+      "Check: 0.35 × 20 = 7."
+    ],
+    "wrong": {
+      "0.035": "This is 35/1,000, ten times too small. 7/20 = 35/100 = 0.35.",
+      "0.7": "This is 7/10. The bottom number is 20, not 10.",
+      "3.5": "This is 7/2, ten times too big. 7/20 is less than 1, since 7 is less than 20."
+    },
+    "tip": "To turn a fraction into a decimal, try to make the denominator 10, 100 or 1,000."
+  },
+  "216": {
+    "steps": [
+      "'18 is what percent of 72' means (18 ÷ 72) × 100%.",
+      "Simplify 18/72: divide top and bottom by 18 → 1/4.",
+      "1/4 = 0.25 = 25%.",
+      "Check: 25% of 72 = 72 ÷ 4 = 18."
+    ],
+    "wrong": {
+      "20%": "20% of 72 = 0.20 × 72 = 14.4, not 18.",
+      "30%": "30% of 72 = 0.30 × 72 = 21.6, not 18.",
+      "36%": "36% of 72 = 0.36 × 72 = 25.92, not 18. (36 is half of 72, which may cause this mix-up.)"
+    },
+    "tip": "'A is what percent of B' → A ÷ B × 100%. The number after 'of' goes on the bottom."
+  },
+  "217": {
+    "steps": [
+      "Total pay = pay per day × number of days = ₱540 × 26.",
+      "Break 26 into 20 + 6.",
+      "₱540 × 20 = ₱10,800.",
+      "₱540 × 6 = ₱3,240.",
+      "₱10,800 + ₱3,240 = ₱14,040.",
+      "Check: ₱540 × 26 is close to ₱500 × 26 = ₱13,000 plus ₱40 × 26 = ₱1,040. ₱13,000 + ₱1,040 = ₱14,040."
+    ],
+    "wrong": {
+      "₱13,540": "This is ₱500 short of the right answer, an addition slip. ₱10,800 + ₱3,240 = ₱14,040.",
+      "₱14,400": "This mixes up the digits of ₱14,040. ₱14,400 would be about 26.7 days of pay.",
+      "₱15,040": "This is ₱1,000 more than the right answer, a carrying slip."
+    },
+    "tip": "For big multiplications, split one number (26 = 20 + 6), multiply each part, then add."
+  },
+  "295": {
+    "steps": [
+      "1 hour = 60 minutes.",
+      "2.5 hours means 2 and a half hours.",
+      "2.5 × 60 = 150 minutes.",
+      "Check: 2 hours = 120 minutes, half an hour = 30 minutes. 120 + 30 = 150 minutes."
+    ],
+    "wrong": {
+      "125": "This reads 2.5 hours as 2 hours 5 minutes. But 0.5 hour is half an hour, which is 30 minutes.",
+      "160": "This is 2 hours 40 minutes. Half an hour is 30 minutes, not 40.",
+      "250": "This treats one hour as 100 minutes. An hour has only 60 minutes."
+    },
+    "tip": "Decimal hours × 60 = minutes. 0.5 h = 30 min, 0.25 h = 15 min, not 50 or 25 minutes."
+  },
+  "296": {
+    "steps": [
+      "'3/5 of 450' means divide 450 into 5 equal parts and take 3 of them.",
+      "One part: 450 ÷ 5 = 90.",
+      "Three parts: 90 × 3 = 270.",
+      "Check: 3/5 = 0.6, and 0.6 × 450 = 270."
+    ],
+    "wrong": {
+      "250": "This is 5/9 of 450. 3/5 of 450 is 90 × 3 = 270.",
+      "290": "Check: 290 ÷ 450 ≈ 0.64, not 0.6 (3/5).",
+      "300": "This is 2/3 of 450 (450 ÷ 3 × 2), not 3/5."
+    },
+    "tip": "Fraction of a number: divide by the bottom number, then multiply by the top number."
+  },
+  "297": {
+    "steps": [
+      "Find the price of 1 kg (the unit price): ₱156 ÷ 3 = ₱52 per kg.",
+      "Price of 7 kg: ₱52 × 7.",
+      "₱50 × 7 = ₱350 and ₱2 × 7 = ₱14. ₱350 + ₱14 = ₱364.",
+      "Check: 6 kg would be twice 3 kg = ₱312, and 1 more kg adds ₱52. ₱312 + ₱52 = ₱364."
+    ],
+    "wrong": {
+      "₱344": "This is ₱20 short. ₱52 × 7 = ₱364.",
+      "₱354": "This is ₱10 short. ₱52 × 7 = ₱364.",
+      "₱374": "This is ₱10 too much. ₱374 ÷ 7 is not ₱52."
+    },
+    "tip": "Unit-price method: divide to get the price of 1, then multiply for the amount you need."
+  },
+  "298": {
+    "steps": [
+      "The mode is the value that appears most often in a list.",
+      "Count each value: 4 appears 2 times, 7 appears 3 times, 2 appears 1 time, 9 appears 1 time.",
+      "7 appears the most (3 times).",
+      "The mode is 7."
+    ],
+    "wrong": {
+      "4": "4 appears only 2 times. 7 appears 3 times.",
+      "9": "9 appears only once. It is the largest number, not the most frequent.",
+      "2": "2 appears only once. It is the smallest number, not the most frequent."
+    },
+    "tip": "Mode = most frequent value. Tally each number before deciding."
+  },
+  "299": {
+    "steps": [
+      "The area of a triangle is A = ½ × base × height.",
+      "base = 10 cm, height = 8 cm.",
+      "10 × 8 = 80.",
+      "½ × 80 = 40.",
+      "Area = 40 cm². Check: a triangle is half of a 10 cm by 8 cm rectangle (80 cm²)."
+    ],
+    "wrong": {
+      "18 cm²": "This adds base and height (10 + 8). Area uses multiplication, not addition.",
+      "80 cm²": "This is base × height without the ½. That is the area of a rectangle, not a triangle.",
+      "36 cm²": "This is 2 × (10 + 8), a perimeter-style calculation. Area of a triangle is ½ × 10 × 8 = 40."
+    },
+    "tip": "Triangle area = ½ × base × height. Do not forget the half."
+  },
+  "300": {
+    "steps": [
+      "The volume of a box (rectangular prism) is V = length × width × height.",
+      "5 × 4 = 20.",
+      "20 × 3 = 60.",
+      "Volume = 60 cm³. Volume uses cubic units (cm³) because three lengths are multiplied."
+    ],
+    "wrong": {
+      "12 cm³": "This adds the sides: 5 + 4 + 3 = 12. Volume needs multiplication.",
+      "47 cm³": "This is 5×4 + 4×3 + 5×3 = 20 + 12 + 15 = 47, which is half the surface area, not the volume.",
+      "120 cm³": "This is double the right answer (2 × 60). Volume is just 5 × 4 × 3."
+    },
+    "tip": "Box volume = length × width × height. Area uses cm², volume uses cm³."
+  },
+  "301": {
+    "steps": [
+      "In a right triangle, the longest side (the hypotenuse) is opposite the right angle.",
+      "The Pythagorean theorem says: (short side)² + (other short side)² = (longest side)².",
+      "6² = 6 × 6 = 36 and 8² = 8 × 8 = 64.",
+      "36 + 64 = 100.",
+      "Longest side = √100 = 10 (because 10 × 10 = 100)."
+    ],
+    "wrong": {
+      "9": "9² = 81, but 6² + 8² = 100. So 9 is too short.",
+      "12": "This is 2 × 6. Check: 12² = 144, not 100.",
+      "14": "This adds the sides: 6 + 8 = 14. You must add the squares, then take the square root."
+    },
+    "tip": "a² + b² = c². Remember the 3-4-5 triangle and its double, 6-8-10."
+  },
+  "302": {
+    "steps": [
+      "A 30% salt solution means 30% of the liquid is salt.",
+      "Salt now: 30% of 10 L = 0.30 × 10 = 3 L of salt.",
+      "Adding water does not change the amount of salt. It stays 3 L.",
+      "Let x = liters of water added. New total = 10 + x liters. We want salt to be 20% of it: 3 ÷ (10 + x) = 0.20.",
+      "So 10 + x = 3 ÷ 0.20 = 15. Then x = 15 − 10 = 5 liters.",
+      "Check: 3 L of salt in 15 L total = 3 ÷ 15 = 0.20 = 20%."
+    ],
+    "wrong": {
+      "3": "3 L is the amount of salt, not the water to add. Adding 3 L makes 13 L, and 3 ÷ 13 ≈ 23%, not 20%.",
+      "10": "Adding 10 L makes 20 L, and 3 ÷ 20 = 15%, which is too weak.",
+      "15": "15 L is the final total amount of liquid, not the water added. Adding 15 L makes 25 L, and 3 ÷ 25 = 12%."
+    },
+    "tip": "Dilution: the amount of the substance (salt) stays the same. Find it first, then find the new total."
+  },
+  "303": {
+    "steps": [
+      "Let s = the son's age now. The father is 4 times as old: 4s.",
+      "In 20 years: son = s + 20, father = 4s + 20.",
+      "Then the father is twice the son's age: 4s + 20 = 2(s + 20).",
+      "Multiply out: 4s + 20 = 2s + 40.",
+      "Subtract 2s from both sides: 2s + 20 = 40. Subtract 20: 2s = 20. Divide by 2: s = 10.",
+      "Check: son 10, father 40 now. In 20 years: son 30, father 60, and 60 is twice 30."
+    ],
+    "wrong": {
+      "5": "Son 5 means father 20. In 20 years: son 25, father 40. 40 is not twice 25.",
+      "15": "Son 15 means father 60. In 20 years: son 35, father 80. 80 is not twice 35.",
+      "20": "20 is the number of years in the problem. Son 20 means father 80; in 20 years 100 is not twice 40."
+    },
+    "tip": "Age problems: let a letter be the age now, add the same years to everyone, set up the equation, then check."
+  },
+  "304": {
+    "steps": [
+      "Let the larger number be L and the smaller be S.",
+      "L + S = 50 and L − S = 14.",
+      "Add the two equations: (L + S) + (L − S) = 50 + 14, so 2L = 64.",
+      "L = 64 ÷ 2 = 32.",
+      "Then S = 50 − 32 = 18. Check: 32 + 18 = 50 and 32 − 18 = 14."
+    ],
+    "wrong": {
+      "28": "If the larger is 28, the smaller is 22. Their difference is 6, not 14.",
+      "30": "If the larger is 30, the smaller is 20. Their difference is 10, not 14.",
+      "36": "This is 50 − 14 = 36. If the larger is 36, the smaller is 14, and the difference is 22, not 14."
+    },
+    "tip": "Sum and difference: larger = (sum + difference) ÷ 2, smaller = (sum − difference) ÷ 2."
+  },
+  "305": {
+    "steps": [
+      "Count in easy pieces from 7:45 AM.",
+      "7:45 AM to 12:45 PM is 5 hours.",
+      "12:45 PM to 1:00 PM is 15 minutes.",
+      "1:00 PM to 1:20 PM is 20 minutes.",
+      "Total = 5 hours + 15 min + 20 min = 5 hours 35 minutes.",
+      "Check with 24-hour time: 1:20 PM = 13:20. 13:20 − 7:45: borrow 1 hour → 12 h 80 min − 7 h 45 min = 5 h 35 min."
+    ],
+    "wrong": {
+      "5 h 25 min": "This subtracts the minutes the wrong way (45 − 20 = 25). From :45 to :20 of the next hour is 35 minutes.",
+      "6 h 35 min": "This borrows 60 minutes (80 − 45 = 35) but forgets to take 1 hour away. 13 − 7 = 6 must become 5.",
+      "5 h 45 min": "This is 10 minutes too long. 7:45 + 5 h 45 min = 1:30 PM, not 1:20 PM."
+    },
+    "tip": "For time spans, count up to a whole hour first, then add the remaining minutes."
+  },
+  "306": {
+    "steps": [
+      "The tenths place is the first digit after the decimal point. In 4,867.351 the tenths digit is 3.",
+      "Look at the digit just to its right (the hundredths place): it is 5.",
+      "Rule: if that digit is 5 or more, round up. If it is 4 or less, keep the digit.",
+      "5 means round up: the 3 becomes 4. Drop the digits after it.",
+      "Answer: 4,867.4."
+    ],
+    "wrong": {
+      "4,867.3": "This rounds down. The next digit is 5, so the tenths digit must go up from 3 to 4.",
+      "4,867.35": "This is rounded to the nearest hundredth (two decimal places), not the nearest tenth.",
+      "4,870": "This is rounded to the nearest ten, not the nearest tenth."
+    },
+    "tip": "Look only at the one digit to the right of the place you are rounding to: 5 or more rounds up."
+  },
+  "307": {
+    "steps": [
+      "An exponent tells how many times to multiply the base by itself. 2³ = 2 × 2 × 2.",
+      "2³ = 2 × 2 × 2 = 8.",
+      "3² = 3 × 3 = 9.",
+      "8 × 9 = 72."
+    ],
+    "wrong": {
+      "36": "This treats exponents as plain multiplication: 2 × 3 = 6 and 3 × 2 = 6, then 6 × 6 = 36. But 2³ means 2 × 2 × 2 = 8.",
+      "54": "This uses 2³ = 6 (2 × 3) by mistake: 6 × 9 = 54. 2³ is 8.",
+      "108": "This swaps the exponents: 2² × 3³ = 4 × 27 = 108. The problem is 2³ × 3²."
+    },
+    "tip": "The exponent is how many times the base appears in the multiplication: 2³ = 2 × 2 × 2, not 2 × 3."
+  },
+  "308": {
+    "steps": [
+      "More workers need fewer days. This is an inverse proportion.",
+      "Total work = 6 workers × 9 days = 54 worker-days.",
+      "With 9 workers: days = 54 ÷ 9 = 6 days.",
+      "Check: 9 × 6 = 54 worker-days, the same job. And 6 days is fewer than 9, which makes sense with more workers."
+    ],
+    "wrong": {
+      "4": "Check: 9 workers × 4 days = 36 worker-days, but the house needs 54.",
+      "8": "Check: 9 workers × 8 days = 72 worker-days, more than the 54 needed.",
+      "13.5": "This is 9 × 9 ÷ 6 = 13.5, treating it as if more workers need more days. More workers finish sooner."
+    },
+    "tip": "More workers, fewer days: workers × days stays the same."
+  },
+  "309": {
+    "steps": [
+      "A markup of 40% over cost means the price is 100% + 40% = 140% of the cost.",
+      "Marked price: ₱800 × 1.40 = ₱1,120.",
+      "The 10% discount is taken from the marked price (₱1,120). You pay 90%.",
+      "Selling price: ₱1,120 × 0.90 = ₱1,008.",
+      "Check: 10% of ₱1,120 = ₱112, and ₱1,120 − ₱112 = ₱1,008."
+    ],
+    "wrong": {
+      "₱1,000": "This is a 25% net increase (₱800 × 1.25). No step in the problem gives that.",
+      "₱1,040": "This does 40% − 10% = 30% markup (₱800 × 1.30). But the 10% discount is taken from ₱1,120, not from ₱800.",
+      "₱1,120": "This is the marked price before the 10% discount."
+    },
+    "tip": "Markups and discounts multiply one after another: cost × 1.40 × 0.90. Never just add or subtract the percents."
+  },
+  "310": {
+    "steps": [
+      "The square root (√) of a number is the number that, multiplied by itself, gives it.",
+      "√144 = 12, because 12 × 12 = 144.",
+      "√81 = 9, because 9 × 9 = 81.",
+      "12 + 9 = 21."
+    ],
+    "wrong": {
+      "19": "This would need √144 = 10 or √81 = 7. But 10 × 10 = 100 and 7 × 7 = 49.",
+      "23": "This would need √144 = 14 or √81 = 11. But 14 × 14 = 196 and 11 × 11 = 121.",
+      "225": "This adds the numbers under the roots (144 + 81 = 225) and never takes the square roots."
+    },
+    "tip": "Memorize the perfect squares from 1² to 15² (1, 4, 9, … 144, 169, 196, 225)."
+  },
+  "311": {
+    "steps": [
+      "0.08 has 2 digits after the decimal point, so it means 8 hundredths: 0.08 = 8/100.",
+      "Lowest terms means the top and bottom have no common factor except 1.",
+      "8 and 100 can both be divided by 4: 8 ÷ 4 = 2 and 100 ÷ 4 = 25.",
+      "8/100 = 2/25. 2 and 25 share no common factor, so this is in lowest terms.",
+      "Check: 2 ÷ 25 = 0.08."
+    ],
+    "wrong": {
+      "8/10": "8/10 = 0.8, not 0.08. 0.08 is 8 hundredths, not 8 tenths.",
+      "4/50": "4/50 has the right value (it equals 0.08), but it is not in lowest terms. Both 4 and 50 can still be divided by 2.",
+      "1/8": "1/8 = 0.125, not 0.08."
+    },
+    "tip": "Decimal to fraction: put the digits over 10, 100 or 1,000 (one zero per decimal place), then simplify."
+  },
+  "312": {
+    "steps": [
+      "Divide each term by the one before it.",
+      "2 ÷ 1 = 2, 6 ÷ 2 = 3, 24 ÷ 6 = 4, 120 ÷ 24 = 5.",
+      "The multiplier goes up by 1 each time: × 2, × 3, × 4, × 5. Next is × 6.",
+      "Next term = 120 × 6 = 720."
+    ],
+    "wrong": {
+      "240": "This is 120 × 2. The multiplier grows each time; the next one is 6.",
+      "600": "This is 120 × 5, repeating the last multiplier instead of using 6.",
+      "840": "This is 120 × 7, skipping the multiplier 6."
+    },
+    "tip": "If the ratios between terms are 2, 3, 4, 5…, the next multiplier is simply the next counting number."
+  },
+  "313": {
+    "steps": [
+      "Look at what happens from each term to the next.",
+      "4 × 2 = 8, 8 − 1 = 7, 7 × 2 = 14, 14 − 1 = 13, 13 × 2 = 26.",
+      "The steps alternate: × 2, then − 1, then × 2, then − 1.",
+      "The last step was × 2 (13 → 26), so the next step is − 1.",
+      "Next term = 26 − 1 = 25."
+    ],
+    "wrong": {
+      "27": "This adds 1 (26 + 1). The pattern subtracts 1 after each doubling.",
+      "39": "This adds 13 (26 + 13). The next step in the pattern is − 1.",
+      "52": "This doubles again (26 × 2). But after a × 2 step comes a − 1 step."
+    },
+    "tip": "When a series goes up and down, look for two operations that take turns (alternating pattern)."
+  },
+  "314": {
+    "steps": [
+      "The first 4 km cost a flat ₱13 (the base fare).",
+      "Kilometers after the first 4: 9 − 4 = 5 km.",
+      "Extra charge: 5 km × ₱1.80 = ₱9.00.",
+      "Total fare = ₱13 + ₱9.00 = ₱22.00.",
+      "Check: the fare must be more than ₱13 and the extra part is 5 × ₱1.80 = ₱9.00, so ₱22.00 makes sense."
+    ],
+    "wrong": {
+      "₱20.20": "This charges only 4 extra km (4 × ₱1.80 = ₱7.20, then ₱13 + ₱7.20). After the first 4 km, there are 9 − 4 = 5 km left.",
+      "₱29.20": "This charges ₱1.80 for all 9 km (9 × ₱1.80 = ₱16.20) and then adds ₱13. The first 4 km are already covered by the ₱13.",
+      "₱16.20": "This is 9 × ₱1.80 with no base fare. The first 4 km cost ₱13, and only 5 km are charged at ₱1.80."
+    },
+    "tip": "Base-fare problems: subtract the covered distance first, then charge the rate only on what is left."
+  }
+}

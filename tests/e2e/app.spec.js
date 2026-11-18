@@ -21,6 +21,9 @@ const dialog = page => page.getByRole('alertdialog')
 async function answerAll(page, max = 400) {
   for (let i = 0; i < max; i++) {
     if (await page.getByText('General rating').isVisible()) return
+    if (await page.getByText('Something went wrong on this screen').isVisible()) {
+      throw new Error('Screen crashed: ' + await page.locator('[role=alert] pre').innerText() + '\n' + errors.join('\n'))
+    }
     if (await dialog(page).isVisible()) { await dialog(page).getByRole('button').last().click(); continue }
     const opt = page.locator('.opt:not([disabled])').first()
     if (await opt.count()) await opt.click()

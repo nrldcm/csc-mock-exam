@@ -10,6 +10,7 @@ import { checkForUpdate, dismiss as dismissUpdate, isNative, startUpdate, wasDis
 import { avg, shortDate, shuffle } from './lib/util.js'
 import { BottomNav } from './components/common.jsx'
 import Home from './components/Home.jsx'
+import ErrorBoundary from './components/ErrorBoundary.jsx'
 import { ScreenSkeleton, UIProvider, useUI } from './components/ui.jsx'
 
 // Screens load on demand; a skeleton shows while each one loads
@@ -215,6 +216,7 @@ function Main() {
   return (
     <>
       <a className="skip" href="#main">Skip to content</a>
+      <ErrorBoundary key={screen} onReset={() => { setExam(null); go('home') }}>
       {screen === 'home' && (
         <Home key={homeKey} level={level} setLevel={setLevel} mode={mode} setMode={setMode} diff={diff} setDiff={setDiff}
           timed={timed} setTimed={setTimed} onStart={start} onResume={resume} onTrivia={playTrivia} go={go} />
@@ -242,6 +244,7 @@ function Main() {
         )}
         {screen === 'about' && <About />}
       </Suspense>
+      </ErrorBoundary>
       {NAV_SCREENS.includes(screen) && <BottomNav current={screen} go={go} />}
     </>
   )

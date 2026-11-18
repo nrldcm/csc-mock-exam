@@ -17,17 +17,25 @@ test.afterEach(async () => { expect(errors, errors.join('\n')).toEqual([]) })
 const nav = (page, name) => page.getByRole('navigation', { name: 'Main' }).getByRole('button', { name })
 const dialog = page => page.getByRole('alertdialog')
 
-/* Answer every item: pick the first available choice, then Next/Skip/Finish/Submit, confirming dialogs */
+/* Answer every item: pick the first available choice, then Next/Skip. On the last item the button says
+   Finish/Submit: confirm the dialog and wait for the (lazy-loaded) results screen before returning. */
 async function answerAll(page, max = 400) {
   for (let i = 0; i < max; i++) {
-    if (await page.getByText('General rating').isVisible()) return
+    const next = page.locator('.dock .btn').last()
+    await next.waitFor()
     if (await page.getByText('Something went wrong on this screen').isVisible()) {
       throw new Error('Screen crashed: ' + await page.locator('[role=alert] pre').innerText() + '\n' + errors.join('\n'))
     }
-    if (await dialog(page).isVisible()) { await dialog(page).getByRole('button').last().click(); continue }
     const opt = page.locator('.opt:not([disabled])').first()
     if (await opt.count()) await opt.click()
-    await page.locator('.dock .btn').last().click()
+    const label = (await next.innerText()).trim()
+    await next.click()
+    if (/^(Finish|Submit)$/.test(label)) {
+      await dialog(page).waitFor()
+      await dialog(page).getByRole('button').last().click()
+      await expect(page.getByText('General rating')).toBeVisible({ timeout: 20_000 })
+      return
+    }
   }
   throw new Error('did not reach results')
 }
